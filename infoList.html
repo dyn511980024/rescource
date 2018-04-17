@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>成果科技</title>
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="static/css/swiper.min.css"/>
+    <link rel="stylesheet" href="static/css/index.css"/>
+    <link rel="stylesheet" href="static/css/iconfont.css"/>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/swiper.min.js"></script>
+    <script src="static/js/index.js"></script>
+
+    <!-- 在所有的页面引用IE兼容解决方案 -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+    <!-- 前端：通用头部 -->
+    <div class="header header-index">
+        <!--<div class="header-login">-->
+            <!--<div class="container pa">-->
+                <!--<div class="logo">中国科学院</div>-->
+                <!--<ul class="login-list list-unstyled pull-right">-->
+                    <!--<li><a href="#">登录</a></li>-->
+                    <!--<li>|</li>-->
+                    <!--<li><a href="#">注册</a></li>-->
+                <!--</ul>-->
+
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="header-menu">-->
+            <!--<div class="container">-->
+                <!--<ul class="menu-list pull-right">-->
+                    <!--<li class="active"><a href="javascript:;">首页</a></li>-->
+                    <!--<li><a href="javascript:;">科研成果</a></li>-->
+                    <!--<li><a href="javascript:;">院所风采</a></li>-->
+                    <!--<li><a href="javascript:;">供需服务</a></li>-->
+                    <!--<li><a href="javascript:;">联盟主页</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a href="home.html" class="logo"></a></div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <ul class="menu-list">
+                        <li class="active"><a href="javascript:;">首页</a></li>
+                        <li><a href="javascript:;">科研成果</a></li>
+                        <li><a href="javascript:;">院所风采</a></li>
+                        <li><a href="javascript:;">供需服务</a></li>
+                        <li><a href="javascript:;">联盟主页</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="search pa pull-left">
+                        <div class="search-select">
+                            <a href="javascript:;" class="origin dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="txt">成果</span> <i class="iconfont icon-caret-bottom"></i></a>
+                            <select multiple class="dropdown-menu value-list ">
+                                <option value="成果" selected>成果</option>
+                                <option value="服务">服务</option>
+                                <option value="会员">会员</option>
+                                <option value="需求">需求</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form-control" placeholder="请输入搜索内容"/>
+                        <a href="javascript:;" class="search-btn"><i class="iconfont icon-search1"></i></a>
+                    </div>
+                    <ul class="login-list list-unstyled pull-right">
+                        <li><a href="#">登录</a></li>
+                        <li>|</li>
+                        <li><a href="#">注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 内容部分 -->
+    <div class="main infoList">
+        <div class="container">
+            <!-- 用户列表 -->
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                    <div class="banner">
+                        <!-- Swiper -->
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" style="background-image: url('static/img/pic01.png');"><a href="#"></a></div>
+                                <div class="swiper-slide" style="background-image: url('static/img/pic02.png');"><a href="#"></a></div>
+                                <div class="swiper-slide" style="background-image: url('static/img/pic3.png');"><a href="#"></a></div>
+                                <div class="swiper-slide" style="background-image: url('static/img/pic1.png');"><a href="#"></a></div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="tab-box pa">
+                        <!-- Nav tabs -->
+                        <ul class="nav tab-header" role="tablist">
+                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">全部</a></li>
+                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">活动资讯</a></li>
+                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">市场动态</a></li>
+                            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">行业分析</a></li>
+                        </ul>
+                        <a href="javascript:;" class="btn all-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">全部 <i class="iconfont icon-down"></i></a>
+                        <div class="all-con dropdown-menu">
+                            <ul class="nav tab-header">
+                                <li class="active"><a href="#">全部</a></li>
+                                <li ><a href="#">活动资讯</a></li>
+                                <li><a href="#">市场动态</a></li>
+                                <li><a href="#">行业</a></li>
+                                <li><a href="#">活动资讯</a></li>
+                                <li><a href="#">动态</a></li>
+                                <li><a href="#">分析</a></li>
+                                <li><a href="#">资讯</a></li>
+                                <li><a href="#">市场动态</a></li>
+                                <li><a href="#">行业分析</a></li>
+                                <li><a href="#">活资讯</a></li>
+                                <li><a href="#">市场动态</a></li>
+                                <li><a href="#">行业析</a></li>
+                                <li><a href="#">行析</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                            <div class="info-list">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <a href="#"> <p class="info-list-pic" style="background-image: url('static/img/pic01.png')"></p></a>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 info-list-content">
+                                        <h2><a href="#"><span class="label label-default">活动资讯</span>欢迎<em class="text-danger">新成员</em>：北京分站北京分北京分站站</a></h2>
+                                        <p>0.02毫米建模精度，自动化建模处理，业界能实现的公司比较罕见。建模精度，自动化建模处理</p>
+                                        <label><span>发布人发布</span><span>2017-03-06</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-list">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <a href="#"> <p class="info-list-pic" style="background-image: url('static/img/pic02.png')"></p></a>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 info-list-content">
+                                        <h2><a href="#"><span class="label label-default">行业分析</span>欢迎<em class="text-danger">新成员</em>：北京分站北京分北京分站站</a></h2>
+                                        <p>0.02毫米建模精度，自动化建模处理，业界能实现的公司比较罕见。建模精度，自动化建模处理</p>
+                                        <label><span>发布人发布</span><span>2017-03-06</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-list no-pic">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 info-list-content">
+                                        <h2><a href="#"><span class="label label-default">活动资讯</span>欢迎<em class="text-danger">新成员</em>：北京分站北京分北京分站站</a></h2>
+                                        <p>0.02毫米建模精度，自动化建模处理，业界能实现的公司比较罕见。建模精度，自动化建模处理</p>
+                                        <label><span>发布人发布</span><span>2017-03-06</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-list">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <a href="#"> <p class="info-list-pic" style="background-image: url('static/img/pic01.png')"></p></a>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 info-list-content">
+                                        <h2><a href="#"><span class="label label-default">活动资讯</span>欢迎 <em class="text-danger">新成员</em>：北京分站北京分北京分站站</a></h2>
+                                        <p>0.02毫米建模精度，自动化建模处理，业界能实现的公司比较罕见。建模精度，自动化建模处理</p>
+                                        <label><span>发布人发布</span><span>2017-03-06</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-list">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <a href="#"> <p class="info-list-pic" style="background-image: url('static/img/pic02.png')"></p></a>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 info-list-content">
+                                        <h2><a href="#"><span class="label label-default">行业分析</span>欢迎<em class="text-danger">新成员</em>：北京分站北京分北京分站站</a></h2>
+                                        <p>0.02毫米建模精度，自动化建模处理，业界能实现的公司比较罕见。建模精度，自动化建模处理</p>
+                                        <label><span>发布人发布</span><span>2017-03-06</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-list no-pic">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 info-list-content">
+                                        <h2><a href="#"><span class="label label-default">活动资讯</span>欢迎<em class="text-danger">新成员</em>：北京分站北京分北京分站站</a></h2>
+                                        <p>0.02毫米建模精度，自动化建模处理，业界能实现的公司比较罕见。建模精度，自动化建模处理</p>
+                                        <label><span>发布人发布</span><span>2017-03-06</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="profile">2</div>
+                        <div role="tabpanel" class="tab-pane" id="messages">3</div>
+                        <div role="tabpanel" class="tab-pane" id="settings">4</div>
+                    </div>
+                    <!--分页-->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pagination-private">
+                            <ul class="pagination">
+                                <li><a href="#">&laquo;</a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">&raquo;</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--end-->
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="news-wrap">
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home1" aria-controls="home1" role="tab" data-toggle="tab"><span>热门资讯</span></a></li>
+                            <li role="presentation"><a href="#profile1" aria-controls="profile1" role="tab" data-toggle="tab"><span>热门活动</span></a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home1">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <dl class="hotInfo-list">
+                                            <dt style="background-image: url('static/img/pic1.png')"></dt>
+                                            <dd>
+                                                <p><a href="#">修机100股权众筹奇树有鱼股权众筹机器翻译一家民宿王思聪香蕉体育三好网社区更</a></p>
+                                                <span class="time">2017-03-06</span>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <dl class="hotInfo-list">
+                                            <dt style="background-image: url('static/img/pic2.png')"></dt>
+                                            <dd>
+                                                <p><a href="#">我并不反对碎片化学习</a>，实际上我们大多数新知识的掌握，并没有经</p>
+                                                <span class="time">2017-03-06</span>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <dl class="hotInfo-list">
+                                            <dt style="background-image: url('static/img/pic3.png')"></dt>
+                                            <dd>
+                                                <p><a href="#">修机100股权众筹奇树有鱼股权众筹机器翻译一家民宿王思聪香蕉体育三好网社区更</a></p>
+                                                <span class="time">2017-03-06</span>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <dl class="hotInfo-list">
+                                            <dt style="background-image: url('static/img/pic1.png')"></dt>
+                                            <dd>
+                                                <p><a href="#">修机100股权众筹奇树有鱼股权众筹机器翻译一家民宿王思聪香蕉体育三好网社区更</a></p>
+                                                <span class="time">2017-03-06</span>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <dl class="hotInfo-list">
+                                            <dt style="background-image: url('static/img/pic2.png')"></dt>
+                                            <dd>
+                                                <p><a href="#">修机100股权众筹奇树有鱼股权众筹机器翻译一家民宿王思聪香蕉体育三好网社区更</a></p>
+                                                <span class="time">2017-03-06</span>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <dl class="hotInfo-list">
+                                            <dt style="background-image: url('static/img/pic3.png')"></dt>
+                                            <dd>
+                                                <p><a href="#">修机100股权众筹奇树有鱼股权众筹机器翻译一家民宿王思聪香蕉体育三好网社区更</a></p>
+                                                <span class="time">2017-03-06</span>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <dl class="hotInfo-list">
+                                            <dt style="background-image: url('static/img/pic1.png')"></dt>
+                                            <dd>
+                                                <p><a href="#">修机100股权众筹奇树有鱼股权众筹机器翻译一家民宿王思聪香蕉体育三好网社区更</a></p>
+                                                <span class="time">2017-03-06</span>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <dl class="hotInfo-list">
+                                            <dt style="background-image: url('static/img/pic2.png')"></dt>
+                                            <dd>
+                                                <p><a href="#">修机100股权众筹奇树有鱼股权众筹机器翻译一家民宿王思聪香蕉体育三好网社区更</a></p>
+                                                <span class="time">2017-03-06</span>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile1">...</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 前端：通用尾部  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>院所园企</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>服务指南</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>关于我们</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">平台简介</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">法律声明</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-offset-1 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="friend-link-list ">
+                        <a class="facebook" href="#"><i class="iconfont icon-facebook1"></i></a>
+                        <a class="twiter" href="#"><i class="iconfont icon-icontwiter"></i></a>
+                        <a class="sina" href="#"><i class="iconfont icon-sina"></i></a>
+                        <a class="google" href="#"><i class="iconfont icon-google1"></i></a>
+                    </div>
+                    <p>copyRight@2007-2017 中国科学院科技产业网版权所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(".value-list> option").click(function () {
+        var _this = $(this);
+        var _val = _this.val();
+        $(".origin > .txt").text(_val);
+    });
+    /* input输入框的插件*/
+//    $(document).ready(function(){
+//        $('input').iCheck({
+//            checkboxClass: 'icheckbox_flat-blue',
+//            radioClass: 'iradio_flat-blue'
+//        });
+//    });
+</script>
+</body>
+</html>

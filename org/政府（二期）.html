@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>成果科技</title>
+
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css"/>
+    <!--<link rel="stylesheet" href="static/css/blue.css"/>-->
+    <link rel="stylesheet" href="../static/css/swiper.min.css"/>
+    <link rel="stylesheet" href="../static/css/iconfont.css"/>
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <!--<script src="static/js/icheck.min.js"></script>-->
+    <script src="../static/js/swiper.min.js"></script>
+    <script src="../static/js/laydate/laydate.js"></script>
+    <script src="../static/js/index.js"></script>
+    <!--多个文件上传插件-->
+    <link rel="stylesheet" type="text/css" href="../static/css/fileinput.css"/>
+    <link rel="stylesheet" href="../static/css/admin.css"/>
+    <!--end-->
+</head>
+<body>
+<div class="wrapper">
+    <!-- 前端：通用头部 -->
+    <div class="header header-index">
+        <!--<div class="header-login">-->
+            <!--<div class="container pa">-->
+                <!--<div class="logo">中国科学院</div>-->
+                <!--<ul class="login-list list-unstyled pull-right">-->
+                    <!--<li><a href="#">登录</a></li>-->
+                    <!--<li>|</li>-->
+                    <!--<li><a href="#">注册</a></li>-->
+                <!--</ul>-->
+
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="header-menu">-->
+            <!--<div class="container">-->
+                <!--<ul class="menu-list pull-right">-->
+                    <!--<li class="active"><a href="javascript:;">首页</a></li>-->
+                    <!--<li><a href="javascript:;">科研成果</a></li>-->
+                    <!--<li><a href="javascript:;">院所风采</a></li>-->
+                    <!--<li><a href="javascript:;">供需服务</a></li>-->
+                    <!--<li><a href="javascript:;">联盟主页</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"><a href="../home.html" class="logo"></a></div>
+                <div class="col-md-6">
+                    <ul class="menu-list">
+                        <li class="active"><a href="javascript:;">首页</a></li>
+                        <li><a href="javascript:;">科研成果</a></li>
+                        <li><a href="javascript:;">院所风采</a></li>
+                        <li><a href="javascript:;">供需服务</a></li>
+                        <li><a href="javascript:;">联盟主页</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="search pa pull-left">
+                        <div class="search-select">
+                            <a href="javascript:;" class="origin dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="txt">成果</span> <i class="iconfont icon-caret-bottom"></i></a>
+                            <select multiple class="dropdown-menu value-list ">
+                                <option value="成果" selected>成果</option>
+                                <option value="服务">服务</option>
+                                <option value="会员">会员</option>
+                                <option value="需求">需求</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form-control" placeholder="请输入搜索内容"/>
+                        <a href="javascript:;" class="search-btn"><i class="iconfont icon-search1"></i></a>
+                    </div>
+                    <ul class="login-list list-unstyled pull-right">
+                        <li><a href="#">登录</a></li>
+                        <li>|</li>
+                        <li><a href="#">注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 内容部分 -->
+    <div class="admin-main">
+        <div class="container">
+            <div class="row">
+                  <div class="col-md-2 sidebar" style="height: 930px">
+                    <h2>用户中心</h2>
+                    <ul class="sidebar-list">
+                        <li><a href="#"><i class="iconfont icon-user"></i>账户信息</a></li>
+                        <li class="active"><a href="#"><i class="iconfont">&nbsp;</i>基本信息</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>教育背景</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>职业信息</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>成果案例</a></li>
+                        <li><a href="#"><i class="iconfont icon-jigou2"></i>我加入的机构</a></li>
+                        <li><a href="#"><i class="iconfont icon-jigou2"></i>专利技术管理</a></li>
+                        <li><a href="#"><i class="iconfont icon-guanli01-copy"></i>科技成果管理</a></li>
+                        <li><a href="#"><i class="iconfont icon-guanli"></i>供需管理</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>发布服务</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>发布需求</a></li>
+                        <li><a href="#"><i class="iconfont icon-jiaoliu"></i>互动交流</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>我的关注</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>我的收藏</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>我的论坛</a></li>
+                        <li><a href="#"><i class="iconfont icon-notice"></i>资讯中心</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>发布资讯</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>发布活动</a></li>
+                        <li><a href="#"><i class="iconfont icon-wave"></i>个人主页</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-10 content">
+                    <div class="row">
+                        <div class="col-md-12 basicInfo">
+                            <div class="common-head"><span>基本信息</span><a href="#" class="btn btn-default btn-back"><i class="iconfont icon-back"></i>返回</a></div>
+                            <div class="form-group">
+                            	<div class="row">
+                            		<div class="col-md-3 text-right">
+		                                <label class="normal-label">机构名称：</label>
+		                            </div>
+                            		<div class="col-md-6">
+		                                <div class="common-input">
+		                                    <h4>教育部留学服务中心</h4>
+		                                </div>
+		                            </div>
+                            	</div>
+		                        <div class="row">
+		                          <div class="control-group">
+						            <div class="col-md-3 text-right">
+		                                <label class="normal-label">联系人姓名：</label>
+		                            </div>
+		                            <div class="col-md-6">
+		                                <div class="common-input">
+		                                    <h4>德玛西亚</h4>
+		                                </div>
+		                            </div>
+		                        </div>
+		                      </div>
+		                      <div class="row">
+		                            <div class="col-md-3 text-right">
+		                                <label class="normal-label">手机号码：</label>
+		                            </div>
+		                            <div class="col-md-6">
+		                                <div class="common-input">
+		                                	<h4>134123512351</h4>
+		                                </div>
+		                            </div>
+		                      </div>
+		                       <div class="row">
+		                            <div class="col-md-3 text-right">
+		                                <label class="normal-label">*法定代表人/负责人姓名：</label>
+		                            </div>
+		                            <div class="col-md-6">
+		                                <div class="common-input">
+		                                    <input type="text" class="form-control" placeholder="法定代表人/负责人姓名"/>
+		                                </div>
+		                            </div>
+		                      </div>
+		                     
+		                     
+		                    
+								<div class="row">
+									<div class="col-md-3 text-right">
+										<label class="normal-label">机构属性：</label>
+									</div>
+									<div class="col-md-6">
+										<div class="common-input">
+											<h4>政府机构</h4>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+		                            <div class="col-md-3 text-right">
+		                                <label class="normal-label">归属单位：</label>
+		                            </div>
+		                            <div class="col-md-6 file-upload">
+		                            	<div class="common-input">
+		                            	  <input type="text" class="form-control" placeholder="请填写归属单位"/>
+		                            	</div>
+		                            </div>
+		                   </div>
+		                    
+		                  
+		                     
+		                     
+		                      <!--<div class="row">-->
+		                            <!--<div class="col-md-3 text-right">-->
+		                                <!--<label class="normal-label">是否上市：</label>-->
+		                            <!--</div>-->
+		                            <!--<div class="col-md-5">-->
+		                                <!--<div class="common-input">-->
+										    <!--<select class="form-control">-->
+										      <!--<option value="">请选择</option>-->
+										      <!--<option value="yes">是</option>-->
+										      <!--<option value="no">否</option>-->
+										    <!--</select>-->
+		                                <!--</div>-->
+		                            <!--</div>-->
+		                      <!--</div>-->
+		                      <!--<div class="row">-->
+		                            <!--<div class="col-md-3 text-right">-->
+		                                <!--<label class="normal-label">机构规模：</label>-->
+		                            <!--</div>-->
+		                            <!--<div class="col-md-5">-->
+		                                <!--<div class="common-input">-->
+		                                	<!--<h4><input type="text" class="form-control scale"/>人</h4>-->
+		                                <!--</div>-->
+		                            <!--</div>-->
+		                      <!--</div>-->
+		                      <div class="row">
+	                            <div class="col-md-3 text-right">
+	                                <label class="normal-label">机构所在地：</label>
+	                            </div>
+	                            <div class="col-md-6 area-selct">
+	                                <div class="common-input">
+	                                    <div class="row clearfix">
+	                                        <div class="col-md-3 area-item">
+	                                            <select class="form-control">
+	                                            	<option value="0">省</option>
+	                                                <option value="1">北京</option>
+	                                                <option value="1">上海</option>
+	                                                <option value="1">广州</option>
+	                                                <option value="1">辽宁</option>
+	                                            </select>
+	                                        </div>
+	                                        <div class="col-md-4 area-item">
+	                                            <select class="form-control">
+	                                            	<option value="0">市</option>
+	                                                <option value="1">浦东新区</option>
+	                                                <option value="1">松江区</option>
+	                                                <option value="1">徐汇区</option>
+	                                                <option value="1">青浦区</option>
+	                                            </select>
+	                                        </div>
+	                                        <div class="col-md-4 area-item-last">
+	                                            <select class="form-control">
+	                                            	<option value="0">区</option>
+	                                                <option value="1">乐山路33号</option>
+	                                                <option value="1">徐汇分支123</option>
+	                                                <option value="1">虹口机场路12号12楼</option>
+	                                                <option value="1">我也不知道了</option>
+	                                            </select>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+		                      </div>
+		                      <div class="row">
+		                            <div class="col-md-3 text-right">
+		                                <label class="normal-label">详细地址：</label>
+		                            </div>
+		                            <div class="col-md-6">
+		                                <div class="common-input">
+		                                    <input type="text" class="form-control" placeholder="请输入详细地址"/>
+		                                </div>
+		                            </div>
+		                      </div>
+		                      <div class="row">
+		                            <div class="col-md-3 text-right">
+		                                <label class="normal-label">办公电话：</label>
+		                            </div>
+		                            <div class="col-md-6">
+		                                <div class="common-input">
+		                                    <input type="text" class="form-control" placeholder="请输入固定电话"/>
+		                                </div>
+		                            </div>
+		                             <div class="col-md-3 text-right">
+		                                *例：010-58812909，区号与电话之间以破折号（"-"）隔开
+		                            </div>
+		                      </div>
+		                       <div class="row">
+		                            <div class="col-md-3 text-right">
+		                                <label class="normal-label">官网：</label>
+		                            </div>
+		                            <div class="col-md-6">
+		                                <div class="common-input">
+		                                    <input type="text" class="form-control" placeholder="请输入固定电话"/>
+		                                </div>
+		                            </div>
+		                             <div class="col-md-3 ">
+		                                *官网格式：www.castt.cn
+		                            </div>
+		                      </div>
+		                     <div class="row">
+		                            <div class="col-md-3 text-right">
+		                                <label class="normal-label">邮箱：</label>
+		                            </div>
+		                            <div class="col-md-6">
+		                                <div class="common-input">
+		                                    <input type="text" class="form-control" placeholder="请输入邮箱"/>
+		                                </div>
+		                            </div>
+		                             <div class="col-md-3">
+		                              *请填写联系邮箱，邮箱格式为：zhangsan@zkzy.com.cn
+		                            </div>
+		                      </div>
+		                      <div class="row">
+		                            <div class="col-md-3 text-right">
+		                                <label class="normal-label labelTop">机构简介：</label>
+		                            </div>
+		                            <div class="col-md-6">
+		                                <div class="common-input">
+		                                    <textarea class="form-control textarea-1" placeholder="请输入机构简介"></textarea>
+		                                </div>
+		                            </div>
+		                      </div>
+		                      <div class="row">
+		                            <div class="col-md-5 col-md-offset-3">
+		                                <button class="btn btn-primary btn-confirm">保存</button>
+		                            </div>
+		                      </div>
+		                    </div>
+		                </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 前端：通用尾部  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <h2>院所园企</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h2>服务指南</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h2>关于我们</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">平台简介</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">法律声明</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-offset-1 col-md-4">
+                    <div class="friend-link-list ">
+                        <a class="facebook" href="#"><i class="iconfont icon-facebook1"></i></a>
+                        <a class="twiter" href="#"><i class="iconfont icon-icontwiter"></i></a>
+                        <a class="sina" href="#"><i class="iconfont icon-sina"></i></a>
+                        <a class="google" href="#"><i class="iconfont icon-google1"></i></a>
+                    </div>
+                    <p>copyRight@2007-2017 中国科学院科技产业网版权所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../static/js/fileinput.min.js"></script>   <!--文件上传-->
+<script src="//cdn.bootcss.com/bootstrap-fileinput/4.3.8/js/locales/zh.js"></script> <!--fileinput汉化包-->
+<script type="text/javascript">
+$(function () {
+    
+var FileInput = function () {
+	var oFile = new Object();
+	//初始化fileinput控件（第一次初始化）
+	oFile.Init = function(ctrlName, uploadUrl) {
+	var control = $('#' + ctrlName);
+	//初始化上传控件的样式
+	control.fileinput({
+		language: 'zh', //设置语言
+		uploadUrl: uploadUrl, //上传的地址
+		//uploadAsync: true,
+		allowedFileExtensions: ['jpg', 'gif', 'png'],//接收的文件后缀
+		allowedPreviewTypes:false,
+		showUpload: false, //是否显示上传按钮
+		showCaption: false,//是否显示标题
+		browseClass: "btn btn-default", //按钮样式	 
+		dropZoneEnabled: false,//是否显示拖拽区域
+		//minImageWidth: 50, //图片的最小宽度
+		//minImageHeight: 50,//图片的最小高度
+		//maxImageWidth: 1000,//图片的最大宽度
+		//maxImageHeight: 1000,//图片的最大高度
+		//maxFileSize: 0,//单位为kb，如果为0表示不限制文件大小
+		//minFileCount: 0,
+		//maxFileCount: 10, //表示允许同时上传的最大文件个数
+		enctype: 'multipart/form-data',
+		validateInitialCount:true,
+		previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+		msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+	});
+	//导入文件上传完成之后的事件 
+	$("#txt_file1").on("fileuploaded", function (event, data, previewId, index) {
+		var data = data.response.lstOrderImport;
+		if (data == undefined) {
+			toastr.error('文件格式类型不正确');
+			return;
+		}
+		//初始化表格 下面用来接收date并初始化
+//		var oTable = new TableInit();
+//		oTable.Init(data);
+//		$("#div_startimport").show();
+	   });
+	   $("#txt_file2").on("fileuploaded", function (event, data, previewId, index) {
+		var data = data.response.lstOrderImport;
+		if (data == undefined) {
+			toastr.error('文件格式类型不正确');
+			return;
+		}
+      });
+      $("#txt_file3").on("fileuploaded", function (event, data, previewId, index) {
+		var data = data.response.lstOrderImport;
+		if (data == undefined) {
+			toastr.error('文件格式类型不正确');
+			return;
+		}
+      });
+     }
+		return oFile;
+	};
+//0.初始化fileinput
+    var oFileInput = new FileInput();
+    oFileInput.Init("txt_file1", "/api/OrderApi/ImportOrder");
+    oFileInput.Init("txt_file2", "/api/OrderApi/ImportOrder");
+    oFileInput.Init("txt_file3", "/api/OrderApi/ImportOrder");
+    //初始化fileinput
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>成果科技</title>
+
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../static/css/swiper.min.css"/>
+    <link rel="stylesheet" href="../static/css/blue.css"/>
+    <link rel="stylesheet" href="../static/css/admin.css"/>
+    <link rel="stylesheet" href="../static/css/iconfont.css"/>
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/swiper.min.js"></script>
+    <script src="../static/js/laydate/laydate.js"></script>
+    <script src="../static/js/icheck.min.js"></script>
+    <script src="../static/js/index.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <!-- 前端：通用头部 -->
+    <div class="header header-index">
+        <!--<div class="header-login">-->
+            <!--<div class="container pa">-->
+                <!--<div class="logo">中国科学院</div>-->
+                <!--<ul class="login-list list-unstyled pull-right">-->
+                    <!--<li><a href="#">登录</a></li>-->
+                    <!--<li>|</li>-->
+                    <!--<li><a href="#">注册</a></li>-->
+                <!--</ul>-->
+
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="header-menu">-->
+            <!--<div class="container">-->
+                <!--<ul class="menu-list pull-right">-->
+                    <!--<li class="active"><a href="javascript:;">首页</a></li>-->
+                    <!--<li><a href="javascript:;">科研成果</a></li>-->
+                    <!--<li><a href="javascript:;">院所风采</a></li>-->
+                    <!--<li><a href="javascript:;">供需服务</a></li>-->
+                    <!--<li><a href="javascript:;">联盟主页</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"><a href="../home.html" class="logo"></a></div>
+                <div class="col-md-6">
+                    <ul class="menu-list">
+                        <li class="active"><a href="javascript:;">首页</a></li>
+                        <li><a href="javascript:;">科研成果</a></li>
+                        <li><a href="javascript:;">院所风采</a></li>
+                        <li><a href="javascript:;">供需服务</a></li>
+                        <li><a href="javascript:;">联盟主页</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="search pa pull-left">
+                        <div class="search-select">
+                            <a href="javascript:;" class="origin dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="txt">成果</span> <i class="iconfont icon-caret-bottom"></i></a>
+                            <select multiple class="dropdown-menu value-list ">
+                                <option value="成果" selected>成果</option>
+                                <option value="服务">服务</option>
+                                <option value="会员">会员</option>
+                                <option value="需求">需求</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form-control" placeholder="请输入搜索内容"/>
+                        <a href="javascript:;" class="search-btn"><i class="iconfont icon-search1"></i></a>
+                    </div>
+                    <ul class="login-list list-unstyled pull-right">
+                        <li><a href="#">登录</a></li>
+                        <li>|</li>
+                        <li><a href="#">注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 内容部分 -->
+    <div class="admin-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 sidebar">
+                    <h2>用户中心</h2>
+                    <ul class="sidebar-list">
+                        <li><a href="#"><i class="iconfont icon-user"></i>账户信息</a></li>
+                        <li class="active"><a href="#"><i class="iconfont">&nbsp;</i>基本信息</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>教育背景</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>职业信息</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>成果案例</a></li>
+                        <li><a href="#"><i class="iconfont icon-jigou2"></i>我加入的机构</a></li>
+                        <li><a href="#"><i class="iconfont icon-guanli01-copy"></i>科技成果管理</a></li>
+                        <li><a href="#"><i class="iconfont icon-guanli"></i>供需管理</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>发布服务</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>发布需求</a></li>
+                        <li><a href="#"><i class="iconfont icon-jiaoliu"></i>互动交流</a></li>
+                        <li><a href="#"><i class="iconfont icon-notice"></i>资讯中心</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>发布资讯</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>发布活动</a></li>
+                        <li><a href="#"><i class="iconfont icon-wave"></i>个人主页</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-10 content">
+                    <div class="row">
+                        <div class="col-md-12 job-info">
+                            <div class="common-head"><span>发布服务</span>
+                                <a href="#" class="btn btn-default btn-back"><i class="iconfont icon-back"></i>返回</a>
+                            </div>
+                            <div class="row form-group private error">
+                                <div class="col-md-2 text-right">
+                                    <label class="normal-label">服务类型：</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="common-input">
+                                        <select class="form-control common-select single">
+                                            <option value="1" selected>请选择：</option>
+                                            <option value="2">知识产权</option>
+                                            <option value="3">分析报告</option>
+                                            <option value="4">政策应用</option>
+                                            <option value="5">顾问服务</option>
+                                            <option value="6">工业设计</option>
+                                            <option value="7">技术转移</option>
+                                            <option value="8">科技金融</option>
+                                            <option value="9">认证评估</option>
+                                            <option value="10">监理检测</option>
+                                            <option value="11">咨询培训</option>
+                                        </select>
+                                        <select class="form-control common-select single">
+                                            <option value="1" selected>请选择：</option>
+                                            <option value="2">专利申请</option>
+                                            <option value="3">专利检索分析报告</option>
+                                            <option value="4">专利评价报告</option>
+                                            <option value="5">专利维权保护</option>
+                                            <option value="6">侵权奉献评估</option>
+                                            <option value="7">知识产权托管</option>
+                                            <option value="8">商标服务</option>
+                                            <option value="9">商号权</option>
+                                            <option value="10">著作权服务</option>
+                                            <option value="11">植物新品种权</option>
+                                            <option value="12">集成电路设计图权</option>
+                                            <option value="13">商业秘密权</option>
+                                            <option value="14">其他</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-group private">
+                                <div class="col-md-2 text-right">
+                                    <label class="normal-label">服务名称：</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="common-input">
+                                        <input type="text" class="form-control" placeholder="请输入专业名称"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-group private top">
+                                <div class="col-md-2 text-right">
+                                    <label class="normal-label">服务领域：</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="option1"> 不限领域
+                                        </label>
+                                    </div>
+                                    <select multiple class="form-control">
+                                        <option selected>电器自动化</option>
+                                        <option>采矿冶金</option>
+                                        <option>航空航天</option>
+                                        <option>海洋开发</option>
+                                        <option>医药与医疗</option>
+                                        <option>电子信息</option>
+                                        <option>化学化工</option>
+                                        <option>轻工纺织</option>
+                                        <option>家居用品</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row form-group private top">
+                              <div class="col-md-2 text-right">
+                                <label class="normal-label">服务地区：</label>
+                              </div>
+                              <div class="col-md-9">
+                                  <div class="row">
+                                      <div class="col-md-12">
+                                          <div class="checkbox">
+                                              <label>
+                                                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 全国
+                                              </label>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-12 checkbox-list">
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" id="inlineCheckbox2" value="option2"> 北京
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" id="inlineCheckbox3" value="option3"> 天津
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" id="inlineCheckbox4" value="option3"> 上海
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" id="inlineCheckbox5" value="option3"> 黑龙江
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" id="inlineCheckbox6" value="option3"> 吉林
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" id="inlineCheckbox7" value="option3"> 辽宁
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" id="inlineCheckbox8" value="option3"> 内蒙古
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" id="inlineCheckbox9" value="option3"> 河北
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" id="inlineCheckbox10" value="option3"> 河南
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" id="inlineCheckbox11" value="option3"> 山东
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" id="inlineCheckbox12" value="option3"> 安徽
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" id="inlineCheckbox13" value="option3"> 湖北
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" value="option3"> 湖南
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" value="option3"> 江苏
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" value="option3"> 浙江
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" value="option3"> 江西
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" value="option3"> 福建
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" value="option3"> 广西
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" value="option3"> 广东
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" value="option3"> 四川
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" value="option3"> 云南
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" value="option3"> 山西
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" value="option3"> 陕西
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" value="option3"> 青海
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" value="option3"> 甘肃
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" value="option3"> 重庆
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" value="option3"> 新疆
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" value="option3"> 西藏
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" value="option3"> 香港
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" value="option3"> 澳门
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" value="option3"> 宁夏
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" value="option3"> 海南
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" value="option3"> 贵州
+                                          </label>
+                                          <label class="checkbox-inline">
+                                              <input type="checkbox" value="option3"> 台湾
+                                          </label>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="row form-group private">
+                                <div class="col-md-2 text-right">
+                                    <label class="normal-label">服务描述：</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="common-input">
+                                        <textarea rows="5" class="form-control" placeholder=""></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-group private">
+                                <div class="col-md-2 text-right">
+                                    <label class="normal-label">服务流程：</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="common-input">
+                                        <textarea rows="5" class="form-control" placeholder=""></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-group private top">
+                                <div class="col-md-2 text-right">
+                                    <label class="normal-label">服务承诺：</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="option1"> 承诺信息真实有效
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="option2"> 承诺资料保密
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="option3"> 承诺两个工作日内快速回复
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="option3"> 售后指导
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="option3"> 快速服务
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-group private">
+                                <div class="col-md-2 text-right">
+                                    <label class="normal-label">服务案例：</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="common-input">
+                                        <textarea rows="5" class="form-control" placeholder=""></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-group private">
+                                <div class="col-md-2 text-right">
+                                    <label class="normal-label">服务图片：</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="common-input">
+                                        <p class="uploadFile pa">
+                                            <button class="btn btn-default active">选择文件</button>
+                                            <input type="file" />
+                                            <span class="txt">178617395.jpg</span>
+                                            <a href="javascript:;" class="btn-delete" onclick="deleteEvent(this);">删除</a>
+                                        </p>
+                                        <p class="uploadFile pa">
+                                            <button class="btn btn-default active">选择文件</button>
+                                            <input type="file" />
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-group private">
+                              <div class="col-md-2 text-right">
+                                <label class="normal-label">服务价格：</label>
+                              </div>
+                              <div class="col-md-5">
+                                  <div class="common-input">
+                                      <input type="text" class="form-control small xs" placeholder=""/>
+                                      <span> 元 ~</span>
+                                      <input type="text" class="form-control small xs" placeholder=""/>
+                                      <span> 元 </span>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="row form-group private top">
+                              <div class="col-md-2 text-right">
+                                <label class="normal-label">服务机构联系人：</label>
+                              </div>
+                              <div class="col-md-5">
+                                  <div class="common-input">
+                                      <p>张三</p>
+                                      <div class="staticTxt">
+                                          <div class="name">联系方式：</div>
+                                          <div class="value">1800000000</div>
+                                          <div class="name">所在地：</div>
+                                          <div class="value">北京市海淀区</div>
+                                          <div class="name">详细地址：</div>
+                                          <div class="value">大麻子东路12号</div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="row form-group private">
+                                <div class="col-md-2 text-right">
+                                    <label class="normal-label">服务机构宣传信息：</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="common-input">
+                                        <textarea rows="5" class="form-control" placeholder=""></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+		                     <div class="form-group">
+		                        <div class="row">
+		                            <div class="col-md-2 text-right">
+		                            </div>
+		                            <div class="col-md-5">
+		                                <button class="btn btn-primary btn-confirm">提交</button>
+		                            </div>
+		                        </div>
+		                     </div>
+                          </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 前端：通用尾部  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <h2>院所园企</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h2>服务指南</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h2>关于我们</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">平台简介</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">法律声明</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-offset-1 col-md-4">
+                    <div class="friend-link-list ">
+                        <a class="facebook" href="#"><i class="iconfont icon-facebook1"></i></a>
+                        <a class="twiter" href="#"><i class="iconfont icon-icontwiter"></i></a>
+                        <a class="sina" href="#"><i class="iconfont icon-sina"></i></a>
+                        <a class="google" href="#"><i class="iconfont icon-google1"></i></a>
+                    </div>
+                    <p>copyRight@2007-2017 中国科学院科技产业网版权所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+   $(function(){
+   	  $(".key .plus-round").click(function(){
+		 var panel=$(this).closest("div").children(".addNew");
+		 console.log(panel);
+		  $(".value-name").val("");
+	  	  $(".value-time").val("");
+	      $(panel).show();
+	      $(this).hide();
+	});
+	$(".addNew .add-cancle").click(function(){
+		var panel=$(this).closest(".addNew");
+		var panelPlus=$(this).closest(".key").children(".plus-round");
+		 console.log(panel);
+		$(panel).hide();
+		$(panelPlus).show();
+	});
+	$(".addNew .add-save").click(function(){
+		var panel=$(this).closest(".addNew");
+		var panelPlus=$(this).closest(".key").children(".plus-round");
+		var valueName=$(this).closest(".addNew").children(".value-name").val();
+  	    var valueTime=$(this).closest(".addNew").children(".value-time").val();
+  	  	var _html="<p>"+valueName+","+valueTime+"<span class='btn-delete' onclick='deleteEvent(this)'>删除</span>"
+  	  	+"</p>";
+  	  	
+  	  	if(valueName==""|| valueTime==""){
+  	  	  return false;
+  	  	}else{
+  	  	  console.log($(this).closest("div"));
+  	  	  console.log(valueName);
+
+  	  	  $(this).closest(".key").children(".value-list").append(_html);
+  	  	   console.log(valueTime);
+  	  	  $(panel).hide();
+  	  	  $(panelPlus).show();
+  	  	}
+	});
+
+	laydate({
+      elem: '.date', //目标元素。由于laydate.js封装了一个轻量级的选择器引擎，因此elem还允许你传入class、tag但必须按照这种方式 '#id .class'
+      event: 'focus' //响应事件。如果没有传入event，则按照默认的click
+  });
+ })
+
+
+</script>
+</body>
+</html>

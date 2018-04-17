@@ -1,0 +1,112 @@
+@charset "UTF-8";
+@import "variables";
+@import "base";
+@import "compass";
+
+
+.wrapper {
+  .techDetail {
+    &-header {
+      background: $light-gray;
+      .left {
+        img {
+          width: 100%;
+          height: 230px;
+        }
+      }
+      .right {
+        h2 {
+          font-size: 2.4rem;
+          margin: 0 0 40px;
+        }
+        .table {
+          margin: 0 0 10px;
+          border-bottom: 1px solid $global-border;
+          tbody {
+            tr {
+              td {
+                border: none;
+                padding: 0 0 15px;
+              }
+            }
+          }
+        }
+        h4 {
+          font-size: 1.4rem;
+          color: $color6;
+        }
+        p {
+          font-size: 1.2rem;
+          color: $color9;
+        }
+        .btn {
+          margin: 40px 20px 0 0;
+        }
+        .tips {
+          width: 100%;
+          padding: 10px 20px;
+          left: -33px;
+          p {
+            line-height: 26px;
+          }
+        }
+      }
+      .common-tabs {
+        padding-top: 20px;
+        .nav {
+          li {
+            font-size: 1.8rem;
+            @include inline-block(top);
+            border-bottom: 2px solid transparent;
+            a {
+              color: $color6;
+              font-weight: 500;
+            }
+            &:hover,&.active {
+                border-color: darken($bg-red,12%);
+              a {
+                color: darken($bg-red,12%);
+                background: transparent;
+              }
+            }
+          }
+
+        }
+      }
+    }
+    &-content {
+      padding: 20px 0 40px;
+      .txt {
+        padding-bottom: 10px;
+        color: $color6;
+      }
+      .center-block {
+        padding-top: 10px;
+        min-height: 240px;
+      }
+      .main-index-title {
+        padding-bottom: 20px;
+      }
+      &.server-content {
+        p {
+          color: $color9;
+        }
+        h4 {
+          color: $color6;
+          padding-top: 20px;
+          font-size: 1.6rem;
+        }
+        .con {
+          padding-bottom: 20px;
+        }
+        h3 {
+          color: $color6;
+          font-size: 1.4rem;
+        }
+      }
+      .achievement-item {
+        margin: 0;
+      }
+    }
+  }
+}

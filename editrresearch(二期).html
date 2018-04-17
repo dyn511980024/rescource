@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <title>设置用户信息</title>
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="static/css/index.css"/>
+    <link rel="stylesheet" href="static/css/iconfont.css"/>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/swiper.min.js"></script>
+    <script src="static/js/laydate/laydate.js"></script>
+    <script src="static/js/index.js"></script>
+
+    <!-- 在所有的页面引用IE兼容解决方案 -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+    <!-- 前端：通用头部 -->
+    <div class="header header-index">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a href="home.html" class="logo"></a></div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <ul class="menu-list">
+                        <li class="active"><a href="javascript:;">首页</a></li>
+                        <li><a href="javascript:;">科研成果</a></li>
+                        <li><a href="javascript:;">院所风采</a></li>
+                        <li><a href="javascript:;">供需服务</a></li>
+                        <li><a href="javascript:;">联盟主页</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-sm-4 col-xs-4">
+                    <div class="search pull-left pa">
+                        <div class="search-select">
+                            <a href="javascript:;" class="origin dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="txt">成果</span> <i class="iconfont icon-caret-bottom"></i></a>
+                            <select multiple class="dropdown-menu value-list ">
+                                <option value="成果" selected>成果</option>
+                                <option value="服务">服务</option>
+                                <option value="会员">会员</option>
+                                <option value="需求">需求</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form-control" placeholder="请输入搜索内容"/>
+                        <a href="javascript:;" class="search-btn"><i class="iconfont icon-search1"></i></a>
+                    </div>
+                    <ul class="login-list list-unstyled pull-right">
+                        <li><a href="#">登录</a></li>
+                        <li>|</li>
+                        <li><a href="#">注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 内容部分 -->
+    <div class="main register">
+        <div class="container">
+            <div class="common-form common-wide-form">
+                <legend><h2>完善信息</h2> <a href="#" class="small pull-right">跳过此步</a></legend>
+                <!-- Nav tabs -->
+                <!--<div class="tabs-wrap">-->
+                    <!--<div class="row">-->
+                        <!--<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>-->
+                        <!--<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">-->
+                            <!--<ul class="nav common-tabs" role="tablist">-->
+                                <!--<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">个人</a></li>-->
+                                <!--<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">研究所</a></li>-->
+                                <!--<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">院校</a></li>-->
+                                <!--<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">企业</a></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!-- Tab panes -->
+                <!--<div class="tab-content">-->
+                <form class="form forget-form basicInfo">
+                	 <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <label class="normal-label">用户类型：</label>
+                            </div>
+                              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                <div class="common-input">
+                                    <label class="normal-label">研究所</label>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <label class="normal-label">联系人姓名：</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                <div class="common-input">
+                                    <label class="normal-label">袁隆平</label>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                     <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <label class="normal-label">研究所名称：</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                <div class="common-input">
+                                    <label class="normal-label">北京中科三方</label>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                     <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <label class="normal-label">法定代表人/负责人姓名：</label>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8">
+                                <div class="common-input">
+                                    <input type="text" class="form-control" placeholder="请输入法定代表人姓名"/>
+                                    <div class="form-tip form-error"><i class="iconfont icon-error"></i>请填写身份证件上的号码</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-8 col-xs-8" style="padding-top: 15px;">
+                            	*&nbsp;请填写与机构证件一致
+                            	</div>
+                        </div>      
+                      </div>
+                  <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <label class="normal-label">机构证件类型：</label>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8">
+                                <div class="common-input">
+                                    <div class="row clearfix">
+                                        <div class=" col-md-4 col-sm-4 col-xs-4" style="width:96%;padding-left: 15px;padding-right: 0px;">
+                                            <select class="form-control common-select">
+                                            	<option value="1">请选择</option>
+                                                <option value="营业执照">营业执照</option>
+                                                <option value="事业单位法人证明">事业单位法人证明</option>
+                                                <option value="组织机构代码证">组织机构代码证</option>
+                                                <option value="三证合一">三证合一</option>
+                                            </select>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <label class="normal-label">证件号：</label>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8">
+                                <div class="common-input">
+                                    <input type="text" class="form-control" placeholder="请输入身份证号"/>
+                                    <div class="form-tip form-error"><i class="iconfont icon-error"></i>请填写身份证件上的号码</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-8 col-xs-8" style="padding-top: 15px;">
+                            	*&nbsp;请填写身份证件上的号码
+                            	</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <label class="normal-label">证件照片上传：</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                <dl class="uploadId" style="float: left;">
+                                    <dt><img src="static/img/profile.png" alt="profile"/></dt>
+                                    <dd>
+                                        <div class="uploadFile pa">
+                                            <a href="javascript:;" class="btn btn-primary">上传身份证正面照</a>
+                                            <input type="file">
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <label class="normal-label">邮箱：</label>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8">
+                                <div class="common-input">
+                                    <input type="text" class="form-control" placeholder="请输入您的邮箱"/>
+                                    <div class="form-tip form-error"><i class="iconfont icon-error"></i>请输入11位手机号</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-8 col-xs-8" style="padding-top: 15px;">
+                            	*&nbsp;邮箱格式：zhangsan@zkzy.com.cn
+                            	</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <label class="normal-label">所在地：</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                <div class="common-input">
+                                    <div class="row clearfix">
+                                        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4" style="padding-left: 15px;padding-right: 0px;">
+                                            <select class="form-control common-select">
+                                                <option value="1">北京</option>
+                                                <option value="1">上海</option>
+                                                <option value="1">广州</option>
+                                                <option value="1">辽宁</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4" style="padding-left: 5px;padding-right: 0px;">
+                                            <select class="form-control common-select">
+                                                <option value="1">浦东新区</option>
+                                                <option value="1">松江区</option>
+                                                <option value="1">徐汇区</option>
+                                                <option value="1">青浦区</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4" style="padding-left: 5px;padding-right: 0px;width: 235px;">
+                                            <select class="form-control common-select">
+                                                <option value="1">乐山路33号</option>
+                                                <option value="1">徐汇分支123</option>
+                                                <option value="1">虹口机场路12号12楼</option>
+                                                <option value="1">我也不知道了</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <label class="normal-label">详细地址：</label>
+                            </div>
+                            <div class="col-lg-6 col-md-8 col-sm-8 col-xs-8">
+                                <div class="common-input">
+                                    <input type="text" class="form-control" placeholder="请输入您的固定电话"/>
+                                    <div class="form-tip form-error"><i class="iconfont icon-error"></i>请输入11位手机号</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-8 col-xs-8" style="padding-top: 15px;">
+                            	*&nbsp;请输入能接收信件的有效地址
+                            	</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <label class="normal-label">办公电话：</label>
+                            </div>
+                            <div class="col-lg-6 col-md-8 col-sm-8 col-xs-8">
+                                <div class="common-input">
+                                    <input type="text" class="form-control" placeholder="请输入您的固定电话"/>
+                                    <div class="form-tip form-error"><i class="iconfont icon-error"></i>请输入11位手机号</div>
+                                </div>
+                            </div>
+                              <div class="col-lg-3 col-md-6 col-sm-8 col-xs-8" style="padding-top: 5px;">
+                            	*&nbsp;例：010-58812909<br />
+  									     区号与电话之间以破折号(“—”)隔开
+                            	</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <label class="normal-label">官网：</label>
+                            </div>
+                            <div class="col-lg-6 col-md-8 col-sm-8 col-xs-8">
+                                <div class="common-input">
+                                    <input type="text" class="form-control" placeholder="请输入官网地址"/>
+                                    <div class="form-tip form-error"><i class="iconfont icon-error"></i>请输入11位手机号</div>
+                                </div>
+                            </div>
+                              <div class="col-lg-3 col-md-6 col-sm-8 col-xs-8" style="padding-top: 5px;">
+                            	*&nbsp;官网地址：www.castt.ac.cn
+                            	</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <label class="normal-label">重点研究领域：</label>
+                            </div>
+                            <div class="col-lg-6 col-md-8 col-sm-8 col-xs-8">
+                                <div class="common-input">
+                                    <input type="text" class="form-control" placeholder="请输入研究领域"/>
+                                    <div class="form-tip form-error"><i class="iconfont icon-error"></i>请输入11位手机号</div>
+                                </div>
+                            </div>
+                              <div class="col-lg-3 col-md-6 col-sm-8 col-xs-8" style="padding-top: 5px;">
+                            	*&nbsp;以逗号分隔多个研究领域
+                            	</div>
+                        </div>
+                    </div>
+                
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <label class="normal-label">个人简介：</label>
+                            </div>
+                            <div class="col-lg-6 col-md-8 col-sm-8 col-xs-8">
+                                <textarea  id="doc" name="textarea" rows="5" class="form-control" placeholder="在此处进行简短的个人描述，最多可输入200字" onkeyup="wordStatic(this);" maxlength="200"> </textarea>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-8 col-xs-8" style="padding-top: 90px;">
+                            	<span id="num">0</span>/200
+                            	</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                <div class="btn-wrap">
+                                    <a href="#" class="btn">提交</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 前端：通用尾部  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>院所园企</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>服务指南</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>关于我们</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">平台简介</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">法律声明</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-offset-1 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="friend-link-list ">
+                        <a class="facebook" href="#"><i class="iconfont icon-facebook1"></i></a>
+                        <a class="twiter" href="#"><i class="iconfont icon-icontwiter"></i></a>
+                        <a class="sina" href="#"><i class="iconfont icon-sina"></i></a>
+                        <a class="google" href="#"><i class="iconfont icon-google1"></i></a>
+                    </div>
+                    <p>copyRight@2007-2017 中国科学院科技产业网版权所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 手机验证码弹窗 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">手机验证码</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form modal-form">
+                        <div class="form-group">
+                            <div class="common-input pa sendCode">
+                                <div class="clearfix">
+                                    <span class="common-input-addon label-person"><i class="iconfont icon-eyes"></i></span>
+                                    <input type="text" class="form-control send-value modal-send-value"  placeholder="输入验证码"/>
+                                    <input type="button" class="pull-right sendBtn"  value="发送验证码">
+                                </div>
+                                <div class="form-tip form-error"><i class="iconfont icon-error"></i>请输入正确的验证码</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer modal-footer-center">
+                    <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+  $(function(){
+      /* 添加职业名称 */
+	  $(".plus-round").click(function(){
+	  	  $(".value-name").val();
+	  	  $(".value-time").val("");
+	      $(".addNew").show();
+	      $(this).hide();
+	  });
+	  $(".add-save").click(function(){
+  	  	var valueName= $(".value-name").val();
+  	    var valueTime=$(".value-time").val();
+
+  	  	var _html="<p>"+valueName+","+valueTime+"<a href='javascript:;' class='btn-delete' onclick='deleteEvent(this)'>删除</a></p>";
+
+  	  	if(valueName==""|| valueTime==""){
+  	  	  return false;
+  	  	}else{
+
+  	  	  $(".value-list").append(_html);
+  	  	  $(".addNew").hide();
+  	  	  $(".plus-round").show();
+  	  	}
+  	  });
+  	  $(".add-cancle").click(function(){
+  	  	  $(".addNew").hide();
+  	  	  $(".plus-round").show();
+  	  });
+  });
+
+  laydate({
+      elem: '#date', //目标元素。由于laydate.js封装了一个轻量级的选择器引擎，因此elem还允许你传入class、tag但必须按照这种方式 '#id .class'
+      event: 'focus' //响应事件。如果没有传入event，则按照默认的click
+  });
+
+</script>
+<script>
+function wordStatic(input) {  
+        // 获取要显示已经输入字数文本框对象  
+        var content = document.getElementById('num');  
+        if (content && input) {  
+            // 获取输入框输入内容长度并更新到界面  
+            var value = input.value;  
+            // 将换行符不计算为单词数  
+            value = value.replace(/\n|\r/gi,"");  
+            // 更新计数  
+            content .innerText = value.length;  
+        }  
+    }  
+</script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-hans">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>成果科技</title>
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="static/css/swiper.min.css"/>
+    <link rel="stylesheet" href="static/css/home2.css"/>
+     <link rel="stylesheet" href="static/css/researchShow.css"/>
+    <link rel="stylesheet" href="static/css/iconfont.css"/>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/swiper.min.js"></script>
+    <script src="static/js/index.js"></script>
+     <script src="static/js/casmenu.js"></script>
+
+    <!-- 在所有的页面引用IE兼容解决方案 -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper" id="mainContainer">
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <!-- 登录后样式 -->
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="name">
+                        我叫小胖胖 <i class="icon icon-gread gread1"></i><i class="iconfont icon-caret-bottom"></i>
+                    </div>
+                    <a href="#" class="notice">消息<span class="label label-danger">30</span></a>
+                    <a href="#" class="loginOut">退出</a>
+                </div>
+                <!-- 登录前样式 -->
+                <!--<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">-->
+                    <!--<a href="#" class="loginIn">请登录</a>-->
+                    <!--<a href="#" class="registerIn">免费注册</a>-->
+                <!--</div>-->
+                <div class="col-md-offset-1 col-lg-7 col-md-7 col-sm-6 col-xs-6">
+                    <div class="right-nav">
+                    	<a href="#"><span class="luntan"><img src="static/img/index/luntang.png/"></span>&nbsp;论坛 <i class="iconfont icon-caret-bottom"></i></a>
+                        <a href="#">我的成果 <i class="iconfont icon-caret-bottom"></i></a>
+                        <a href="#">我的服务 <i class="iconfont icon-caret-bottom"></i></a>
+                        <a href="#">我的需求 <i class="iconfont icon-caret-bottom"></i></a>
+                        <a href="#">我的机构 <i class="iconfont icon-caret-bottom"></i></a>
+                        <a class="wechatCheck" href="#">微信扫一扫
+                            <img src="static/img/index/wechao.png"/>
+                            <div class="bigImg">
+                                <img src="static/img/index/wechao.png"/>
+                            </div>
+                        </a>
+                        <a class="wechatCheck" href="#">今日关注扫一扫
+                            <img src="static/img/index/wechao.png"/>
+                            <div class="bigImg">
+                                <img src="static/img/index/wechao.png"/>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5"><a href="#"><img src="static/img/index/new-logo.png"/></a></div>
+                <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                   <div class="search pa pull-left" style="margin-left:106px;width: 81%;">
+                        <div class="search-select">
+                            <a href="javascript:;" class="origin dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="txt">成果</span> <i class="iconfont icon-caret-bottom"></i></a>
+                            <select multiple class="dropdown-menu value-list ">
+                                <option value="成果" selected>成果</option>
+                                <option value="服务">服务</option>
+                                <option value="会员">会员</option>
+                                <option value="需求">需求</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form-control" placeholder="请输入搜索内容"/>
+                        <a href="javascript:;" class="search-btn"><i class="iconfont icon-search1"></i></a>
+                    </div>
+                   
+                    <ul class="list" style="margin-left:51px;padding-left:57px;">
+                        <li><label>热门搜索 :</label></li>
+                        <li><a href="#">人工智能</a></li>
+                        <li><a href="#">风云四号</a></li>
+                        <li><a href="#">海绵城市</a></li>
+                        <li><a href="#">数字经济</a></li>
+                        <li><a href="#">通用航空</a></li>
+                        <li><a href="#">航天航空</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <nav class="header-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <a class="active" href="javascript:;">首页</a>
+                    <a href="javascript:;">科研成果</a>
+                    <a href="javascript:;">科研产品</a>
+                    <a href="javascript:;">分站风采</a>
+                    <a href="javascript:;">专家团队</a>
+                    <a href="javascript:;">供需服务</a>
+                    <a href="javascript:;">联盟主页</a>
+                    <a href="javascript:;">科技资讯</a>
+                  
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+            	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            	  <img src="static/img/productbg.png" style="margin-top: 30px;"/>
+            	</div>
+            	  
+            </div>
+     	<div class="main-index-title" style="border-bottom: 1px solid #DCDCDC;"><span>支付系统</span></div>	
+           <div class="col-md-12 pay">
+           	<table>
+           		<tr>
+           			<td>付款人信息：</td><td>德玛西亚</td><td>北京市</td><td>海淀区</td><td>召唤师峡谷</td><td>1381381381</td>
+           		</tr>
+           		<tr>
+           			<td>支付方式：</td><td><span class="paying">支付宝</span><span>微信支付</span><span>在线支付</span><span>公司汇款</span><span>邮局汇款</span></td>
+           		</tr>
+           		<tr>
+           			<td>购买信息：</td><td>成果名称 — 数据收集显示系统隐形眼镜</td>
+           		</tr>
+           		<tr>
+           			<td style="margin-left: 80px;"><img src="static/img/28.jpg"/></td>
+           		</tr>
+           		<tr>
+           			<td>发票信息：</td><td>普通发票</td><td>中科三方网络技术有限公司</td><td>  <a href="javascript:;"  data-toggle="modal"  style="color: #217DBB;" data-target="#myModal">修改</a></td>
+           		</tr>
+           	</table>
+           </div>
+  
+       	</div>
+       	</div>
+    <!-- 前端：通用尾部  -->
+   
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>院所园企</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>服务指南</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>关于我们</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">平台简介</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">法律声明</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-offset-1 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="friend-link-list ">
+                        <a class="facebook" href="#"><i class="iconfont icon-facebook1"></i></a>
+                        <a class="twiter" href="#"><i class="iconfont icon-icontwiter"></i></a>
+                        <a class="sina" href="#"><i class="iconfont icon-sina"></i></a>
+                        <a class="google" href="#"><i class="iconfont icon-google1"></i></a>
+                    </div>
+                    <p>copyRight@2007-2017 中国科学院科技产业网版权所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">支付系统</h4>
+                </div>
+                
+                <ul class="pay-nav" role="tablist">
+                		<span>发票类型:</span>
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">普通发票</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">增值税发票</a></li>
+                                    
+                </ul>
+                <div class="clear"></div>
+                <div class="tab-content">
+                 <div role="tabpanel" class="tab-pane active" id="home">
+                	<div class="modal-body">
+                    	 <div class="form-group">
+                            <div class="pay-head">
+                                <div class="clearfix" style="margin-bottom: 10px;">
+                                    <span class="">发表抬头:</span>
+                                    <input type="text" class=""  placeholder="输入发票抬头"/>
+                       
+                                </div>
+                                  <div class="clearfix" style="margin-bottom: 10px;">
+                                    <span class="">发表内容:</span>
+                                    <input type="text" class=""  placeholder="输入发表内容"/>
+                       			</div>
+                            </div>
+                        </div>
+                 	</div>
+               		  <div class="modal-footer modal-footer-center">
+                 		 <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn">保存</button>
+                			 <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+               		  </div>
+                </div>
+                  <div role="tabpanel" class="tab-pane" id="profile">
+                  	<div class="modal-body">
+                    	 <div class="form-group">
+                            <div class="pay-head">
+                                <div class="clearfix" style="margin-bottom: 10px;">
+                                    <span class="">发表抬头:</span>
+                                    <input type="text" class=""  placeholder="输入发票抬头"/>
+                       
+                                </div>
+                                  <div class="clearfix" style="margin-bottom: 10px;">
+                                    <span class="">纳税人识别号:</span>
+                                    <input type="text" class=""  placeholder="输入纳税人识别号"/>
+                       			</div>
+                       			 <div class="clearfix" style="margin-bottom: 10px;">
+                                    <span class="">地址:</span>
+                                    <input type="text" class=""  placeholder="输入地址"/>
+                       			</div>
+                       			 <div class="clearfix" style="margin-bottom: 10px;">
+                                    <span class="">电话:</span>
+                                    <input type="text" class=""  placeholder="输入电话"/>
+                       			</div>
+                       			 <div class="clearfix" style="margin-bottom: 10px;">
+                                    <span class="">开户行:</span>
+                                    <input type="text" class=""  placeholder="输入开户行"/>
+                       			</div>
+                       			 <div class="clearfix" style="margin-bottom: 10px;">
+                                    <span class="">银行账号:</span>
+                                    <input type="text" class=""  placeholder="输入银行账号"/>
+                       			</div>
+                       			 <div class="clearfix" style="margin-bottom: 10px;">
+                                    <span class="">发票内容:</span>
+                                    <input type="text" class=""  placeholder="输入发票内容"/>
+                       			</div>
+                            </div>
+                        </div>
+                 	</div>
+               		  <div class="modal-footer modal-footer-center">
+                 		 <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn">保存</button>
+                			 <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+               		  </div>
+                  </div>
+               </div>
+               
+            </div>
+        </div>
+    </div>
+ 
+</div>
+<script type="text/javascript">
+
+$(".pay table tr td span").click(function(){
+	$(this).addClass("paying");
+	$(this).siblings().removeClass("paying");
+})
+</script>
+
+</body>
+</html>

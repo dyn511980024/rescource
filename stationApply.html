@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <title>成果科技</title>
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="static/css/index.css"/>
+    <link rel="stylesheet" href="static/css/iconfont.css"/>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/index.js"></script>
+
+    <!-- 在所有的页面引用IE兼容解决方案 -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+    <<!-- 前端：通用头部 -->
+    <div class="header header-index">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 col-sm-2 col-xs-2"><a href="home.html" class="logo"></a></div>
+                <div class="col-md-6">
+                    <ul class="menu-list">
+                        <li class="active"><a href="javascript:;">首页</a></li>
+                        <li><a href="javascript:;">科研成果</a></li>
+                        <li><a href="javascript:;">院所风采</a></li>
+                        <li><a href="javascript:;">供需服务</a></li>
+                        <li><a href="javascript:;">联盟主页</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="search pull-left">
+                        <div class="search-select">
+                            <a href="javascript:;" class="origin dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="txt">成果</span> <i class="iconfont icon-caret-bottom"></i></a>
+                            <select multiple class="dropdown-menu value-list ">
+                                <option value="成果" selected>成果</option>
+                                <option value="服务">服务</option>
+                                <option value="会员">会员</option>
+                                <option value="需求">需求</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form-control" placeholder="请输入搜索内容"/>
+                    </div>
+                    <ul class="login-list list-unstyled pull-right">
+                        <li><a href="#">登录</a></li>
+                        <li>|</li>
+                        <li><a href="#">注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 内容部分 -->
+    <div class="main register">
+        <div class="container">
+            <div class="common-form common-wide-form">
+                <legend><h2>分站申请</h2></legend>
+                <form class="form forget-form basicInfo">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <label class="normal-label"><span class="text-danger">*</span> 申请分站名称：</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                <div class="common-input">
+                                    <input type="text" class="form-control" placeholder="请输入分站名称"/>
+                                    <div class="form-tip form-error"><i class="iconfont icon-error"></i>请输入分站名称</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <label class="normal-label">分站LOGO：</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 station-updown">
+                                <div class="uploadFile pa">
+                                    <button class="btn btn-default">选择文件</button>
+                                    <input type="file" />
+                                    <span class="txt">未选择任何文件</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <label class="normal-label"><span class="text-danger">*</span> 分站管理员姓名：</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                <div class="common-input">
+                                    <input type="text" class="form-control" placeholder="请输入管理员姓名"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <label class="normal-label"><span class="text-danger">*</span> 身份证号：</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                <div class="common-input">
+                                    <input type="text" class="form-control" placeholder="请输入身份证号"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <label class="normal-label">证件照片上传：</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                <dl class="uploadId">
+                                    <dt><img src="static/img/profile.png" alt="profile"/></dt>
+                                    <dd>
+                                    	<p class="uploadFile pa ">
+                                                    <button class="btn btn-primary">上传身份证正面照</button>
+                                                    <input type="file" class="value-file"/><span class="fileInputText"></span>
+                                                </p>
+                                    </dd>
+                                   <!-- <dd><a href="javascript:;" class="btn btn-primary">上传身份证正面照</a></dd>-->
+                                </dl>
+                                <dl class="uploadId">
+                                    <dt><img src="static/img/credit-card.png" alt="profile"/></dt>
+                                    <dd>
+                                    	<p class="uploadFile pa ">
+                                                    <button class="btn btn-primary">上传身份证背面照</button>
+                                                    <input type="file" class="value-file"/><span class="fileInputText"></span>
+                                                </p>
+                                    </dd>
+                                    <!--<dd><a href="javascript:;" class="btn btn-primary">上传身份证背面照</a></dd>-->
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <label class="normal-label">手机号码：</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                <div class="common-input">
+                                    <input type="text" class="form-control" placeholder="请输入您的手机号"/>
+                                    <div class="form-tip form-error"><i class="iconfont icon-error"></i>请输入11位手机号</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <label class="normal-label">联系电话：</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                <div class="common-input">
+                                    <input type="text" class="form-control" placeholder="请输入您的手机号"/>
+                                    <div class="form-tip form-error"><i class="iconfont icon-error"></i>请输入11位手机号</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <label class="normal-label">邮箱：</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                <div class="common-input">
+                                    <input type="text" class="form-control" placeholder="请输入您的手机号"/>
+                                    <div class="form-tip form-error"><i class="iconfont icon-error"></i>请输入11位手机号</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <label class="normal-label">所在地：</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                <div class="common-input">
+                                    <div class="row clearfix">
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                            <select class="form-control common-select">
+                                                <option value="1">北京</option>
+                                                <option value="1">上海</option>
+                                                <option value="1">广州</option>
+                                                <option value="1">辽宁</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                            <select class="form-control common-select">
+                                                <option value="1">浦东新区</option>
+                                                <option value="1">松江区</option>
+                                                <option value="1">徐汇区</option>
+                                                <option value="1">青浦区</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                            <select class="form-control common-select">
+                                                <option value="1">乐山路33号</option>
+                                                <option value="1">徐汇分支123</option>
+                                                <option value="1">虹口机场路12号12楼</option>
+                                                <option value="1">我也不知道了</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <label class="normal-label">详细地址：</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                <div class="common-input">
+                                    <input type="text" class="form-control"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <label class="normal-label">分站类型：</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                <div class="common-input">
+                                    <select class="form-control common-select">
+                                        <option value="1">乐山路33号</option>
+                                        <option value="2">徐汇分支123</option>
+                                        <option value="3">虹口机场路12号12楼</option>
+                                        <option value="4">我也不知道了</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <label class="normal-label">分站简介：</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                <textarea name="textarea" rows="5" class="form-control" placeholder="在此处输入成果案例"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                <div class="btn-wrap">
+                                    <a href="#" class="btn">申请</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 前端：通用尾部  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>院所园企</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>服务指南</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>关于我们</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">平台简介</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">法律声明</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-offset-1 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="friend-link-list ">
+                        <a class="facebook" href="#"><i class="iconfont icon-facebook1"></i></a>
+                        <a class="twiter" href="#"><i class="iconfont icon-icontwiter"></i></a>
+                        <a class="sina" href="#"><i class="iconfont icon-sina"></i></a>
+                        <a class="google" href="#"><i class="iconfont icon-google1"></i></a>
+                    </div>
+                    <p>copyRight@2007-2017 中国科学院科技产业网版权所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 手机验证码弹窗 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">手机验证码</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form modal-form">
+                        <div class="form-group">
+                            <div class="common-input pa sendCode">
+                                <div class="clearfix">
+                                    <span class="common-input-addon label-person"><i class="iconfont icon-eyes"></i></span>
+                                    <input type="text" class="form-control send-value modal-send-value"  placeholder="输入验证码"/>
+                                    <input type="button" class="pull-right sendBtn"  value="发送验证码">
+                                </div>
+                                <div class="form-tip form-error"><i class="iconfont icon-error"></i>请输入正确的验证码</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer modal-footer-center">
+                    <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+  $(function(){
+	  	/* 设置全局变量sendTime */
+	    var sentTime= 59;
+	    function sent()
+	    {
+	        if(sentTime == 0) {
+	            $('.sendBtn').removeAttr('disabled');
+	            $('.sendBtn').val('发送验证码');
+	            sentTime=3;
+	        }
+	        else {
+	            $('.sendBtn').attr('disabled',true);
+	            $('.sendBtn').val('重新获取（'+sentTime+'）');
+	            sentTime--;
+	            setTimeout(function(){ sent(); },1000);
+	        }
+	    }
+	    $('.sendBtn').click(function(){
+	        sent();
+	    });
+	    
+//	   添加职业名称
+      
+  	  
+	  $(".plus-round").click(function(){
+	  	  $(".value-name").val();
+	  	  $(".value-time").val("");
+	      $(".addNew").show();
+	      $(this).hide();
+	  });
+	  $(".add-save").click(function(){
+  	  	var valueName= $(".value-name").val();
+  	    var valueTime=$(".value-time").val();
+  	  	var _html="<p>"+valueName+","+valueTime+"</p>";
+  	  	
+  	  	if(valueName==""|| valueTime==""){
+  	  	  return false;
+  	  	}else{
+  	  		
+  	  	  $(".value-list").append(_html);
+  	  	  $(".addNew").hide();
+  	  	  $(".plus-round").show();
+  	  	}
+  	  });
+  	  $(".add-cancle").click(function(){
+  	  	  $(".addNew").hide();
+  	  	  $(".plus-round").show();
+  	  });
+  })
+    
+
+    /* input输入框的插件*/
+//    $(document).ready(function(){
+//        $('input').iCheck({
+//            checkboxClass: 'icheckbox_flat-blue',
+//            radioClass: 'iradio_flat-blue'
+//        });
+//    });
+
+
+</script>
+</body>
+</html>

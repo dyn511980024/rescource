@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="zh-hans">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<title>成果科技</title>
+
+		<link rel="stylesheet" href="static/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="static/css/swiper.min.css" />
+		<link rel="stylesheet" href="static/css/home2.css" />
+		<link rel="stylesheet" href="static/css/iconfont.css" />
+		<script src="static/js/jquery.min.js"></script>
+		<script src="static/js/bootstrap.min.js"></script>
+		<script src="static/js/swiper.min.js"></script>
+		<script src="static/js/index.js"></script>
+
+		<!-- 在所有的页面引用IE兼容解决方案 -->
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+
+	<body>
+		<div class="wrapper" id="mainContainer">
+			<div class="header-top">
+				<div class="container">
+					<div class="row">
+						<!-- 登录后样式 -->
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+							<div class="name">
+								我叫小胖胖 <i class="icon icon-gread gread1"></i><i class="iconfont icon-caret-bottom"></i>
+							</div>
+							<a href="#" class="notice">消息<span class="label label-danger">30</span></a>
+							<a href="#" class="loginOut">退出</a>
+						</div>
+						<!-- 登录前样式 -->
+						<!--<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">-->
+						<!--<a href="#" class="loginIn">请登录</a>-->
+						<!--<a href="#" class="registerIn">免费注册</a>-->
+						<!--</div>-->
+						<div class="col-md-offset-1 col-lg-7 col-md-7 col-sm-6 col-xs-6">
+							<div class="right-nav">
+								<a href="#"><span class="luntan"><img src="static/img/index/luntang.png/"></span>&nbsp;论坛 <i class="iconfont icon-caret-bottom"></i></a>
+								<a href="#">我的成果 <i class="iconfont icon-caret-bottom"></i></a>
+								<a href="#">我的服务 <i class="iconfont icon-caret-bottom"></i></a>
+								<a href="#">我的需求 <i class="iconfont icon-caret-bottom"></i></a>
+								<a href="#">我的机构 <i class="iconfont icon-caret-bottom"></i></a>
+								<a class="wechatCheck" href="#">微信扫一扫
+									<img src="static/img/index/wechao.png" />
+									<div class="bigImg">
+										<img src="static/img/index/wechao.png" />
+									</div>
+								</a>
+								<a class="wechatCheck" href="#">今日关注扫一扫
+									<img src="static/img/index/wechao.png" />
+									<div class="bigImg">
+										<img src="static/img/index/wechao.png" />
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+							<a href="#"><img src="static/img/index/new-logo.png" /></a>
+						</div>
+						<div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<div class="search pa pull-left" style="margin-left:106px;width: 81%;">
+								<div class="search-select">
+									<a href="javascript:;" class="origin dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="txt">成果</span> <i class="iconfont icon-caret-bottom"></i></a>
+									<select multiple class="dropdown-menu value-list ">
+										<option value="成果" selected>成果</option>
+										<option value="服务">服务</option>
+										<option value="会员">会员</option>
+										<option value="需求">需求</option>
+									</select>
+								</div>
+								<input type="text" class="form-control" placeholder="请输入搜索内容" />
+								<a href="javascript:;" class="search-btn"><i class="iconfont icon-search1"></i></a>
+							</div>
+
+							<ul class="list" style="margin-left:51px;padding-left:57px;">
+								<li><label>热门搜索 :</label></li>
+								<li>
+									<a href="#">人工智能</a>
+								</li>
+								<li>
+									<a href="#">风云四号</a>
+								</li>
+								<li>
+									<a href="#">海绵城市</a>
+								</li>
+								<li>
+									<a href="#">数字经济</a>
+								</li>
+								<li>
+									<a href="#">通用航空</a>
+								</li>
+								<li>
+									<a href="#">航天航空</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<nav class="header-nav">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<a class="active" href="javascript:;">首页</a>
+							<a href="javascript:;">科研成果</a>
+							<a href="javascript:;">科研产品</a>
+							<a href="javascript:;">分站风采</a>
+							<a href="javascript:;">专家团队</a>
+							<a href="javascript:;">供需服务</a>
+							<a href="javascript:;">联盟主页</a>
+							<a href="javascript:;">科技资讯</a>
+
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="main">
+				<!--轮播图-->
+				<div id="myCarousel" class="carousel slide">
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="static/img/ad.png" />
+						</div>
+						<div class="item">
+							<img src="static/img/28.jpg" alt="" />
+						</div>
+						<div class="item">
+							<img src="static/img/adbg.png" alt="" />
+						</div>
+					</div>
+					<div class="relative">
+						<div class="btn btn-info">&nbsp;找设备&nbsp;</div>
+						<div class="btn btn-danger">&nbsp;找服务&nbsp;</div>
+						<div class="btn btn-primary">&nbsp;找需求&nbsp;</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<!--科研设备-->
+				<div class="main-index-title">
+					<span>科研设备</span>
+					<ul id="newtab" class="nav nav-tabs">
+						<li class="active">
+							<a href="#mytab1" data-toggle="tab">室外观测设备</a>
+						</li>
+						<li>
+							<a href="#mytab2" data-toggle="tab">室内分析测试设备</a>
+						</li>
+						<li>
+							<a href="#mytab3" data-toggle="tab">工艺试验设备</a>
+						</li>
+						<li>
+							<a href="#mytab4" data-toggle="tab">计算和数据分析</a>
+						</li>
+					</ul>
+				</div>
+				<hr />
+				<div class="tab-content relative">
+					<div id="mytab1" class="tab-pane active">
+						<div class="row">
+							<a href="#" class="more pull-right">更多 ></a>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<div class="device-list">
+									<a href="#">
+										<img src="static/img/28.jpg" />
+										<span>高性能计算设备</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<div class="device-list">
+									<a href="#">
+										<img src="static/img/28.jpg" />
+										<span>高性能计算设备</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<div class="device-list">
+									<a href="#">
+										<img src="static/img/28.jpg" />
+										<span>高性能计算设备</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<div class="device-list">
+									<a href="#">
+										<img src="static/img/28.jpg" />
+										<span> 高性能计算设备 </span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="mytab2" class="tab-pane">
+						<div class="row">
+							<a href="#" class="more pull-right">更多 ></a>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<div class="device-list">
+									<a href="#">
+										<img src="static/img/background.jpg" />
+										<span>高性能计算设备</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<div class="device-list">
+									<a href="#">
+										<img src="static/img/background.jpg" />
+										<span> 性能计算设备</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<div class="device-list">
+									<a href="#">
+										<img src="static/img/28.jpg" />
+										<span>高性能计算设备</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<div class="device-list">
+									<a href="#">
+										<img src="static/img/background.jpg" />
+										<span>高性能计算设备 </span>
+									</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div id="mytab3" class="tab-pane">
+						<div class="row">
+							<a href="#" class="more pull-right">更多 ></a>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<div class="device-list">
+									<a href="#">
+										<img src="static/img/banner.png" />
+										<span>高性能计算设备</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<div class="device-list">
+									<a href="#">
+										<img src="static/img/bg.png" />
+										<span> 性能计算设备</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<div class="device-list">
+									<a href="#">
+										<img src="static/img/checked.png" />
+										<span>高性能计算设备</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<div class="device-list">
+									<a href="#">
+										<img src="static/img/in_top_bj.jpg" />
+										<span>高性能计算设备 </span>
+									</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div id="mytab4" class="tab-pane">
+						<div class="row">
+							<a href="#" class="more pull-right">更多 ></a>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<div class="device-list">
+									<a href="#">
+										<img src="static/img/logo1.png" />
+										<span>高性能计算设备</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<div class="device-list">
+									<a href="#">
+										<img src="static/img/forumbg.png" />
+										<span> 性能计算设备</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<div class="device-list">
+									<a href="#">
+										<img src="static/img/pic01.png" />
+										<span>高性能计算设备</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<div class="device-list">
+									<a href="#">
+										<img src="static/img/too_sad.png" />
+										<span>高性能计算设备 </span>
+									</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!--科技服务-->
+				<div class="main-index-title export-title">
+					<span>科技服务</span>
+					<a href="#" class="more pull-right">更多 &gt;</a>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+						<dl class="server-item pa">
+							<dt><a href="#"><img src="static/img/pic2.png"></a></dt>
+							<dd>
+								<p>
+									<a href="#">服务名称：知识产权认证服务</a>
+								</p>
+								<p>服务地区：全国</p>
+								<p>服务类型：知识产权</p>
+								<p>服务领域：电器自动化</p>
+								<h4>服务机构：北京中科三方网络技术有限公司 <i class="iconfont icon-combinedshape1"></i></h4>
+							</dd>
+						</dl>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+						<dl class="server-item pa">
+							<dt><a href="#"><img src="static/img/pic1.png"></a></dt>
+							<dd>
+								<p>
+									<a href="#">服务名称：知识产权认证服务</a>
+								</p>
+								<p>服务地区：全国</p>
+								<p>服务类型：知识产权</p>
+								<p>服务领域：电器自动化</p>
+								<h4>服务机构：北京中科三方网络技术有限公司 <i class="iconfont icon-heart-round"></i></h4>
+							</dd>
+						</dl>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+						<dl class="server-item pa">
+							<dt><a href="#"><img src="static/img/pic3.png"></a></dt>
+							<dd>
+								<p>
+									<a href="#">服务名称：知识产权认证服务</a>
+								</p>
+								<p>服务地区：全国</p>
+								<p>服务类型：知识产权</p>
+								<p>服务领域：电器自动化</p>
+								<h4>服务机构：北京中科三方网络技术有限公司 <i class="iconfont icon-combinedshape1"></i></h4>
+							</dd>
+						</dl>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+						<dl class="server-item pa">
+							<dt><a href="#"><img src="static/img/pic2.png"></a></dt>
+							<dd>
+								<p>
+									<a href="#">服务名称：知识产权认证服务</a>
+								</p>
+								<p>服务地区：全国</p>
+								<p>服务类型：知识产权</p>
+								<p>服务领域：电器自动化</p>
+								<h4>服务机构：北京中科三方网络技术有限公司 <i class="iconfont icon-heart-round"></i></h4>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<!--科技需求-->
+				<div class="main-index-title">
+					<span>科技需求</span>
+					<a href="#" class="more pull-right">更多 ></a>
+				</div>
+				<ul class="demand-list">
+					<li class="demand-item">
+						<h2 class="tit"><a href="#" class="photo"><img src="static/img/person.png"/></a>袁浩</h2>
+						<p>需求名称：骑车轮胎的高压铸造生产</p>
+						<p>投入预算： <span>50</span>万元</p>
+						<p>截止日期：2017年04月05日</p>
+					</li>
+					<li class="demand-item">
+						<h2 class="tit"><a href="#" class="photo"><img src="static/img/person.png"/></a>郜翔</h2>
+						<p>需求名称：骑车轮胎的高压铸造生产</p>
+						<p>投入预算： <span>50</span>万元</p>
+						<p>截止日期：2017年04月05日</p>
+					</li>
+					<li class="demand-item">
+						<h2 class="tit"><a href="#" class="photo"><img src="static/img/person.png"/></a>彭于晏</h2>
+						<p>需求名称：骑车轮胎的高压铸造生产</p>
+						<p>投入预算： <span>50</span>万元</p>
+						<p>截止日期：2017年04月05日</p>
+					</li>
+					<li class="demand-item">
+						<h2 class="tit"><a href="#" class="photo"><img src="static/img/person.png"/></a>张柏芝</h2>
+						<p>需求名称：骑车轮胎的高压铸造生产</p>
+						<p>投入预算： <span>50</span>万元</p>
+						<p>截止日期：2017年04月05日</p>
+					</li>
+					<li class="demand-item">
+						<h2 class="tit"><a href="#" class="photo"><img src="static/img/person.png"/></a>袁浩</h2>
+						<p>需求名称：骑车轮胎的高压铸造生产</p>
+						<p>投入预算： <span>50</span>万元</p>
+						<p>截止日期：2017年04月05日</p>
+					</li>
+					<li class="demand-item">
+						<h2 class="tit"><a href="#" class="photo"><img src="static/img/person.png"/></a>袁浩</h2>
+						<p>需求名称：骑车轮胎的高压铸造生产</p>
+						<p>投入预算： <span>50</span>万元</p>
+						<p>截止日期：2017年04月05日</p>
+					</li>
+					<li class="demand-item">
+						<h2 class="tit"><a href="#" class="photo"><img src="static/img/person.png"/></a>袁浩</h2>
+						<p>需求名称：骑车轮胎的高压铸造生产</p>
+						<p>投入预算： <span>50</span>万元</p>
+						<p>截止日期：2017年04月05日</p>
+					</li>
+					<li class="demand-item">
+						<h2 class="tit"><a href="#" class="photo"><img src="static/img/person.png"/></a>袁浩</h2>
+						<p>需求名称：骑车轮胎的高压铸造生产</p>
+						<p>投入预算： <span>50</span>万元</p>
+						<p>截止日期：2017年04月05日</p>
+					</li>
+				</ul>
+
+			</div>
+			<br /><br />
+			<!-- 前端：通用尾部  -->
+
+			<div class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+							<h2>院所园企</h2>
+							<ul class="footer-list">
+								<li>
+									<a href="#">账号问题</a>
+								</li>
+								<li>
+									<a href="#">参与活动</a>
+								</li>
+								<li>
+									<a href="#">帮助中心</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+							<h2>服务指南</h2>
+							<ul class="footer-list">
+								<li>
+									<a href="#">账号问题</a>
+								</li>
+								<li>
+									<a href="#">参与活动</a>
+								</li>
+								<li>
+									<a href="#">帮助中心</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+							<h2>关于我们</h2>
+							<ul class="footer-list">
+								<li>
+									<a href="#">平台简介</a>
+								</li>
+								<li>
+									<a href="#">参与活动</a>
+								</li>
+								<li>
+									<a href="#">法律声明</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-offset-1 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+							<div class="friend-link-list ">
+								<a class="facebook" href="#"><i class="iconfont icon-facebook1"></i></a>
+								<a class="twiter" href="#"><i class="iconfont icon-icontwiter"></i></a>
+								<a class="sina" href="#"><i class="iconfont icon-sina"></i></a>
+								<a class="google" href="#"><i class="iconfont icon-google1"></i></a>
+							</div>
+							<p>copyRight@2007-2017 中国科学院科技产业网版权所有</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 幕布 -->
+			<div class="curtain">
+				<img src="static/img/index/curtain.gif" />
+				<div class="content">
+					<h2>LOGO中国科学院科技产业网</h2>
+
+					<h4>中国科学院科技产业化联盟官方平台</h4>
+
+					<h4>科技成果专业服务平台</h4>
+
+					<h4>网址：www.castt.ac.cn</h4>
+
+					<h4>主管单位：中国科学院科技促进发展局</h4>
+
+					<h4>承办单位：喀斯玛控股有限公司</h4>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			//    幕布效果
+			var curtain = function() {
+				$('.curtain').show(
+					setTimeout(function() {
+						$('.curtain').fadeOut();
+					}, 3000)
+				);
+			};
+			//    curtain();
+
+			//搜索按钮效果
+			$(".value-list> option").click(function() {
+				var _this = $(this);
+				var _val = _this.val();
+				$(".origin > .txt").text(_val);
+			});
+		</script>
+	</body>
+
+</html>

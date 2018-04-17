@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="zh-hans">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>成果科技</title>
+    <script src="static/js/jquery.min.js"></script>
+    <style>
+        html{
+            height: 100%;
+            background-image: url(./static/img/background.jpg);
+            background-size: cover;
+            background-position: bottom center;
+            background-repeat: no-repeat;
+        }
+        .link {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000000;
+            background-image: url(./static/img/welcome4.png);
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        .firework {
+            position: absolute;
+            width: 200px;
+            height: 240px;
+            z-index: 10000000;
+        }
+
+        .firework_left {
+            left: 40px;
+            bottom: 0;
+        }
+
+        .firework_left_2 {
+            width: 120px;
+            height: 144px;
+            bottom: 250px;
+            left: 250px;
+        }
+
+        .firework_right {
+            right: 40px;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="javascript:;" class="link"> </a>
+    <img src="./static/img/firework.gif" class="firework firework_left" />
+    <img src="./static/img/firework.gif" class="firework firework_left firework_left_2" />
+    <img src="./static/img/firework.gif" class="firework firework_right" />
+    <video id="cutdownVideo"  style="display:none;position: fixed;top: 0;left: 0;width:100%;z-index: 100000000;">
+        <source src="./static/video/cutdown4.mp4" type="video/mp4" />
+    </video>
+    <script>
+        $(function () {
+            var h=$(window).height();
+            var $cutdownVideo = $('#cutdownVideo');
+            var cutdownVideo = $cutdownVideo.get(0);
+            $cutdownVideo.height(h);
+            cutdownVideo.load();
+            cutdownVideo.addEventListener('ended', function () {
+                window.location.href = './home2.html'
+            }, false);
+            $('.link').on('click', function () {
+                $('.link').remove();
+                $cutdownVideo.css('display', 'block')
+                cutdownVideo.play();
+            })
+        })
+    </script>
+</body>
+
+</html>

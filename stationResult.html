@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <title>成果科技</title>
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="static/css/researchShow.css" />
+    <link rel="stylesheet" href="static/css/iconfont.css"/>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <!-- 在所有的页面引用IE兼容解决方案 -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+   <!-- 前端：通用头部 -->
+    <div class="header header-index">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a href="home.html" class="logo"></a></div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <ul class="menu-list">
+                        <li class="active"><a href="javascript:;">首页</a></li>
+                        <li><a href="javascript:;">科研成果</a></li>
+                        <li><a href="javascript:;">院所风采</a></li>
+                        <li><a href="javascript:;">供需服务</a></li>
+                        <li><a href="javascript:;">联盟主页</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="search pull-left pa">
+                        <div class="search-select">
+                            <a href="javascript:;" class="origin dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="txt">成果</span> <i class="iconfont icon-caret-bottom"></i></a>
+                            <select multiple class="dropdown-menu value-list ">
+                                <option value="成果" selected>成果</option>
+                                <option value="服务">服务</option>
+                                <option value="会员">会员</option>
+                                <option value="需求">需求</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form-control" placeholder="请输入搜索内容"/>
+                        <a href="javascript:;" class="search-btn"><i class="iconfont icon-search1"></i></a>
+                    </div>
+                    <ul class="login-list list-unstyled pull-right">
+                        <li><a href="#">登录</a></li>
+                        <li>|</li>
+                        <li><a href="#">注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 内容部分 -->
+    <div class="main search-show">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <!-- 面包屑 -->
+                  <ol class="breadcrumb">
+                      <li><a href="#">首页 </a></li>
+                      <li><a href="#">院所风采 </a></li>
+                      <li><a href="#">北京分站</a></li>
+                      <li class="active">分站成果</li>
+                  </ol>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="search-key">
+                      <div class="search-title">
+                          <span>成果检索</span>
+                          <a href="#" class="btn btn-primary btn-inverse pull-right">发布成果</a>
+                      </div>
+                      <div class="search-screen">
+                          <form class="form-search form-inline">
+                              <div class="input-append">
+                                  <input class="form-control span2" type="text">
+                                  <button class="btn btn-primary btn-search" type="button">搜索</button>
+                              </div>
+                          </form>
+                          <div class="screen-top">
+                              <div class="pa screen-header">
+                                  <span class="pull-left">学科领域：</span>
+                                  <div class="right pull-left">
+                                      <a class="all">全部</a>&nbsp;<a>原创/自译教程</a>&nbsp;<a >酷友观点/经验</a>&nbsp;<a>设计资讯/资料 </a>&nbsp;<a>站酷专访</a>&nbsp;<a>站酷设计公开课</a>&nbsp;<a>设计笔记</a> &nbsp;<a>原创/自译教程 </a>&nbsp;<a>酷友挂点/经验</a> &nbsp;<a>站酷专访</a>
+                                      <label  class="screen-body"><a>原创/自译教程</a>&nbsp;<a >酷友观点/经验</a>&nbsp;<a>设计资讯/资料 </a>&nbsp;<a>站酷专访</a>&nbsp;<a>站酷设计公开课</a>&nbsp;<a>设计笔记</a> &nbsp;<a>原创/自译教程 </a>&nbsp;<a>酷友挂点/经验</a> &nbsp;<a>站酷专访</a></label>
+                                  </div>
+
+                                  <div class="more pull-right">更多<i class="iconfont icon-caret-top"></i></div>
+                              </div>
+                              <div class="pa screen-header">
+                                  <span class="pull-left">技术成熟度：</span>
+                                  <div class="right pull-left">
+                                      <a class="all">全部</a>&nbsp;<a>原创/自译教程</a>&nbsp;<a >酷友观点/经验</a>&nbsp;<a>设计资讯/资料 </a>&nbsp;<a>站酷专访</a>&nbsp;<a>站酷设计公开课</a>&nbsp;<a>设计笔记</a> &nbsp;<a>原创/自译教程 </a>&nbsp;<a>酷友挂点/经验</a> &nbsp;<a>站酷专访</a>
+                                      <label  class="screen-body"><a>原创/自译教程</a>&nbsp;<a >酷友观点/经验</a>&nbsp;<a>设计资讯/资料 </a>&nbsp;<a>站酷专访</a>&nbsp;<a>站酷设计公开课</a>&nbsp;<a>设计笔记</a> &nbsp;<a>原创/自译教程 </a>&nbsp;<a>酷友挂点/经验</a> &nbsp;<a>站酷专访</a></label>
+                                  </div>
+
+                                  <div class="more pull-right">更多<i class="iconfont icon-caret-top"></i></div>
+                              </div>
+                              <div class="pa screen-header">
+                                  <span class="pull-left">成果等级：</span>
+                                  <div class="right pull-left">
+                                      <a class="all">全部</a>&nbsp;<a>原创/自译教程</a>&nbsp;<a >酷友观点/经验</a>&nbsp;<a>设计资讯/资料 </a>&nbsp;<a>站酷专访</a>&nbsp;<a>站酷设计公开课</a>&nbsp;<a>设计笔记</a> &nbsp;<a>原创/自译教程 </a>&nbsp;<a>酷友挂点/经验</a> &nbsp;<a>站酷专访</a>
+                                      <label  class="screen-body"><a>原创/自译教程</a>&nbsp;<a >酷友观点/经验</a>&nbsp;<a>设计资讯/资料 </a>&nbsp;<a>站酷专访</a>&nbsp;<a>站酷设计公开课</a>&nbsp;<a>设计笔记</a> &nbsp;<a>原创/自译教程 </a>&nbsp;<a>酷友挂点/经验</a> &nbsp;<a>站酷专访</a></label>
+                                  </div>
+                                  <div class="more pull-right">更多<i class="iconfont icon-caret-top"></i></div>
+                              </div>
+                              <div class="pa screen-header">
+                                  <span class="pull-left">交易类型：</span>
+                                  <div class="right pull-left">
+                                      <a class="all">全部</a>&nbsp;<a>原创/自译教程</a>&nbsp;<a >酷友观点/经验</a>&nbsp;<a>设计资讯/资料 </a>&nbsp;<a>站酷专访</a>&nbsp;<a>站酷设计公开课</a>&nbsp;<a>设计笔记</a> &nbsp;<a>原创/自译教程 </a>&nbsp;<a>酷友挂点/经验</a> &nbsp;<a>站酷专访</a>
+                                      <label  class="screen-body"><a>原创/自译教程</a>&nbsp;<a >酷友观点/经验</a>&nbsp;<a>设计资讯/资料 </a>&nbsp;<a>站酷专访</a>&nbsp;<a>站酷设计公开课</a>&nbsp;<a>设计笔记</a> &nbsp;<a>原创/自译教程 </a>&nbsp;<a>酷友挂点/经验</a> &nbsp;<a>站酷专访</a></label>
+                                  </div>
+                                  <div class="more pull-right">更多<i class="iconfont icon-caret-top"></i></div>
+                              </div>
+                              <div class="pa screen-header">
+                                  <span class="pull-left">地区：</span>
+                                  <div class="right pull-left">
+                                      <a class="all">全部</a>&nbsp;<a>上海</a>&nbsp;<a >北京</a>&nbsp;<a>广州 </a>&nbsp;<a>深圳</a>
+                                  </div>
+                                  <!--<div class="more pull-right">更多<i class="iconfont icon-caret-top"></i></div>-->
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+            <!-- 热门排序 -->
+            <div class="row ">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <ul class="nav sort-list" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">默认</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">热门</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--成果搜索-结果-->
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <dl class="achievement-item">
+                                <a href="#">
+                                    <dt class="pic"><img src="static/img/pic01.png"/><i>航天航空</i><b>Hot</b></dt>
+                                    <dd>
+                                        <h2>磁珠磁珠法核算11提取试剂盒提取…</h2>
+                                        <p class="achievement-info">
+                                            家纺用品、服装用纺织品、产业用纺织品共同构成纺织业的三分天下，全自动断布机目前主要针对绒毯类产品这个分支，目标是实现毯子生产过程中从布卷到单个布料的裁剪的自动化，从而减少人工，提高效率，降低成本，提高产品竞
+                                        </p>
+                                        <p class="link-nav">
+                                            <span class="on"><i class="iconfont icon-guide1"></i>正在研发</span>
+                                            <span><i class="iconfont icon-guide"></i>北京</span>
+                                        </p>
+                                    </dd>
+                                </a>
+                            </dl>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <dl class="achievement-item">
+                                <a href="#">
+                                    <dt class="pic"><img src="static/img/pic01.png"/><i>航天航空</i><b>Hot</b></dt>
+                                    <dd>
+                                        <h2>磁珠磁珠法核算11提取试剂盒提取…</h2>
+                                        <p class="achievement-info">
+                                            家纺用品、服装用纺织品、产业用纺织品共同构成纺织业的三分天下，全自动断布机目前主要针对绒毯类产品这个分支，目标是实现毯子生产过程中从布卷到单个布料的裁剪的自动化，从而减少人工，提高效率，降低成本，提高产品竞
+                                        </p>
+                                        <p class="link-nav">
+                                            <span class="on"><i class="iconfont icon-guide1"></i>正在研发</span>
+                                            <span><i class="iconfont icon-guide"></i>北京</span>
+                                        </p>
+                                    </dd>
+                                </a>
+                            </dl>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <dl class="achievement-item">
+                                <a href="#">
+                                    <dt class="pic"><img src="static/img/pic01.png"/><i>航天航空</i><b>Hot</b></dt>
+                                    <dd>
+                                        <h2>磁珠磁珠法核算11提取试剂盒提取…</h2>
+                                        <p class="achievement-info">
+                                            家纺用品、服装用纺织品、产业用纺织品共同构成纺织业的三分天下，全自动断布机目前主要针对绒毯类产品这个分支，目标是实现毯子生产过程中从布卷到单个布料的裁剪的自动化，从而减少人工，提高效率，降低成本，提高产品竞
+                                        </p>
+                                        <p class="link-nav">
+                                            <span class="on"><i class="iconfont icon-guide1"></i>正在研发</span>
+                                            <span><i class="iconfont icon-guide"></i>北京</span>
+                                        </p>
+                                    </dd>
+                                </a>
+                            </dl>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <dl class="achievement-item">
+                                <a href="#">
+                                    <dt class="pic"><img src="static/img/pic01.png"/><i>航天航空</i><b>Hot</b></dt>
+                                    <dd>
+                                        <h2>磁珠磁珠法核算11提取试剂盒提取…</h2>
+                                        <p class="achievement-info">
+                                            家纺用品、服装用纺织品、产业用纺织品共同构成纺织业的三分天下，全自动断布机目前主要针对绒毯类产品这个分支，目标是实现毯子生产过程中从布卷到单个布料的裁剪的自动化，从而减少人工，提高效率，降低成本，提高产品竞
+                                        </p>
+                                        <p class="link-nav">
+                                            <span class="on"><i class="iconfont icon-guide1"></i>正在研发</span>
+                                            <span><i class="iconfont icon-guide"></i>北京</span>
+                                        </p>
+                                    </dd>
+                                </a>
+                            </dl>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <dl class="achievement-item">
+                                <a href="#">
+                                    <dt class="pic"><img src="static/img/pic01.png"/><i>航天航空</i><b>Hot</b></dt>
+                                    <dd>
+                                        <h2>磁珠磁珠法核算11提取试剂盒提取…</h2>
+                                        <p class="achievement-info">
+                                            家纺用品、服装用纺织品、产业用纺织品共同构成纺织业的三分天下，全自动断布机目前主要针对绒毯类产品这个分支，目标是实现毯子生产过程中从布卷到单个布料的裁剪的自动化，从而减少人工，提高效率，降低成本，提高产品竞
+                                        </p>
+                                        <p class="link-nav">
+                                            <span class="on"><i class="iconfont icon-guide1"></i>正在研发</span>
+                                            <span><i class="iconfont icon-guide"></i>北京</span>
+                                        </p>
+                                    </dd>
+                                </a>
+                            </dl>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <dl class="achievement-item">
+                                <a href="#">
+                                    <dt class="pic"><img src="static/img/pic01.png"/><i>航天航空</i><b>Hot</b></dt>
+                                    <dd>
+                                        <h2>磁珠磁珠法核算11提取试剂盒提取…</h2>
+                                        <p class="achievement-info">
+                                            家纺用品、服装用纺织品、产业用纺织品共同构成纺织业的三分天下，全自动断布机目前主要针对绒毯类产品这个分支，目标是实现毯子生产过程中从布卷到单个布料的裁剪的自动化，从而减少人工，提高效率，降低成本，提高产品竞
+                                        </p>
+                                        <p class="link-nav">
+                                            <span class="on"><i class="iconfont icon-guide1"></i>正在研发</span>
+                                            <span><i class="iconfont icon-guide"></i>北京</span>
+                                        </p>
+                                    </dd>
+                                </a>
+                            </dl>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <dl class="achievement-item">
+                                <a href="#">
+                                    <dt class="pic"><img src="static/img/pic01.png"/><i>航天航空</i><b>Hot</b></dt>
+                                    <dd>
+                                        <h2>磁珠磁珠法核算11提取试剂盒提取…</h2>
+                                        <p class="achievement-info">
+                                            家纺用品、服装用纺织品、产业用纺织品共同构成纺织业的三分天下，全自动断布机目前主要针对绒毯类产品这个分支，目标是实现毯子生产过程中从布卷到单个布料的裁剪的自动化，从而减少人工，提高效率，降低成本，提高产品竞
+                                        </p>
+                                        <p class="link-nav">
+                                            <span class="on"><i class="iconfont icon-guide1"></i>正在研发</span>
+                                            <span><i class="iconfont icon-guide"></i>北京</span>
+                                        </p>
+                                    </dd>
+                                </a>
+                            </dl>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <dl class="achievement-item">
+                                <a href="#">
+                                    <dt class="pic"><img src="static/img/pic01.png"/><i>航天航空</i><b>Hot</b></dt>
+                                    <dd>
+                                        <h2>磁珠磁珠法核算11提取试剂盒提取…</h2>
+                                        <p class="achievement-info">
+                                            家纺用品、服装用纺织品、产业用纺织品共同构成纺织业的三分天下，全自动断布机目前主要针对绒毯类产品这个分支，目标是实现毯子生产过程中从布卷到单个布料的裁剪的自动化，从而减少人工，提高效率，降低成本，提高产品竞
+                                        </p>
+                                        <p class="link-nav">
+                                            <span class="on"><i class="iconfont icon-guide1"></i>正在研发</span>
+                                            <span><i class="iconfont icon-guide"></i>北京</span>
+                                        </p>
+                                    </dd>
+                                </a>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="news-wrap">
+                        <h2 class="tit">分站推荐</h2>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <dl class="substation-item">
+                                    <dt><img src="static/img/pic.png"/></dt>
+                                    <dd>
+                                        <h2>北京-安河桥分站</h2>
+                                        <p class="des"><i class="iconfont icon-search"></i>XXXXXXXX供应方向</p>
+                                        <p class="dex"><i class="iconfont icon-building"></i>XXXXX类型服务分站</p>
+                                    </dd>
+                                </dl>
+                                <dl class="substation-item">
+                                    <dt><img src="static/img/pic.png"/></dt>
+                                    <dd>
+                                        <h2>北京-安河桥分站</h2>
+                                        <p class="des"><i class="iconfont icon-search"></i>XXXXXXXX供应方向</p>
+                                        <p class="dex"><i class="iconfont icon-building"></i>XXXXX类型服务分站</p>
+                                    </dd>
+                                </dl>
+                                <dl class="substation-item">
+                                    <dt><img src="static/img/pic.png"/></dt>
+                                    <dd>
+                                        <h2>北京-安河桥分站</h2>
+                                        <p class="des"><i class="iconfont icon-search"></i>XXXXXXXX供应方向</p>
+                                        <p class="dex"><i class="iconfont icon-building"></i>XXXXX类型服务分站</p>
+                                    </dd>
+                                </dl>
+                                <dl class="substation-item">
+                                    <dt><img src="static/img/pic.png"/></dt>
+                                    <dd>
+                                        <h2>北京-安河桥分站</h2>
+                                        <p class="des"><i class="iconfont icon-search"></i>XXXXXXXX供应方向</p>
+                                        <p class="dex"><i class="iconfont icon-building"></i>XXXXX类型服务分站</p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+           <!--分页-->
+           <div class="row">
+           	  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pagination-private">
+           	  	 <ul class="pagination">
+					<li><a href="#">&laquo;</a></li>
+					<li class="active"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">&raquo;</a></li>
+				</ul>
+           	  </div>
+           </div>
+           <!--end-->
+        </div>
+    </div>
+
+    <!-- 前端：通用尾部  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>院所园企</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>服务指南</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>关于我们</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">平台简介</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">法律声明</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-offset-1 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="friend-link-list ">
+                        <a class="facebook" href="#"><i class="iconfont icon-facebook1"></i></a>
+                        <a class="twiter" href="#"><i class="iconfont icon-icontwiter"></i></a>
+                        <a class="sina" href="#"><i class="iconfont icon-sina"></i></a>
+                        <a class="google" href="#"><i class="iconfont icon-google1"></i></a>
+                    </div>
+                    <p>copyRight@2007-2017 中国科学院科技产业网版权所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="static/js/bootstrap-paginator.js"></script>
+<script>
+  $(function(){
+  	$(".value-list> option").click(function () {
+        var _this = $(this);
+        var _val = _this.val();
+        $(".origin > .txt").text(_val);
+    });
+    
+    $(".screen-header .more").click(function(){
+        var _this = this;
+        var current = $(_this).closest(".screen-header").find(".screen-body");
+        var iconState=$(_this).children("i");
+        iconState.toggleClass("icon-caret-bottom");
+        current.toggle();
+    });
+  })
+
+</script>
+</body>
+</html>

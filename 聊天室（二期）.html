@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>成果科技</title>
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="static/css/swiper.min.css"/>
+    <link rel="stylesheet" href="static/css/index.css"/>
+    <link rel="stylesheet" href="static/css/iconfont.css"/>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/swiper.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <script src="static/js/starScore.js"></script>
+
+    <!-- 在所有的页面引用IE兼容解决方案 -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+    <!-- 前端：通用头部 -->
+    <div class="header header-index">
+        <!--<div class="header-login">-->
+            <!--<div class="container pa">-->
+                <!--<div class="logo">中国科学院</div>-->
+                <!--<ul class="login-list list-unstyled pull-right">-->
+                    <!--<li><a href="#">登录</a></li>-->
+                    <!--<li>|</li>-->
+                    <!--<li><a href="#">注册</a></li>-->
+                <!--</ul>-->
+
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="header-menu">-->
+            <!--<div class="container">-->
+                <!--<ul class="menu-list pull-right">-->
+                    <!--<li class="active"><a href="javascript:;">首页</a></li>-->
+                    <!--<li><a href="javascript:;">科研成果</a></li>-->
+                    <!--<li><a href="javascript:;">院所风采</a></li>-->
+                    <!--<li><a href="javascript:;">供需服务</a></li>-->
+                    <!--<li><a href="javascript:;">联盟主页</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a href="home.html" class="logo"></a></div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <ul class="menu-list">
+                        <li class="active"><a href="javascript:;">首页</a></li>
+                        <li><a href="javascript:;">科研成果</a></li>
+                        <li><a href="javascript:;">院所风采</a></li>
+                        <li><a href="javascript:;">供需服务</a></li>
+                        <li><a href="javascript:;">联盟主页</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="search pa pull-left">
+                        <div class="search-select">
+                            <a href="javascript:;" class="origin dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="txt">成果</span> <i class="iconfont icon-caret-bottom"></i></a>
+                            <select multiple class="dropdown-menu value-list ">
+                                <option value="成果" selected>成果</option>
+                                <option value="服务">服务</option>
+                                <option value="会员">会员</option>
+                                <option value="需求">需求</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form-control" placeholder="请输入搜索内容"/>
+                        <a href="javascript:;" class="search-btn"><i class="iconfont icon-search1"></i></a>
+                    </div>
+                    <ul class="login-list list-unstyled pull-right">
+                        <li><a href="#">登录</a></li>
+                        <li>|</li>
+                        <li><a href="#">注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<style>
+/* 清理浮动 */
+.fn-clear:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.fn-clear {zoom:1; /* for IE6 IE7 */}
+/* 隐藏, 通常用来与 JS 配合 */
+body .fn-hide {display:none;}
+/* 设置内联, 减少浮动带来的bug */
+.fn-left,.fn-right {display:inline;}
+.fn-left {float:left;}
+.fn-right {float:right;}
+.logo{ float:left;}
+.logo img{ vertical-align:bottom;}
+::-webkit-scrollbar-track-piece{background:#e9e9e9;}
+::-webkit-scrollbar{width:8px;height:8px;}
+::-webkit-scrollbar-button{display:none;}
+::-webkit-scrollbar-track,::-webkit-scrollbar-track-piece{background:-webkit-gradient(linear,left);}
+::-webkit-scrollbar-thumb,::-webkit-scrollbar-thumb:horizontal{border-radius:6px;background:#bdbdbd;}
+::-webkit-scrollbar-thumb:hover{background:#8e8e8e;}
+::-webkit-scrollbar-thumb:active{background:#828181;}
+</style>
+    <!-- 内容部分 -->
+    <div class="main" id="chatbg">
+        <div class="container" >
+       <div class="col-md-12" >
+       	<div class="chatbox">
+  <div class="chat_top fn-clear">
+    <div class="logo"><img src="static/img/new-logo.png" width="" height="50"  alt=""/></div>
+    <div class="uinfo fn-clear">
+      <div class="uface"><img src="static/img//hetu.jpg" width="40" height="40"  alt=""/></div>
+      <div class="uname">
+        河图
+        
+      </div>
+    </div>
+  </div>
+  <div class="chat_message fn-clear">
+    <div class="chat_left">
+      <div class="message_box" id="message_box">
+        <div class="msg_item fn-clear">
+          <div class="uface"><img src="static/img//53f44283a4347.jpg" width="40" height="40"  alt=""/></div>
+          <div class="item_right">
+            <div class="msg">近日，TIOBE发布了2014年9月的编程语言排行榜，Java、C++跌至历史最低点，前三名则没有变化，依旧是C、Java、Objective-C。</div>
+            <div class="name_time">猫猫 · 3分钟前</div>
+          </div>
+        </div>
+        
+        <div class="msg_item fn-clear">
+          <div class="uface"><img src="static/img//53f442834079a.jpg" width="40" height="40"  alt=""/></div>
+          <div class="item_right">
+            <div class="msg">(Visual) FoxPro, 4th Dimension/4D, Alice, APL, Arc, Automator, Awk, Bash, bc, Bourne shell, C++CLI, CFML, cg, CL (OS/400), Clean, Clojure, Emacs Lisp, Factor, Forth, Hack, Icon, Inform, Io, Ioke, J, JScript.NET, LabVIEW, LiveCode, M4, Magic, Max/MSP, Modula-2, Moto, NATURAL, OCaml, OpenCL, Oz, PILOT, Programming Without Coding Technology, Prolog, Pure Data, Q, RPG (OS/400), S, Smalltalk, SPARK, Standard ML, TOM, VBScript, Z shell</div>
+            <div class="name_time">白猫 · 1分钟前</div>
+          </div>
+        </div>
+        
+        <div class="msg_item fn-clear">
+          <div class="uface"><img src="static/img/hetu.jpg" width="40" height="40"  alt=""/></div>
+          <div class="item_right">
+            <div class="msg own">那个统计表也不能说明一切</div>
+            <div class="name_time">河图 · 30秒前</div>
+          </div>
+        </div>
+      </div>
+      <div class="write_box">
+        <textarea id="message" name="message" class="write_area" placeholder="说点啥吧..." style="width: 100%;"></textarea>
+        <input type="hidden" name="fromname" id="fromname" value="河图" />
+        <input type="hidden" name="to_uid" id="to_uid" value="0">
+        <div class="facebox fn-clear">
+          <div class="expression"></div>
+          <div class="chat_type" id="chat_type">群聊</div>
+          <button name="" class="sub_but as">提 交</button>
+        </div>
+      </div>
+    </div>
+    <div class="chat_right" id="user">
+      <ul class="user_list" title="双击用户私聊">
+        
+        <li class="fn-clear" data-id="1"><span><img src="static/img/hetu.jpg" width="30" height="30"  alt=""/></span><em>河图</em><small class="online" title="在线"></small></li>
+        <li class="fn-clear" data-id="2"><span><img src="static/img/53f44283a4347.jpg" width="30" height="30"  alt=""/></span><em>猫猫</em><small class="online" title="在线"></small></li>
+        <li class="fn-clear" data-id="3"><span><img src="static/img/53f442834079a.jpg" width="30" height="30"  alt=""/></span><em>白猫</em><small class="offline" title="离线"></small></li>
+      </ul>
+    </div>
+  </div>
+</div>
+       	
+       </div>
+
+
+           
+        </div>
+    </div>
+</script>
+    <!-- 前端：通用尾部  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>院所园企</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>服务指南</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>关于我们</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">平台简介</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">法律声明</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-lg-4 col-sm-4 col-xs-4">
+                    <div class="friend-link-list ">
+                        <a class="facebook" href="#"><i class="iconfont icon-facebook1"></i></a>
+                        <a class="twiter" href="#"><i class="iconfont icon-icontwiter"></i></a>
+                        <a class="sina" href="#"><i class="iconfont icon-sina"></i></a>
+                        <a class="google" href="#"><i class="iconfont icon-google1"></i></a>
+                    </div>
+                    <p>copyRight@2007-2017 中国科学院科技产业网版权所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(e) {
+	$('#message_box').scrollTop($("#message_box")[0].scrollHeight + 20);
+	$('.uname').hover(
+	    function(){
+		    $('.managerbox').stop(true, true).slideDown(100);
+	    },
+		function(){
+		    $('.managerbox').stop(true, true).slideUp(100);
+		}
+	);
+	
+	var fromname = $('#fromname').val();
+	var to_uid   = 0; // 默认为0,表示发送给所有用户
+	var to_uname = '';
+	$('.user_list > li').dblclick(function(){
+		to_uname = $(this).find('em').text();
+		to_uid   = $(this).attr('data-id');
+		if(to_uname == fromname){
+		    alert('您不能和自己聊天!');
+			return false;
+		}
+		if(to_uname == '所有用户'){
+		    $("#toname").val('');
+			$('#chat_type').text('群聊');
+		}else{
+		    $("#toname").val(to_uid);
+			$('#chat_type').text('您正和 ' + to_uname + ' 聊天');
+		}
+		$(this).addClass('selected').siblings().removeClass('selected');
+	    $('#message').focus().attr("placeholder", "您对"+to_uname+"说：");
+	});
+	
+	$('.sub_but').click(function(event){
+	    sendMessage(event, fromname, to_uid, to_uname);
+	});
+	
+	/*按下按钮或键盘按键*/
+	$("#message").keydown(function(event){
+		var e = window.event || event;
+        var k = e.keyCode || e.which || e.charCode;
+		//按下ctrl+enter发送消息
+		if((event.ctrlKey && (k == 13 || k == 10) )){
+			sendMessage(event, fromname, to_uid, to_uname);
+		}
+	});
+});
+function sendMessage(event, from_name, to_uid, to_uname){
+    var msg = $("#message").val();
+	if(to_uname != ''){
+	    msg = '您对 ' + to_uname + ' 说： ' + msg;
+	}
+	var htmlData =   '<div class="msg_item fn-clear">'
+                   + '   <div class="uface"><img src="images/hetu.jpg" width="40" height="40"  alt=""/></div>'
+			       + '   <div class="item_right">'
+			       + '     <div class="msg own">' + msg + '</div>'
+			       + '     <div class="name_time">' + from_name + ' · 30秒前</div>'
+			       + '   </div>'
+			       + '</div>';
+	$("#message_box").append(htmlData);
+	$('#message_box').scrollTop($("#message_box")[0].scrollHeight + 20);
+	$("#message").val('');
+}
+</script>
+<script>
+	$(".as").click(function(){
+  $.ajax({
+                type: 'post',
+                url: '{url('wap','demand','wapHomeIndex')}',
+                data:
+                dataType: 'json',
+                success: function(json){
+                    j++;
+                    var result = '';
+                        for (var i = 0; i < json.data.length; i++) {
+                            result += ' <li class="fn-clear" data-id=' + i + '>'
+                                    + '<span><img src="'+ json.data[i].image + '" width="30" height="30"  alt=""/>'
+                                    + '  </span><em>'+ json.data[i].name + '</em><small class="online" title="在线"></small>'
+                                    + '</li>';
+                                  
+                        }
+                },
+                 $('.user_list').remove();
+                 $('.user_list').append(result);
+                error: function(xhr, type){
+                    alert('通信错误，请重试!');
+                    me.resetload();
+                }
+            });		
+	})
+</script>
+</body>
+</html>

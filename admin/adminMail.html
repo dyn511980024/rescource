@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>成果科技</title>
+
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css"/>
+    <!--<link rel="stylesheet" href="static/css/blue.css"/>-->
+    <link rel="stylesheet" href="../static/css/swiper.min.css"/>
+    <link rel="stylesheet" href="../static/css/admin.css"/>
+    <link rel="stylesheet" href="../static/css/iconfont.css"/>
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <!--<script src="static/js/icheck.min.js"></script>-->
+    <script src="../static/js/swiper.min.js"></script>
+    <script src="../static/js/index.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <!-- 前端：通用头部 -->
+    <div class="header header-index">
+        <!--<div class="header-login">-->
+            <!--<div class="container pa">-->
+                <!--<div class="logo">中国科学院</div>-->
+                <!--<ul class="login-list list-unstyled pull-right">-->
+                    <!--<li><a href="#">登录</a></li>-->
+                    <!--<li>|</li>-->
+                    <!--<li><a href="#">注册</a></li>-->
+                <!--</ul>-->
+
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="header-menu">-->
+            <!--<div class="container">-->
+                <!--<ul class="menu-list pull-right">-->
+                    <!--<li class="active"><a href="javascript:;">首页</a></li>-->
+                    <!--<li><a href="javascript:;">科研成果</a></li>-->
+                    <!--<li><a href="javascript:;">院所风采</a></li>-->
+                    <!--<li><a href="javascript:;">供需服务</a></li>-->
+                    <!--<li><a href="javascript:;">联盟主页</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"><a href="../home.html" class="logo"></a></div>
+                <div class="col-md-6">
+                    <ul class="menu-list">
+                        <li class="active"><a href="javascript:;">首页</a></li>
+                        <li><a href="javascript:;">科研成果</a></li>
+                        <li><a href="javascript:;">院所风采</a></li>
+                        <li><a href="javascript:;">供需服务</a></li>
+                        <li><a href="javascript:;">联盟主页</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="search pa pull-left">
+                        <div class="search-select">
+                            <a href="javascript:;" class="origin dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="txt">成果</span> <i class="iconfont icon-caret-bottom"></i></a>
+                            <select multiple class="dropdown-menu value-list ">
+                                <option value="成果" selected>成果</option>
+                                <option value="服务">服务</option>
+                                <option value="会员">会员</option>
+                                <option value="需求">需求</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form-control" placeholder="请输入搜索内容"/>
+                        <a href="javascript:;" class="search-btn"><i class="iconfont icon-search1"></i></a>
+                    </div>
+                    <ul class="login-list list-unstyled pull-right">
+                        <li><a href="#">登录</a></li>
+                        <li>|</li>
+                        <li><a href="#">注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 内容部分 -->
+    <div class="admin-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 sidebar">
+                    <h2>用户中心</h2>
+                    <ul class="sidebar-list">
+                        <li><a href="#"><i class="iconfont icon-user"></i>账户信息</a></li>
+                        <li class="active"><a href="#"><i class="iconfont">&nbsp;</i>基本信息</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>教育背景</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>职业信息</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>成果案例</a></li>
+                        <li><a href="#"><i class="iconfont icon-jigou2"></i>我加入的机构</a></li>
+                        <li><a href="#"><i class="iconfont icon-guanli01-copy"></i>科技成果管理</a></li>
+                        <li><a href="#"><i class="iconfont icon-guanli"></i>供需管理</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>发布服务</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>发布需求</a></li>
+                        <li><a href="#"><i class="iconfont icon-jiaoliu"></i>互动交流</a></li>
+                        <li><a href="#"><i class="iconfont icon-notice"></i>资讯中心</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>发布资讯</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>发布活动</a></li>
+                        <li><a href="#"><i class="iconfont icon-wave"></i>个人主页</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-10 content">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="common-head"><span>站内信</span></div>
+                            <!-- Tab heads -->
+                            <ul class="nav admin-tabs" role="tablist">
+                                <li role="presentation" class="active"><a href="#read" aria-controls="read" role="tab" data-toggle="tab">全部</a></li>
+                                <li role="presentation"><a href="#no-read" aria-controls="no-read" role="tab" data-toggle="tab">未读</a></li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="read">
+                                	<div class="row title">
+                                		<div class="col-md-9">标题</div>
+                                		<div class="col-md-3">时间</div>
+                                	</div>
+                                	<ul>
+                                		<li>
+                                			<dl>
+                                				<dt>
+                                					<div class="row">
+                                						  <div class="col-md-9">
+                                						  	  这里是标题标题标题标题标题这里是标题标题标题标题标题这里是标题标题标题标题标题
+                                						  </div>
+                                						  <div class="col-md-3">
+                                						  	2017-05-19 11:23:31<i class="iconfont icon-caret-down pull-right"></i></a>
+                                						  </div>
+                                					</div>
+                                				</dt>
+                                				<dd class="content">
+                                					1里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是
+                                				</dd>
+                                			</dl>
+                                		</li>
+                                		<li>
+                                			<dl>
+                                				<dt>
+                                					<div class="row">
+                                						  <div class="col-md-9">
+                                						  	  这里是标题标题标题标题标题这里是标题标题标题标题标题这里是标题标题标题标题标题
+                                						  </div>
+                                						  <div class="col-md-3">
+                                						  	2017-05-19 11:23:31<i class="iconfont icon-caret-down  pull-right"></i></a>
+                                						  </div>
+                                					</div>
+                                				</dt>
+                                				<dd class="content">
+                                					2里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是
+                                				</dd>
+                                			</dl>
+                                		</li>
+                                		<li>
+                                			<dl>
+                                				<dt>
+                                					<div class="row">
+                                						  <div class="col-md-9">
+                                						  	  这里是标题标题标题标题标题这里是标题标题标题标题标题这里是标题标题标题标题标题
+                                						  </div>
+                                						  <div class="col-md-3">
+                                						  	2017-05-19 11:23:31<i class="iconfont icon-caret-down pull-right"></i></a>
+                                						  </div>
+                                					</div>
+                                				</dt>
+                                				<dd class="content">
+                                					2里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是内容这里是内容这里是内容这是
+                                				</dd>
+                                			</dl>
+                                		</li>
+                                	</ul>
+                                <!-- 翻页按钮 -->
+                                    <div class="row mt30">
+                                        <div class="col-md-12 text-right">
+                                            <nav class="">
+                                                <ul class="pagination">
+                                                    <li>
+                                                        <a href="#" aria-label="Previous">
+                                                            <span aria-hidden="true">&laquo;</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="active"><a href="#">1</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">4</a></li>
+                                                    <li><a href="#">5</a></li>
+                                                    <li>
+                                                        <a href="#" aria-label="Next">
+                                                            <span aria-hidden="true">&raquo;</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="no-read">2</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 前端：通用尾部  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <h2>院所园企</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h2>服务指南</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h2>关于我们</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">平台简介</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">法律声明</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-offset-1 col-md-4">
+                    <div class="friend-link-list ">
+                        <a class="facebook" href="#"><i class="iconfont icon-facebook1"></i></a>
+                        <a class="twiter" href="#"><i class="iconfont icon-icontwiter"></i></a>
+                        <a class="sina" href="#"><i class="iconfont icon-sina"></i></a>
+                        <a class="google" href="#"><i class="iconfont icon-google1"></i></a>
+                    </div>
+                    <p>copyRight@2007-2017 中国科学院科技产业网版权所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+$(function(){
+	   $(".tab-pane >ul li dt").bind("click",function(){
+		   $(this).closest("li").siblings().find("dd").slideUp();
+           $(this).parent().children("dd").slideToggle(300);
+           var _icon = $(this).find("i");
+//           var _show = $(this).closest("dl").find(".content").css("display");
+//           console.log(_show);
+           if( _icon.hasClass("icon-caret-down")){
+               _icon.removeClass("icon-caret-down")
+               .addClass("icon-carettop");
+               $(this).closest("li").siblings().find("i")
+               .addClass("icon-caret-down");
+           }
+           else {
+               _icon.removeClass("icon-carettop")
+               .addClass("icon-caret-down");
+               $(this).closest("li").siblings().find("i").addClass("icon-carettop");
+           }
+       });
+})
+</script>
+</body>
+</html>

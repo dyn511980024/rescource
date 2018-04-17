@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <title>成果科技</title>
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="static/css/techDetail.css" />
+    <link rel="stylesheet" href="static/css/iconfont.css"/>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+
+    <!-- 在所有的页面引用IE兼容解决方案 -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+   <!-- 前端：通用头部 -->
+    <div class="header header-index">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a href="home.html" class="logo"></a></div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <ul class="menu-list">
+                        <li class="active"><a href="javascript:;">首页</a></li>
+                        <li><a href="javascript:;">科研成果</a></li>
+                        <li><a href="javascript:;">院所风采</a></li>
+                        <li><a href="javascript:;">供需服务</a></li>
+                        <li><a href="javascript:;">联盟主页</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="search pull-left pa">
+                        <div class="search-select">
+                            <a href="javascript:;" class="origin dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="txt">成果</span> <i class="iconfont icon-caret-bottom"></i></a>
+                            <select multiple class="dropdown-menu value-list ">
+                                <option value="成果" selected>成果</option>
+                                <option value="服务">服务</option>
+                                <option value="会员">会员</option>
+                                <option value="需求">需求</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form-control" placeholder="请输入搜索内容"/>
+                        <a href="javascript:;" class="search-btn"><i class="iconfont icon-search1"></i></a>
+                    </div>
+                    <ul class="login-list list-unstyled pull-right">
+                        <li><a href="#">登录</a></li>
+                        <li>|</li>
+                        <li><a href="#">注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 内容部分 -->
+    <div class="techDetail">
+        <div class="techDetail-header">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <!-- 面包屑 -->
+                        <ol class="breadcrumb">
+                            <li><a href="#">供需服务</a></li>
+                            <li class="active">服务详情</li>
+                        </ol>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 left">
+                        <img src="static/img/pic2.png" class="img-rounded"/>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 right">
+                        <h2>服务名称：xxxxxxxxxxxxxx</h2>
+                        <table class="table ">
+                            <tbody>
+                            <tr>
+                                <td>服务价格：－面议</td>
+                                <td>服务类型：知识产权</td>
+                                <td>服务地区：北京市</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>服务领域：电器自动化</td>
+                                <td>发布时间：2017年03月04日</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="row">
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                <h4>机构用户简介：</h4>
+                                <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                    laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
+                                    sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient
+                                    montes, nascetur ridiculus mus. Nam fermentum,</p>
+                                <h4>服务机构宣传信息：</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <a href="javascript:;" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">咨询</a>
+                                <div class="dropdown-menu tips">
+                                    <p>联系方式：13912345678</p>
+                                    <p>公司名称：中科三方网络技术有限公司</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 common-tabs">
+                        <!-- Nav tabs -->
+                        <ul class="nav" role="tablist">
+                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">服务简介</a></li>
+                            <!--<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">交易承诺</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="techDetail-content server-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home">
+                                <h4>服务描述</h4>
+                                <p class="con">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo
+                                    commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+                                    parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra
+                                    vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+
+                                <h4>服务流程</h4>
+                                <p class="txt">1. xxxxxxxxxxxxxxxxxxxxxxx</p>
+                                <p class="txt">2. xxxxxxxxxxxxxxxxxxxxxxx</p>
+                                <p class="txt">3. xxxxxxxxxxxxxxxxxxxxxxx</p>
+
+                                <h4>服务案例</h4>
+
+                                <h3>案例1.</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                    laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
+                                    sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient
+                                    montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate,
+                                    felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+                                <h3>案例2.</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                    laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
+                                    sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient
+                                    montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate,
+                                    felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile">2</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- 前端：通用尾部  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>院所园企</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>服务指南</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>关于我们</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">平台简介</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">法律声明</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="friend-link-list ">
+                        <a class="facebook" href="#"><i class="iconfont icon-facebook1"></i></a>
+                        <a class="twiter" href="#"><i class="iconfont icon-icontwiter"></i></a>
+                        <a class="sina" href="#"><i class="iconfont icon-sina"></i></a>
+                        <a class="google" href="#"><i class="iconfont icon-google1"></i></a>
+                    </div>
+                    <p>copyRight@2007-2017 中国科学院科技产业网版权所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="static/js/bootstrap-paginator.js"></script>
+<script>
+  $(function(){
+  	$(".value-list> option").click(function () {
+        var _this = $(this);
+        var _val = _this.val();
+        $(".origin > .txt").text(_val);
+    });
+    
+    $(".search-key .search-screen .more").click(function(){
+    	if($(".screen-body").hasClass("show")){
+    	   $(".screen-body").removeClass("show");
+          $(this).find("i").removeClass("icon-caret-bottom");
+    	}else{
+    	  $(".screen-body").addClass("show");
+    	  $(this).find("i").addClass("icon-caret-bottom");
+    	}
+    });
+  })
+
+</script>
+</body>
+</html>

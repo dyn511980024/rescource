@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="zh-hans">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<title>分站详情页</title>
+
+	<link rel="stylesheet" href="static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="static/css/swiper.min.css"/>
+     <link rel="stylesheet" href="static/css/home2.css"/>
+    <link rel="stylesheet" href="static/css/index.css"/>
+    <link rel="stylesheet" href="static/css/iconfont.css"/>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/swiper.min.js"></script>
+    <script src="static/js/index.js"></script>
+    
+
+		<!-- 在所有的页面引用IE兼容解决方案 -->
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+
+	<body>
+		<div class="wrapper" id="mainContainer">
+			<div class="header-top">
+				<div class="container">
+					<div class="row">
+						<!-- 登录后样式 -->
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+							<div class="name">
+								我叫小胖胖 <i class="icon icon-gread gread1"></i><i class="iconfont icon-caret-bottom"></i>
+							</div>
+							<a href="#" class="notice">消息<span class="label label-danger">30</span></a>
+							<a href="#" class="loginOut">退出</a>
+						</div>
+						<!-- 登录前样式 -->
+						<!--<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">-->
+						<!--<a href="#" class="loginIn">请登录</a>-->
+						<!--<a href="#" class="registerIn">免费注册</a>-->
+						<!--</div>-->
+						<div class="col-md-offset-1 col-lg-7 col-md-7 col-sm-6 col-xs-6">
+							<div class="right-nav">
+								<a href="#"><span class="luntan"><img src="static/img/index/luntang.png/"></span>&nbsp;论坛 <i class="iconfont icon-caret-bottom"></i></a>
+								<a href="#">我的成果 <i class="iconfont icon-caret-bottom"></i></a>
+								<a href="#">我的服务 <i class="iconfont icon-caret-bottom"></i></a>
+								<a href="#">我的需求 <i class="iconfont icon-caret-bottom"></i></a>
+								<a href="#">我的机构 <i class="iconfont icon-caret-bottom"></i></a>
+								<a class="wechatCheck" href="#">微信扫一扫
+									<img src="static/img/index/wechao.png" />
+									<div class="bigImg">
+										<img src="static/img/index/wechao.png" />
+									</div>
+								</a>
+								<a class="wechatCheck" href="#">今日关注扫一扫
+									<img src="static/img/index/wechao.png" />
+									<div class="bigImg">
+										<img src="static/img/index/wechao.png" />
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+							<a href="#"><img src="static/img/index/new-logo.png" /></a>
+						</div>
+						<div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<div class="search pa pull-left" style="margin-left:106px;width: 81%;">
+								<div class="search-select">
+									<a href="javascript:;" class="origin dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="txt">成果</span> <i class="iconfont icon-caret-bottom"></i></a>
+									<select multiple class="dropdown-menu value-list ">
+										<option value="成果" selected>成果</option>
+										<option value="服务">服务</option>
+										<option value="会员">会员</option>
+										<option value="需求">需求</option>
+									</select>
+								</div>
+								<input type="text" class="form-control" placeholder="请输入搜索内容" />
+								<a href="javascript:;" class="search-btn"><i class="iconfont icon-search1"></i></a>
+							</div>
+
+							<ul class="list" style="margin-left:51px;padding-left:57px;">
+								<li><label>热门搜索 :</label></li>
+								<li>
+									<a href="#">人工智能</a>
+								</li>
+								<li>
+									<a href="#">风云四号</a>
+								</li>
+								<li>
+									<a href="#">海绵城市</a>
+								</li>
+								<li>
+									<a href="#">数字经济</a>
+								</li>
+								<li>
+									<a href="#">通用航空</a>
+								</li>
+								<li>
+									<a href="#">航天航空</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<nav class="header-nav">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<a class="active" href="javascript:;">首页</a>
+							<a href="javascript:;">科研成果</a>
+							<a href="javascript:;">科研产品</a>
+							<a href="javascript:;">分站风采</a>
+							<a href="javascript:;">专家团队</a>
+							<a href="javascript:;">供需服务</a>
+							<a href="javascript:;">联盟主页</a>
+							<a href="javascript:;">科技资讯</a>
+
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="ad-banner" style="background-image:url('static/img/changzhou.png')">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center">
+							<p class="logo" style="background-image: url('static/img/stationLogo.png')"></p>
+						</div>
+						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 desc">
+							<h2>XXXXXXXX分站</h2>
+							<p class="desc" style="height: 70px">You are a big sucker, yes, that is you, I hope you die in Macau Well, never go back to Shanghai, do not add me, I do not want to see you, you are bad is my greatest blessing</p>
+						<span class="zhankai" style="color:#0023AC; cursor:pointer;margin-left: 20px;">展开</span>
+                <span class="shouqi" style="color:#0023AC;display:none;cursor:pointer;margin-left: 20px;">收起</span>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                    		<a href="#" class="btn btn-primary join-btn">加入分站</a>
+                		</div>
+					</div>
+				</div>
+			</div>
+			<div class="main main-index">
+			<div class="main main-index">
+				<div class="container">
+					<div class="banner row">
+						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+							<!-- Swiper -->
+							<div class="swiper-container" id="substation-carousel">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide" style="background-image: url('static/img/banner.png');"></div>
+									<div class="swiper-slide" style="background-image: url('static/img/pic1.png');"></div>
+									<div class="swiper-slide" style="background-image: url('static/img/banner.png');"></div>
+									<div class="swiper-slide" style="background-image: url('static/img/pic2.png');"></div>
+								</div>
+								<!-- Add Pagination -->
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="news-wrap" id="substation-tab">
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs" role="tablist" id="nav">
+									<li role="presentation" class="active">
+										<a href="#home" aria-controls="home" role="tab" data-toggle="tab"><span>新闻动态</span></a>
+									</li>
+									<li role="presentation">
+										<a href="#info" aria-controls="info" role="tab" data-toggle="tab"><span>热门专题</span></a>
+									</li>
+									<li role="presentation">
+										<a href="#sports" aria-controls="sports" role="tab" data-toggle="tab"><span>热门活动</span></a>
+									</li>
+								</ul>
+
+								<!-- Tab panes -->
+								<div class="tab-content">
+									<div role="tabpanel" class="tab-pane active" id="home">
+										<ul class="news-list">
+											<li class="news-list-item">
+												<div class="item">
+													<i class="iconfont icon-caret pull-left"></i>
+													<a href="#" class="pull-left">智合退出法律在线教育平台“知识网”</a>
+												</div>
+												<p><span>2017-03-09 21:38</span><span class="label label-danger">活动</span></p>
+											</li>
+											<li class="news-list-item">
+												<div class="item">
+													<i class="iconfont icon-caret pull-left"></i>
+													<a href="#" class="pull-left">乐视金融退出财经金融信息服务平台，贾跃亭：来乐视看财讯元有鬼电车第一单</a>
+												</div>
+												<p><span>2017-03-09 21:38</span><span class="label label-info">行业动态</span></p>
+											</li>
+											<li class="news-list-item">
+												<div class="item">
+													<i class="iconfont icon-caret"></i>
+													<a href="#">智合退出法律在线教育平台“知识网”</a>
+												</div>
+												<p><span>2017-03-09 21:38</span><span class="label label-success">政策法规</span></p>
+											</li>
+											<li class="news-list-item">
+												<div class="item">
+													<i class="iconfont icon-caret"></i>
+													<a href="#">智合退出法律在线教育平台“知识网”</a>
+												</div>
+												<p><span>2017-03-09 21:38</span><span class="label label-warning">活动</span></p>
+											</li>
+										</ul>
+										<div class="text-center">
+											<a href="news.html" class="btn btn-primary btn-inverse">浏览更多</a>
+										</div>
+									</div>
+									<div role="tabpanel" class="tab-pane" id="info">...</div>
+									<div role="tabpanel" class="tab-pane" id="sports">...</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div></div>
+					<div class="main main-index" style="background: #f8f8f8;">
+				<div class="container">
+				    <div class="row">
+						<div class="col-md-4">
+							<div class="main-index-title substation-title" style="padding-bottom: 0px;">
+								<span style="padding-left: 0px;"><label style="font-weight: bold;">科技需求</label>&nbsp;Science and demand</span>
+								<hr style="width: 15px;margin-top: 15px;"/>
+								<a href="#" class="more pull-right" style="color:red;margin-top: -38px;">更多 ></a>
+							</div>
+							<div class="czdemand">
+								<ul>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+						
+						<div class="col-md-4">
+							<div class="main-index-title substation-title" style="padding-bottom: 0px;">
+								<span style="padding-left: 0px;"><label style="font-weight: bold;">政策法规</label> &nbsp;Policies and regulations</span>
+								<hr style="width: 15px;margin-top: 15px;"/>
+								<a href="#" class="more pull-right" style="color:red;margin-top: -38px;">更多 ></a>
+							</div>
+							<div class="czdemand">
+								<ul>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+						
+						<div class="col-md-4">
+							<img src="static/img/changzhouimg.png" style="margin-top: 40px;">
+						</div>
+				</div>
+				</div>
+				</div>
+				<div class="main main-index" style="background: #ffffff;padding-bottom: 0px;">
+				 	<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								
+								<div class="czachievemrnt">
+								<h1><label>成果展示</label>  Achievement display</h1>
+								<hr />
+								<div class="banner">
+								  <!-- Swiper -->
+								<div class="swiper-container">
+			                        <div class="swiper-wrapper">
+			                            <div class="swiper-slide"  style="height: 236px;">
+			                            	<div class="banner-left pull-left" style="height: 200px;">
+			                            		<a href="#">
+			                            		<img src="static/img/53f44283a4347.jpg" style="width: 279px;height: 184px;"/>
+			                            		</a>
+			                            	</div>
+			                            	<div class="banner-right pull-left" style="height: 200px;">			                       
+			                            		<h2 style="margin-top: 10px;font-size: 16px;"><a href="#"style="font-size:16px;height: 25px;border: 0px;text-align: left;line-height: normal;margin-top: 0px;color: #414141;"">德玛西亚卡卡卡得1</a></h2>
+			                            		<label style="width: 20px;margin-bottom: -1px;border-top: 1px solid #EC3642;"></label>
+			                            		<i class="iconfont icon-caret"></i>
+			                			  		<span>德玛西亚</span>
+			                            		<h3 style="font-size: 14px;margin: 5px 0;">电气自动化2</h3>
+			                                    <p class="zxx_text_overflow" style="font-size: 14px;line-height: normal;">是点击啊啥叫打算定居阿速达到阿诗丹是点击啊啥叫打算定居阿速达到阿诗丹顿集散地欧萨地面无IE就我借我点埃里克简单的是点击啊啥叫打算定居阿速达到阿诗丹顿集散地欧萨地面无IE就我借我点埃里克简单的顿集散地欧萨地面无IE就我借我点埃里克简单的</p>
+			                            		<a href="#" style="height: 0px;border: 0px;text-align: left;line-height: normal;">查看更多>></a>
+			                            	</div>
+			                            </div>
+			                             <div class="swiper-slide" style="height: 236px;">
+			                            	<div class="banner-left pull-left" style="height: 200px;">
+			                            		<a href="#">
+			                            		<img src="static/img/53f44283a4347.jpg" style="width: 279px;height: 184px;"/>
+			                            	    </a>
+			                            	</div>
+			                            	<div class="banner-right pull-left" style="height: 200px;">			                       
+			                            		<h2 style="margin-top: 10px;font-size: 16px;"><a href="#" style="height: 25px;border: 0px;text-align: left;line-height: normal;margin-top: 0px;color: #414141;"">德玛西亚卡卡卡得2</a></h2>
+			                            		<label style="width: 20px;margin-bottom: -1px;border-top: 1px solid #EC3642;"></label>
+			                            		<i class="iconfont icon-caret"></i>
+			                			  		<span>德玛西亚</span>
+			                            		<h3 style="font-size: 14px;margin: 5px 0;">电气自动化</h3>
+			                                    <p class="zxx_text_overflow" style="font-size: 14px;line-height: normal;">是点击啊啥叫打算定居阿速达到阿诗丹是点击啊啥叫打算定居阿速达到阿诗丹顿集散地欧萨地面无IE就我借我点埃里克简单的是点击啊啥叫打算定居阿速达到阿诗丹顿集散地欧萨地面无IE就我借我点埃里克简单的顿集散地欧萨地面无IE就我借我点埃里克简单的</p>
+			                            		<a href="#" style="height: 0px;border: 0px;text-align: left;line-height: normal;">查看更多>></a>
+			                            	</div>
+			                            </div>
+			                             <div class="swiper-slide" style="height: 236px;">
+			                            	<div class="banner-left pull-left" style="height: 200px;">
+			                            		<a href="#">
+			                            		<img src="static/img/53f44283a4347.jpg" style="width: 279px;height: 184px;"/>
+			                            		</a>
+			                            	</div>
+			                            	<div class="banner-right pull-left" style="height: 200px;">			                       
+			                            		<h2 style="margin-top: 10px;font-size: 16px;"><a href="#"style="height:25px;border: 0px;text-align: left;line-height: normal;margin-top: 0px;color: #414141;">3</a></h2>
+			                            		<label style="width: 20px;margin-bottom: -1px;border-top: 1px solid #EC3642;"></label>
+			                            		<i class="iconfont icon-caret"></i>
+			                			  		<span>德玛西亚</span>
+			                            		<h3 style="font-size: 14px;margin: 5px 0;">电气自动化</h3>
+			                                    <p class="zxx_text_overflow" style="font-size: 14px;line-height: normal;">是点击啊啥叫打算定居阿速达到阿诗丹是点击啊啥叫打算定居阿速达到阿诗丹顿集散地欧萨地面无IE就我借我点埃里克简单的是点击啊啥叫打算定居阿速达到阿诗丹顿集散地欧萨地面无IE就我借我点埃里克简单的顿集散地欧萨地面无IE就我借我点埃里克简单的</p>
+			                            		<a href="#" style="height: 0px;border: 0px;text-align: left;line-height: normal;">查看更多>></a>
+			                            	</div>
+			                            </div>
+			                             <div class="swiper-slide" style="height: 236px;">
+			                            	<div class="banner-left pull-left" style="height: 200px;">
+			                            		<a href="#">
+			                            		<img src="static/img/53f44283a4347.jpg" style="width: 279px;height: 184px;"/>
+			                            		</a>
+			                            	</div>
+			                            	<div class="banner-right pull-left" style="height: 200px;">			                       
+			                            		<h2 style="margin-top: 10px;font-size: 16px;"><a href="#"style="height: 25px;border: 0px;text-align: left;line-height: normal;margin-top: 0px;color: #414141;">德玛西亚卡卡卡得</a></h2>
+			                            		<label style="width: 20px;margin-bottom: -1px;border-top: 1px solid #EC3642;"></label>
+			                            		<i class="iconfont icon-caret"></i>
+			                			  		<span>德玛西亚</span>
+			                            		<h3 style="font-size: 14px;margin: 5px 0;">电气自动化</h3>
+			                                    <p class="zxx_text_overflow" style="font-size: 14px;line-height: normal;">是点击啊啥叫打算定居阿速达到阿诗丹是点击啊啥叫打算定居阿速达到阿诗丹顿集散地欧萨地面无IE就我借我点埃里克简单的是点击啊啥叫打算定居阿速达到阿诗丹顿集散地欧萨地面无IE就我借我点埃里克简单的顿集散地欧萨地面无IE就我借我点埃里克简单的</p>
+			                            		<a href="#" style="height: 0px;border: 0px;text-align: left;line-height: normal;">查看更多>></a>
+			                            	</div>
+			                            </div>
+			                         </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination" style="text-align: right;left: 0px;"></div>
+                    </div>
+							</div>
+							</div>
+							</div>
+							<div class="col-md-6">
+								<div class="col-md-6 czach">
+									<a href="">
+									<span>提交成果</span>
+									<hr  />
+									<span>Submit achievement</span>
+									</a>
+								</div> 
+								<div class="col-md-6 czdem">
+									<a href="">
+									<span>提交需求</span>
+									<hr  />
+									<span>Submit requirement</span>
+									</a>
+								</div> 
+								<div class="col-md-6 czsev">
+									<a href="">
+									<span>发布服务</span>
+									<hr  />
+									<span>Announce service</span>
+									</a>
+								</div> 
+								<div class="col-md-6 czpro">
+									<a href="">
+									<span>发布产品</span>
+									<hr  />
+									<span>Announce products</span>
+									</a>
+								</div> 
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="main main-index" style="background: #f8f8f8;">
+				<div class="container">
+					<div class="main-index-title substation-title" style="text-align: center;">
+						<hr style="width: 18px;margin: 0 auto;margin-bottom: 10px;"/>
+						<span style="padding-left: 0px; display:block;font-weight: bold;">专家推荐</span>
+						<span style="padding-left: 0px;">Expert recommendation</span>
+						
+						<a href="#" class="more pull-right">更多 ></a>
+					</div>
+					<div class="row">
+		                 	 <div class="col-md-3" style="background: #FFFFFF;padding: 0px; width:24%;margin-right: 10px;">
+		                        <div class="czexpert">
+		                        	<a href="#">
+		                        	<img src="static/img/53f442834079a.jpg">
+		                        	</a>
+		                        	<h2>Milla Jovovich</h2>
+		                        	<p class="zxx_text_overflow1">格雷森.鲍彻，美国篮球运动员，巡回赛
+										唯一的白人，也是最矮的选手。</p>
+		                        </div>          
+		                     </div>
+		                     <div class="col-md-3" style="background: #FFFFFF;padding: 0px; width:24%;margin-right: 10px;">
+		                        <div class="czexpert">
+		                        	<img src="static/img/53f442834079a.jpg">
+		                        	<h2>Milla Jovovich</h2>
+		                        	<p class="zxx_text_overflow1">格雷森.鲍彻，美国篮球运动员，巡回赛
+										唯一的白人，也是最矮的选手。</p>
+		                        </div>          
+		                     </div>
+		                      <div class="col-md-3" style="background: #FFFFFF;padding: 0px; width:24%;margin-right: 10px;">
+		                        <div class="czexpert">
+		                        	<img src="static/img/53f442834079a.jpg">
+		                        	<h2>Milla Jovovich</h2>
+		                        	<p class="zxx_text_overflow1">格雷森.鲍彻，美国篮球运动员，巡回赛
+										唯一的白人，也是最矮的选手。</p>
+		                        </div>          
+		                     </div>
+		                      <div class="col-md-3" style="background: #FFFFFF;padding: 0px; width:24%;margin-right: 10px;">
+		                        <div class="czexpert">
+		                        	<img src="static/img/53f442834079a.jpg">
+		                        	<h2>Milla Jovovich</h2>
+		                        	<p class="zxx_text_overflow1">格雷森.鲍彻，美国篮球运动员，巡回赛
+										唯一的白人，也是最矮的选手。</p>
+		                        </div>          
+		                     </div>
+                
+            </div>
+				</div>
+				</div>
+					<div class="main main-index" style="background: #ffffff;">
+				<div class="container">
+					<div class="main-index-title substation-title" style="text-align: center;">
+						<hr style="width: 18px;margin: 0 auto;margin-bottom: 10px;"/>
+						<span style="padding-left: 0px; display:block;font-weight: bold;">分站企业推荐</span>
+						<span style="padding-left: 0px;">Substation enterprise recommendation</span>
+						
+						<a href="#" class="more pull-right">更多 ></a>
+					</div>
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-4col-xs-4 ">
+                            <div class="user-list">
+                                <dl>
+                                    <dt class="img-thumbnail"><img src="static/img/stationLogo.png"/></dt>
+                                    <dd>
+                                        <h2><a href="#">中科三方网络技术有限公司</a></h2>
+                                        <p>You are a big sucker, yes, that is you, I hope you die in Macau Well, never go back to Shanghai</p>
+                                    </dd>
+                                </dl>
+                                <div class="txt-group">
+                                    <p><label>机构类型</label> 研究所
+                                    <label>所在地：</label> 北京</p>
+                                     <p style="height: auto;"><label>重点研究领域：</label> 人工智能</p>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <span>成果</span>
+                                        <label>126</label>
+                                    </li>
+                                    <li>
+                                        <span>专家</span>
+                                        <label>55</label>
+                                    </li>
+                                    <li>
+                                        <span>关注者</span>
+                                        <label>12898</label>
+                                    </li>
+                                </ul>
+                                <div class="text-center group">
+                                    <a href="#" class="btn btn-primary"><i class="iconfont icon-plus"></i>关注</a>
+                                    <a href="#" class="btn btn-primary btn-inverse">私信</a>
+                                    
+                                      <!--
+                          
+                         
+                            <a href="#" class="cancel">取消关注</a>
+                        
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                            
+                             -->
+                                </div>
+                            </div>
+                        </div>
+					<div class="col-lg-4 col-md-4 col-sm-4col-xs-4 ">
+                            <div class="user-list">
+                                <dl>
+                                    <dt class="img-thumbnail"><img src="static/img/stationLogo.png"/></dt>
+                                    <dd>
+                                        <h2><a href="#">中科三方网络技术有限公司</a></h2>
+                                        <p>You are a big sucker, yes, that is you, I hope you die in Macau Well, never go back to Shanghai</p>
+                                    </dd>
+                                </dl>
+                                <div class="txt-group">
+                                    <p><label>机构类型</label> 研究所
+                                    <label>所在地：</label> 北京</p>
+                                     <p style="height: auto;"><label>重点研究领域：</label> 人工智能</p>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <span>成果</span>
+                                        <label>126</label>
+                                    </li>
+                                    <li>
+                                        <span>专家</span>
+                                        <label>55</label>
+                                    </li>
+                                    <li>
+                                        <span>关注者</span>
+                                        <label>12898</label>
+                                    </li>
+                                </ul>
+                                <div class="text-center group">
+                                    <a href="#" class="btn btn-primary"><i class="iconfont icon-plus"></i>关注</a>
+                                    <a href="#" class="btn btn-primary btn-inverse">私信</a>
+                                    
+                                      <!--
+                          
+                         
+                            <a href="#" class="cancel">取消关注</a>
+                        
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                            
+                             -->
+                                </div>
+                            </div>
+                        </div>
+						<div class="col-lg-4 col-md-4 col-sm-4col-xs-4 ">
+                            <div class="user-list">
+                                <dl>
+                                    <dt class="img-thumbnail"><img src="static/img/stationLogo.png"/></dt>
+                                    <dd>
+                                        <h2><a href="#">中科三方网络技术有限公司</a></h2>
+                                        <p>You are a big sucker, yes, that is you, I hope you die in Macau Well, never go back to Shanghai</p>
+                                    </dd>
+                                </dl>
+                                <div class="txt-group">
+                                    <p><label>机构类型</label> 研究所
+                                    <label>所在地：</label> 北京</p>
+                                     <p style="height: auto;"><label>重点研究领域：</label> 人工智能</p>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <span>成果</span>
+                                        <label>126</label>
+                                    </li>
+                                    <li>
+                                        <span>专家</span>
+                                        <label>55</label>
+                                    </li>
+                                    <li>
+                                        <span>关注者</span>
+                                        <label>12898</label>
+                                    </li>
+                                </ul>
+                                <div class="text-center group">
+                                    <a href="#" class="btn btn-primary"><i class="iconfont icon-plus"></i>关注</a>
+                                    <a href="#" class="btn btn-primary btn-inverse">私信</a>
+                                    
+                                      <!--
+                          
+                         
+                            <a href="#" class="cancel">取消关注</a>
+                        
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                            
+                             -->
+                                </div>
+                            </div>
+                        </div>
+					
+					</div>
+					</div></div>
+					
+					<div class="main main-index" style="background: #f8f8f8;">
+				<div class="container">
+					<div class="main-index-title substation-title" style="text-align: center;">
+						<hr style="width: 18px;margin: 0 auto;margin-bottom: 10px;"/>
+						<span style="padding-left: 0px; display:block;font-weight: bold;">一站式服务大厅</span>
+						<span style="padding-left: 0px;">One stop service hall</span>
+						
+						<!--<a href="#" class="more pull-right">更多 ></a>-->
+					</div>
+					<div class="row">
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+							<div class="czlink">
+							<a href="http://www.cztt518.com/service.jspx?num=1" style="background-image: url(static/img/c-8.png);">
+							<span>产学研服务</span>	
+							</a>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+							<div class="czlink">
+							<a href="http://www.cztt518.com/service.jspx?num=2" style="background-image: url(static/img/c-9.png);">
+							<span>高企高品服务</span>	
+							</a>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+							<div class="czlink">
+							<a href="http://uias.czstb.gov.cn/sb/1.jsp?type=1&cateid=503" style="background-image: url(static/img/c-10.png);">
+							<span>项目申请服务</span>	
+							</a>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+							<div class="czlink">
+							<a href="http://www.czkjjl.com/" style="background-image: url(static/img/c-11.png);">
+							<span>国际合作服务</span>	
+							</a>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+							<div class="czlink">
+							<a href="http://www.cztt518.com/service.jspx?num=3" style="background-image: url(static/img/c-12.png);">
+							<span>创新创业服务</span>	
+							</a>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+							<div class="czlink">
+							<a href="http://www.cztt518.com/service.jspx?num=6" style="background-image: url(static/img/c-13.png);">
+							<span>知识产权服务</span>	
+							</a>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+							<div class="czlink">
+							<a href="http://kjj.changzhou.gov.cn/class/FPOJIKLL" style="background-image: url(static/img/c-14.png);">
+							<span>科技人才服务</span>	
+							</a>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+							<div class="czlink">
+							<a href="http://www.czstf.gov.cn/" style="background-image: url(static/img/c-15.png);">
+							<span>科技金融服务</span>	
+							</a>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+							<div class="czlink">
+							<a href="http://www.cztt518.com/service.jspx?num=4" style="background-image: url(static/img/c-16.png);">
+							<span>产业联盟服务</span>	
+							</a>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+							<div class="czlink">
+							<a href="http://www.cztt518.com/service.jspx?num=5" style="background-image: url(static/img/c-17.png);">
+							<span>科技服务机构</span>	
+							</a>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+							<div class="czlink">
+							<a href="http://uias.czstb.gov.cn/dy/" style="background-image: url(static/img/c-18.png);">
+							<span>仪器设备协作</span>	
+							</a>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+							<div class="czlink">
+							<a href="http://210.73.136.69/Kjzy/" style="background-image: url(static/img/c-19.png);">
+							<span>文献信息共享</span>	
+							</a>
+							</div>
+						</div>
+					</div>
+					</div></div>
+					<div class="main main-index" style="background: #ffffff;">
+				         <div class="container">
+				         	<div class="main-index-title substation-title" style="text-align: center;">
+					
+						<span style="padding-left: 0px; display:block;font-weight: bold;"></span>
+						<span style="padding-left: 0px;"></span>
+						
+						
+					</div>
+				         	<div class="row">
+				         		<div class="czgov">
+				         			<a href="http://kjj.changzhou.gov.cn/class/CNCKIKNJ" target="_blank">
+				         			<img src="static/img/1.png">
+				         		    </a>
+				         		</div>
+				         		<div class="czgov">
+				         			<a href="http://kjj.changzhou.gov.cn/class/CKAFIKKA" target="_blank">
+				         			<img src="static/img/2.png">
+				         		    </a>
+				         		</div>
+				         		<div class="czgov">
+				         			<a href="http://kjj.changzhou.gov.cn/class/CKAAIKKQ" target="_blank">
+				         			<img src="static/img/3.png">
+				         		    </a>
+				         		</div>
+				         		<div class="czgov">
+				         			<a href="http://kjj.changzhou.gov.cn/class/FPNPIKLI" target="_blank">
+				         			<img src="static/img/4.png">
+				         		    </a>
+				         		</div>
+				         		<div class="czgov">
+				         			<a href="http://kjj.changzhou.gov.cn/class/FPMMIKKC" target="_blank">
+				         			<img src="static/img/5.png">
+				         		    </a>
+				         		</div>
+				         		<div class="czgov">
+				         			<a href="http://kjj.changzhou.gov.cn/class/LBDKKHHE" target="_blank">
+				         			<img src="static/img/6.png">
+				         		    </a>
+				         		</div>
+				         		<div class="czgov">
+				         			<a href="http://kjj.changzhou.gov.cn/class/FPMFIKKF" target="_blank">
+				         			<img src="static/img/7.png">
+				         		    </a>
+				         		</div>
+				         		<div class="czgov">
+				         			<a href="http://kjj.changzhou.gov.cn/class/FPOJIKLL" target="_blank">
+				         			<img src="static/img/8.png">
+				         		    </a>
+				         		</div>
+				         		
+				         	</div>
+					     </div>
+					</div>
+					<!-- 前端：通用尾部  -->
+
+			</div>
+				<div class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+							<h2>院所园企</h2>
+							<ul class="footer-list">
+								<li>
+									<a href="#">账号问题</a>
+								</li>
+								<li>
+									<a href="#">参与活动</a>
+								</li>
+								<li>
+									<a href="#">帮助中心</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+							<h2>服务指南</h2>
+							<ul class="footer-list">
+								<li>
+									<a href="#">账号问题</a>
+								</li>
+								<li>
+									<a href="#">参与活动</a>
+								</li>
+								<li>
+									<a href="#">帮助中心</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+							<h2>关于我们</h2>
+							<ul class="footer-list">
+								<li>
+									<a href="#">平台简介</a>
+								</li>
+								<li>
+									<a href="#">参与活动</a>
+								</li>
+								<li>
+									<a href="#">法律声明</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-offset-1 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+							<div class="friend-link-list ">
+								<a class="facebook" href="#"><i class="iconfont icon-facebook1"></i></a>
+								<a class="twiter" href="#"><i class="iconfont icon-icontwiter"></i></a>
+								<a class="sina" href="#"><i class="iconfont icon-sina"></i></a>
+								<a class="google" href="#"><i class="iconfont icon-google1"></i></a>
+							</div>
+							<p>copyRight@2007-2017 中国科学院科技产业网版权所有</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 幕布 -->
+			<div class="curtain">
+				<img src="static/img/index/curtain.gif" />
+				<div class="content">
+					<h2>LOGO中国科学院科技产业网</h2>
+
+					<h4>中国科学院科技产业化联盟官方平台</h4>
+
+					<h4>科技成果专业服务平台</h4>
+
+					<h4>网址：www.castt.ac.cn</h4>
+
+					<h4>主管单位：中国科学院科技促进发展局</h4>
+
+					<h4>承办单位：喀斯玛控股有限公司</h4>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			//    幕布效果
+			var curtain = function() {
+				$('.curtain').show(
+					setTimeout(function() {
+						$('.curtain').fadeOut();
+					}, 3000)
+				);
+			};
+			//    curtain();
+
+			//搜索按钮效果
+			$(".value-list> option").click(function() {
+				var _this = $(this);
+				var _val = _this.val();
+				$(".origin > .txt").text(_val);
+			});
+			 $(".zhankai").click(function(){
+        $(".desc p").css("height","auto");
+        $(".zhankai").hide();
+        $(".shouqi").show();
+    });
+    $(".shouqi").click(function(){
+        $(".desc p").css("height","43px");
+        $(".shouqi").hide();
+        $(".zhankai").show();
+    });
+    $(document).ready(function(){
+//限制字符个数
+        $(".zxx_text_overflow1").each(function(){
+            var maxwidth=40;
+            if($(this).text().length>maxwidth){
+                $(this).text($(this).text().substring(0,maxwidth));
+                $(this).html($(this).html()+'…');
+            }
+        });
+    });
+    $(document).ready(function(){
+//限制字符个数
+$(".zxx_text_overflow").each(function(){
+var maxwidth=53;
+if($(this).text().length>maxwidth){
+$(this).text($(this).text().substring(0,maxwidth));
+$(this).html($(this).html()+'…');
+}
+});
+});
+		</script>
+	</body>
+
+</html>

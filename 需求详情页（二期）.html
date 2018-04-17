@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-hans">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>成果科技</title>
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="static/css/swiper.min.css"/>
+    <link rel="stylesheet" href="static/css/home2.css"/>
+    <link rel="stylesheet" href="static/css/researchShow.css"/>
+    <link rel="stylesheet" href="static/css/index.css"/>
+    <link rel="stylesheet" href="static/css/iconfont.css"/>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/swiper.min.js"></script>
+    <script src="static/js/index.js"></script>
+
+    <!-- 在所有的页面引用IE兼容解决方案 -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--<script type="text/javascript">
+    	var desDiv=document.querySelectorAll(".max-words div")[1];
+		var content=desDiv.innerHTML;
+		function maxWords(){
+		if(content.length>150){
+			var newContent=content.substring(0,150);
+			newContent=newContent+"  ..."+"<a href=\"#\" class=\"text-info\" onclick=\"myopen()\">展开</a>";
+			desDiv.innerHTML=newContent;
+			}
+		}
+		function myopen(){
+			desDiv.innerHTML=content+"<a href=\"#\" class=text-info onclick=\"myclose()\">收起</a>";
+								
+		}
+		function myclose(){
+			desDiv.innerHTML=content.substring(0,150)+"  ..."+"<a href=\"#\" class=\"text-info\" onclick=\"myopen()\">展开</a>";
+		}
+    </script>-->
+</head>
+<body onload="">
+<div class="wrapper" id="mainContainer">
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <!-- 登录后样式 -->
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="name">
+                        我叫小胖胖 <i class="icon icon-gread gread1"></i><i class="iconfont icon-caret-bottom"></i>
+                    </div>
+                    <a href="#" class="notice">消息<span class="label label-danger">30</span></a>
+                    <a href="#" class="loginOut">退出</a>
+                </div>
+                <!-- 登录前样式 -->
+                <!--<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">-->
+                    <!--<a href="#" class="loginIn">请登录</a>-->
+                    <!--<a href="#" class="registerIn">免费注册</a>-->
+                <!--</div>-->
+                <div class="col-md-offset-1 col-lg-7 col-md-7 col-sm-6 col-xs-6">
+                    <div class="right-nav">
+                    	<a href="#"><span class="luntan"><img src="static/img/index/luntang.png/"></span>&nbsp;论坛 <i class="iconfont icon-caret-bottom"></i></a>
+                        <a href="#">我的成果 <i class="iconfont icon-caret-bottom"></i></a>
+                        <a href="#">我的服务 <i class="iconfont icon-caret-bottom"></i></a>
+                        <a href="#">我的需求 <i class="iconfont icon-caret-bottom"></i></a>
+                        <a href="#">我的机构 <i class="iconfont icon-caret-bottom"></i></a>
+                        <a class="wechatCheck" href="#">微信扫一扫
+                            <img src="static/img/index/wechao.png"/>
+                            <div class="bigImg">
+                                <img src="static/img/index/wechao.png"/>
+                            </div>
+                        </a>
+                        <a class="wechatCheck" href="#">今日关注扫一扫
+                            <img src="static/img/index/wechao.png"/>
+                            <div class="bigImg">
+                                <img src="static/img/index/wechao.png"/>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5"><a href="#"><img src="static/img/index/new-logo.png"/></a></div>
+                <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                   <div class="search pa pull-left" style="margin-left:106px;width: 81%;">
+                        <div class="search-select">
+                            <a href="javascript:;" class="origin dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="txt">成果</span> <i class="iconfont icon-caret-bottom"></i></a>
+                            <select multiple class="dropdown-menu value-list ">
+                                <option value="成果" selected>成果</option>
+                                <option value="服务">服务</option>
+                                <option value="会员">会员</option>
+                                <option value="需求">需求</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form-control" placeholder="请输入搜索内容"/>
+                        <a href="javascript:;" class="search-btn"><i class="iconfont icon-search1"></i></a>
+                    </div>
+                   
+                    <ul class="list" style="margin-left:51px;padding-left:57px;">
+                        <li><label>热门搜索 :</label></li>
+                        <li><a href="#">人工智能</a></li>
+                        <li><a href="#">风云四号</a></li>
+                        <li><a href="#">海绵城市</a></li>
+                        <li><a href="#">数字经济</a></li>
+                        <li><a href="#">通用航空</a></li>
+                        <li><a href="#">航天航空</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <nav class="header-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <a class="active" href="javascript:;">首页</a>
+                    <a href="javascript:;">科研成果</a>
+                    <a href="javascript:;">科研产品</a>
+                    <a href="javascript:;">分站风采</a>
+                    <a href="javascript:;">专家团队</a>
+                    <a href="javascript:;">供需服务</a>
+                    <a href="javascript:;">联盟主页</a>
+                    <a href="javascript:;">科技资讯</a>
+                  
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+    	<div class="bg-grey">
+    	<div class="container">
+	        <div class="row">
+	        	<p class="text-muted margin"><a href="#" class="text-muted">需求列表</a>&gt;
+	        		<a href="#" class="text-muted">需求详情</a></p>
+	        	
+	        	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 relative demand-bg">
+	        		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+		        		<div class="thumbnail">
+		        			<img src="img/7.jpg" />
+		        		
+		        		</div>
+	        		 </div>
+	        		<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 relative demand-zixu">
+	        		<p class="text-blue">路桥伸缩缝螺柱焊接生产系统</p>
+	        		
+	        		<hr />
+	        		<table class="mytable">
+	        			<tr>
+	        				<td width="33.3%">学科领域：电气自动化</td>
+	        				<td width="33.3%">需求类型：电气自动化</td>
+	        				<td width="33.3%">所在地：德玛西亚</td>
+	        			</tr>
+	        			
+	        			<tr >
+	        				<td width="33.3%" style="padding-top: 10px;">投入预算：10万元</td>
+	        				<td width="33.3%" style="padding-top: 10px;">用户姓名：陈志国</td>
+	        			</tr>
+	        			
+	        		</table>
+	        		<span>
+	        			<img src="static/img/collect.png" alt="" />
+	        			<img src="static/img/zixu.png" alt="" />
+	        			<script>
+					$(function () { 
+						$("[data-toggle='popover']").popover();
+					});
+					</script>
+					</div>
+	        	</div>
+	        </div>
+	        </div>
+	        </div>
+	        <div class="container">
+        	<div class="row">
+	        	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+	        		<div class="tab-box pa">
+	                    <blockquote id="top-margin" class="demand-title">
+	                        	预约详情<span>Reservation details</span>
+	                        	 <a href="#" class="achievement-import pull-right"><i class="iconfont icon-edit"></i>成果录入</a>
+	                    </blockquote>
+	                    <hr />
+	                     <div>
+	                     	<p>鲜腐竹产品在运输过程中容易变质，在不添加任何防腐剂和氮气情况下，能不能解决腐竹在运输过程中保鲜问题鲜腐竹产品在运输过程中容易变质，在不添加任何防腐剂和氮气情况下，能不能解决腐竹在运输过程中保鲜问题。</p>
+	                     </div>   
+	                </div>
+	                <div class="comment-wrap tab-box pa" style="margin-top: 20px;">
+                        <blockquote id="top-margin">
+	                        	参与讨论<span>Reservation details</span>
+	                    </blockquote>
+	                      <hr />
+                        <textarea class="form-control comment-textarea" placeholder="评论更多"style="max-width: 100%;"></textarea>
+                        <div class="row btn-wrap">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="#">登录</a>后参与评论</div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right"><a href="#" class="btn btn-primary btn-inverse">提交评论</a></div>
+                        </div>
+                        <ul class="comment-list">
+                            <li>
+                                <dl class="comment-item">
+                                    <dt class="pa"><img class="img-circle pic-auto" src="static/img/person.png"/></dt>
+                                    <dd>
+                                        <p>肖龙123<span class="pull-right">2017-03-11 <b>2楼</b></span></p>
+                                        <p class="con">这个研究感觉我好像做过</p>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl class="comment-item">
+                                    <dt class="pa"><img class="img-circle pic-auto" src="static/img/person.png"/></dt>
+                                    <dd>
+                                        <p>龙子虚23<span class="pull-right">2017-03-11 <b>2楼</b></span></p>
+                                        <p class="con">归纳来说就是结晶体的共存</p>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl class="comment-item">
+                                    <dt class="pa"><img class="img-circle pic-auto" src="static/img/person.png"/></dt>
+                                    <dd>
+                                        <p>肖龙123<span class="pull-right">2017-03-11 <b>2楼</b></span></p>
+                                        <p class="con">这个研究感觉我好像做过</p>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li><a href="JavaScript:;" class="btn btn-default btn-inverse center-block">点击加载更多</a></li>
+                        </ul>
+                    </div>
+	        	</div>	
+        		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        			<div class="news-wrap">
+						<h2 class="tit" id="tit">相似需求推荐</h2>
+						<div class="row">
+							<div class="col-md-12">
+								<a href="#" data-href="#" data-level="" class="lookInformation">
+									<dl class="hotInfo-list" id="patentNews">
+										<dt style="background-image: url('static/img/28.jpg')"></dt>
+										<dd>
+											<p>首届中以创新创业大赛（初赛）在以色列成功举办</p>
+											<span class="time">需求类型：德玛下雨</span>
+										</dd>
+									</dl>
+								</a>
+							</div>
+							
+							<div class="col-md-12">
+								<a href="#" data-href="#" data-level="" class="lookInformation">
+									<dl class="hotInfo-list" id="patentNews">
+										<dt style="background-image: url('static/img/bg.png')"></dt>
+										<dd>
+											<p>首届中以创新创业大赛（初赛）在以色列成功举办</p>
+											<span class="time">需求类型：德玛下雨</span>
+										</dd>
+									</dl>
+								</a>
+							</div>
+							<div class="col-md-12">
+								<a href="#" data-href="#" data-level="" class="lookInformation">
+									<dl class="hotInfo-list" id="patentNews">
+										<dt style="background-image: url('static/img/28.jpg')"></dt>
+										<dd>
+											<p>首届中以创新创业大赛（初赛）在以色列成功举办</p>
+											<span class="time">需求类型：德玛下雨</span>
+										</dd>
+									</dl>
+								</a>
+							</div>
+							
+							<div class="col-md-12">
+								<a href="#" data-href="#" data-level="" class="lookInformation">
+									<dl class="hotInfo-list" id="patentNews">
+										<dt style="background-image: url('static/img/bg.png')"></dt>
+										<dd>
+											<p>首届中以创新创业大赛（初赛）在以色列成功举办</p>
+											<span class="time">需求类型：德玛下雨</span>
+										</dd>
+									</dl>
+								</a>
+							</div><div class="col-md-12">
+								<a href="#" data-href="#" data-level="" class="lookInformation">
+									<dl class="hotInfo-list" id="patentNews">
+										<dt style="background-image: url('static/img/28.jpg')"></dt>
+										<dd>
+											<p>首届中以创新创业大赛（初赛）在以色列成功举办</p>
+											<span class="time">需求类型：德玛下雨</span>
+										</dd>
+									</dl>
+								</a>
+							</div>
+							
+							
+							<div class="col-md-12">
+								<br />
+								<div class="text-center">
+									<a href="#" class="btn btn-primary btn-inverse">更多需求</a>
+								</div>
+								<hr id="solid" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<br />
+								<img src="static/img/banner.png" alt="" />
+							</div>
+						</div>
+					</div>
+        		</div>
+        	</div>
+        </div>
+	</div>
+    <!-- 前端：通用尾部  -->
+   
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>院所园企</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>服务指南</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>关于我们</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">平台简介</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">法律声明</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-offset-1 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="friend-link-list ">
+                        <a class="facebook" href="#"><i class="iconfont icon-facebook1"></i></a>
+                        <a class="twiter" href="#"><i class="iconfont icon-icontwiter"></i></a>
+                        <a class="sina" href="#"><i class="iconfont icon-sina"></i></a>
+                        <a class="google" href="#"><i class="iconfont icon-google1"></i></a>
+                    </div>
+                    <p>copyRight@2007-2017 中国科学院科技产业网版权所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 幕布 -->
+    <div class="curtain">
+        <img src="static/img/index/curtain.gif"/>
+        <div class="content">
+            <h2>LOGO中国科学院科技产业网</h2>
+
+            <h4>中国科学院科技产业化联盟官方平台</h4>
+
+            <h4>科技成果专业服务平台</h4>
+
+            <h4>网址：www.castt.ac.cn</h4>
+
+            <h4>主管单位：中国科学院科技促进发展局</h4>
+
+            <h4>承办单位：喀斯玛控股有限公司</h4>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+//    幕布效果
+    var curtain =  function(){
+        $('.curtain').show(
+                setTimeout(function(){
+                    $('.curtain').fadeOut();
+                },3000)
+        );
+    };
+//    curtain();
+
+    //搜索按钮效果
+    $(".value-list> option").click(function () {
+        var _this = $(this);
+        var _val = _this.val();
+        $(".origin > .txt").text(_val);
+    });
+</script>
+</body>
+</html>

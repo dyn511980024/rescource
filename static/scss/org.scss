@@ -1,0 +1,244 @@
+@charset "UTF-8";
+@import "base";
+@import "variables";
+
+.organization {
+  padding: 20px 0 40px;
+
+  &-content {
+    .head {
+      height: 50px;
+      padding: 5px;
+      border: 1px solid $global-border;
+      @include border-radius(3px);
+      background: $light-gray;
+      .pic {
+        width: 40px;
+        height: 40px;
+        @include inline-block();
+        @include border-radius(3px);
+      }
+      &-list {
+          @include inline-block(middle);
+        li {
+          float: left;
+          padding-left: 40px;
+          a {
+            font-size: 1.4rem;
+              color: darken($dark-blue,10%);
+            i {
+              font-size: 1.8rem;
+              margin-right: 5px;
+              @include inline-block(-2px);
+            }
+            &:hover {
+              color: $dark-blue;
+            }
+          }
+          &:last-child {
+            a {
+              i {
+                font-size: 1.6rem;
+                @include inline-block(0);
+              }
+            }
+          }
+
+        }
+      }
+    }
+    .org-title {
+      padding: 30px 0 10px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid $global-border;
+      i {
+        font-size: 3rem;
+        padding-right: 10px;
+        color: $color6;
+      }
+      span {
+        font-size: 1.8rem;
+        color: $color6;
+      }
+      a {
+        font-size: 1.4rem;
+        color: $color6;
+        padding-top: 20px;
+        @include inline-block(middle);
+        &:hover {
+          color: $common-blue;
+        }
+      }
+    }
+    .achievement-item {
+      margin: 0;
+    }
+    .need-item {
+      margin: 0;
+      .title {
+        padding-left: 15px;
+      }
+    }
+
+  }
+  .infos {
+    margin-top: -20px;
+    &-list {
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+  &.organization-result {
+    .breadcrumb {
+      padding: 0 0 20px;
+    }
+    .achievement-item {
+      margin: 0 0 30px;
+    }
+    .need-item {
+      margin-bottom: 20px;
+    }
+  }
+
+  /* 机构前台右侧 */
+  .sidebar {
+    &-info {
+      @include border-radius(3px);
+      border: 1px solid $global-border;
+      dt {
+        padding: 40px 0 20px;
+        text-align: center;
+        border-bottom: 1px solid $global-border;
+        .logo {
+          width: 80px;
+          height: 80px;
+          margin: 0 auto;
+          @include border-radius(50%);
+          background-position: center;
+          background-repeat: no-repeat;
+          -webkit-background-size: cover;
+          background-size: cover;
+          background-color: $bg-gray;
+          overflow: hidden;
+        }
+        h2 {
+          font-size: 1.8rem;
+          color: $color6;
+        }
+        p {
+          font-size: 1.4rem;
+          color: $color6;
+        }
+        .btn-wrap {
+          padding: 20px 0 0;
+          .btn {
+            padding: 12px;
+            width: 180px;
+            @include border-radius(30px);
+          }
+        }
+      }
+
+      dd {
+        h3 {
+          i {
+            margin-right: 10px;
+          }
+          font-size: 1.4rem;
+          line-height: 30px;
+          margin: 0;
+          padding: 0 20px;
+          color: $color6;
+          a {
+            color: $color6;
+            &:hover {
+              color: $common-blue;
+            }
+          }
+          &.top {
+            padding-top: 10px;
+            i {
+              font-size: 1.4rem;
+            }
+          }
+          &.bottom {
+            padding-bottom: 10px;
+            i {
+              font-size: 1.8rem;
+            }
+          }
+
+        }
+        p {
+          border-top: 1px solid $global-border;
+          padding: 10px 20px;
+        }
+      }
+    }
+    &-list {
+      padding: 20px 0 10px;
+      //border-bottom: 1px solid $global-border;
+      li {
+        width: 100%;
+        line-height: 46px;
+        a {
+          display: block;
+          color: $color6;
+          font-size: 1.6rem;
+          i {
+            margin-right: 10px;
+            font-size: 1.6rem;
+          }
+          &:hover {
+            color: $common-blue;
+          }
+        }
+        &.active {
+          a {
+            color: $common-blue;
+            i {
+              color: $common-blue;
+            }
+          }
+        }
+
+      }
+    }
+    .contact {
+      border-top: 1px solid $global-border;
+      h2 {
+        font-size: 1.6rem;
+        color: $color6;
+        i {
+          font-size: 2rem;
+          margin-right: 10px;
+        }
+      }
+      &-list {
+        border: 1px solid $global-border;
+        @include border-radius(3px);
+        //background: $light-gray;
+        padding: 10px;
+        li {
+          font-size: 1.4rem;
+          color: $color6;
+          line-height: 40px;
+          span {
+            @include inline-block(top);
+            width: 100px;
+            padding-right: 10px;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+.btn-watch{
+    .btn{
+        padding: 6px!important;width:99px!important; margin:10px;
+    }
+ }
+ 

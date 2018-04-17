@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>成果科技</title>
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="static/css/swiper.min.css"/>
+     <link rel="stylesheet" href="static/css/home2.css"/>
+    <link rel="stylesheet" href="static/css/index.css"/>
+    <link rel="stylesheet" href="static/css/iconfont.css"/>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/swiper.min.js"></script>
+    <script src="static/js/index.js"></script>
+
+    <!-- 在所有的页面引用IE兼容解决方案 -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+    <!-- 前端：通用头部 -->
+    <div class="header header-index">
+        <!--<div class="header-login">-->
+            <!--<div class="container pa">-->
+                <!--<div class="logo">中国科学院</div>-->
+                <!--<ul class="login-list list-unstyled pull-right">-->
+                    <!--<li><a href="#">登录</a></li>-->
+                    <!--<li>|</li>-->
+                    <!--<li><a href="#">注册</a></li>-->
+                <!--</ul>-->
+
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="header-menu">-->
+            <!--<div class="container">-->
+                <!--<ul class="menu-list pull-right">-->
+                    <!--<li class="active"><a href="javascript:;">首页</a></li>-->
+                    <!--<li><a href="javascript:;">科研成果</a></li>-->
+                    <!--<li><a href="javascript:;">院所风采</a></li>-->
+                    <!--<li><a href="javascript:;">供需服务</a></li>-->
+                    <!--<li><a href="javascript:;">联盟主页</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a href="home.html" class="logo"></a></div>
+                <div class="col-md-6">
+                    <ul class="menu-list">
+                        <li class="active"><a href="javascript:;">首页</a></li>
+                        <li><a href="javascript:;">科研成果</a></li>
+                        <li><a href="javascript:;">院所风采</a></li>
+                        <li><a href="javascript:;">供需服务</a></li>
+                        <li><a href="javascript:;">联盟主页</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="search pa pull-left">
+                        <div class="search-select">
+                            <a href="javascript:;" class="origin dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="txt">成果</span> <i class="iconfont icon-caret-bottom"></i></a>
+                            <select multiple class="dropdown-menu value-list ">
+                                <option value="成果" selected>成果</option>
+                                <option value="服务">服务</option>
+                                <option value="会员">会员</option>
+                                <option value="需求">需求</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form-control" placeholder="请输入感兴趣的内容.."/>
+                        <a href="javascript:;" class="search-btn"><i class="iconfont icon-search1"></i></a>
+                    </div>
+                    <ul class="login-list list-unstyled pull-right">
+                        <li><a href="#">登录</a></li>
+                        <li>|</li>
+                        <li><a href="#">注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 条幅部分 -->
+    <div class="ad-banner" style="background: url(static/img/demand-banner.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center">
+                    <p class="logo" style="background-image: url('static/img/stationLogo.png')"></p>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 desc">
+                    <h2>XXXXXXXX分站</h2>
+                    <p>You are a big sucker, yes, that is you, I hope you die in Macau Well, never go back to Shanghai, do not add me, I do not want to see you, you are bad is my greatest blessing</p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                    <a href="#" class="btn btn-primary join-btn">加入分站</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 内容部分 -->
+    <div class="main main-index">
+        <div class="container">
+           <div class="banner row">
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-image: url('static/img/banner.png');"><a href="#"></a></div>
+                            <div class="swiper-slide" style="background-image: url('static/img/pic1.png');"><a href="#"></a></div>
+                            <div class="swiper-slide" style="background-image: url('static/img/banner.png');"><a href="#"></a></div>
+                            <div class="swiper-slide" style="background-image: url('static/img/pic2.png');"><a href="#"></a></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                   <div class="right">
+                            <div class="news-wrap fluid">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist"  id="nav">
+                                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><span>热门专题</span></a></li>
+                                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><span>热门资讯</span></a></li>
+                                     <li role="presentation"><a href="#league" aria-controls="league" role="tab" data-toggle="tab"><span>联盟资讯</span></a></li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="home">
+                                        <ul class="news-list">
+                                            <li class="news-list-item">
+                                                <div class="item">
+                                                    <i class="iconfont icon-caret"></i>
+                                                    <a href="#">乐视金融退出财经金融信息服务平台，贾跃亭：来乐视看财讯元有鬼电车第一单</a>
+                                                </div>
+                                                <p><span>2017-03-09 21:38</span><span class="label label-danger">活动</span></p>
+                                            </li>
+                                            <li class="news-list-item">
+                                                <div class="item">
+                                                    <i class="iconfont icon-caret"></i>
+                                                    <a href="#">智合退出法律在线教育平台“知识网”</a>
+                                                </div>
+                                                <p><span>2017-03-09 21:38</span><span class="label label-info">行业动态</span></p>
+                                            </li>
+                                            <li class="news-list-item">
+                                                <div class="item">
+                                                    <i class="iconfont icon-caret"></i>
+                                                    <a href="#">智合退出法律在线教育平台“知识网”</a>
+                                                </div>
+                                                <p><span>2017-03-09 21:38</span><span class="label label-success">政策法规</span></p>
+                                            </li>
+                                        </ul>
+                                        <div class="text-center"><a href="news.html" class="btn btn-primary btn-inverse">浏览更多</a></div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="profile">...</div>
+                                    <div role="tabpanel" class="tab-pane" id="league">...</div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+		</div>
+		<div class="main main-index"style="background: #f2f3f7;margin-top: 50px;padding-top: 0px;">
+		 <div class="container" >
+            <div class="demand-title1"><span>站内需求</span> <a href="#" class="more pull-right">更多 ></a>
+            	<label></label>
+            </div>
+            <div class="row">
+                <div class="col-md-3" >      	
+                	<div class="station-bg">
+                		<a href="#">
+                  		<div class="station-demand">
+                  			<img src="static/img/brand3.png">
+		                  	<h2>中国科学院科技产业网</h2>
+		                  	<span>需求名称</span>
+		                  	<span>汽车德玛西亚召唤师峡谷</span>
+		                  	<span>投入预算</span>
+		                  	<span><label>50</label>万元</span>
+		                  	<span>截止日期</span>
+		                  	<span>2017年04月05日</span>
+                 		 </div> 
+                 		 </a>
+                	  </div>
+                </div> 
+                <div class="col-md-3" >
+                	<div class="station-bg">
+                  		<div class="station-demand">
+                  			<img src="static/img/brand3.png">
+		                  	<h2>中国科学院科技产业网</h2>
+		                  	<span>需求名称</span>
+		                  	<span>汽车德玛西亚召唤师峡谷</span>
+		                  	<span>投入预算</span>
+		                  	<span><label>50</label>万元</span>
+		                  	<span>截止日期</span>
+		                  	<span>2017年04月05日</span>
+                 		 </div> 
+                	  </div>
+                </div> 
+                <div class="col-md-3" >
+                	<div class="station-bg">
+                  		<div class="station-demand">
+                  			<img src="static/img/brand3.png">
+		                  	<h2>中国科学院科技产业网</h2>
+		                  	<span>需求名称</span>
+		                  	<span>汽车德玛西亚召唤师峡谷</span>
+		                  	<span>投入预算</span>
+		                  	<span><label>50</label>万元</span>
+		                  	<span>截止日期</span>
+		                  	<span>2017年04月05日</span>
+                 		 </div> 
+                	  </div>
+                </div> 
+                <div class="col-md-3" >
+                	<div class="station-bg">
+                  		<div class="station-demand">
+                  			<img src="static/img/brand3.png">
+		                  	<h2>中国科学院科技产业网</h2>
+		                  	<span>需求名称</span>
+		                  	<span>汽车德玛西亚召唤师峡谷</span>
+		                  	<span>投入预算</span>
+		                  	<span><label>50</label>万元</span>
+		                  	<span>截止日期</span>
+		                  	<span>2017年04月05日</span>
+                 		 </div> 
+                	  </div>
+                </div> 
+            </div>
+		</div>
+		</div>
+		<div class="main main-index"style="margin-top: 0px;padding-top: 0px;">
+		 <div class="container" >
+            <div class="demand-title1"><span>站内成果</span> <a href="#" class="more pull-right">更多 ></a>
+            	<label></label>
+            </div>
+            <div class="row">
+                <div class="col-md-4" >
+                	<div class="station-achievem">
+                		<a href="#">
+                			<span class="biaoqian">电气自动化</span>
+                		<img src="static/img/ad.png" />
+                		<div class="station-achievem-content">
+                			  <i class="iconfont icon-caret"></i>
+                			  <span>德玛西亚</span>
+                			  <h2>拔了刷的卡时间冻结奥术大师即为基金地位</h2>
+                			  <label></label>
+                			  <p class="zxx_text_overflow">拔了刷的卡时间冻结奥术大师即为基金地位拔了刷的卡时间冻结奥术大师即为基金地位拔了刷的卡时间冻结奥术大师即为基金地位</p>
+                		</div>
+                		</a>
+                	</div>
+                </div>
+                 <div class="col-md-4" >
+                	<div class="station-achievem">
+                		<a href="#">
+                			<span class="biaoqian">电气自动化</span>
+                		<img src="static/img/ad.png" />
+                		<div class="station-achievem-content">
+                			  <i class="iconfont icon-caret"></i>
+                			  <span>德玛西亚</span>
+                			  <h2>拔了刷的卡时间冻结奥术大师即为基金地位</h2>
+                			  <label></label>
+                			  <p class="zxx_text_overflow">拔了刷的卡时间冻结奥术大师即为基金地位拔了刷的卡时间冻结奥术大师即为基金地位拔了刷的卡时间冻结奥术大师即为基金地位</p>
+                		</div>
+                		</a>
+                	</div>
+                </div>
+                 <div class="col-md-4" >
+                	<div class="station-achievem">
+                		<a href="#">
+                			<span class="biaoqian">电气自动化</span>
+                		<img src="static/img/ad.png" />
+                		<div class="station-achievem-content">
+                			  <i class="iconfont icon-caret"></i>
+                			  <span>德玛西亚</span>
+                			  <h2>拔了刷的卡时间冻结奥术大师即为基金地位</h2>
+                			  <label></label>
+                			  <p class="zxx_text_overflow">拔了刷的卡时间冻结奥术大师即为基金地位拔了刷的卡时间冻结奥术大师即为基金地位拔了刷的卡时间冻结奥术大师即为基金地位</p>
+                		</div>
+                		</a>
+                	</div>
+                </div>
+            </div>
+		</div>
+		</div>
+<div class="main main-index"style="margin-top: 0px;padding-top: 0px;">
+		 <div class="container" >
+            <div class="demand-title1"><span>站内专利</span> <a href="#" class="more pull-right">更多 ></a>
+            	<label></label>
+            </div>
+            <div class="row">
+                  <div class="col-md-6">
+                                    <dl class="patent-item" style="height: 130px;margin-bottom:30px;margin-top:0px;display: block;">
+                                        <div class="patenttitleleft">
+                                            <span>专利名称</span>
+                                        </div>
+                                        <div class="patenttitleright">
+                                            <span><a target="_blank"  href="{url('','patents','detailPatents',['id'=>$value->id])}">{$value->patentTi}</a></span>
+                                            <span>-- {$value->patentAn}</span>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="patentlastinfo">
+                                            <span>专利简介</span>
+                                            <span style="width:72%;height: 46px">{$value->patentAb}</span>
+                                        </div>
+                                       <img src="static/img/iconpatent.png" class="pimg"/>
+                                    </dl>
+                                </div>
+                  <div class="col-md-6">
+                                    <dl class="patent-item" style="height: 130px;margin-bottom:30px;margin-top:0px;display: block;">
+                                        <div class="patenttitleleft">
+                                            <span>专利名称</span>
+                                        </div>
+                                        <div class="patenttitleright">
+                                            <span><a target="_blank"  href="{url('','patents','detailPatents',['id'=>$value->id])}">{$value->patentTi}</a></span>
+                                            <span>-- {$value->patentAn}</span>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="patentlastinfo">
+                                            <span>专利简介</span>
+                                            <span style="width:72%;height: 46px">{$value->patentAb}</span>
+                                        </div>
+                                       <img src="static/img/iconpatent.png" class="pimg"/>
+                                    </dl>
+                                </div>
+                 <div class="col-md-6">
+                                    <dl class="patent-item" style="height: 130px;margin-bottom:30px;margin-top:0px;display: block;">
+                                        <div class="patenttitleleft">
+                                            <span>专利名称</span>
+                                        </div>
+                                        <div class="patenttitleright">
+                                            <span><a target="_blank"  href="{url('','patents','detailPatents',['id'=>$value->id])}">{$value->patentTi}</a></span>
+                                            <span>-- {$value->patentAn}</span>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="patentlastinfo">
+                                            <span>专利简介</span>
+                                            <span style="width:72%;height: 46px">{$value->patentAb}</span>
+                                        </div>
+                                       <img src="static/img/iconpatent.png" class="pimg"/>
+                                    </dl>
+                                </div>
+                  <div class="col-md-6">
+                                    <dl class="patent-item" style="height: 130px;margin-bottom:30px;margin-top:0px;display: block;">
+                                        <div class="patenttitleleft">
+                                            <span>专利名称</span>
+                                        </div>
+                                        <div class="patenttitleright">
+                                            <span><a target="_blank"  href="{url('','patents','detailPatents',['id'=>$value->id])}">{$value->patentTi}</a></span>
+                                            <span>-- {$value->patentAn}</span>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="patentlastinfo">
+                                            <span>专利简介</span>
+                                            <span style="width:72%;height: 46px">{$value->patentAb}</span>
+                                        </div>
+                                       <img src="static/img/iconpatent.png" class="pimg"/>
+                                    </dl>
+                                </div>
+            </div>
+		</div>
+		</div>
+<div class="main main-index" style="background: #f2f3f7;margin-top: 0px;padding-top: 0px;">
+		 <div class="container" >
+            <div class="demand-title1"><span>站内服务</span> <a href="#" class="more pull-right">更多 ></a>
+            	<label></label>
+            </div>
+            <div class="row">
+            	 <div class="col-md-3">
+            	 	<div class="station-sever">
+            	 		<a href="#">
+            	 		<img src="static/img/53f442834079a.jpg" class="pull-left sever-img"/>
+            	 		</a>
+            	 		<div class="pull-left station-sever-date">
+            	 			<span>
+            	 				<h5>07</h5>
+            	 				<h6>-</h6>
+            	 				<h4>Oct.</h4>
+            	 				<h5>12:22:22</h5>
+            	 			</span>
+            	 			<span>
+            	 				<a href="#">
+            	 				<img src="static/img/station-collect.png" />
+            	 				</a>
+            	 			</span>
+            	 			<span>
+            	 				<a href="#">
+            	 				<img src="static/img/zixun.png" />
+            	 				</a>
+            	 			</span>
+            	 		</div>
+            	 	</div>
+            	 	<div class="station-sever-content">
+            	 		<img src="static/img/admin/iconGread1.png" class="pull-left"/>
+            	 		<h2 class="pull-left"> 知识产权认证服务</h2>
+            	 		<div class="clear"></div>
+            	 		<span>服务地区：全国</span>
+            	 		<span>服务类型：知识产权</span>
+            	 		<span>服务领域：电气自动化</span>
+            	 		<span>服务机构：北京中科三方网络技术预先公司</span>
+            	 	</div>
+            	 </div>
+            	  <div class="col-md-3">
+            	 	<div class="station-sever">
+            	 		<a href="#">
+            	 		<img src="static/img/53f442834079a.jpg" class="pull-left sever-img"/>
+            	 		</a>
+            	 		<div class="pull-left station-sever-date">
+            	 			<span>
+            	 				<h5>07</h5>
+            	 				<h6>-</h6>
+            	 				<h4>Oct.</h4>
+            	 				<h5>12:22:22</h5>
+            	 			</span>
+            	 			<span>
+            	 				<a href="#">
+            	 				<img src="static/img/station-collect.png" />
+            	 				</a>
+            	 			</span>
+            	 			<span>
+            	 				<a href="#">
+            	 				<img src="static/img/zixun.png" />
+            	 				</a>
+            	 			</span>
+            	 		</div>
+            	 	</div>
+            	 	<div class="station-sever-content">
+            	 		<img src="static/img/admin/iconGread1.png" class="pull-left"/>
+            	 		<h2 class="pull-left"> 知识产权认证服务</h2>
+            	 		<div class="clear"></div>
+            	 		<span>服务地区：全国</span>
+            	 		<span>服务类型：知识产权</span>
+            	 		<span>服务领域：电气自动化</span>
+            	 		<span>服务机构：北京中科三方网络技术预先公司</span>
+            	 	</div>
+            	 </div>
+            	  <div class="col-md-3">
+            	 	<div class="station-sever">
+            	 		<a href="#">
+            	 		<img src="static/img/53f442834079a.jpg" class="pull-left sever-img"/>
+            	 		</a>
+            	 		<div class="pull-left station-sever-date">
+            	 			<span>
+            	 				<h5>07</h5>
+            	 				<h6>-</h6>
+            	 				<h4>Oct.</h4>
+            	 				<h5>12:22:22</h5>
+            	 			</span>
+            	 			<span>
+            	 				<a href="#">
+            	 				<img src="static/img/station-collect.png" />
+            	 				</a>
+            	 			</span>
+            	 			<span>
+            	 				<a href="#">
+            	 				<img src="static/img/zixun.png" />
+            	 				</a>
+            	 			</span>
+            	 		</div>
+            	 	</div>
+            	 	<div class="station-sever-content">
+            	 		<img src="static/img/admin/iconGread1.png" class="pull-left"/>
+            	 		<h2 class="pull-left"> 知识产权认证服务</h2>
+            	 		<div class="clear"></div>
+            	 		<span>服务地区：全国</span>
+            	 		<span>服务类型：知识产权</span>
+            	 		<span>服务领域：电气自动化</span>
+            	 		<span>服务机构：北京中科三方网络技术预先公司</span>
+            	 	</div>
+            	 </div>
+            	  <div class="col-md-3">
+            	 	<div class="station-sever">
+            	 		<a href="#">
+            	 		<img src="static/img/53f442834079a.jpg" class="pull-left sever-img"/>
+            	 		</a>
+            	 		<div class="pull-left station-sever-date">
+            	 			<span>
+            	 				<h5>07</h5>
+            	 				<h6>-</h6>
+            	 				<h4>Oct.</h4>
+            	 				<h5>12:22:22</h5>
+            	 			</span>
+            	 			<span>
+            	 				<a href="#">
+            	 				<img src="static/img/station-succsess.png" />
+            	 				</a>
+            	 			</span>
+            	 			<span>
+            	 				<a href="#">
+            	 				<img src="static/img/zixun.png" />
+            	 				</a>
+            	 			</span>
+            	 		</div>
+            	 	</div>
+            	 	<div class="station-sever-content">
+            	 		<img src="static/img/admin/iconGread1.png" class="pull-left"/>
+            	 		<h2 class="pull-left"> 知识产权认证服务</h2>
+            	 		<div class="clear"></div>
+            	 		<span>服务地区：全国</span>
+            	 		<span>服务类型：知识产权</span>
+            	 		<span>服务领域：电气自动化</span>
+            	 		<span>服务机构：北京中科三方网络技术预先公司</span>
+            	 	</div>
+            	 </div>
+        	</div>
+		</div>
+		</div>
+		<div class="main main-index"style="background: #224e6b;margin-top: 0px;padding-top: 0px;margin-bottom: 20px;">
+		 <div class="container" >
+            <div class="demand-title1"><span style="color: #FFFFFF;">站内机构</span> <a href="#" class="more pull-right" style="color: #FFFFFF;">更多 ></a>
+            	<label></label>
+            </div>
+            <div class="row">
+            	 <div class="col-md-12" style="background: #FFFFFF;padding: 10px 0px;margin-bottom: 20px;">
+            	 	<div class="station-jigou">
+            	 		<div class="col-md-4 border-right">
+            	 			<a href="#">
+            	 			<img src="static/img/53f44283a4347.jpg" class="pull-left"/>
+            	 			</a>
+            	 			<div class="jigou-content pull-left">
+            	 				<h2>中科三方德玛西亚</h2>
+            	 				<p class="zxx_text_overflow">中科三方sad静安寺电烤炉阿斯中科三方sad静安寺电烤炉阿斯蒂ask合法舒肤佳哈斯见覅啥第四爱的捷安达蒂ask合法舒肤佳哈斯见覅啥第四爱的捷安达</p>
+            	 			</div>
+            	 		</div>
+            	 			<div class="col-md-3 border-right jigou-didian">
+            	 				<span>机构类型:<label>研究所</label></span>
+            	 				<span>所在地:<label>北京</label></span>
+            	 				<span>重点研究领域:<label>人工智能</label></span>
+            	 			</div>
+            	 			<div class="col-md-3 border-right jigou-achievement">
+            	 				<div class="jigou-detail pull-left">
+            	 					<label>成果</label>
+            	 					<span>126</span>
+            	 				</div>
+            	 				<div class="jigou-detail pull-left">
+            	 					<label>专家</label>
+            	 					<span>126</span>
+            	 				</div>
+            	 				<div class="jigou-detail pull-left">
+            	 					<label>关注者</label>
+            	 					<span>126</span>
+            	 				</div>
+            	 			</div>	
+            	 			<div class="col-md-2 border-right jigou-guanzhu" style="border-right: 0px;">
+            	 				<a href=""class="guanzhu">+&nbsp;关注</a>
+            	 				<a href="" class="sixin">私信</a>
+            	 			</div>
+            	 	</div>	  
+        	</div>
+        	<div class="col-md-12" style="background: #FFFFFF;padding: 10px 0px;margin-bottom: 20px;">
+            	 	<div class="station-jigou">
+            	 		<div class="col-md-4 border-right">
+            	 			<a href="#">
+            	 			<img src="static/img/53f44283a4347.jpg" class="pull-left"/>
+            	 			</a>
+            	 			<div class="jigou-content pull-left">
+            	 				<h2>中科三方德玛西亚</h2>
+            	 				<p class="zxx_text_overflow">中科三方sad静安寺电烤炉阿斯中科三方sad静安寺电烤炉阿斯蒂ask合法舒肤佳哈斯见覅啥第四爱的捷安达蒂ask合法舒肤佳哈斯见覅啥第四爱的捷安达</p>
+            	 			</div>
+            	 		</div>
+            	 			<div class="col-md-3 border-right jigou-didian">
+            	 				<span>机构类型:<label>研究所</label></span>
+            	 				<span>所在地:<label>北京</label></span>
+            	 				<span>重点研究领域:<label>人工智能</label></span>
+            	 			</div>
+            	 			<div class="col-md-3 border-right jigou-achievement">
+            	 				<div class="jigou-detail pull-left">
+            	 					<label>成果</label>
+            	 					<span>126</span>
+            	 				</div>
+            	 				<div class="jigou-detail pull-left">
+            	 					<label>专家</label>
+            	 					<span>126</span>
+            	 				</div>
+            	 				<div class="jigou-detail pull-left">
+            	 					<label>关注者</label>
+            	 					<span>126</span>
+            	 				</div>
+            	 			</div>	
+            	 			<div class="col-md-2 border-right jigou-guanzhu" style="border-right: 0px;">
+            	 				<a href=""class="quxiaoguanzhu">取消关注</a>
+            	 				<a href="" class="sixin">私信</a>
+            	 			</div>
+            	 	</div>	  
+        	</div>
+        	<div class="col-md-12" style="background: #FFFFFF;padding: 10px 0px;">
+            	 	<div class="station-jigou">
+            	 		<div class="col-md-4 border-right">
+            	 			<a href="#">
+            	 			<img src="static/img/53f44283a4347.jpg" class="pull-left"/>
+            	 			</a>
+            	 			<div class="jigou-content pull-left">
+            	 				<h2>中科三方德玛西亚</h2>
+            	 				<p class="zxx_text_overflow">中科三方sad静安寺电烤炉阿斯中科三方sad静安寺电烤炉阿斯蒂ask合法舒肤佳哈斯见覅啥第四爱的捷安达蒂ask合法舒肤佳哈斯见覅啥第四爱的捷安达</p>
+            	 			</div>
+            	 		</div>
+            	 			<div class="col-md-3 border-right jigou-didian">
+            	 				<span>机构类型:<label>研究所</label></span>
+            	 				<span>所在地:<label>北京</label></span>
+            	 				<span>重点研究领域:<label>人工智能</label></span>
+            	 			</div>
+            	 			<div class="col-md-3 border-right jigou-achievement">
+            	 				<div class="jigou-detail pull-left">
+            	 					<label>成果</label>
+            	 					<span>126</span>
+            	 				</div>
+            	 				<div class="jigou-detail pull-left">
+            	 					<label>专家</label>
+            	 					<span>126</span>
+            	 				</div>
+            	 				<div class="jigou-detail pull-left">
+            	 					<label>关注者</label>
+            	 					<span>126</span>
+            	 				</div>
+            	 			</div>	
+            	 			<div class="col-md-2 border-right jigou-guanzhu"style="border-right: 0px;">
+            	 				<a href=""class="guanzhu">+&nbsp;关注</a>
+            	 				<a href="" class="sixin">私信</a>
+            	 			</div>
+            	 	</div>	  
+        	</div>
+		</div>
+		</div>
+</div>
+    	<div class="main main-index"style="background: #318cb8;margin-top: 0px;padding-top: 0px;margin-bottom: 20px;">
+		 <div class="container" >
+            <div class="demand-title1"><span style="color: #FFFFFF;">站内专家</span> <a href="#" class="more pull-right" style="color: #FFFFFF;">更多 ></a>
+            	<label></label>
+            </div>
+            <div class="row">
+            	<div class="col-md-6 ma-bo-40">
+            		<div class="expert">
+            			<a href="#">
+            			<img src="static/img/53f44283a4347.jpg" class="pull-right"/> 
+            			</a>
+            			<div class="expert-left pull-right">
+            				<h2>德玛西亚</h2>
+            				<span>医疗健医疗健身医疗健身身</span>
+            			</div>
+            			
+            		</div>
+            	</div>
+            	<div class="col-md-6 ma-bo-40">
+            		<div class="expert">
+           			<div class="expert-right pull-right">
+            				<h2>德玛西亚</h2>
+            				<span>医疗健医疗健身医疗健身身</span>
+            			</div>
+            			<a href="#">
+            			<img src="static/img/53f44283a4347.jpg" class="pull-right"/>
+            			</a>
+            		</div>
+            	</div>
+            	<div class="clear"></div>
+            	<div class="col-md-6 ma-bo-40">
+            		<div class="expert">
+            			<img src="static/img/53f44283a4347.jpg" class="pull-right"/> 
+            			<div class="expert-left pull-right">
+            				<h2>德玛西亚</h2>
+            				<span>医疗健医疗健身医疗健身身</span>
+            			</div>
+            			
+            		</div>
+            	</div>
+            	<div class="col-md-6 ma-bo-40">
+            		<div class="expert">
+           			<div class="expert-right pull-right">
+            				<h2>德玛西亚</h2>
+            				<span>医疗健医疗健身医疗健身身</span>
+            			</div>
+            			<img src="static/img/53f44283a4347.jpg" class="pull-right"/> 
+            		</div>
+            	</div>
+            </div>
+		</div>
+</div>
+	<div class="main main-index"style="margin-top: 0px;padding-top: 0px;margin-bottom: 20px;">
+				 <div class="container" >
+		            <div class="demand-title1"><span>站内产品</span> <a href="#" class="more pull-right" >更多 ></a>
+		            	<label></label>
+		            </div>
+		            <div class="row">
+		            	<div class="col-md-3">
+				            <div class="station-product">
+				            	<img src="static/img/bg.png" />
+				            	<div class="station-product-content">
+				            	<span>科技产品</span>
+				            	<span>零售价：<label>￥500</label></span>	
+				            	</div>
+				            </div>
+		       			</div>
+		       			<div class="col-md-3">
+				            <div class="station-product">
+				            	<img src="static/img/bg.png" />
+				            	<div class="station-product-content">
+				            	<span>科技产品</span>
+				            	<span>零售价：<label>￥500</label></span>	
+				            	</div>
+				            </div>
+		       			</div>
+		       			<div class="col-md-3">
+				            <div class="station-product">
+				            	<img src="static/img/bg.png" />
+				            	<div class="station-product-content">
+				            	<span>科技产品</span>
+				            	<span>零售价：<label>￥500</label></span>	
+				            	</div>
+				            </div>
+		       			</div>
+		       			<div class="col-md-3">
+				            <div class="station-product">
+				            	<img src="static/img/bg.png" />
+				            	<div class="station-product-content">
+				            	<span>科技产品</span>
+				            	<span>零售价：<label>￥500</label></span>	
+				            	</div>
+				            </div>
+		       			</div>
+					</div>
+				</div>
+		</div>
+  		
+<div class="main main-index"style="margin-top: 0px;padding-top: 0px;margin-bottom: 20px;">
+				 <div class="container" >
+		            <div class="demand-title1"><span>站内设备</span> <a href="#" class="more pull-right" >更多 ></a>
+		            	<label></label>
+		            </div>
+		            <div class="row">
+		            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                   			 	<div class="device-list">
+                				<a href="#">
+                				<img src="static/img/28.jpg" />
+                				<span>
+                					高性能计算设备
+                				</span>
+                				</a>
+                			</div>
+                		</div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                   			 	<div class="device-list">
+                				<a href="#">
+                				<img src="static/img/28.jpg" />
+                				<span>
+                					高性能计算设备
+                				</span>
+                				</a>
+                			</div>
+                		</div>
+               <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                   			 	<div class="device-list">
+                				<a href="#">
+                				<img src="static/img/28.jpg" />
+                				<span>
+                					高性能计算设备
+                				</span>
+                				</a>
+                			</div>
+                		</div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                   			 	<div class="device-list">
+                				<a href="#">
+                				<img src="static/img/28.jpg" />
+                				<span>
+                					高性能计算设备
+                				</span>
+                				</a>
+                			</div>
+                		</div>
+		        	
+		        
+				</div>
+				</div>
+		</div>
+    	
+    </div>
+    <!-- 前端：通用尾部  -->
+    
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>院所园企</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>服务指南</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>关于我们</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">平台简介</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">法律声明</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-offset-1 col-md-4">
+                    <div class="friend-link-list ">
+                        <a class="facebook" href="#"><i class="iconfont icon-facebook1"></i></a>
+                        <a class="twiter" href="#"><i class="iconfont icon-icontwiter"></i></a>
+                        <a class="sina" href="#"><i class="iconfont icon-sina"></i></a>
+                        <a class="google" href="#"><i class="iconfont icon-google1"></i></a>
+                    </div>
+                    <p>copyRight@2007-2017 中国科学院科技产业网版权所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(".value-list> option").click(function () {
+        var _this = $(this);
+        var _val = _this.val();
+        $(".origin > .txt").text(_val);
+    });
+</script>
+<script>
+	$(document).ready(function(){
+//限制字符个数
+$(".zxx_text_overflow").each(function(){
+var maxwidth=53;
+if($(this).text().length>maxwidth){
+$(this).text($(this).text().substring(0,maxwidth));
+$(this).html($(this).html()+'…');
+}
+});
+});
+</script>
+</body>
+</html>

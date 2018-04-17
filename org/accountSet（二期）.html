@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-hans">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>成果科技</title>
+
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css"/>
+    <!--<link rel="stylesheet" href="static/css/blue.css"/>-->
+    <link rel="stylesheet" href="../static/css/swiper.min.css"/>
+    <link rel="stylesheet" href="../static/css/admin.css"/>
+    <link rel="stylesheet" href="../static/css/iconfont.css"/>
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <!--<script src="static/js/icheck.min.js"></script>-->
+    <script src="../static/js/swiper.min.js"></script>
+    <script src="../static/js/index.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <!-- 前端：通用头部 -->
+    <div class="header header-index">
+        <!--<div class="header-login">-->
+            <!--<div class="container pa">-->
+                <!--<div class="logo">中国科学院</div>-->
+                <!--<ul class="login-list list-unstyled pull-right">-->
+                    <!--<li><a href="#">登录</a></li>-->
+                    <!--<li>|</li>-->
+                    <!--<li><a href="#">注册</a></li>-->
+                <!--</ul>-->
+
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="header-menu">-->
+            <!--<div class="container">-->
+                <!--<ul class="menu-list pull-right">-->
+                    <!--<li class="active"><a href="javascript:;">首页</a></li>-->
+                    <!--<li><a href="javascript:;">科研成果</a></li>-->
+                    <!--<li><a href="javascript:;">院所风采</a></li>-->
+                    <!--<li><a href="javascript:;">供需服务</a></li>-->
+                    <!--<li><a href="javascript:;">联盟主页</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"><a href="../home.html" class="logo"></a></div>
+                <div class="col-md-6">
+                    <ul class="menu-list">
+                        <li class="active"><a href="javascript:;">首页</a></li>
+                        <li><a href="javascript:;">科研成果</a></li>
+                        <li><a href="javascript:;">院所风采</a></li>
+                        <li><a href="javascript:;">供需服务</a></li>
+                        <li><a href="javascript:;">联盟主页</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="search pa pull-left">
+                        <div class="search-select">
+                            <a href="javascript:;" class="origin dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="txt">成果</span> <i class="iconfont icon-caret-bottom"></i></a>
+                            <select multiple class="dropdown-menu value-list ">
+                                <option value="成果" selected>成果</option>
+                                <option value="服务">服务</option>
+                                <option value="会员">会员</option>
+                                <option value="需求">需求</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form-control" placeholder="请输入搜索内容"/>
+                        <a href="javascript:;" class="search-btn"><i class="iconfont icon-search1"></i></a>
+                    </div>
+                    <ul class="login-list list-unstyled pull-right">
+                        <li><a href="#">登录</a></li>
+                        <li>|</li>
+                        <li><a href="#">注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 内容部分 -->
+    <div class="admin-main">
+        <div class="container">
+            <div class="row">
+                 <div class="col-md-2 sidebar" style="height: 930px">
+                    <h2>用户中心</h2>
+                    <ul class="sidebar-list">
+                        <li><a href="#"><i class="iconfont icon-user"></i>账户信息</a></li>
+                        <li class="active"><a href="#"><i class="iconfont">&nbsp;</i>基本信息</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>教育背景</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>职业信息</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>成果案例</a></li>
+                        <li><a href="#"><i class="iconfont icon-jigou2"></i>我加入的机构</a></li>
+                        <li><a href="#"><i class="iconfont icon-jigou2"></i>专利技术管理</a></li>
+                        <li><a href="#"><i class="iconfont icon-guanli01-copy"></i>科技成果管理</a></li>
+                        <li><a href="#"><i class="iconfont icon-guanli"></i>供需管理</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>发布服务</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>发布需求</a></li>
+                        <li><a href="#"><i class="iconfont icon-jiaoliu"></i>互动交流</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>我的关注</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>我的收藏</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>我的论坛</a></li>
+                        <li><a href="#"><i class="iconfont icon-notice"></i>资讯中心</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>发布资讯</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>发布活动</a></li>
+                        <li><a href="#"><i class="iconfont icon-wave"></i>个人主页</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-10 content org">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="common-head"><span>账户信息</span><a href="#" class="btn btn-default btn-back"><i class="iconfont icon-back"></i>返回</a> <a href="#" class="btn btn-primary btn-inverse pull-right" data-toggle="modal" data-target="#modal">修改密码</a></div>
+                            <table class="table nohead-table">
+                                <thead>
+                                    <tr>
+                                        <th width="20%"></th>
+                                        <th width="80%"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-right">机构名称：</td>
+                                        <td>李霸天 <small style="float: right;">您还未认证，请进行实名认证</small></td>
+                                    </tr>
+                                     <tr>
+                                        <td>手机号码：</td>
+                                        <!-- <td>180010XXXXX</td>-->
+                                        <td><a href="#" style="color: red;"> 请补充手机号码！</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>QQ账号：</td>
+                                        <td>123123</td>
+                                    </tr>
+                                     <tr>
+                                        <td>微信账号：</td>
+                                        <td>123123</td>
+                                    </tr>
+                                     <tr>
+                                        <td>微博账号：</td>
+                                        <td>123123</td>
+                                    </tr>
+                                    <tr>
+                                        <td>联系人姓名：</td>
+                                        <td>孙陶然</td>
+                                    </tr>
+                                    <tr>
+                                        <td>机构证明：</td>
+                                        <td>110XXXXXXXXXXXXXXX</td>
+                                    </tr>
+                                    <tr>
+                                        <td>证件照片：</td>
+                                        <td>
+                                            <p class="pic" style="background-image: url('../static/img/pic01.png')"></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>机构类型：</td>
+                                        <td>企业</td>
+                                    </tr>
+                                    <tr>
+                                        <td>所在地：</td>
+                                        <td>北京市海淀区中关村南四街333号</td>
+                                    </tr>
+                                    <tr>
+                                        <td>固定电话：</td>
+                                        <td>010-58811092</td>
+                                    </tr>
+                                    <tr>
+                                        <td>邮箱：</td>
+                                        <td>123456789@outlook.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>机构简介：</td>
+                                        <td>
+                                            <p class="txt">德云社相声网隶属于北京麦甜文化传媒有限公司北京德云社剧场位于京味民间艺术发源地----天桥，是由始建于一九三三年的天乐戏院改建而成，建筑面积近千平方米，可同时接待300名观众。由“北京德云社”演绎传统相声、鼓曲等曲艺形式演出为主。</p>
+                                            <p class="txt">北京德云社”最初由相声演员郭德纲先生创建于1996年，是以弘扬民族文化，培养曲艺人才，服务大众为主旨的曲艺演出团体，全体演员的艺术水平和艺德受到了京、津观众的交口称赞。“北京德云社”在立足于弘扬民族文化的基石上，以剧场为媒介向大众传播传统文化、民间艺术，让相声艺术回归剧场得以生存，为北京演出市场开创又一新亮点。</p>
+                                            <p>面向百姓，服务工薪”，也是我们的经营宗旨，每天演出精彩不断，以低廉的票价、优质的服务、让中外游客了解古都市井文化，感受现代风情。</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>机构资质：</td>
+                                        <td>
+                                            <div class="has-tit">
+                                                <h5 class="pic-tit">资质名称</h5>
+                                                <p class="pic pa" style="background-image: url('../static/img/pic01.png')">
+                                                </p>
+                                            </div>
+                                            <div class="has-tit">
+                                                <h5 class="pic-tit">资质名称</h5>
+                                                <p class="pic pa" style="background-image: url('../static/img/pic01.png')">
+                                                    
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="btn-wrap">
+                                <a href="#" class="btn btn-primary">修改</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 前端：通用尾部  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <h2>院所园企</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h2>服务指南</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h2>关于我们</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">平台简介</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">法律声明</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-offset-1 col-md-4">
+                    <div class="friend-link-list ">
+                        <a class="facebook" href="#"><i class="iconfont icon-facebook1"></i></a>
+                        <a class="twiter" href="#"><i class="iconfont icon-icontwiter"></i></a>
+                        <a class="sina" href="#"><i class="iconfont icon-sina"></i></a>
+                        <a class="google" href="#"><i class="iconfont icon-google1"></i></a>
+                    </div>
+                    <p>copyRight@2007-2017 中国科学院科技产业网版权所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 模态窗 -->
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content out-station">
+                <div class="modal-body">
+                    <div class="row modalPwd">
+                        <div class="col-md-4"><span>旧密码：</span></div>
+                        <div class="col-md-8"><input type="password" class="form-control" required/></div>
+                    </div>
+                    <div class="row modalPwd">
+                        <div class="col-md-4"><span>新密码：</span></div>
+                        <div class="col-md-8"><input type="password" class="form-control" required/></div>
+                    </div>
+                    <div class="row modalPwd">
+                        <div class="col-md-4"><span>确认密码：</span></div>
+                        <div class="col-md-8"><input type="password" class="form-control" required/></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">保存</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

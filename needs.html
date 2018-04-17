@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <title>成果科技</title>
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="static/css/swiper.min.css" />
+    <link rel="stylesheet" href="static/css/needs.css" />
+    <link rel="stylesheet" href="static/css/iconfont.css"/>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/laydate/laydate.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/swiper.min.js"></script>
+    <script src="static/js/index.js"></script>
+
+    <!-- 在所有的页面引用IE兼容解决方案 -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+   <!-- 前端：通用头部 -->
+    <div class="header header-index">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a href="home.html" class="logo"></a></div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <ul class="menu-list">
+                        <li><a href="javascript:;">首页</a></li>
+                        <li><a href="javascript:;">科研成果</a></li>
+                        <li><a href="javascript:;">院所风采</a></li>
+                        <li class="active"><a href="javascript:;">供需服务</a></li>
+                        <li><a href="javascript:;">联盟主页</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="search pull-left pa">
+                        <div class="search-select">
+                            <a href="javascript:;" class="origin dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="txt">成果</span> <i class="iconfont icon-caret-bottom"></i></a>
+                            <select multiple class="dropdown-menu value-list ">
+                                <option value="成果" selected>成果</option>
+                                <option value="服务">服务</option>
+                                <option value="会员">会员</option>
+                                <option value="需求">需求</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form-control" placeholder="请输入搜索内容"/>
+                        <a href="javascript:;" class="search-btn"><i class="iconfont icon-search1"></i></a>
+                    </div>
+                    <ul class="login-list list-unstyled pull-right">
+                        <li><a href="#">登录</a></li>
+                        <li>|</li>
+                        <li><a href="#">注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 内容部分 -->
+    <div class="main needs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 banner">
+                    <div class="left pull-left">
+                        <dl class="category">
+                            <dt class="pull-left"><i class="iconfont icon-fenlei"></i></dt>
+                            <dd class="pull-left">
+                                <h2 class="tit">服务分类</h2>
+                                <p>共35123项服务</p>
+                            </dd>
+                        </dl>
+                        <div class="category-list-wrap">
+                            <ul class="category-list pa" id="top-nav">
+                                <li class="category-list-item">
+                                    <a href="#">
+                                        <i class="iconfont icon-shopping"></i>服务大类 <i class="iconfont icon-caret-right pull-right"></i>
+                                    </a>
+                                    <div class="content">
+                                        <ul class="category-list-item-list">
+                                            <li><a href="#">服务子类</a></li>
+                                            <li><a href="#">服务子类</a></li>
+                                            <li><a href="#">服务子类</a></li>
+                                            <li><a href="#">服务子类</a></li>
+                                            <li><a href="#">服务子类</a></li>
+                                            <li><a href="#">服务子类</a></li>
+                                            <li><a href="#">服务子类</a></li>
+                                            <li><a href="#">服务子类</a></li>
+                                            <li><a href="#">服务子类</a></li>
+                                            <li><a href="#">服务子类</a></li>
+                                            <li><a href="#">服务子类</a></li>
+                                            <li><a href="#">服务子类</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="category-list-item">
+                                    <a href="#">
+                                        <i class="iconfont icon-shopping"></i>服务大类 <i class="iconfont icon-caret-right pull-right"></i>
+                                    </a>
+                                    <div class="content">
+                                        <ul class="category-list-item-list">
+                                            <li><a href="#">服务子类2</a></li>
+                                            <li><a href="#">服务子类2</a></li>
+                                            <li><a href="#">服务子类2</a></li>
+                                            <li><a href="#">服务子类</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="category-list-item">
+                                    <a href="#">
+                                        <i class="iconfont icon-shopping"></i>服务大类 <i class="iconfont icon-caret-right pull-right"></i>
+                                    </a>
+                                    <div class="content">
+                                        <ul class="category-list-item-list">
+                                            <li><a href="#">服务子类3</a></li>
+                                            <li><a href="#">服务子类3</a></li>
+                                            <li><a href="#">服务子类3</a></li>
+                                            <li><a href="#">服务子类</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="category-list-item">
+                                    <a href="#">
+                                        <i class="iconfont icon-shopping"></i>服务大类 <i class="iconfont icon-caret-right pull-right"></i>
+                                    </a>
+                                    <div class="content">
+                                        <ul class="category-list-item-list">
+                                            <li><a href="#">服务子类4</a></li>
+                                            <li><a href="#">服务子类4</a></li>
+                                            <li><a href="#">服务子类4</a></li>
+                                            <li><a href="#">服务子类3</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="category-list-item">
+                                    <a href="#">
+                                        <i class="iconfont icon-shopping"></i>服务大类 <i class="iconfont icon-caret-right pull-right"></i>
+                                    </a>
+                                    <div class="content">
+                                        <ul class="category-list-item-list">
+                                            <li><a href="#">服务子类5</a></li>
+                                            <li><a href="#">服务子类5</a></li>
+                                            <li><a href="#">服务子类5</a></li>
+                                            <li><a href="#">服务子类3</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="category-list-item">
+                                    <a href="#">
+                                        <i class="iconfont icon-shopping"></i>服务大类 <i class="iconfont icon-caret-right pull-right"></i>
+                                    </a>
+                                    <div class="content">
+                                        <ul class="category-list-item-list">
+                                            <li><a href="#">服务子类6</a></li>
+                                            <li><a href="#">服务子类6</a></li>
+                                            <li><a href="#">服务子类6</a></li>
+                                            <li><a href="#">服务子类3</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="category-list-item other">
+                                    <a href="#">
+                                        <i class="iconfont icon-shopping"></i>服务大类 <i class="iconfont icon-caret-right pull-right"></i>
+                                    </a>
+                                    <div class="content">
+                                        <ul class="category-list-item-list">
+                                            <li><a href="#">服务子类5</a></li>
+                                            <li><a href="#">服务子类5</a></li>
+                                            <li><a href="#">服务子类5</a></li>
+                                            <li><a href="#">服务子类3</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="category-list-item other">
+                                    <a href="#">
+                                        <i class="iconfont icon-shopping"></i>服务大类 <i class="iconfont icon-caret-right pull-right"></i>
+                                    </a>
+                                    <div class="content">
+                                        <ul class="category-list-item-list">
+                                            <li><a href="#">服务子类6</a></li>
+                                            <li><a href="#">服务子类6</a></li>
+                                            <li><a href="#">服务子类6</a></li>
+                                            <li><a href="#">服务子类3</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="category-list-item other">
+                                    <a href="#">
+                                        <i class="iconfont icon-shopping"></i>服务大类 <i class="iconfont icon-caret-right pull-right"></i>
+                                    </a>
+                                    <div class="content">
+                                        <ul class="category-list-item-list">
+                                            <li><a href="#">服务子类5</a></li>
+                                            <li><a href="#">服务子类5</a></li>
+                                            <li><a href="#">服务子类5</a></li>
+                                            <li><a href="#">服务子类3</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="category-list-item other">
+                                    <a href="#">
+                                        <i class="iconfont icon-shopping"></i>服务大类 <i class="iconfont icon-caret-right pull-right"></i>
+                                    </a>
+                                    <div class="content">
+                                        <ul class="category-list-item-list">
+                                            <li><a href="#">服务子类6</a></li>
+                                            <li><a href="#">服务子类6</a></li>
+                                            <li><a href="#">服务子类6</a></li>
+                                            <li><a href="#">服务子类3</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="category-list-item other">
+                                    <a href="#">
+                                        <i class="iconfont icon-shopping"></i>服务大类 <i class="iconfont icon-caret-right pull-right"></i>
+                                    </a>
+                                    <div class="content">
+                                        <ul class="category-list-item-list">
+                                            <li><a href="#">服务子类5</a></li>
+                                            <li><a href="#">服务子类5</a></li>
+                                            <li><a href="#">服务子类5</a></li>
+                                            <li><a href="#">服务子类3</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="category-list-item other">
+                                            <a href="#">
+                                                <i class="iconfont icon-shopping"></i>服务大类 <i class="iconfont icon-caret-right pull-right"></i>
+                                            </a>
+                                            <div class="content">
+                                                <ul class="category-list-item-list">
+                                                    <li><a href="#">服务子类6</a></li>
+                                                    <li><a href="#">服务子类6</a></li>
+                                                    <li><a href="#">服务子类6</a></li>
+                                                    <li><a href="#">服务子类3</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                            </ul>
+                            <div class="more text-center">
+                                <a href="javascript:;" class="btn" id="expansion">展开</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right pull-left">
+                        <!-- Swiper -->
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" style="background-image: url('static/img/banner.png');"><a href="#"></a></div>
+                                <div class="swiper-slide" style="background-image: url('static/img/pic1.png');"><a href="#"></a></div>
+                                <div class="swiper-slide" style="background-image: url('static/img/banner.png');"><a href="#"></a></div>
+                                <div class="swiper-slide" style="background-image: url('static/img/pic2.png');"><a href="#"></a></div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+          	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 search-key">
+                <div class="search-title">
+                    <span>服务列表</span>
+                    <!-- 热门排序 -->
+                    <ul class="nav sort-list" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">默认</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">热门</a></li>
+                    </ul>
+
+                    <!--<div class="dropdown price">-->
+                        <!--<a href="javascript:;" class="dropdown-toggle price-origin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><em class="txt">价格</em><i class="iconfont icon-down"></i></a>-->
+                        <!--<select multiple class="dropdown-menu price-list"  aria-labelledby="dropdownMenu1">-->
+                            <!--<option value="价格1" selected>价格1</option>-->
+                            <!--<option value="金币">金币</option>-->
+                            <!--<option value="价格3">价格3</option>-->
+                            <!--<option value="价格4">价格4</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+
+                    <!--<div class="inputGroup">-->
+                        <!--<div class="input-group">-->
+                            <!--<div class="input-group-addon">￥</div>-->
+                            <!--<input type="text" class="form-control" placeholder="0">-->
+                        <!--</div>-->
+                        <!--<em class="pull-left">-</em>-->
+                        <!--<div class="input-group">-->
+                            <!--<div class="input-group-addon">￥</div>-->
+                            <!--<input type="text" class="form-control" placeholder="100">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <a href="#" class="more pull-right">更多 ></a>
+                </div>
+          	</div>
+          </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <dl class="server-item pa">
+                        <dt><a href="#"><img src="static/img/pic2.png"/></a></dt>
+                        <dd>
+                            <p>服务名称：知识产权认证服务</p>
+                            <p>服务地区：全国</p>
+                            <p>服务类型：知识产权</p>
+                            <p>服务领域：电器自动化</p>
+                            <h4>服务机构：北京中科三方网络技术有限公司<i class="icon icon-gread gread1"></i></h4>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <dl class="server-item pa">
+                        <dt><a href="#"><img src="static/img/pic2.png"/></a></dt>
+                        <dd>
+                            <p>服务名称：知识产权认证服务</p>
+                            <p>服务地区：全国</p>
+                            <p>服务类型：知识产权</p>
+                            <p>服务领域：电器自动化</p>
+                            <h4>服务机构：北京中科三方网络技术有限公司<i class="icon icon-gread gread4"></i></h4>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <dl class="server-item pa">
+                        <dt><a href="#"><img src="static/img/pic2.png"/></a></dt>
+                        <dd>
+                            <p>服务名称：知识产权认证服务</p>
+                            <p>服务地区：全国</p>
+                            <p>服务类型：知识产权</p>
+                            <p>服务领域：电器自动化</p>
+                            <h4>服务机构：北京中科三方网络技术有限公司
+                                <!-- 预留，防止甲方需求变动，如不变动可删除 -->
+                                <!--<i class="iconfont icon-combinedshape1"></i>-->
+                                <i class="icon icon-gread gread5"></i>
+                            </h4>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <dl class="server-item pa">
+                        <dt><a href="#"><img src="static/img/pic2.png"/></a></dt>
+                        <dd>
+                            <p>服务名称：知识产权认证服务</p>
+                            <p>服务地区：全国</p>
+                            <p>服务类型：知识产权</p>
+                            <p>服务领域：电器自动化</p>
+                            <h4>服务机构：北京中科三方网络技术有限公司<i class="icon icon-gread gread3"></i></h4>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 search-key demand-key">
+                    <div class="search-title">
+                        <span>需求列表</span>
+                        <!--<div class="chose">-->
+                            <!--<em class="text-right">类别：</em>-->
+                            <!--<select class="form-control">-->
+                                <!--<option value="0" selected>选择类型</option>-->
+                                <!--<option value="1">1</option>-->
+                                <!--<option value="2">2</option>-->
+                                <!--<option value="3">3</option>-->
+                            <!--</select>-->
+                        <!--</div>-->
+                        <!--<div class="dateChose">-->
+                            <!--<em>发布日期：</em>-->
+                            <!--<input placeholder="2017-02-18" class="form-control dateStart" onclick="laydate()">-->
+                            <!--<em>-</em>-->
+                            <!--<input placeholder="2017-03-18" class="form-control dateEnd" onclick="laydate()">-->
+                        <!--</div>-->
+                        <a href="#" class="more pull-right">更多 ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <ul class="demand-list">
+                        <li class="demand-item">
+                            <h2 class="tit"><a href="#" class="photo"><img src="static/img/person.png"/></a>袁浩</h2>
+                            <p>需求名称：骑车轮胎的高压铸造生产</p>
+                            <p>投入预算： <span>50</span>万元</p>
+                            <p>截止日期：2017年04月05日</p>
+                        </li>
+                        <li class="demand-item">
+                            <h2 class="tit"><a href="#" class="photo"><img src="static/img/person.png"/></a>郜翔</h2>
+                            <p>需求名称：骑车轮胎的高压铸造生产</p>
+                            <p>投入预算： <span>50</span>万元</p>
+                            <p>截止日期：2017年04月05日</p>
+                        </li>
+                        <li class="demand-item">
+                            <h2 class="tit"><a href="#" class="photo"><img src="static/img/person.png"/></a>彭于晏</h2>
+                            <p>需求名称：骑车轮胎的高压铸造生产</p>
+                            <p>投入预算： <span>50</span>万元</p>
+                            <p>截止日期：2017年04月05日</p>
+                        </li>
+                        <li class="demand-item">
+                            <h2 class="tit"><a href="#" class="photo"><img src="static/img/person.png"/></a>张柏芝</h2>
+                            <p>需求名称：骑车轮胎的高压铸造生产</p>
+                            <p>投入预算： <span>50</span>万元</p>
+                            <p>截止日期：2017年04月05日</p>
+                        </li>
+                        <li class="demand-item">
+                            <h2 class="tit"><a href="#" class="photo"><img src="static/img/person.png"/></a>袁浩</h2>
+                            <p>需求名称：骑车轮胎的高压铸造生产</p>
+                            <p>投入预算： <span>50</span>万元</p>
+                            <p>截止日期：2017年04月05日</p>
+                        </li>
+                        <li class="demand-item">
+                            <h2 class="tit"><a href="#" class="photo"><img src="static/img/person.png"/></a>袁浩</h2>
+                            <p>需求名称：骑车轮胎的高压铸造生产</p>
+                            <p>投入预算： <span>50</span>万元</p>
+                            <p>截止日期：2017年04月05日</p>
+                        </li>
+                        <li class="demand-item">
+                            <h2 class="tit"><a href="#" class="photo"><img src="static/img/person.png"/></a>袁浩</h2>
+                            <p>需求名称：骑车轮胎的高压铸造生产</p>
+                            <p>投入预算： <span>50</span>万元</p>
+                            <p>截止日期：2017年04月05日</p>
+                        </li>
+                        <li class="demand-item">
+                            <h2 class="tit"><a href="#" class="photo"><img src="static/img/person.png"/></a>袁浩</h2>
+                            <p>需求名称：骑车轮胎的高压铸造生产</p>
+                            <p>投入预算： <span>50</span>万元</p>
+                            <p>截止日期：2017年04月05日</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 前端：通用尾部  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>院所园企</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>服务指南</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>关于我们</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">平台简介</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">法律声明</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-offset-1 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="friend-link-list ">
+                        <a class="facebook" href="#"><i class="iconfont icon-facebook1"></i></a>
+                        <a class="twiter" href="#"><i class="iconfont icon-icontwiter"></i></a>
+                        <a class="sina" href="#"><i class="iconfont icon-sina"></i></a>
+                        <a class="google" href="#"><i class="iconfont icon-google1"></i></a>
+                    </div>
+                    <p>copyRight@2007-2017 中国科学院科技产业网版权所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="static/js/bootstrap-paginator.js"></script>
+<script>
+  $(function(){
+  	$(".value-list> option").click(function () {
+        var _this = $(this);
+        var _val = _this.val();
+        $(".origin > .txt").text(_val);
+    });
+
+      $(".screen-header .more").click(function(){
+          var _this = this;
+          var current = $(_this).closest(".screen-header").find(".screen-body");
+          current.toggle();
+      });
+
+
+      $(".price-list> option").click(function () {
+          var _this = $(this);
+          var _val = _this.val();
+          $(".price-origin > .txt").text(_val);
+      });
+  });
+
+
+  laydate({
+      elem: '.dateStart, .dateEnd', //目标元素。由于laydate.js封装了一个轻量级的选择器引擎，因此elem还允许你传入class、tag但必须按照这种方式 '#id .class'
+      event: 'focus' //响应事件。如果没有传入event，则按照默认的click
+  });
+
+
+
+</script>
+<script>
+	$(function() {
+    $("#top-nav li").hover(function() {
+        $(this).has("ul").children("ul").fadeIn();
+    },
+    function() {
+        $(this).has("ul").children("ul").hide();
+    });
+})
+</script>
+</body>
+</html>

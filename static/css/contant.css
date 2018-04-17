@@ -1,0 +1,126 @@
+@charset "UTF-8";
+body {
+  font-family: "微软雅黑";
+}
+
+p, dl, ul, label, em, a {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  font-style: normal;
+}
+
+a {
+  outline: none;
+}
+
+a:hover {
+  color: #3498DB;
+  text-decoration: none;
+  transition: all .1s ease;
+}
+
+a:focus {
+  text-decoration: none;
+}
+.contacthead{
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+	border-bottom: 1px solid #DCDCDC;
+}
+.contacthead img{
+	vertical-align: middle;
+}
+.contact_title{
+	padding:52px 0px 42px 0px;
+}
+.contact_title span{
+	display: block;
+	font-size: 16px;
+	color: #525252;
+	padding-left: 10px;
+	border-left: 3px solid #014099;
+	font-weight: bold;
+}
+.liuyan{
+	position: relative;
+	display: block;
+	padding: 10px 0px;
+	margin-bottom: 0px;
+}
+.liuyan span{
+	width: 15%;
+	display: inline-block;
+	text-align: right;
+	margin-right: 4%;
+	font-size: 14px;
+	color: #525252;
+}
+.liuyan input{
+	display: inline-block;
+	height: 40px;
+	width: 80%;
+	text-indent: 10px;
+	border-radius: 5px;
+}
+.liuyan textarea{
+	display: inline-block;
+	height: 100px;
+	width: 80%;
+	border: 1px solid #e2e2e2;
+	text-indent: 10px;
+	border-radius: 5px;
+}
+.liuyan i{
+	top:12px;
+}
+.liuyan small{
+	margin-right: 103px;
+}
+.liuyan button{
+	display: block;
+	float: right;
+	color: #FFFFFF;
+	background: #014099;
+	height: 35px;
+	width: 122px;
+	text-align: center;
+	border-radius: 5px;
+}
+.lycontent{
+	border-bottom: 1px solid #DCDCDC;
+	padding-bottom: 20px;
+}
+.clear{
+	clear: both;
+}
+.vcodeleft{
+	float: left;
+	text-align: center;
+	margin-left: 30px;
+}
+.vcodeleft img{
+	width: 200px;
+	height: 200px;
+}
+.vcodeleft span{
+	display: block;
+	margin-top: 10px;
+}
+.contact{
+	padding: 11px 0;
+}
+.footer{
+	margin-top: 30px;
+	background: #27323d;
+	text-align: center;
+	padding: 25px 0px;
+	color: #FFFFFF;
+	font-size: 12px;
+	padding-top: 30px;
+	
+}
+.footer img {
+	margin-right: 10px;
+}

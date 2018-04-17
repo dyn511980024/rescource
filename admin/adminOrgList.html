@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>成果科技</title>
+
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css"/>
+    <!--<link rel="stylesheet" href="static/css/blue.css"/>-->
+    <link rel="stylesheet" href="../static/css/swiper.min.css"/>
+    <link rel="stylesheet" href="../static/css/admin.css"/>
+    <link rel="stylesheet" href="../static/css/iconfont.css"/>
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <!--<script src="static/js/icheck.min.js"></script>-->
+    <script src="../static/js/swiper.min.js"></script>
+    <script src="../static/js/index.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <!-- 前端：通用头部 -->
+    <div class="header header-index">
+        <!--<div class="header-login">-->
+            <!--<div class="container pa">-->
+                <!--<div class="logo">中国科学院</div>-->
+                <!--<ul class="login-list list-unstyled pull-right">-->
+                    <!--<li><a href="#">登录</a></li>-->
+                    <!--<li>|</li>-->
+                    <!--<li><a href="#">注册</a></li>-->
+                <!--</ul>-->
+
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="header-menu">-->
+            <!--<div class="container">-->
+                <!--<ul class="menu-list pull-right">-->
+                    <!--<li class="active"><a href="javascript:;">首页</a></li>-->
+                    <!--<li><a href="javascript:;">科研成果</a></li>-->
+                    <!--<li><a href="javascript:;">院所风采</a></li>-->
+                    <!--<li><a href="javascript:;">供需服务</a></li>-->
+                    <!--<li><a href="javascript:;">联盟主页</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"><a href="../home.html" class="logo"></a></div>
+                <div class="col-md-6">
+                    <ul class="menu-list">
+                        <li class="active"><a href="javascript:;">首页</a></li>
+                        <li><a href="javascript:;">科研成果</a></li>
+                        <li><a href="javascript:;">院所风采</a></li>
+                        <li><a href="javascript:;">供需服务</a></li>
+                        <li><a href="javascript:;">联盟主页</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="search pa pull-left">
+                        <div class="search-select">
+                            <a href="javascript:;" class="origin dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="txt">成果</span> <i class="iconfont icon-caret-bottom"></i></a>
+                            <select multiple class="dropdown-menu value-list ">
+                                <option value="成果" selected>成果</option>
+                                <option value="服务">服务</option>
+                                <option value="会员">会员</option>
+                                <option value="需求">需求</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form-control" placeholder="请输入搜索内容"/>
+                        <a href="javascript:;" class="search-btn"><i class="iconfont icon-search1"></i></a>
+                    </div>
+                    <ul class="login-list list-unstyled pull-right">
+                        <li><a href="#">登录</a></li>
+                        <li>|</li>
+                        <li><a href="#">注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 内容部分 -->
+    <div class="admin-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 sidebar">
+                    <h2>用户中心</h2>
+                    <ul class="sidebar-list">
+                        <li><a href="#"><i class="iconfont icon-user"></i>账户信息</a></li>
+                        <li class="active"><a href="#"><i class="iconfont">&nbsp;</i>基本信息</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>教育背景</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>职业信息</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>成果案例</a></li>
+                        <li><a href="#"><i class="iconfont icon-jigou2"></i>我加入的机构</a></li>
+                        <li><a href="#"><i class="iconfont icon-guanli01-copy"></i>科技成果管理</a></li>
+                        <li><a href="#"><i class="iconfont icon-guanli"></i>供需管理</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>发布服务</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>发布需求</a></li>
+                        <li><a href="#"><i class="iconfont icon-jiaoliu"></i>互动交流</a></li>
+                        <li><a href="#"><i class="iconfont icon-notice"></i>资讯中心</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>发布资讯</a></li>
+                        <li><a href="#"><i class="iconfont">&nbsp;</i>发布活动</a></li>
+                        <li><a href="#"><i class="iconfont icon-wave"></i>个人主页</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-10 content">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="common-head"><span>我的所属机构</span></div>
+
+                            <!-- Tab heads -->
+                            <ul class="nav admin-tabs" role="tablist">
+                                <li role="presentation" class="active"><a href="#orgList" aria-controls="orgList" role="tab" data-toggle="tab">机构列表</a></li>
+                                <li role="presentation"><a href="#state" aria-controls="state" role="tab" data-toggle="tab">待审核&未通过</a></li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="orgList">
+                                    <!-- 过滤器 -->
+                                    <div class="filter">
+                                        <div class="filter-name nopad">
+                                            <label><span class="left">机构名称： </span><input type="text" class="form-control" placeholder="成果名称"/></label>
+                                        </div>
+                                        <div class="filter-name nopad">
+                                            <label><span class="left">机构属性： </span>
+                                                <select class="form-control">
+                                                    <option value="1" selected>请选择：</option>
+                                                    <option value="2">企业</option>
+                                                    <option value="3">院校</option>
+                                                    <option value="4">研究所</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                        <!--<div class="filter-name">-->
+                                        <!--<label><span class="left">审核状态： </span>-->
+                                        <!--<select class="form-control">-->
+                                        <!--<option value="1" selected>请选择：</option>-->
+                                        <!--<option value="2">审核通过</option>-->
+                                        <!--<option value="3">审核未通过</option>-->
+                                        <!--<option value="4">未审核</option>-->
+                                        <!--</select>-->
+                                        <!--</label>-->
+                                        <!--</div>-->
+                                        <div class="filter-btn text-center">
+                                            <em><a href="#" class="btn btn-default btn-inverse">搜索</a></em>
+                                        </div>
+                                    </div>
+                                    <!-- 表格 -->
+                                    <table class="common-table table">
+                                        <thead>
+                                        <tr>
+                                            <th width="18%">机构名称</th>
+                                            <th width="18%">所属分站</th>
+                                            <th width="18%">机构属性</th>
+                                            <th width="16%">所在地</th>
+                                            <th width="13%">审核时间</th>
+                                            <th width="15%">操作</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>iwojia.com.cn</td>
+                                            <td>北京分站</td>
+                                            <td>公司</td>
+                                            <td>北京</td>
+                                            <td>2017-08-09</td>
+                                            <td class="last"><a href="#" >机构详情</a><a class="out-btn" href="#" data-toggle="modal" data-target=".bs-example-modal-lg1">退出</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>iwojia.com.cn</td>
+                                            <td>北京分站</td>
+                                            <td>院校</td>
+                                            <td>北京</td>
+                                            <td>2017-08-09</td>
+                                            <td class="last"><a href="#" >机构详情</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>iwojia.com.cn</td>
+                                            <td>北京分站</td>
+                                            <td>公司</td>
+                                            <td>北京</td>
+                                            <td>2017-08-09</td>
+                                            <td class="last"><a href="#" >机构详情</a><a class="out-btn" href="#" data-toggle="modal" data-target=".bs-example-modal-lg1">退出</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>iwojia.com.cn</td>
+                                            <td>北京分站</td>
+                                            <td>公司</td>
+                                            <td>北京</td>
+                                            <td>2017-08-09</td>
+                                            <td class="last"><a href="#" >机构详情</a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- 分页 -->
+                                    <div class="row">
+                                        <div class="col-md-12 text-right">
+                                            <nav class="">
+                                                <ul class="pagination">
+                                                    <li>
+                                                        <a href="#" aria-label="Previous">
+                                                            <span aria-hidden="true">&laquo;</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="active"><a href="#">1</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">4</a></li>
+                                                    <li><a href="#">5</a></li>
+                                                    <li>
+                                                        <a href="#" aria-label="Next">
+                                                            <span aria-hidden="true">&raquo;</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="state"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 前端：通用尾部  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <h2>院所园企</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h2>服务指南</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h2>关于我们</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">平台简介</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">法律声明</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-offset-1 col-md-4">
+                    <div class="friend-link-list ">
+                        <a class="facebook" href="#"><i class="iconfont icon-facebook1"></i></a>
+                        <a class="twiter" href="#"><i class="iconfont icon-icontwiter"></i></a>
+                        <a class="sina" href="#"><i class="iconfont icon-sina"></i></a>
+                        <a class="google" href="#"><i class="iconfont icon-google1"></i></a>
+                    </div>
+                    <p>copyRight@2007-2017 中国科学院科技产业网版权所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 模态窗 -->
+    <div class="modal fade bs-example-modal-lg1" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content out-station">
+                <div class="modal-body">
+                    <h4>您确定要退出此机构?</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">确认</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 模态窗 -->
+    <div class="modal fade bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content out-station">
+                <div class="modal-body">
+                    <h4>您个人资料不全，请完善后重试 <i class="iconfont icon-smail"></i></h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">完善资料</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

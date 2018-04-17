@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <title>成果科技-需求列表</title>
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="static/css/researchShow.css" />
+    <link rel="stylesheet" href="static/css/iconfont.css"/>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+
+    <!-- 在所有的页面引用IE兼容解决方案 -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+   <!-- 前端：通用头部 -->
+    <div class="header header-index">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a href="home.html" class="logo"></a></div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <ul class="menu-list">
+                        <li class="active"><a href="javascript:;">首页</a></li>
+                        <li><a href="javascript:;">科研成果</a></li>
+                        <li><a href="javascript:;">院所风采</a></li>
+                        <li><a href="javascript:;">供需服务</a></li>
+                        <li><a href="javascript:;">联盟主页</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="search pull-left pa">
+                        <div class="search-select">
+                            <a href="javascript:;" class="origin dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="txt">成果</span> <i class="iconfont icon-caret-bottom"></i></a>
+                            <select multiple class="dropdown-menu value-list ">
+                                <option value="成果" selected>成果</option>
+                                <option value="服务">服务</option>
+                                <option value="会员">会员</option>
+                                <option value="需求">需求</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form-control" placeholder="请输入搜索内容"/>
+                        <a href="javascript:;" class="search-btn"><i class="iconfont icon-search1"></i></a>
+                    </div>
+                    <ul class="login-list list-unstyled pull-right">
+                        <li><a href="#">登录</a></li>
+                        <li>|</li>
+                        <li><a href="#">注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 内容部分 -->
+    <div class="main search-show">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <!-- 面包屑 -->
+                  <ol class="breadcrumb">
+                      <li><a href="#">首页</a></li>
+                      <li><a href="#">供需请求</a></li>
+                      <li class="active">需求列表</li>
+                  </ol>
+              </div>
+          	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                <div class="search-key">
+                    <div class="search-title">
+                        <span>需求检索</span>
+                        <a href="#" class="btn btn-primary btn-inverse pull-right">发布需求</a>
+                    </div>
+                    <div class="search-screen">
+                        <form class="form-search form-inline">
+                            <div class="input-append">
+                                <input class="form-control span2" type="text">
+                                <button class="btn btn-primary btn-search" type="button">搜索</button>
+                            </div>
+                        </form>
+                        <div class="screen-top">
+                            <div class="pa screen-header">
+                                <span class="pull-left">学科领域：</span>
+                                <div class="right pull-left">
+                                    <a class="all">全部</a>&nbsp;<a>教育休闲</a>&nbsp;<a >电气自动化</a>&nbsp;<a>包装印刷</a>&nbsp;<a>采矿冶金</a>&nbsp;<a>航空航天</a>&nbsp;<a>海洋开发</a> &nbsp;<a>农林牧业</a>&nbsp;<a>医药与医疗</a> &nbsp;<a>新能源</a><a>电子信息</a>&nbsp;<a >交通运</a>&nbsp;<a>仪器仪表</a>&nbsp;
+                                    <label  class="screen-body"><a>电子信息</a>&nbsp;<a >交通运</a>&nbsp;<a>仪器仪表</a>&nbsp;<a>站酷专访</a>&nbsp;<a>建筑建材</a>&nbsp;</label>
+                                </div>
+
+                                <div class="more pull-right">更多<i class="iconfont icon-caret-top"></i></div>
+                            </div>
+                            <div class="pa screen-header">
+                                <span class="pull-left">需求类型：</span>
+                                <div class="right pull-left inline-private">
+                                    <a class="all">全部</a>
+                                    <a>
+                                    	<label class="checkbox"><input type="checkbox" value="option1">&nbsp; 技术难题</label>	
+                                    </a>
+                                    <a>
+                                    	<label class="checkbox"><input type="checkbox" value="option2">&nbsp; 科学推荐</label>	
+                                    </a>
+                                     <a>
+                                    	<label class="checkbox"><input type="checkbox" value="option3">&nbsp; 项目投资</label>	
+                                    </a>
+                                    <a>
+                                    	<label class="checkbox"><input type="checkbox" value="option4">&nbsp; 专利买卖</label>	
+                                    </a>
+                                    <a>
+                                    	<label class="checkbox"><input type="checkbox" value="option4">&nbsp; 专利买卖</label>	
+                                    </a>
+                                    <a>
+                                    	<label class="checkbox"><input type="checkbox" value="option5">&nbsp; 科技资源</label>	
+                                    </a>
+                                    <a>
+                                    	<label class="checkbox"><input type="checkbox" value="option6">&nbsp; 咨询服务</label>	
+                                    </a>
+                                    <a>
+                                    	<label class="checkbox"><input type="checkbox" value="option7">&nbsp; 企业合作</label>	
+                                    </a>
+                                    <a>
+                                    	<label class="checkbox"><input type="checkbox" value="option8">&nbsp; 项目合作</label>	
+                                    </a>
+                                    <a>
+                                    	<label class="checkbox"><input type="checkbox" value="option9">&nbsp; 解决方案</label>	
+                                    </a>
+                                    <a>
+                                    	<label class="checkbox"><input type="checkbox" value="option10">&nbsp; 企业孵化</label>	
+                                    </a>
+                                    <a>
+                                    	<label class="checkbox"><input type="checkbox" value="option111">&nbsp; 组织服务</label>	
+                                    </a>
+                                </div>
+                            </div>
+                          </div>
+
+                    </div>
+                </div>
+          	</div>
+          </div>
+            <!--成果搜索-结果-->
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h2 class="searchResult no-border">找到"<span class="text-danger">王木木</span>"相关资讯 <span class="text-danger">22 </span>条</h2>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <dl class="server-item pa need-item">
+                            	<b>项目投资</b>
+                            	<img src="static/img/person.png" class="avator"/>
+                            	<h2 class="title"><a href="#">项目名称项目名称项目名称</a></h2>
+                            	<div class="row info">
+                            		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            	 	<p>发布人：<span class="text-danger">王木木</span></p>
+                            	    <p>投入预算：<span>50</span>万元</p>
+                            	    <p>截止日期：2017年04月5日</p>
+                            	    <p>学科领域：XXXXX</p>
+	                            	 </div>
+	                            	 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+	                            	 	<p class="private">需求描述：需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求</p>
+	                            	 </div>
+                            	</div>
+                            </dl>
+                            <dl class="server-item pa need-item">
+                            	<b>项目投资</b>
+                            	<img src="static/img/person.png" class="avator"/>
+                            	<h2 class="title"><a href="#">项目名称项目名称项目名称</a></h2>
+                                <div class="row info">
+                            		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            	 	<p>发布人：<span class="text-danger">王木木</span></p>
+                            	    <p>投入预算：<span>50</span>万元</p>
+                            	    <p>截止日期：2017年04月5日</p>
+                            	    <p>学科领域：XXXXX</p>
+	                            	 </div>
+	                            	 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+	                            	 	<p class="private">需求描述：需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求</p>
+	                            	 </div>
+                            	</div>
+                            </dl>
+                            <dl class="server-item pa need-item">
+                            	<b>项目投资</b>
+                            	<img src="static/img/person.png" class="avator"/>
+                            	<h2 class="title"><a href="#">项目名称项目名称项目名称</a></h2>
+                                <div class="row info">
+                            		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            	 	<p>发布人：<span class="text-danger">王木木</span></p>
+                            	    <p>投入预算：<span>50</span>万元</p>
+                            	    <p>截止日期：2017年04月5日</p>
+                            	    <p>学科领域：XXXXX</p>
+	                            	 </div>
+	                            	 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+	                            	 	<p class="private">需求描述：需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求</p>
+	                             </div>
+                            	</div>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="news-wrap mt30 news-wrap-border">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <dl class="brand-list">
+                                    <dt class="pa"><a href="#"><img class="pic-auto" src="static/img/brand1.png"/></a></dt>
+                                </dl>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+           <!--分页-->
+           <div class="row">
+           	  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pagination-private">
+           	  	 <ul class="pagination">
+					<li><a href="#">&laquo;</a></li>
+					<li class="active"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">&raquo;</a></li>
+				</ul>
+           	  </div>
+           </div>
+           <!--end-->
+        </div>
+    </div>
+
+    <!-- 前端：通用尾部  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>院所园企</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>服务指南</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>关于我们</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">平台简介</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">法律声明</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="friend-link-list ">
+                        <a class="facebook" href="#"><i class="iconfont icon-facebook1"></i></a>
+                        <a class="twiter" href="#"><i class="iconfont icon-icontwiter"></i></a>
+                        <a class="sina" href="#"><i class="iconfont icon-sina"></i></a>
+                        <a class="google" href="#"><i class="iconfont icon-google1"></i></a>
+                    </div>
+                    <p>copyRight@2007-2017 中国科学院科技产业网版权所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="static/js/bootstrap-paginator.js"></script>
+<script>
+  $(function(){
+  	$(".value-list> option").click(function () {
+        var _this = $(this);
+        var _val = _this.val();
+        $(".origin > .txt").text(_val);
+    });
+
+      $(".screen-header .more").click(function(){
+          var _this = this;
+          var current = $(_this).closest(".screen-header").find(".screen-body");
+          var iconState=$(_this).children("i");
+          iconState.toggleClass("icon-caret-bottom");
+          current.toggle();
+      });
+  })
+
+</script>
+</body>
+</html>

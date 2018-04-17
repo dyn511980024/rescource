@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>成果科技</title>
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="static/css/swiper.min.css"/>
+    <link rel="stylesheet" href="static/css/index.css"/>
+    <link rel="stylesheet" href="static/css/iconfont.css"/>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/swiper.min.js"></script>
+    <script src="static/js/index.js"></script>
+
+    <!-- 在所有的页面引用IE兼容解决方案 -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+    <!-- 前端：通用头部 -->
+    <div class="header header-index">
+        <!--<div class="header-login">-->
+            <!--<div class="container pa">-->
+                <!--<div class="logo">中国科学院</div>-->
+                <!--<ul class="login-list list-unstyled pull-right">-->
+                    <!--<li><a href="#">登录</a></li>-->
+                    <!--<li>|</li>-->
+                    <!--<li><a href="#">注册</a></li>-->
+                <!--</ul>-->
+
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="header-menu">-->
+            <!--<div class="container">-->
+                <!--<ul class="menu-list pull-right">-->
+                    <!--<li class="active"><a href="javascript:;">首页</a></li>-->
+                    <!--<li><a href="javascript:;">科研成果</a></li>-->
+                    <!--<li><a href="javascript:;">院所风采</a></li>-->
+                    <!--<li><a href="javascript:;">供需服务</a></li>-->
+                    <!--<li><a href="javascript:;">联盟主页</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><a href="home.html" class="logo"></a></div>
+                <div class="col-md-6">
+                    <ul class="menu-list">
+                        <li class="active"><a href="javascript:;">首页</a></li>
+                        <li><a href="javascript:;">科研成果</a></li>
+                        <li><a href="javascript:;">院所风采</a></li>
+                        <li><a href="javascript:;">供需服务</a></li>
+                        <li><a href="javascript:;">联盟主页</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="search pa pull-left">
+                        <div class="search-select">
+                            <a href="javascript:;" class="origin dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="txt">成果</span> <i class="iconfont icon-caret-bottom"></i></a>
+                            <select multiple class="dropdown-menu value-list ">
+                                <option value="成果" selected>成果</option>
+                                <option value="服务">服务</option>
+                                <option value="会员">会员</option>
+                                <option value="需求">需求</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form-control" placeholder="请输入感兴趣的内容.."/>
+                        <a href="javascript:;" class="search-btn"><i class="iconfont icon-search1"></i></a>
+                    </div>
+                    <ul class="login-list list-unstyled pull-right">
+                        <li><a href="#">登录</a></li>
+                        <li>|</li>
+                        <li><a href="#">注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 条幅部分 -->
+    <div class="ad-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center">
+                    <p class="logo" style="background-image: url('static/img/stationLogo.png')"></p>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 desc">
+                    <h2>XXXXXXXX分站</h2>
+                    <p>You are a big sucker, yes, that is you, I hope you die in Macau Well, never go back to Shanghai, do not add me, I do not want to see you, you are bad is my greatest blessing</p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                    <a href="#" class="btn btn-primary join-btn">加入分站</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 内容部分 -->
+    <div class="main main-index">
+        <div class="container">
+            <div class="banner row">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-image: url('static/img/banner.png');"></div>
+                            <div class="swiper-slide" style="background-image: url('static/img/pic1.png');"></div>
+                            <div class="swiper-slide" style="background-image: url('static/img/banner.png');"></div>
+                            <div class="swiper-slide" style="background-image: url('static/img/pic2.png');"></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="news-wrap">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><span>热门资讯</span></a></li>
+                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><span>热门活动</span></a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home">
+                                <ul class="news-list">
+                                    <li class="news-list-item">
+                                        <div class="item">
+                                            <i class="iconfont icon-caret pull-left"></i>
+                                            <a href="#" class="pull-left">智合退出法律在线教育平台“知识网”</a>
+                                        </div>
+                                        <p><span>2017-03-09 21:38</span><span class="label label-danger">活动</span></p>
+                                    </li>
+                                    <li class="news-list-item">
+                                        <div class="item">
+                                            <i class="iconfont icon-caret pull-left"></i>
+                                            <a href="#" class="pull-left">乐视金融退出财经金融信息服务平台，贾跃亭：来乐视看财讯元有鬼电车第一单</a>
+                                        </div>
+                                        <p><span>2017-03-09 21:38</span><span class="label label-info">行业动态</span></p>
+                                    </li>
+                                    <li class="news-list-item">
+                                        <div class="item">
+                                            <i class="iconfont icon-caret"></i>
+                                            <a href="#">智合退出法律在线教育平台“知识网”</a>
+                                        </div>
+                                        <p><span>2017-03-09 21:38</span><span class="label label-success">政策法规</span></p>
+                                    </li>
+                                    <li class="news-list-item">
+                                        <div class="item">
+                                            <i class="iconfont icon-caret"></i>
+                                            <a href="#">智合退出法律在线教育平台“知识网”</a>
+                                        </div>
+                                        <p><span>2017-03-09 21:38</span><span class="label label-warning">活动</span></p>
+                                    </li>
+                                </ul>
+                                <div class="text-center"><a href="news.html" class="btn btn-primary btn-inverse">浏览更多</a></div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile">...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-index-title"><span>分站成果推荐</span> <a href="#" class="more pull-right">更多 ></a></div>
+            <div class="row">
+                <div class="col-md-4">
+                    <dl class="achievement-list">
+                        <dt class="pic"><a href="#"><img src="static/img/pic3.png"/></a></dt>
+                        <dd>
+                            <h2><a href="#">磁珠磁珠法核算11提取试剂盒提取…</a></h2>
+                            <p class="list">
+                                <a href="#"><i class="iconfont icon-heart-round"></i>中国农业大学</a>
+                                <a href="#"><i class="iconfont icon-book"></i>电器自动化</a>
+                            </p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-md-4">
+                    <dl class="achievement-list">
+                        <dt class="pic"><a href="#"><img src="static/img/pic1.png"/></a></dt>
+                        <dd>
+                            <h2><a href="#">磁珠磁珠法核算11提取试剂盒提取…</a></h2>
+                            <p class="list">
+                                <a href="#"><i class="iconfont icon-heart-round"></i>中国农业大学</a>
+                                <a href="#"><i class="iconfont icon-book"></i>电器自动化</a>
+                            </p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-md-4">
+                    <dl class="achievement-list">
+                        <dt class="pic"><a href="#"><img src="static/img/pic2.png"/></a></dt>
+                        <dd>
+                            <h2><a href="#">磁珠磁珠法核算11提取试剂盒提取…</a></h2>
+                            <p class="list">
+                                <a href="#"><i class="iconfont icon-heart-round"></i>中国农业大学</a>
+                                <a href="#"><i class="iconfont icon-book"></i>电器自动化</a>
+                            </p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+
+            <div class="main-index-title"><span>服务推荐</span> <a href="#" class="more pull-right">更多 ></a></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <dl class="server-item pa">
+                        <dt><a href="#"><img src="static/img/pic2.png"/></a></dt>
+                        <dd>
+                            <p>服务名称：知识产权认证服务</p>
+                            <p>服务地区：全国</p>
+                            <p>服务类型：知识产权</p>
+                            <p>服务领域：电器自动化</p>
+                            <h4>服务机构：北京中科三方网络技术有限公司 <i class="iconfont icon-combinedshape1"></i></h4>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-md-6">
+                    <dl class="server-item pa">
+                        <dt><a href="#"><img src="static/img/pic1.png"/></a></dt>
+                        <dd>
+                            <p>服务名称：知识产权认证服务</p>
+                            <p>服务地区：全国</p>
+                            <p>服务类型：知识产权</p>
+                            <p>服务领域：电器自动化</p>
+                            <h4>服务机构：北京中科三方网络技术有限公司 <i class="iconfont icon-heart-round"></i></h4>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-md-6">
+                    <dl class="server-item pa">
+                        <dt><a href="#"><img src="static/img/pic3.png"/></a></dt>
+                        <dd>
+                            <p>服务名称：知识产权认证服务</p>
+                            <p>服务地区：全国</p>
+                            <p>服务类型：知识产权</p>
+                            <p>服务领域：电器自动化</p>
+                            <h4>服务机构：北京中科三方网络技术有限公司 <i class="iconfont icon-combinedshape1"></i></h4>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-md-6">
+                    <dl class="server-item pa">
+                        <dt><a href="#"><img src="static/img/pic2.png"/></a></dt>
+                        <dd>
+                            <p>服务名称：知识产权认证服务</p>
+                            <p>服务地区：全国</p>
+                            <p>服务类型：知识产权</p>
+                            <p>服务领域：电器自动化</p>
+                            <h4>服务机构：北京中科三方网络技术有限公司 <i class="iconfont icon-heart-round"></i></h4>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="main-index-title"><span>分站专家推荐</span> <a href="#" class="more pull-right">更多 ></a></div>
+            <div class="row expert">
+                <div class="col-md-12">
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <dl class="slide-list">
+                                                <dt class="pa"><a class="pic-auto" href="#"><img src="static/img/person.png" alt=""/></a></dt>
+                                                <dd>
+                                                    <h2>Milla Jovovich<i class="iconfont icon-combinedshape1"></i></h2>
+                                                    <p>格雷森.鲍彻，美国篮球运动员，巡回赛唯一的白人，也是最矮的选手。</p>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <dl class="slide-list">
+                                                <dt class="pa"><a class="pic-auto" href="#"><img src="static/img/person.png" alt=""/></a></dt>
+                                                <dd>
+                                                    <h2>Don Draper <i class="iconfont icon-combinedshape1"></i></h2>
+                                                    <p>新内容生态、消费互联网、B2B、O2O、企业级应用/服务</p>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <dl class="slide-list">
+                                                <dt class="pa"><a class="pic-auto" href="#"><img src="static/img/person.png" alt=""/></a></dt>
+                                                <dd>
+                                                    <h2>Jessica Chastain <i class="iconfont icon-combinedshape1"></i></h2>
+                                                    <p>医疗健身、金融</p>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <dl class="slide-list">
+                                                <dt class="pa"><a class="pic-auto" href="#"><img src="static/img/person.png" alt=""/></a></dt>
+                                                <dd>
+                                                    <h2>Milla Jovovich<i class="iconfont icon-combinedshape1"></i></h2>
+                                                    <p>格雷森.鲍彻，美国篮球运动员，巡回赛唯一的白人，也是最矮的选手。</p>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <dl class="slide-list">
+                                                <dt class="pa"><a class="pic-auto" href="#"><img src="static/img/person.png" alt=""/></a></dt>
+                                                <dd>
+                                                    <h2>Don Draper <i class="iconfont icon-combinedshape1"></i></h2>
+                                                    <p>新内容生态、消费互联网、B2B、O2O、企业级应用/服务</p>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <dl class="slide-list">
+                                                <dt class="pa"><a class="pic-auto" href="#"><img src="static/img/person.png" alt=""/></a></dt>
+                                                <dd>
+                                                    <h2>Jessica Chastain <i class="iconfont icon-combinedshape1"></i></h2>
+                                                    <p>医疗健身、金融</p>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <dl class="slide-list">
+                                                <dt class="pa"><a class="pic-auto" href="#"><img src="static/img/person.png" alt=""/></a></dt>
+                                                <dd>
+                                                    <h2>Milla Jovovich<i class="iconfont icon-combinedshape1"></i></h2>
+                                                    <p>格雷森.鲍彻，美国篮球运动员，巡回赛唯一的白人，也是最矮的选手。</p>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <dl class="slide-list">
+                                                <dt class="pa"><a class="pic-auto" href="#"><img src="static/img/person.png" alt=""/></a></dt>
+                                                <dd>
+                                                    <h2>Don Draper <i class="iconfont icon-combinedshape1"></i></h2>
+                                                    <p>新内容生态、消费互联网、B2B、O2O、企业级应用/服务</p>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <dl class="slide-list">
+                                                <dt class="pa"><a class="pic-auto" href="#"><img src="static/img/person.png" alt=""/></a></dt>
+                                                <dd>
+                                                    <h2>Jessica Chastain <i class="iconfont icon-combinedshape1"></i></h2>
+                                                    <p>医疗健身、金融</p>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <dl class="slide-list">
+                                                <dt class="pa"><a class="pic-auto" href="#"><img src="static/img/person.png" alt=""/></a></dt>
+                                                <dd>
+                                                    <h2>Milla Jovovich<i class="iconfont icon-combinedshape1"></i></h2>
+                                                    <p>格雷森.鲍彻，美国篮球运动员，巡回赛唯一的白人，也是最矮的选手。</p>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <dl class="slide-list">
+                                                <dt class="pa"><a class="pic-auto" href="#"><img src="static/img/person.png" alt=""/></a></dt>
+                                                <dd>
+                                                    <h2>Don Draper <i class="iconfont icon-combinedshape1"></i></h2>
+                                                    <p>新内容生态、消费互联网、B2B、O2O、企业级应用/服务</p>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <dl class="slide-list">
+                                                <dt class="pa"><a class="pic-auto" href="#"><img src="static/img/person.png" alt=""/></a></dt>
+                                                <dd>
+                                                    <h2>Jessica Chastain <i class="iconfont icon-combinedshape1"></i></h2>
+                                                    <p>医疗健身、金融</p>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-index-title"><span>分站机构推荐</span> <a href="#" class="more pull-right">更多 ></a></div>
+            <div class="row">
+                <div class="col-md-3">
+                    <dl class="brand-list">
+                        <dt class="pa"><a href="#"><img class="pic-auto" src="static/img/brand1.png"/></a></dt>
+                        <dd class="text-center">
+                            <h2>中国农业大学</h2>
+                            <p class="text-left">重点研究领域：太阳能发电、水果玉米</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-md-3">
+                    <dl class="brand-list">
+                        <dt class="pa"><a href="#"><img class="pic-auto" src="static/img/brand2.png"/></a></dt>
+                        <dd class="text-center">
+                            <h2>中国农业大学</h2>
+                            <p class="text-left">重点研究领域：太阳能发电、水果玉米</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-md-3">
+                    <dl class="brand-list">
+                        <dt class="pa"><a href="#"><img class="pic-auto" src="static/img/brand3.png"/></a></dt>
+                        <dd class="text-center">
+                            <h2>中国农业大学</h2>
+                            <p class="text-left">重点研究领域：太阳能发电、水果玉米</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-md-3">
+                    <dl class="brand-list">
+                        <dt class="pa"><a href="#"><img class="pic-auto" src="static/img/brand4.png"/></a></dt>
+                        <dd class="text-center">
+                            <h2>中国农业大学</h2>
+                            <p class="text-left">重点研究领域：太阳能发电、水果玉米</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="main-index-title"><span>分站热搜需求</span> <a href="#" class="more pull-right">更多 ></a></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="demand-list">
+                        <li class="demand-item">
+                            <h2 class="tit"><a href="#" class="photo"><img src="static/img/person.png"/></a>袁浩</h2>
+                            <p>需求名称：骑车轮胎的高压铸造生产</p>
+                            <p>投入预算： <span>50</span>万元</p>
+                            <p>截止日期：2017年04月05日</p>
+                        </li>
+                        <li class="demand-item">
+                            <h2 class="tit"><a href="#" class="photo"><img src="static/img/person.png"/></a>郜翔</h2>
+                            <p>需求名称：骑车轮胎的高压铸造生产</p>
+                            <p>投入预算： <span>50</span>万元</p>
+                            <p>截止日期：2017年04月05日</p>
+                        </li>
+                        <li class="demand-item">
+                            <h2 class="tit"><a href="#" class="photo"><img src="static/img/person.png"/></a>彭于晏</h2>
+                            <p>需求名称：骑车轮胎的高压铸造生产</p>
+                            <p>投入预算： <span>50</span>万元</p>
+                            <p>截止日期：2017年04月05日</p>
+                        </li>
+                        <li class="demand-item">
+                            <h2 class="tit"><a href="#" class="photo"><img src="static/img/person.png"/></a>张柏芝</h2>
+                            <p>需求名称：骑车轮胎的高压铸造生产</p>
+                            <p>投入预算： <span>50</span>万元</p>
+                            <p>截止日期：2017年04月05日</p>
+                        </li>
+                        <li class="demand-item">
+                            <h2 class="tit"><a href="#" class="photo"><img src="static/img/person.png"/></a>袁浩</h2>
+                            <p>需求名称：骑车轮胎的高压铸造生产</p>
+                            <p>投入预算： <span>50</span>万元</p>
+                            <p>截止日期：2017年04月05日</p>
+                        </li>
+                        <li class="demand-item">
+                            <h2 class="tit"><a href="#" class="photo"><img src="static/img/person.png"/></a>袁浩</h2>
+                            <p>需求名称：骑车轮胎的高压铸造生产</p>
+                            <p>投入预算： <span>50</span>万元</p>
+                            <p>截止日期：2017年04月05日</p>
+                        </li>
+                        <li class="demand-item">
+                            <h2 class="tit"><a href="#" class="photo"><img src="static/img/person.png"/></a>袁浩</h2>
+                            <p>需求名称：骑车轮胎的高压铸造生产</p>
+                            <p>投入预算： <span>50</span>万元</p>
+                            <p>截止日期：2017年04月05日</p>
+                        </li>
+                        <li class="demand-item">
+                            <h2 class="tit"><a href="#" class="photo"><img src="static/img/person.png"/></a>袁浩</h2>
+                            <p>需求名称：骑车轮胎的高压铸造生产</p>
+                            <p>投入预算： <span>50</span>万元</p>
+                            <p>截止日期：2017年04月05日</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 前端：通用尾部  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>院所园企</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>服务指南</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>关于我们</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">平台简介</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">法律声明</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-offset-1 col-md-4">
+                    <div class="friend-link-list ">
+                        <a class="facebook" href="#"><i class="iconfont icon-facebook1"></i></a>
+                        <a class="twiter" href="#"><i class="iconfont icon-icontwiter"></i></a>
+                        <a class="sina" href="#"><i class="iconfont icon-sina"></i></a>
+                        <a class="google" href="#"><i class="iconfont icon-google1"></i></a>
+                    </div>
+                    <p>copyRight@2007-2017 中国科学院科技产业网版权所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(".value-list> option").click(function () {
+        var _this = $(this);
+        var _val = _this.val();
+        $(".origin > .txt").text(_val);
+    });
+</script>
+</body>
+</html>

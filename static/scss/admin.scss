@@ -1,0 +1,1208 @@
+@charset "UTF-8";
+@import "variables";
+@import "base";
+@import "compass";
+
+.admin-main {
+  padding: 20px 0 0;
+  a {
+    outline: none;
+  }
+  .sidebar {
+    padding: 0;
+    min-height: 800px;
+    background: $midnight-blue;
+    h2 {
+      font-size: 2rem;
+      padding-left: 20px;
+      color: lighten($midnight-blue,20%);
+
+    }
+    &-list {
+      padding-top: 20px;
+      li {
+        a {
+          font-size: 1.4rem;
+          @include inline-block(top);
+          width: 100%;
+          padding: 10px 15px;
+          color: #fff;
+          i {
+            font-size: 1.8rem;
+            @include inline-block(0);
+            width: 40px;
+            min-height: 10px;
+            padding-left: 8px;
+            color: lighten($midnight-blue,20%);
+          }
+        }
+        &.active,&:hover {
+            background: darken($midnight-blue,10%);
+        }
+      }
+    }
+  }
+  .content {
+    padding-bottom: 40px;
+    .info {
+      padding: 20px 0;
+      border: 1px solid $global-border;
+      overflow: hidden;
+        dt {
+          float: left;
+          width: 18%;
+          height: 120px;
+          p {
+            width: 100px;
+            height: 100px;
+            @include border-radius(50%);
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-position: center;
+            -webkit-background-size: cover;
+            background-size: cover;
+          }
+        }
+        dd {
+          float: left;
+          font-size: 1.4rem;
+          width: 82%;
+          padding: 0 40px 0 30px;
+          border-left: 1px solid $global-border;
+          .tit {
+            line-height: 40px;
+            span {
+              color: $common-blue;
+            }
+            label {
+              a {
+                &:last-child {
+                  margin-left: 10px;
+                }
+              }
+            }
+          }
+          p {
+            line-height: 40px;
+            &.email {
+              font-size: 1.2rem;
+              i {
+                font-size: 2rem;
+                color: $color6;
+                @include inline-block(-3px);
+              }
+            }
+          }
+        }
+
+    }
+    /* 公用部分 */
+    .common-title {
+      font-size: 1.6rem;
+      line-height: 40px;
+      color: $color6;
+      border-bottom: 1px solid $global-border;
+    }
+    .common-head {
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 40px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid $global-border;
+      span {
+        padding-left: 10px;
+        border-left: 4px solid $common-blue;
+      }
+      .btn-back {
+        border-radius: 0;
+        background: $light-gray;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 12px;
+        font-size: 1.4rem;
+        margin-left: 20px;
+        i {
+          @include inline-block(1px);
+          font-size: 1.4rem;
+          margin-right: 5px;
+        }
+
+      }
+    }
+    .filter {
+      width: 100%;
+      padding-bottom: 10px;
+      overflow: hidden;
+      .common-filter {
+        font-weight: normal;
+        margin-right: 20px;
+        select {
+          background: darken($light-gray,3%);
+        }
+      }
+
+      &-name {
+        width: 22%;
+        float: left;
+
+        label {
+          width: 100%;
+          span {
+            width: 34%;
+            line-height: 34px;
+            float: left;
+            text-align: right;
+            white-space: nowrap;
+          }
+          input,select {
+            font-size: 1.4rem;
+            font-weight: normal;
+            width: 60%;
+            height: 34px;
+            float: left;
+            color: $color6;
+          }
+          select {
+            background: darken($light-gray,3%);
+          }
+        }
+        &.big {
+          width: 30%;
+        }
+        &.other {
+          width: 40%;
+          label {
+            span {
+              width: 26%;
+            }
+            select {
+              width: 40%;
+            }
+            em {
+              width: 34%;
+              float: left;
+              padding-right: 45px;
+            }
+          }
+        }
+        &.two-select {
+          width: 56%;
+          label {
+            width: 100%;
+            span {
+              width: 15%;
+            }
+            select {
+              width: 20%;
+              margin-right: 10px;
+            }
+            em {
+              padding-left: 20px;
+            }
+          }
+
+        }
+      }
+      &-btn {
+        float: left;
+        width: 16%;
+      }
+    }
+    .admin-tabs {
+      height: 36px;
+      border-bottom: 1px solid $global-border;
+      li {
+        float: left;
+        height: 36px;
+        width: 150px;
+        text-align: center;
+        border: 1px solid $global-border;
+        border-right-width: 0;
+        margin-bottom: -1px;
+        &:last-child {
+          border-right-width: 1px;
+        }
+        a {
+          font-size: 1.2rem;
+          color: $color6;
+          width: 100%;
+          @include inline-block(top);
+          border-top: 2px solid transparent;
+          padding: 0;
+          line-height: 32px;
+        }
+        &:hover {
+          a {
+            border-top-color: $common-blue;
+            background: #fff;
+          }
+        }
+        &.active {
+            height: 36px;
+            background: #fff;
+            border-bottom: none;
+          a {
+            border-top-color: $common-blue;
+            background: #fff;
+          }
+        }
+      }
+    }
+    .tab-content {
+      padding-top: 20px;
+    }
+    .common-table {
+      border: 1px solid $global-border;
+      thead {
+        tr {
+          th {
+            padding: 10px 15px;
+            color: $color6;
+            background: #f5f6fa;
+            border-bottom: none;
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            font-size: 14px;
+            padding: 10px 15px;
+            color: $color6;
+            i {
+              color: $color9;
+              font-size: 1.4rem;
+              width: 20px;
+            }
+            &.last {
+              padding-top: 15px;
+              font-size: 1.2rem;
+              color: $color9;
+            }
+            .out-btn {
+              padding-left: 15px;
+            }
+          }
+          &.content {
+            td {
+              font-size: 1.2rem;
+              color: $color6;
+            }
+          }
+        }
+      }
+      h4 {
+        margin: 0;
+        font-size: 1.4rem;
+        line-height: 1.5;
+      }
+    }
+    .nohead-table {
+      border: 1px solid $global-border;
+      thead {
+        tr {
+          th {
+            border: none;
+            padding: 0;
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            color: $color6;
+            padding: 20px 20px 20px 0;
+            &:first-child {
+              text-align: right;
+            }
+            small {
+              color: $color9;
+              margin-left: 15px;
+            }
+          }
+          &:first-child {
+            td {
+              border-top: none;
+            }
+
+          }
+        }
+        .logo-pic {
+          width: 400px;
+          height: 50px;
+          background-position: left center;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        .txt {
+          padding-bottom: 15px;
+        }
+        .has-tit {
+          @include inline-block(top);
+          width: 240px;
+
+          h5 {
+            width: 100%;
+            line-height: 24px;
+            margin: 0 0 10px;
+          }
+          &:last-child {
+            margin-left: 20px;
+          }
+        }
+        .pic {
+          width: 240px;
+          min-height: 160px;
+          @include inline-block(top);
+          margin-right: 20px;
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          span {
+            text-align: center;
+            line-height: 80px;
+            color: $color3;
+            @include inline-block();
+            width: 50%;
+            height: 50%;
+          }
+        }
+      }
+    &.noborder-table {
+      border: none;
+      tbody {
+        tr {
+          td {
+            border: none;
+            padding: 15px 20px 15px 0;
+            &.btn-wrap {
+              .btn {
+                padding: 12px 30px;
+                width: 160px;
+                &:last-child {
+                  margin-left: 10px;
+                }
+                &.long {
+                  width: 300px;
+                }
+              }
+            }
+          }
+        }
+      }
+      }
+    }
+    .mine-list {
+      width: 100%;
+      padding-bottom: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      &-item {
+        width: 23%;
+        font-size: 1.4rem;
+        line-height: 40px;
+        background: $light-gray;
+        padding-left: 10px;
+        margin-top: 20px;
+        a {
+          @include inline-block(middle);
+          width: 100%;
+          color: $color6;
+          &:hover {
+            color: $common-blue;
+          }
+        }
+      }
+    }
+    .last-active {
+      li {
+        line-height: 30px;
+        a {
+          font-size: 1.4rem;
+          color: $color6;
+          &:hover {
+            color: $common-blue;
+          }
+        }
+        .time {
+          color: $color9;
+        }
+      }
+    }
+    .pagination {
+      margin: 0;
+    }
+    /* 活动审核 */
+    &.infoReview {
+      .desc {
+        padding: 15px 10px;
+        margin-bottom: 20px;
+        &.bg {
+          background: $light-gray;
+        }
+        h2 {
+          font-size: 2rem;
+          line-height: 30px;
+          margin: 0;
+          color: $color6;
+        }
+        p {
+          line-height: 30px;
+          font-size: 1.4rem;
+          color: $color6;
+        }
+      }
+      .filter{
+         padding:10px 0 20px;
+         select,input,button{height:40px;font-size:1.4rem;}
+         select{background: #f1f1f1;}
+      }
+      .fail-info{
+        h4{font-weight:bold;font-size:1.8rem;margin:0 0 10px}
+        input{width:286px;padding: 10px 20px 10px 10px;border:none;
+        border-radius:6px;
+        background:#ddd;}
+      }
+      .table {
+        tbody {
+          tr {
+            td {
+              .common-textarea {
+                  width: 70%;
+                }
+
+            }
+          }
+        }
+      }
+
+    }
+    /* 机构用户中心 */
+    &.org {
+      .btn-wrap {
+        padding-left: 190px;
+        .btn {
+          padding: 12px;
+          width: 360px;
+        }
+      }
+      .common-input {
+        &.org-input {
+          input {
+            @include inline-block(top);
+            width: 60%;
+          }
+          span {
+            @include inline-block(top);
+            line-height: 50px;
+            padding: 0 20px;
+            font-size: 1.4rem;
+          }
+        }
+      }
+      .add-btn {
+        a {
+          @include inline-block();
+          padding-left: 20px;
+          line-height: 30px;
+          margin: 10px 0;
+          i {
+            margin-right: 5px;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+
+//模态窗
+.modal-content {
+  &.out-station {
+    .modal-body {
+      color: $color6;
+      text-align: center;
+      h4 {
+        font-size: 1.6rem;
+        padding: 20px 0;
+        line-height: 24px;
+        i {
+          @include inline-block(-2px);
+          color: $orange;
+          font-size: 2.4rem;
+        }
+        &.tit {
+          padding: 0;
+        }
+      }
+      .modalPwd {
+        width: 400px;
+        margin: 10px auto 20px;
+        span {
+          @include inline-block();
+          width: 100%;
+          text-align: right;
+          line-height: 34px;
+        }
+
+      }
+    }
+    .modal-footer {
+      text-align: center;
+      .btn {
+        width: 100px;
+      }
+    }
+
+  }
+}
+
+//职业信息
+.job-info{
+    padding-bottom: 40px;
+  .desc {
+    font-size: 1.4rem;
+    color: $color6;
+    margin: -10px 0 20px 0;
+  }
+  &.applyServer {
+    .form-group {
+      margin: 0;
+    }
+    .case-list {
+      &-item {
+        h3 {
+          font-size: 1.4rem;
+          color: $orange;
+          margin: 5px 0 10px;
+        }
+      }
+    }
+    .plus-round {
+      @include inline-block(top);
+      line-height: 24px;
+      padding-bottom: 10px;
+      color: $color6;
+      i {
+        margin-right: 5px;
+      }
+    }
+    .case-list-item {
+      padding: 10px 20px;margin-bottom: 20px;
+      background: lightyellow;
+      .uploadFile {
+        height: 70px;
+      }
+      .add-delete {
+        padding: 10px 30px;
+        background: $midnight-blue;
+      }
+    }
+    .applyResult {
+      padding: 40px 0;
+      h2 {
+        font-size: 1.8rem;
+        margin-top: 23px;
+        color: red;
+      }
+      p {
+        font-size: 1.6rem;
+        color: $color6;
+        padding-top: 5px;
+      }
+      .btn-wrap {
+        margin-top: 40px;
+        a {
+          @include inline-block();
+          padding: 14px;
+          width: 280px;
+        }
+      }
+
+    }
+  }
+   .private{
+     .normal-label{
+       //height:50px;
+       line-height:50px;
+       white-space: nowrap;
+     }
+     .checkbox {
+       margin-top: 0;
+     }
+     .common-input {
+       margin: 0;
+       .single-txt {
+         line-height: 24px;
+         color: $color6;
+       }
+       .uploadFile {
+         height: 50px;
+         padding: 10px 0;
+         button,input {
+           top: 5px;
+         }
+         input {
+           height: 34px;
+         }
+         .txt {
+           line-height: 26px;
+         }
+       }
+       .common-select {
+         @include inline-block(top);
+         width: 25%;
+         margin-right: 10px;
+         background: $light-gray;
+         &.single {
+           margin-top: 5px;
+           width: 120px;
+           height: 36px;
+         }
+       }
+       span {
+         @include inline-block(top);
+         line-height: 50px;
+       }
+       input {
+         &.small {
+           @include inline-block(top);
+           width: 160px;
+           height: 36px;
+           margin-top: 7px;
+           &.xs {
+             width: 120px;
+           }
+         }
+       }
+       .staticTxt {
+         font-size: 0;
+         width: 100%;
+         margin-top: 20px;
+         border: 1px solid $global-border;
+         @include border-radius(3px);
+         background: lighten($bg-gray,5%);
+         .name {
+           font-size: 1.4rem;
+           width: 30%;
+           @include inline-block(top);
+           line-height: 50px;
+           padding-right: 0;
+           text-align: right;
+         }
+         .value {
+           font-size: 1.4rem;
+           width: 70%;
+           @include inline-block(top);
+           padding-left: 50px;
+         }
+       }
+       .line {
+         width: 100%;
+         margin-left: -140px;
+       }
+       &.common-active {
+         input[type="text"] {
+           width: 240px;
+           margin-top: 5px;
+           height: 36px;
+
+         }
+       }
+     }
+     .uploadId {
+       width: 280px;
+       @include inline-block(top);
+       &:last-child {
+         margin-left: 15px;
+       }
+     }
+     .tips {
+       width: 100%;
+       height: 50px;
+       line-height: 50px;
+       overflow: hidden;
+       -ms-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+       white-space: nowrap;
+       i {
+         @include inline-block(-1px);
+         font-size: 1.8rem;
+         margin-right: 5px;
+         color: $color9;
+       }
+     }
+     &.error {
+       .common-input {
+         input {
+           border-color: $dark-red;
+           &:focus {
+             box-shadow: inset 0 1px 1px lighten($dark-red,50%), 0 0 8px $dark-red;
+           }
+         }
+       }
+       .tips {
+         color: $dark-red;
+         i {
+         color: $dark-red;
+         }
+       }
+     }
+     &.success {
+       .tips {
+         color: $green;
+         i {
+         color: $green;
+         }
+       }
+     }
+     &.top {
+       font-size: 1.4rem;
+       label {
+         &.normal-label {
+           line-height: 24px;
+         }
+       }
+
+     }
+     .checkbox-list {
+       label {
+         width: 14%;
+         float: left;
+         padding-bottom: 10px;
+         margin: 0;
+         white-space: nowrap;
+       }
+     }
+     .radio-list {
+       margin-top: 14px;
+     }
+   }
+   .normal-label{
+       font-weight:normal;
+       font-size:1.4rem;
+   }
+   .common-input{
+      input{padding-left:10px;}
+   }
+   p{
+     font-size:1.4rem;color:$color6;
+     padding-bottom:4px;
+     .btn-delete {
+        color:#38B7EA;
+        padding:0 10px;
+        font-size:1.4rem;
+        line-height: 28px;
+        cursor:pointer;
+      }
+   }
+   .addNew {
+      //display:none;
+      width: 80%;
+      padding: 10px 20px 15px;
+      margin-bottom: 20px;
+      background: lightyellow;
+      .tit {
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 36px;
+      }
+     .add-delete {
+       //display: none;
+       padding: 10px 30px;
+       background: $midnight-blue;
+     }
+     .add-save,.add-cancle {
+       padding: 10px 30px;
+     }
+      select,input {
+        height: 50px;
+        line-height: 50px;
+      }
+      .uploadFile{
+          padding: 20px 0 0;
+          button{
+            z-index:0;
+            position:absolute;
+            top:20px;
+            left:0;
+          }
+          input{
+              display:inline-block;
+               width: 80px;
+               position: absolute;
+               top: 20px;
+               left: 0;
+               z-index: 3;
+               padding: 8px 0;
+               opacity:0;
+               cursor: pointer;
+          }
+          .txt{
+              padding-left: 90px;
+              line-height: 35px;
+          }
+      }
+    }
+   .btn-confirm{
+        width:100%;
+        padding:10px 0;
+        font-size:1.6rem;
+    }
+  .addAptitude-list-item {
+    &.new {
+      padding: 10px 0 5px;
+      margin-top: 20px;
+      background: lightyellow;
+      overflow: hidden;
+      .btn-delete {
+        font-size: 1.4rem;
+        @include inline-block(top);
+        width: 80px;
+        padding: 10px 20px;
+        margin-top: 10px;
+        text-align: center;
+        color: #fff;
+        @include border-radius(3px);
+        background: $midnight-blue;
+      }
+    }
+  }
+}
+
+//供需管理
+.admin-needs,.basicInfo{
+   .form-group{
+      margin-bottom:0;padding:10px 30px 30px 30px;color:$color6;
+      h4{
+          font-size:1.4rem;font-weight:normal;
+          height:50px;line-height:50px;margin:0;
+        }
+      .row{
+          padding:0 15px;
+          .normal-label{
+            height:50px;
+            line-height:50px;
+            font-weight:normal!important;  
+           }
+         input{height:50px;padding: 0 0 0 16px}
+         select{height:50px;}
+         .labelTop{line-height:0;}
+         textarea{resize:none;height:120px; }
+         p{
+             font-weight:normal;
+             label{
+               font-weight:normal;height:50px;line-height:50px;margin:0;
+               padding-left:17px;
+               .price-radio{margin:0 0 0 -17px;}
+               .price{
+                 display:inline-block;padding:0 6px;width:90px;height:30px;text-align:left;
+                 margin:0 10px;
+               }
+             }
+         }
+         .inline{
+             display:inline-block;font-weight:normal!important;
+             margin:0;height:50px;line-height:50px;padding:0 16px;
+             input{margin:0 0 0 -16px}
+         }
+         .file-upload{line-height:50px;}
+         .btn-confirm{
+            width:100%;
+            padding:10px 0;
+            font-size:1.6rem;
+        }
+      }
+      .glyphicon-folder-open{display:none !important;}
+      .btn-file{background-color:#BCBCBC!important;color:#fff!important;}
+    }
+}
+//机构中心基本信息
+.basicInfo{
+    .scale{width:30%;display:inline-block;margin-right:10px;}
+    .area-selct{
+        .row{
+          .area-item,.area-item-last{
+              padding:0;margin-right:4%;
+              .form-control{padding:6px;}
+           } 
+           .area-item-last{margin-right:0;}
+        }
+    }
+    .schoolType{
+        input[type=radio]{margin:0 6px 0 -20px}
+    }
+}
+//添加专家
+.addExpert{
+    .uploadId{
+        display:inline-block;margin-right:10px;
+          dd{
+            &.uploadFile{input,button{top:-2;}}
+          }
+        }
+     .value-list{
+        p{
+            line-height:130%;padding-bottom:4px;color:$color6;
+           .btn-delete{color:$common-blue;margin-left:10px;cursor:pointer;} 
+        } 
+     }
+    .plus-round {
+      @include inline-block(top);
+      line-height: 24px;
+      padding: 10px 0;
+      color: $color6;
+      i {
+        margin-right: 5px;
+      }
+    }
+    .addNew {
+      width: 80%;
+      padding: 10px 20px 15px;
+      margin-top: 20px;
+      background: lightyellow;
+      .tit {
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 36px;
+      }
+      .add-delete {
+        padding: 10px 30px;
+        background: $midnight-blue;
+      }
+      .add-save,.add-cancle {
+        padding: 10px 30px;
+      }
+      select,input {
+        height: 50px;
+        line-height: 50px;
+      }
+      .uploadFile{
+          padding: 20px 0;
+          button{
+            z-index:0;
+            position:absolute;
+            top:20px;
+            left:0;
+          }
+          input{
+              display:inline-block;
+               width: 80px;
+               position: absolute;
+               top: 20px;
+               left: 0;
+               z-index: 3;
+               padding: 8px 0;
+               opacity:0;
+               cursor: pointer;
+          }
+          .txt{
+              padding-left: 90px;
+              line-height: 30px;
+              height: 30px;
+          }
+      }
+    }
+}
+
+//站内信
+.tab-pane{
+   .title{
+       height:40px;line-height:40px;background-color:#F5F6FA;border:1px solid #ddd;margin:0 0;font-size:1.2rem;
+       }
+   ul{
+      li{
+        dt{
+           border:1px solid $global-border;  border-top: none;padding:0 10px;font-weight:bold;
+           > div{
+               font-size:1.2rem;font-weight:normal;padding:15px 0;line-height:120%;color:$color6;cursor:pointer;
+               i{color:#CCCCCC;font-size:1.2rem;padding-right: 10px;}
+            }
+          }
+          dd{
+             &.content{
+                display:none;color:$color9;font-size:1.2rem;border:1px solid #E4E4E4;border-top:none;padding:15px 10px;
+               }
+          }
+          &:first-child{
+              dt{border-top:none;}
+          } 
+          &:last-child{
+              dd{border-bottom:1px solid #E4E4E4;}
+          }
+      }
+   }
+}
+
+//帮助文档和详情
+.help-banner{
+    width:100%;height:260px;background-color:$light-gray;
+  &.bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-image: url("../../static/img/bg.png");
+  }
+    .filter{
+        margin-top:85px;
+        .filter-name,.filter-input,.filter-confirm{
+            display:inline-block;vertical-align:top;
+        }
+        .filter-name{
+            width:25%;height:50px;line-height:50px;padding-right:10px;
+            font-size:1.8rem;font-weight:bold;color:$color6;
+        }
+        .filter-input{
+           width:47%;
+           input{width:100%;font-size:1.6rem;height:50px;color:$color6} 
+           p{
+               margin-top:10px;font-size:1.2rem;
+               a{color:$color6;margin-right:6px;}
+            }
+        }
+        .filter-confirm{
+          width:24%;
+           button{font-size:1.6rem;margin-left:15px;color:#fff;
+         width:148px;height:50px;
+        background-color:#F06259;} 
+        }
+    }
+}
+.main{
+  margin-top:28px;padding-bottom:30px;
+  .slide-nav{
+       background-color:$light-gray;min-height:600px;
+        ul{
+            li{
+                a{
+                    display:block;font-size:1.4rem;color:$color6;padding:18px 0;
+                   }
+                &.active{
+                    a{
+                       font-size:1.6rem;font-weight:bold;border-bottom:1px solid #E4E4E4;
+                    }
+                    
+                }
+              }
+        }
+    } 
+  .right-nav{
+      padding-left:28px;
+      .text{font-size:1.4rem;}
+    .breadcrumb {  font-size: 1.4rem;  padding: 0;  }
+      ul{
+          margin-top:30px;
+         li{
+            margin:10px 0;
+            a{
+                display:inline-block;color:#1AABD1;font-size:1.4rem;padding:4px 0;
+                i,em{display:inline-block;vertical-align:middle;}
+                i{width:4px;height:4px;border-radius:50%;background-color:#CCCCCC;}
+                em{font-size:1.4rem;margin-left:10px;}
+                       
+            }
+         }
+      }
+      .info{
+          h2{font-size:1.6rem;font-weight:bold;color:$color6;}
+          p{margin-top:16px;}
+      }
+    .block {
+      padding-top: 10px;
+      h3 {
+        font-size: 1.6rem;
+        font-weight: normal;
+        a {
+          color: $common-blue;
+        }
+
+      }
+      h4 {
+        font-size: 1.2rem;
+        font-weight: normal;
+        color: $common-blue;
+      }
+      p {
+        font-size: 1.2rem;
+
+      }
+    }
+    .help-page {
+      .pagination {
+        li {
+          a {
+            padding: 5px 12px;
+          }
+        }
+      }
+    }
+    .searchNo {
+      padding-top: 60px;
+      .pic-wrap {
+        img {
+          max-width: 90px;
+        }
+      }
+      h3 {
+        font-size: 1.6rem;
+        color: $color9;
+        line-height: 50px;
+      }
+    }
+  }
+  &.about {
+    .slide-nav {
+      background: transparent;
+      ul {
+        li {
+          border-top: 2px solid $global-border;
+          a {
+            font-weight: 700;
+            font-size: 1.6rem;
+          }
+          &:first-child {
+            a {
+              border-bottom: none;
+            }
+          }
+          &.active,&:hover {
+            border-top: 2px solid $common-blue;
+          }
+        }
+      }
+    }
+    .about-content {
+      width: 80%;
+      float: right;
+      border: 1px solid $global-border;
+      @include border-radius(3px);
+      padding: 20px 15px;
+
+      .map {
+        width: 100%;
+        height: 540px;
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-image: url("../../static/img/map.png");
+      }
+    }
+  }
+}
+.offet-left1{
+    padding-left:26px;
+}
+.offet-left{
+    padding-left:15px;
+}
+
+.fileInputText{
+    position:absolute;
+    top:26px;left:94px;z-index:3;
+}

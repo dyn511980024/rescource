@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>成果科技</title>
+
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css"/>
+    <!--<link rel="stylesheet" href="static/css/blue.css"/>-->
+    <link rel="stylesheet" href="../static/css/swiper.min.css"/>
+    <link rel="stylesheet" href="../static/css/iconfont.css"/>
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <!--<script src="static/js/icheck.min.js"></script>-->
+    <script src="../static/js/swiper.min.js"></script>
+    <script src="../static/js/laydate/laydate.js"></script>
+    <script src="../static/js/index.js"></script>
+    <!--多个文件上传插件-->
+    <link rel="stylesheet" type="text/css" href="../static/css/fileinput.css"/>
+    <link rel="stylesheet" href="../static/css/admin.css"/>
+    <!--end-->
+</head>
+<body>
+<div class="wrapper">
+    <!-- 前端：通用头部 -->
+    <div class="header header-index">
+        <!--<div class="header-login">-->
+            <!--<div class="container pa">-->
+                <!--<div class="logo">中国科学院</div>-->
+                <!--<ul class="login-list list-unstyled pull-right">-->
+                    <!--<li><a href="#">登录</a></li>-->
+                    <!--<li>|</li>-->
+                    <!--<li><a href="#">注册</a></li>-->
+                <!--</ul>-->
+
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="header-menu">-->
+            <!--<div class="container">-->
+                <!--<ul class="menu-list pull-right">-->
+                    <!--<li class="active"><a href="javascript:;">首页</a></li>-->
+                    <!--<li><a href="javascript:;">科研成果</a></li>-->
+                    <!--<li><a href="javascript:;">院所风采</a></li>-->
+                    <!--<li><a href="javascript:;">供需服务</a></li>-->
+                    <!--<li><a href="javascript:;">联盟主页</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"><a href="../home.html" class="logo"></a></div>
+                <div class="col-md-6">
+                    <ul class="menu-list">
+                        <li class="active"><a href="javascript:;">首页</a></li>
+                        <li><a href="javascript:;">科研成果</a></li>
+                        <li><a href="javascript:;">院所风采</a></li>
+                        <li><a href="javascript:;">供需服务</a></li>
+                        <li><a href="javascript:;">联盟主页</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="search pa pull-left">
+                        <div class="search-select">
+                            <a href="javascript:;" class="origin dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="txt">成果</span> <i class="iconfont icon-caret-bottom"></i></a>
+                            <select multiple class="dropdown-menu value-list ">
+                                <option value="成果" selected>成果</option>
+                                <option value="服务">服务</option>
+                                <option value="会员">会员</option>
+                                <option value="需求">需求</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form-control" placeholder="请输入搜索内容"/>
+                        <a href="javascript:;" class="search-btn"><i class="iconfont icon-search1"></i></a>
+                    </div>
+                    <ul class="login-list list-unstyled pull-right">
+                        <li><a href="#">登录</a></li>
+                        <li>|</li>
+                        <li><a href="#">注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 内容部分 -->
+    <div class="admin-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 sidebar">
+                    <h2>用户中心</h2>
+					<ul class="sidebar-list">
+						<li><a href="#"><i class="iconfont icon-user"></i>账户信息</a></li>
+						<li class="active"><a href="#"><i class="iconfont">&nbsp;</i>基本信息</a></li>
+						<li><a href="#"><i class="iconfont">&nbsp;</i>教育背景</a></li>
+						<li><a href="#"><i class="iconfont">&nbsp;</i>职业信息</a></li>
+						<li><a href="#"><i class="iconfont">&nbsp;</i>成果案例</a></li>
+						<li><a href="#"><i class="iconfont icon-jigou2"></i>我加入的机构</a></li>
+						<li><a href="#"><i class="iconfont icon-guanli01-copy"></i>科技成果管理</a></li>
+						<li><a href="#"><i class="iconfont icon-guanli"></i>供需管理</a></li>
+						<li><a href="#"><i class="iconfont">&nbsp;</i>发布服务</a></li>
+						<li><a href="#"><i class="iconfont">&nbsp;</i>发布需求</a></li>
+						<li><a href="#"><i class="iconfont icon-jiaoliu"></i>互动交流</a></li>
+						<li><a href="#"><i class="iconfont icon-notice"></i>资讯中心</a></li>
+						<li><a href="#"><i class="iconfont">&nbsp;</i>发布资讯</a></li>
+						<li><a href="#"><i class="iconfont">&nbsp;</i>发布活动</a></li>
+						<li><a href="#"><i class="iconfont icon-wave"></i>个人主页</a></li>
+					</ul>
+                </div>
+                <div class="col-md-10 content">
+                    <div class="row">
+                        <div class="col-md-12 admin-needs">
+                            <div class="common-head"><span>供需管理-发布成果</span><a href="#" class="btn btn-default btn-back"><i class="iconfont icon-back"></i>返回</a></div>
+                            <div class="form-group">
+                            	<div class="row">
+                            		<div class="col-md-3 text-right">
+                            			<label class="normal-label">发布者：</label>
+                            	    </div>
+                            		<div class="col-md-5">
+                            			<h4>小岳岳</h4>
+                            		</div>
+                            	</div>
+		                        <div class="row">
+		                          <div class="control-group">
+						            <div class="col-md-3 text-right">
+		                                <label class="normal-label">所有者：</label>
+		                            </div>
+		                            <div class="col-md-5">
+		                                <div class="common-input">
+		                                    <input type="text" class="form-control" placeholder="请输入所有者"/>
+		                                </div>
+		                            </div>
+		                        </div>
+		                      </div>
+		                      <div class="row">
+		                            <div class="col-md-3 text-right">
+		                                <label class="normal-label">成果名称：</label>
+		                            </div>
+		                            <div class="col-md-5">
+		                                <div class="common-input">
+		                                    <input type="text" class="form-control" placeholder="请输入成果名称"/>
+		                                </div>
+		                            </div>
+		                      </div>
+		                      <div class="row">
+		                            <div class="col-md-3 text-right">
+		                                <label class="normal-label">应用领域：</label>
+		                            </div>
+		                            <div class="col-md-5">
+		                                <div class="common-input">
+		                                    <input type="text" class="form-control" placeholder="请输入应用领域"/>
+		                                </div>
+		                            </div>
+		                      </div>
+		                      <div class="row">
+		                            <div class="col-md-3 text-right">
+		                                <label class="normal-label">学科领域：</label>
+		                            </div>
+		                            <div class="col-md-5">
+		                                <div class="common-input">
+										    <select class="form-control">
+										      <option value="">请选择</option>
+										      <option value="电气自动化">电气自动化</option>
+										      <option value="采矿冶金">采矿冶金</option>
+										      <option value="航空航天">航空航天</option>
+										      <option value="海洋开发">海洋开发</option>
+										      <option value="农历牧业">农历牧业</option>
+										      <option value="医药与医疗">医药与医疗</option>
+										      <option value="电子信息">电子信息</option>
+										      <option value="化学化工">化学化工</option>
+										      <option value="轻工纺织">轻工纺织</option>
+										      <option value="家具用品">家具用品</option>
+										    </select>
+		                                </div>
+		                            </div>
+		                      </div>
+		                      <div class="row">
+		                            <div class="col-md-3 text-right">
+		                                <label class="normal-label">专利：</label>
+		                            </div>
+		                            <div class="col-md-5">
+		                                <div class="common-input">
+		                                    <input type="text" class="form-control" placeholder="如果已经申请专利，请输入专利号"/>
+		                                </div>
+		                            </div>
+		                      </div>
+		                      <div class="row">
+		                            <div class="col-md-3 text-right">
+		                                <label class="normal-label labelTop">技术简介：</label>
+		                            </div>
+		                            <div class="col-md-5">
+		                                <div class="common-input">
+		                                    <textarea class="form-control textarea-1" placeholder="请输入技术简介"></textarea>
+		                                </div>
+		                            </div>
+		                      </div>
+		                      <div class="row">
+		                            <div class="col-md-3 text-right">
+		                                <label class="normal-label">技术交易信息：</label>
+		                            </div>
+		                            <div class="col-md-5">
+		                                <div class="common-input">
+		                                	<p>
+		                                	   <label class="radio normal-label">
+												  <input type="radio" name="optionsRadios"  value="option1" class="price-radio" checked>完全转让 价格<input type="text" class="form-control price" value="面议"/>元
+												  
+												</label>
+		                                	</p>
+		                                	<p>
+		                                	   <label class="radio normal-label">
+												  <input type="radio" name="optionsRadios"  value="option1" class="price-radio" checked>许可转让 价格<input type="text" class="form-control price" value="面议"/>元
+												  
+												</label>
+		                                	</p>
+		                                	<p>
+		                                	   <label class="radio normal-label">
+												  <input type="radio" name="optionsRadios"  value="option1" class="price-radio" checked>技术入股 价格<input type="text" class="form-control price" value="面议"/>元
+												  
+												</label>
+		                                	</p>
+		                                	<p>
+		                                	   <label class="radio normal-label">
+												  <input type="radio" name="optionsRadios"  value="option1" class="price-radio" checked>合作开发 价格<input type="text" class="form-control price" value="面议"/>元
+												  
+												</label>
+		                                	</p>
+		                                </div>
+		                            </div>
+		                      </div>
+		                      <div class="row">
+		                            <div class="col-md-3 text-right">
+		                                <label class="normal-label">评估价值：</label>
+		                            </div>
+		                            <div class="col-md-5">
+		                                <div class="common-input">
+		                                    <input type="text" class="form-control" placeholder="请评估价值"/>
+		                                </div>
+		                            </div>
+		                      </div>
+		                      <div class="row">
+		                            <div class="col-md-3 text-right">
+		                                <label class="normal-label">技术成熟度：</label>
+		                            </div>
+		                            <div class="col-md-5">
+		                                <div class="common-input">
+		                                    <label class="radio inline">
+											   <input type="radio" name="optionsRadios1" value="正在研发" checked> 正在研发
+											</label>
+											<label class="radio inline">
+											  <input type="radio" name="optionsRadios2" value="已有样品">已有样品
+											</label>
+											<label class="radio inline">
+											  <input type="radio" name="optionsRadios3" value="通过小试">通过小试
+											</label>
+											<label class="radio inline">
+											  <input type="radio" name="optionsRadios4" value="通过中式">通过中式
+											</label>
+											<label class="radio inline">
+											  <input type="radio" name="optionsRadios5" value="可以量产">可以量产
+											</label>
+		                                </div>
+		                            </div>
+		                      </div>
+		                      <div class="row">
+		                            <div class="col-md-3 text-right">
+		                                <label class="normal-label">成熟照片：</label>
+		                            </div>
+		                            <div class="col-md-5 file-upload">
+		                            	<div class="common-input">
+		                            	  <input type="file" name="txt_file1" id="txt_file1" multiple />
+		                            	</div>
+		                            </div>
+		                      </div>
+		                      <div class="row">
+		                            <div class="col-md-3 text-right">
+		                                <label class="normal-label">成熟度证明材料：</label>
+		                            </div>
+		                            <div class="col-md-5 file-upload">
+		                            	<div class="common-input">
+		                            	  <input type="file" name="txt_file2" id="txt_file2" multiple/>
+		                            	</div>
+		                            </div>
+		                      </div>
+		                      <div class="row">
+		                            <div class="col-md-3 text-right">
+		                                <label class="normal-label">联系人：</label>
+		                            </div>
+		                            <div class="col-md-5">
+		                                <div class="common-input">
+		                                	<h4>张三</h4>
+		                                </div>
+		                            </div>
+		                      </div>
+		                      <div class="row">
+		                            <div class="col-md-3 text-right">
+		                                <label class="normal-label">邮箱：</label>
+		                            </div>
+		                            <div class="col-md-5">
+		                                <div class="common-input">
+		                                	<h4>1088888</h4>
+		                                </div>
+		                            </div>
+		                      </div>
+		                      <div class="row">
+		                            <div class="col-md-3 text-right">
+		                                <label class="normal-label">所在地：</label>
+		                            </div>
+		                            <div class="col-md-5">
+		                                <div class="common-input">
+		                                	<h4>北京市海淀区大麻子路12号</h4>
+		                                </div>
+		                            </div>
+		                      </div>
+		                      <div class="row">
+		                            <div class="col-md-5 col-md-offset-3">
+		                                <button class="btn btn-primary btn-confirm">提交</button>
+		                            </div>
+		                      </div>
+		                    </div>
+		                </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 前端：通用尾部  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <h2>院所园企</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h2>服务指南</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h2>关于我们</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">平台简介</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">法律声明</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-offset-1 col-md-4">
+                    <div class="friend-link-list ">
+                        <a class="facebook" href="#"><i class="iconfont icon-facebook1"></i></a>
+                        <a class="twiter" href="#"><i class="iconfont icon-icontwiter"></i></a>
+                        <a class="sina" href="#"><i class="iconfont icon-sina"></i></a>
+                        <a class="google" href="#"><i class="iconfont icon-google1"></i></a>
+                    </div>
+                    <p>copyRight@2007-2017 中国科学院科技产业网版权所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../static/js/fileinput.min.js"></script>   <!--文件上传-->
+<script src="//cdn.bootcss.com/bootstrap-fileinput/4.3.8/js/locales/zh.js"></script> <!--fileinput汉化包-->
+<script type="text/javascript">
+$(function () {
+    
+var FileInput = function () {
+	var oFile = new Object();
+	//初始化fileinput控件（第一次初始化）
+	oFile.Init = function(ctrlName, uploadUrl) {
+	var control = $('#' + ctrlName);
+	//初始化上传控件的样式
+	control.fileinput({
+		language: 'zh', //设置语言
+		uploadUrl: uploadUrl, //上传的地址
+		//uploadAsync: true,
+		allowedFileExtensions: ['jpg', 'gif', 'png'],//接收的文件后缀
+		allowedPreviewTypes:false,
+		showUpload: false, //是否显示上传按钮
+		showCaption: false,//是否显示标题
+		browseClass: "btn btn-default", //按钮样式	 
+		dropZoneEnabled: false,//是否显示拖拽区域
+		//minImageWidth: 50, //图片的最小宽度
+		//minImageHeight: 50,//图片的最小高度
+		//maxImageWidth: 1000,//图片的最大宽度
+		//maxImageHeight: 1000,//图片的最大高度
+		//maxFileSize: 0,//单位为kb，如果为0表示不限制文件大小
+		//minFileCount: 0,
+		//maxFileCount: 10, //表示允许同时上传的最大文件个数
+		enctype: 'multipart/form-data',
+		validateInitialCount:true,
+		previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+		msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+	});
+	//导入文件上传完成之后的事件 
+	$("#txt_file1").on("fileuploaded", function (event, data, previewId, index) {
+		var data = data.response.lstOrderImport;
+		if (data == undefined) {
+			toastr.error('文件格式类型不正确');
+			return;
+		}
+		//初始化表格 下面用来接收date并初始化
+//		var oTable = new TableInit();
+//		oTable.Init(data);
+//		$("#div_startimport").show();
+	   });
+	   $("#txt_file2").on("fileuploaded", function (event, data, previewId, index) {
+		var data = data.response.lstOrderImport;
+		if (data == undefined) {
+			toastr.error('文件格式类型不正确');
+			return;
+		}
+//		var oTable = new TableInit();
+//		oTable.Init(data);
+//		$("#div_startimport").show();
+    });
+	}
+		return oFile;
+	};
+//0.初始化fileinput
+    var oFileInput = new FileInput();
+    oFileInput.Init("txt_file1", "/api/OrderApi/ImportOrder");
+    oFileInput.Init("txt_file2", "/api/OrderApi/ImportOrder");
+    //初始化fileinput
+});
+</script>
+</body>
+</html>

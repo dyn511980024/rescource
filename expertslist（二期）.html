@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-hans">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>成果科技</title>
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="static/css/swiper.min.css"/>
+    <link rel="stylesheet" href="static/css/home2.css"/>
+     <link rel="stylesheet" href="static/css/researchShow.css"/>
+    <link rel="stylesheet" href="static/css/iconfont.css"/>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/swiper.min.js"></script>
+    <script src="static/js/index.js"></script>
+
+    <!-- 在所有的页面引用IE兼容解决方案 -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper" id="mainContainer">
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <!-- 登录后样式 -->
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="name">
+                        我叫小胖胖 <i class="icon icon-gread gread1"></i><i class="iconfont icon-caret-bottom"></i>
+                    </div>
+                    <a href="#" class="notice">消息<span class="label label-danger">30</span></a>
+                    <a href="#" class="loginOut">退出</a>
+                </div>
+                <!-- 登录前样式 -->
+                <!--<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">-->
+                    <!--<a href="#" class="loginIn">请登录</a>-->
+                    <!--<a href="#" class="registerIn">免费注册</a>-->
+                <!--</div>-->
+                <div class="col-md-offset-1 col-lg-7 col-md-7 col-sm-6 col-xs-6">
+                    <div class="right-nav">
+                    	<a href="#"><span class="luntan"><img src="static/img/index/luntang.png/"></span>&nbsp;论坛 <i class="iconfont icon-caret-bottom"></i></a>
+                        <a href="#">我的成果 <i class="iconfont icon-caret-bottom"></i></a>
+                        <a href="#">我的服务 <i class="iconfont icon-caret-bottom"></i></a>
+                        <a href="#">我的需求 <i class="iconfont icon-caret-bottom"></i></a>
+                        <a href="#">我的机构 <i class="iconfont icon-caret-bottom"></i></a>
+                        <a class="wechatCheck" href="#">微信扫一扫
+                            <img src="static/img/index/wechao.png"/>
+                            <div class="bigImg">
+                                <img src="static/img/index/wechao.png"/>
+                            </div>
+                        </a>
+                        <a class="wechatCheck" href="#">今日关注扫一扫
+                            <img src="static/img/index/wechao.png"/>
+                            <div class="bigImg">
+                                <img src="static/img/index/wechao.png"/>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5"><a href="#"><img src="static/img/index/new-logo.png"/></a></div>
+                <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                   <div class="search pa pull-left" style="margin-left:106px;width: 81%;">
+                        <div class="search-select">
+                            <a href="javascript:;" class="origin dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="txt">成果</span> <i class="iconfont icon-caret-bottom"></i></a>
+                            <select multiple class="dropdown-menu value-list ">
+                                <option value="成果" selected>成果</option>
+                                <option value="服务">服务</option>
+                                <option value="会员">会员</option>
+                                <option value="需求">需求</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form-control" placeholder="请输入搜索内容"/>
+                        <a href="javascript:;" class="search-btn"><i class="iconfont icon-search1"></i></a>
+                    </div>
+                   
+                    <ul class="list" style="margin-left:51px;padding-left:57px;">
+                        <li><label>热门搜索 :</label></li>
+                        <li><a href="#">人工智能</a></li>
+                        <li><a href="#">风云四号</a></li>
+                        <li><a href="#">海绵城市</a></li>
+                        <li><a href="#">数字经济</a></li>
+                        <li><a href="#">通用航空</a></li>
+                        <li><a href="#">航天航空</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <nav class="header-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <a class="active" href="javascript:;">首页</a>
+                    <a href="javascript:;">科研成果</a>
+                    <a href="javascript:;">科研产品</a>
+                    <a href="javascript:;">分站风采</a>
+                    <a href="javascript:;">专家团队</a>
+                    <a href="javascript:;">供需服务</a>
+                    <a href="javascript:;">联盟主页</a>
+                    <a href="javascript:;">科技资讯</a>
+                  
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+            	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            		
+            	<img src="static/img/ad.png" style="margin-top: 30px;"/>
+            	</div>
+            	  <div class="col-md-12">
+                  <div class="search-key">
+                      <div class="search-title">
+                          <span>找专家/专家团队</span>
+                         <ul class="nav nav-tabs pull-right" role="tablist" id="jiansuo">
+                                    <li role="presentation" class="active"><a href="#zonghe" aria-controls="home" role="tab" data-toggle="tab">综合检索</a></li>
+                                    <li role="presentation"><a href="#lingyu" aria-controls="profile" role="tab" data-toggle="tab">领域检索</a></li>
+                                    <li role="presentation"><a href="#zhicheng" aria-controls="league" role="tab" data-toggle="tab">职称检索</a></li>
+                                    <li role="presentation"><a href="#diqu" aria-controls="league" role="tab" data-toggle="tab">地区检索</a></li>
+                                </ul>
+                      </div>
+                      <div class="search-screen">
+                          <div class="screen-top">
+                          	 <div class="tab-content">
+                             <div role="tabpanel" class="tab-pane active expers-search" id="zonghe">
+                              	<input type="text" placeholder="请输入姓名、机构、研究领域、职称等关键词进行检索"/><button>搜索</button>
+                              </div>
+                              <div role="tabpanel" class="tab-pane  expers-search" id="lingyu">
+                              	<input type="text" placeholder="请输入研究领域关键词进行检索"/><button>搜索</button>
+                              </div>
+                               <div role="tabpanel" class="tab-pane  expers-search" id="zhicheng">
+                              	<input type="text" placeholder="请输入职称等关键词进行检索"/><button>搜索</button>
+                              </div>
+                             <div role="tabpanel" class="tab-pane  expers-search" id="diqu">
+                        
+                             	 <span class="pull-left">地区：</span>
+                                  <div class="right pull-left">
+                                      <a class="all">全部</a>&nbsp;<a>北京</a>&nbsp;<a >上海</a>&nbsp;<a>广州 </a>&nbsp;<a>深圳</a>
+                                  </div>
+                             </div>
+                             </div>
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+               </div>
+     		<div class="row ">
+                <div class="col-md-12">
+                    <ul class="nav sort-list" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">默认</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">热门</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+       		    <div class="row">
+                <div class="col-md-4">
+                    <dl class="league-item" id="expertslist">
+                        <dt class="leapic">
+                        <div class="lealeft">
+                            <a href="#  " target="_blank">
+                                <img src="" alt=""/>
+                            </a>
+                        </div>
+                        <div class="learight">
+                            <span class="leatitle"><a href="#">天山捉妖er记</a></span>
+                            <span class="leaberf">所属机构：北京中科三方网络技术有限公司</span>
+                            <span class="leaberf">专家职称：产品总监</span>
+                        </div>
+                        <div class="clear"></div>
+                        </dt>
+                      
+                        <dd class="league-attention" id="attention{$value['id']}">
+                          <!--
+                          
+                         
+                            <a href="#" class="cancel">取消关注</a>
+                        
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                            
+                             -->
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                           
+                            <a href="#" class="letter">咨询</a>
+                        </dd>
+
+                    </dl>
+                </div>
+                <div class="col-md-4">
+                    <dl class="league-item" id="expertslist">
+                        <dt class="leapic">
+                        <div class="lealeft">
+                            <a href="#  " target="_blank">
+                                <img src="" alt=""/>
+                            </a>
+                        </div>
+                        <div class="learight">
+                            <span class="leatitle"><a href="#">天山捉妖er记</a></span>
+                            <span class="leaberf">所属机构：北京中科三方网络技术有限公司</span>
+                            <span class="leaberf">专家职称：产品总监</span>
+                        </div>
+                        <div class="clear"></div>
+                        </dt>
+                      
+                        <dd class="league-attention" id="attention{$value['id']}">
+                          <!--
+                          
+                         
+                            <a href="#" class="cancel">取消关注</a>
+                        
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                            
+                             -->
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                           
+                            <a href="#" class="letter">咨询</a>
+                        </dd>
+
+                    </dl>
+                </div>
+                <div class="col-md-4">
+                    <dl class="league-item" id="expertslist">
+                        <dt class="leapic">
+                        <div class="lealeft">
+                            <a href="#  " target="_blank">
+                                <img src="" alt=""/>
+                            </a>
+                        </div>
+                        <div class="learight">
+                            <span class="leatitle"><a href="#">天山捉妖er记</a></span>
+                            <span class="leaberf">所属机构：北京中科三方网络技术有限公司</span>
+                            <span class="leaberf">专家职称：产品总监</span>
+                        </div>
+                        <div class="clear"></div>
+                        </dt>
+                      
+                        <dd class="league-attention" id="attention{$value['id']}">
+                          <!--
+                          
+                         
+                            <a href="#" class="cancel">取消关注</a>
+                        
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                            
+                             -->
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                           
+                            <a href="#" class="letter">咨询</a>
+                        </dd>
+
+                    </dl>
+                </div>
+               <div class="col-md-4">
+                    <dl class="league-item" id="expertslist">
+                        <dt class="leapic">
+                        <div class="lealeft">
+                            <a href="#  " target="_blank">
+                                <img src="" alt=""/>
+                            </a>
+                        </div>
+                        <div class="learight">
+                            <span class="leatitle"><a href="#">天山捉妖er记</a></span>
+                            <span class="leaberf">所属机构：北京中科三方网络技术有限公司</span>
+                            <span class="leaberf">专家职称：产品总监</span>
+                        </div>
+                        <div class="clear"></div>
+                        </dt>
+                      
+                        <dd class="league-attention" id="attention{$value['id']}">
+                          <!--
+                          
+                         
+                            <a href="#" class="cancel">取消关注</a>
+                        
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                            
+                             -->
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                           
+                            <a href="#" class="letter">咨询</a>
+                        </dd>
+
+                    </dl>
+                </div>
+                <div class="col-md-4">
+                    <dl class="league-item" id="expertslist">
+                        <dt class="leapic">
+                        <div class="lealeft">
+                            <a href="#  " target="_blank">
+                                <img src="" alt=""/>
+                            </a>
+                        </div>
+                        <div class="learight">
+                            <span class="leatitle"><a href="#">天山捉妖er记</a></span>
+                            <span class="leaberf">所属机构：北京中科三方网络技术有限公司</span>
+                            <span class="leaberf">专家职称：产品总监</span>
+                        </div>
+                        <div class="clear"></div>
+                        </dt>
+                      
+                        <dd class="league-attention" id="attention{$value['id']}">
+                          <!--
+                          
+                         
+                            <a href="#" class="cancel">取消关注</a>
+                        
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                            
+                             -->
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                           
+                            <a href="#" class="letter">咨询</a>
+                        </dd>
+
+                    </dl>
+                </div>
+                <div class="col-md-4">
+                    <dl class="league-item" id="expertslist">
+                        <dt class="leapic">
+                        <div class="lealeft">
+                            <a href="#  " target="_blank">
+                                <img src="" alt=""/>
+                            </a>
+                        </div>
+                        <div class="learight">
+                            <span class="leatitle"><a href="#">天山捉妖er记</a></span>
+                            <span class="leaberf">所属机构：北京中科三方网络技术有限公司</span>
+                            <span class="leaberf">专家职称：产品总监</span>
+                        </div>
+                        <div class="clear"></div>
+                        </dt>
+                      
+                        <dd class="league-attention" id="attention{$value['id']}">
+                          <!--
+                          
+                         
+                            <a href="#" class="cancel">取消关注</a>
+                        
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                            
+                             -->
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                           
+                            <a href="#" class="letter">咨询</a>
+                        </dd>
+
+                    </dl>
+                </div>
+               <div class="col-md-4">
+                    <dl class="league-item" id="expertslist">
+                        <dt class="leapic">
+                        <div class="lealeft">
+                            <a href="#  " target="_blank">
+                                <img src="" alt=""/>
+                            </a>
+                        </div>
+                        <div class="learight">
+                            <span class="leatitle"><a href="#">天山捉妖er记</a></span>
+                            <span class="leaberf">所属机构：北京中科三方网络技术有限公司</span>
+                            <span class="leaberf">专家职称：产品总监</span>
+                        </div>
+                        <div class="clear"></div>
+                        </dt>
+                      
+                        <dd class="league-attention" id="attention{$value['id']}">
+                          <!--
+                          
+                         
+                            <a href="#" class="cancel">取消关注</a>
+                        
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                            
+                             -->
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                           
+                            <a href="#" class="letter">咨询</a>
+                        </dd>
+
+                    </dl>
+                </div>
+                <div class="col-md-4">
+                    <dl class="league-item" id="expertslist">
+                        <dt class="leapic">
+                        <div class="lealeft">
+                            <a href="#  " target="_blank">
+                                <img src="" alt=""/>
+                            </a>
+                        </div>
+                        <div class="learight">
+                            <span class="leatitle"><a href="#">天山捉妖er记</a></span>
+                            <span class="leaberf">所属机构：北京中科三方网络技术有限公司</span>
+                            <span class="leaberf">专家职称：产品总监</span>
+                        </div>
+                        <div class="clear"></div>
+                        </dt>
+                      
+                        <dd class="league-attention" id="attention{$value['id']}">
+                          <!--
+                          
+                         
+                            <a href="#" class="cancel">取消关注</a>
+                        
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                            
+                             -->
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                           
+                            <a href="#" class="letter">咨询</a>
+                        </dd>
+
+                    </dl>
+                </div>
+                <div class="col-md-4">
+                    <dl class="league-item" id="expertslist">
+                        <dt class="leapic">
+                        <div class="lealeft">
+                            <a href="#  " target="_blank">
+                                <img src="" alt=""/>
+                            </a>
+                        </div>
+                        <div class="learight">
+                            <span class="leatitle"><a href="#">天山捉妖er记</a></span>
+                            <span class="leaberf">所属机构：北京中科三方网络技术有限公司</span>
+                            <span class="leaberf">专家职称：产品总监</span>
+                        </div>
+                        <div class="clear"></div>
+                        </dt>
+                      
+                        <dd class="league-attention" id="attention{$value['id']}">
+                          <!--
+                          
+                         
+                            <a href="#" class="cancel">取消关注</a>
+                        
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                            
+                             -->
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                           
+                            <a href="#" class="letter">咨询</a>
+                        </dd>
+
+                    </dl>
+                </div>
+               <div class="col-md-4">
+                    <dl class="league-item" id="expertslist">
+                        <dt class="leapic">
+                        <div class="lealeft">
+                            <a href="#  " target="_blank">
+                                <img src="" alt=""/>
+                            </a>
+                        </div>
+                        <div class="learight">
+                            <span class="leatitle"><a href="#">天山捉妖er记</a></span>
+                            <span class="leaberf">所属机构：北京中科三方网络技术有限公司</span>
+                            <span class="leaberf">专家职称：产品总监</span>
+                        </div>
+                        <div class="clear"></div>
+                        </dt>
+                      
+                        <dd class="league-attention" id="attention{$value['id']}">
+                          <!--
+                          
+                         
+                            <a href="#" class="cancel">取消关注</a>
+                        
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                            
+                             -->
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                           
+                            <a href="#" class="letter">咨询</a>
+                        </dd>
+
+                    </dl>
+                </div>
+                <div class="col-md-4">
+                    <dl class="league-item" id="expertslist">
+                        <dt class="leapic">
+                        <div class="lealeft">
+                            <a href="#  " target="_blank">
+                                <img src="" alt=""/>
+                            </a>
+                        </div>
+                        <div class="learight">
+                            <span class="leatitle"><a href="#">天山捉妖er记</a></span>
+                            <span class="leaberf">所属机构：北京中科三方网络技术有限公司</span>
+                            <span class="leaberf">专家职称：产品总监</span>
+                        </div>
+                        <div class="clear"></div>
+                        </dt>
+                      
+                        <dd class="league-attention" id="attention{$value['id']}">
+                          <!--
+                          
+                         
+                            <a href="#" class="cancel">取消关注</a>
+                        
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                            
+                             -->
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                           
+                            <a href="#" class="letter">咨询</a>
+                        </dd>
+
+                    </dl>
+                </div>
+                <div class="col-md-4">
+                    <dl class="league-item" id="expertslist">
+                        <dt class="leapic">
+                        <div class="lealeft">
+                            <a href="#  " target="_blank">
+                                <img src="" alt=""/>
+                            </a>
+                        </div>
+                        <div class="learight">
+                            <span class="leatitle"><a href="#">天山捉妖er记</a></span>
+                            <span class="leaberf">所属机构：北京中科三方网络技术有限公司</span>
+                            <span class="leaberf">专家职称：产品总监</span>
+                        </div>
+                        <div class="clear"></div>
+                        </dt>
+                      
+                        <dd class="league-attention" id="attention{$value['id']}">
+                          <!--
+                          
+                         
+                            <a href="#" class="cancel">取消关注</a>
+                        
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                            
+                             -->
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                           
+                            <a href="#" class="letter">咨询</a>
+                        </dd>
+
+                    </dl>
+                </div>
+               <div class="col-md-4">
+                    <dl class="league-item" id="expertslist">
+                        <dt class="leapic">
+                        <div class="lealeft">
+                            <a href="#  " target="_blank">
+                                <img src="" alt=""/>
+                            </a>
+                        </div>
+                        <div class="learight">
+                            <span class="leatitle"><a href="#">天山捉妖er记</a></span>
+                            <span class="leaberf">所属机构：北京中科三方网络技术有限公司</span>
+                            <span class="leaberf">专家职称：产品总监</span>
+                        </div>
+                        <div class="clear"></div>
+                        </dt>
+                      
+                        <dd class="league-attention" id="attention{$value['id']}">
+                          <!--
+                          
+                         
+                            <a href="#" class="cancel">取消关注</a>
+                        
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                            
+                             -->
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                           
+                            <a href="#" class="letter">咨询</a>
+                        </dd>
+
+                    </dl>
+                </div>
+                <div class="col-md-4">
+                    <dl class="league-item" id="expertslist">
+                        <dt class="leapic">
+                        <div class="lealeft">
+                            <a href="#  " target="_blank">
+                                <img src="" alt=""/>
+                            </a>
+                        </div>
+                        <div class="learight">
+                            <span class="leatitle"><a href="#">天山捉妖er记</a></span>
+                            <span class="leaberf">所属机构：北京中科三方网络技术有限公司</span>
+                            <span class="leaberf">专家职称：产品总监</span>
+                        </div>
+                        <div class="clear"></div>
+                        </dt>
+                      
+                        <dd class="league-attention" id="attention{$value['id']}">
+                          <!--
+                          
+                         
+                            <a href="#" class="cancel">取消关注</a>
+                        
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                            
+                             -->
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                           
+                            <a href="#" class="letter">咨询</a>
+                        </dd>
+
+                    </dl>
+                </div>
+                <div class="col-md-4">
+                    <dl class="league-item" id="expertslist">
+                        <dt class="leapic">
+                        <div class="lealeft">
+                            <a href="#  " target="_blank">
+                                <img src="" alt=""/>
+                            </a>
+                        </div>
+                        <div class="learight">
+                            <span class="leatitle"><a href="#">天山捉妖er记</a></span>
+                            <span class="leaberf">所属机构：北京中科三方网络技术有限公司</span>
+                            <span class="leaberf">专家职称：产品总监</span>
+                        </div>
+                        <div class="clear"></div>
+                        </dt>
+                      
+                        <dd class="league-attention" id="attention{$value['id']}">
+                          <!--
+                          
+                         
+                            <a href="#" class="cancel">取消关注</a>
+                        
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                            
+                             -->
+                            <a href="#" class="attention" ><i class="iconfont icon-plus"></i>关注</a>
+                           
+                            <a href="#" class="letter">咨询</a>
+                        </dd>
+
+                    </dl>
+                </div>
+               
+               <!--分页-->
+           <div class="row">
+           	  <div class="col-md-12 pagination-private">
+           	  	 <ul class="pagination">
+					<li><a href="#">&laquo;</a></li>
+					<li class="active"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">&raquo;</a></li>
+				</ul>
+           	  </div>
+           </div>
+           <!--end-->
+                
+            </div>
+        </div>
+
+    <!-- 前端：通用尾部  -->
+   
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>院所园企</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>服务指南</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>关于我们</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">平台简介</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">法律声明</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-offset-1 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="friend-link-list ">
+                        <a class="facebook" href="#"><i class="iconfont icon-facebook1"></i></a>
+                        <a class="twiter" href="#"><i class="iconfont icon-icontwiter"></i></a>
+                        <a class="sina" href="#"><i class="iconfont icon-sina"></i></a>
+                        <a class="google" href="#"><i class="iconfont icon-google1"></i></a>
+                    </div>
+                    <p>copyRight@2007-2017 中国科学院科技产业网版权所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 幕布 -->
+    <div class="curtain">
+        <img src="static/img/index/curtain.gif"/>
+        <div class="content">
+            <h2>LOGO中国科学院科技产业网</h2>
+
+            <h4>中国科学院科技产业化联盟官方平台</h4>
+
+            <h4>科技成果专业服务平台</h4>
+
+            <h4>网址：www.castt.ac.cn</h4>
+
+            <h4>主管单位：中国科学院科技促进发展局</h4>
+
+            <h4>承办单位：喀斯玛控股有限公司</h4>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+//    幕布效果
+    var curtain =  function(){
+        $('.curtain').show(
+                setTimeout(function(){
+                    $('.curtain').fadeOut();
+                },3000)
+        );
+    };
+//    curtain();
+
+    //搜索按钮效果
+    $(".value-list> option").click(function () {
+        var _this = $(this);
+        var _val = _this.val();
+        $(".origin > .txt").text(_val);
+    });
+
+    //滚动消息通知
+    var t;
+    $(".news").hover(function(){
+        clearInterval(t);
+    },function(){
+        t = setInterval(function(){
+            var ul = $(".news-item");
+            var liHeight = ul.find("li:last").height();
+            ul.animate({marginTop : liHeight +"px"},1000,function(){
+                ul.find("li:last").prependTo(ul);
+                ul.find("li:first").hide();
+                ul.css({marginTop:0});
+                ul.find("li:first").fadeIn(800);
+            });
+        },3000);
+    }).trigger("mouseleave");
+
+    var swiper1 = new Swiper('.patent > .swiper-container',{
+//        autoplay: 2500
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        loop: true
+    });
+
+</script>
+</body>
+</html>

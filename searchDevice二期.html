@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-hans">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>设备搜索结果</title>
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="static/css/swiper.min.css"/>
+    <link rel="stylesheet" href="static/css/home2.css"/>
+    <link rel="stylesheet" href="static/css/iconfont.css"/>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/swiper.min.js"></script>
+    <script src="static/js/index.js"></script>
+
+    <!-- 在所有的页面引用IE兼容解决方案 -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper" id="mainContainer">
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <!-- 登录后样式 -->
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="name">
+                        我叫小胖胖 <i class="icon icon-gread gread1"></i><i class="iconfont icon-caret-bottom"></i>
+                    </div>
+                    <a href="#" class="notice">消息<span class="label label-danger">30</span></a>
+                    <a href="#" class="loginOut">退出</a>
+                </div>
+                <!-- 登录前样式 -->
+                <!--<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">-->
+                    <!--<a href="#" class="loginIn">请登录</a>-->
+                    <!--<a href="#" class="registerIn">免费注册</a>-->
+                <!--</div>-->
+                <div class="col-md-offset-2 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="right-nav">
+                        <a href="#">我的成果 <i class="iconfont icon-caret-bottom"></i></a>
+                        <a href="#">我的服务 <i class="iconfont icon-caret-bottom"></i></a>
+                        <a href="#">我的需求 <i class="iconfont icon-caret-bottom"></i></a>
+                        <a href="#">我的机构 <i class="iconfont icon-caret-bottom"></i></a>
+                        <a class="wechatCheck" href="#">微信扫一扫
+                            <img src="static/img/index/wechao.png"/>
+                            <div class="bigImg">
+                                <img src="static/img/index/wechao.png"/>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5"><a href="#"><img src="static/img/index/new-logo.png"/></a></div>
+                <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="search pa pull-left">
+                        <div class="search-select">
+                            <a href="javascript:;" class="origin dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="txt">成果</span> <i class="iconfont icon-caret-bottom"></i></a>
+                            <select multiple class="dropdown-menu value-list ">
+                                <option value="成果" selected>成果</option>
+                                <option value="服务">服务</option>
+                                <option value="会员">会员</option>
+                                <option value="需求">需求</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form-control" placeholder="请输入搜索内容"/>
+                        <a href="javascript:;" class="search-btn"><i class="iconfont icon-search1"></i></a>
+                    </div>
+                    <div class="btn-wrap">
+                        <a href="#" class="btn btn-default btn-inverse">我要发布</a>
+                    </div>
+                    <ul class="list">
+                        <li><label>热门搜索 :</label></li>
+                        <li><a href="#">人工智能</a></li>
+                        <li><a href="#">风云四号</a></li>
+                        <li><a href="#">海绵城市</a></li>
+                        <li><a href="#">数字经济</a></li>
+                        <li><a href="#">通用航空</a></li>
+                        <li><a href="#">航天航空</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="header-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <a class="active" href="javascript:;">首页</a>
+                    <a href="javascript:;">科研成果</a>
+                    <a href="javascript:;">院所风采</a>
+                    <a href="javascript:;">供需服务</a>
+                    <a href="javascript:;">联盟主页</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="container">
+        	<div class="row">
+        		<div class="col-md-12">
+	        		<h2 class="searchResult no-border">找到"
+	        			<span class="text-danger">设备</span>"相关搜索
+	        			<span class="text-danger">0 </span>条
+	        		</h2>
+	        		<hr />
+        		</div>
+        	</div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+					<div class="thumbnail" id="searchDevice">
+						<img src="static/img/28.jpg" alt="...">
+						<div class="caption">
+							<p class="text-center">哈哈哈哈哈</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+                    <div class="thumbnail" id="searchDevice">
+						<img src="static/img/admin/iconGread1.png" alt="...">
+						<div class="caption">
+							<p class="text-center">哈哈哈哈哈</p>
+						</div>
+					</div>
+                    
+				</div> 
+				<div class="col-md-3 col-sm-6">
+                    <div class="thumbnail" id="searchDevice">
+						<img src="static/img/admin/server1.png" alt="...">
+						<div class="caption">
+							<p class="text-center">哈哈哈哈哈呵呵哈哈或</p>
+						</div>
+					</div>
+				</div> 
+				<div class="col-md-3 col-sm-6">
+                    <div class="thumbnail" id="searchDevice">
+						<img src="static/img/banner.png" alt="...">
+						<div class="caption">
+							<p class="text-center">哈哈哈哈哈</p>
+						</div>
+					</div>
+				</div> 
+				<div class="col-md-3 col-sm-6">
+                    <div class="thumbnail" id="searchDevice">
+						<img src="static/img/index/banner.jpg" alt="...">
+						<div class="caption">
+							<p class="text-center">哈哈哈哈哈</p>
+						</div>
+					</div>
+				</div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- 前端：通用尾部  -->
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h3><span>合作伙伴</span></h3>
+                    <ul class="brands">
+                        <li><a href="#"><img src="static/img/brand4.png"/></a></li>
+                        <li><a href="#"><img src="static/img/brand4.png"/></a></li>
+                        <li><a href="#"><img src="static/img/brand4.png"/></a></li>
+                        <li><a href="#"><img src="static/img/brand4.png"/></a></li>
+                        <li><a href="#"><img src="static/img/brand4.png"/></a></li>
+                        <li><a href="#"><img src="static/img/brand4.png"/></a></li>
+                        <li><a href="#"><img src="static/img/brand4.png"/></a></li>
+                        <li><a href="#"><img src="static/img/brand4.png"/></a></li>
+                        <li><a href="#"><img src="static/img/brand4.png"/></a></li>
+                        <li><a href="#"><img src="static/img/brand4.png"/></a></li>
+                        <li><a href="#"><img src="static/img/brand4.png"/></a></li>
+                        <li><a href="#"><img src="static/img/brand4.png"/></a></li>
+                    </ul>
+                </div>
+                <div class="link col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h4>友情链接</h4>
+                    <div class="link-list">
+                        <a href="#">科学技术部</a>
+                        <a href="#"> 国家自然科学基金委员会</a>
+                        <a href="#">国家知识产权局</a>
+                        <a href="#">科技部火炬中心</a>
+                        <a href="#">科技部人才中心</a>
+                        <a href="#">国家科技风险开发事业中心 </a>
+                        <a href="#">科技部科技评估中心</a>
+                        <a href="#">中信所国家遥感中心</a>
+                        <a href="#">中国农科院成果转化局</a>
+                        <a href="#">教育部科技发展中心</a>
+                        <a href="#">国家军民融合公共服务平台</a>
+                        <a href="#">湖南科技成果转化公共服务平台</a>
+                        <a href="#">国防科学技术大学</a>
+                        <a href="#">北京工业大学</a>
+                        <a href="#">中国科学技术大学</a>
+                        <a href="#">同济大学</a>
+                        <a href="#">西北农林科技大学</a>
+                        <a href="#">西北工业大学</a>
+                        <a href="#">西安交通大学</a>
+                        <a href="#">机械科学研究总院</a>
+                        <a href="#">中国电科第三十九所</a>
+                        <a href="#">中国产学研合作促进会</a>
+                        <a href="#">长城战略咨询</a>
+                        <a href="#">中国与全球化智库</a>
+                        <a href="#">科创通</a>
+                        <a href="#">中科智桥</a>
+                        <a href="#">中国科技奖励科学网</a>
+                        <a href="#">科技导报</a>
+                        <a href="#">中国技术供需在线</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>院所园企</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>服务指南</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>关于我们</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">平台简介</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">法律声明</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-offset-1 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="friend-link-list ">
+                        <a class="facebook" href="#"><i class="iconfont icon-facebook1"></i></a>
+                        <a class="twiter" href="#"><i class="iconfont icon-icontwiter"></i></a>
+                        <a class="sina" href="#"><i class="iconfont icon-sina"></i></a>
+                        <a class="google" href="#"><i class="iconfont icon-google1"></i></a>
+                    </div>
+                    <p>copyRight@2007-2017 中国科学院科技产业网版权所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 幕布 -->
+    <div class="curtain">
+        <img src="static/img/index/curtain.gif"/>
+        <div class="content">
+            <h2>LOGO中国科学院科技产业网</h2>
+
+            <h4>中国科学院科技产业化联盟官方平台</h4>
+
+            <h4>科技成果专业服务平台</h4>
+
+            <h4>网址：www.castt.ac.cn</h4>
+
+            <h4>主管单位：中国科学院科技促进发展局</h4>
+
+            <h4>承办单位：喀斯玛控股有限公司</h4>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+//    幕布效果
+    var curtain =  function(){
+        $('.curtain').show(
+                setTimeout(function(){
+                    $('.curtain').fadeOut();
+                },3000)
+        );
+    };
+//    curtain();
+
+    //搜索按钮效果
+    $(".value-list> option").click(function () {
+        var _this = $(this);
+        var _val = _this.val();
+        $(".origin > .txt").text(_val);
+    });
+
+    //滚动消息通知
+    var t;
+    $(".news").hover(function(){
+        clearInterval(t);
+    },function(){
+        t = setInterval(function(){
+            var ul = $(".news-item");
+            var liHeight = ul.find("li:last").height();
+            ul.animate({marginTop : liHeight +"px"},1000,function(){
+                ul.find("li:last").prependTo(ul);
+                ul.find("li:first").hide();
+                ul.css({marginTop:0});
+                ul.find("li:first").fadeIn(800);
+            });
+        },3000);
+    }).trigger("mouseleave");
+
+    var swiper1 = new Swiper('.patent > .swiper-container',{
+//        autoplay: 2500
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        loop: true
+    });
+
+</script>
+</body>
+</html>

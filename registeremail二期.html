@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <title>成果科技</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="static/css/blue.css"/>
+    <link rel="stylesheet" href="static/css/swiper.min.css"/>
+    <link rel="stylesheet" href="static/css/index.css"/>
+    <link rel="stylesheet" href="static/css/iconfont.css"/>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/swiper.min.js"></script>
+    <script src="static/js/icheck.min.js"></script>
+    <script src="static/js/index.js"></script>
+
+    <!-- 在所有的页面引用IE兼容解决方案 -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+   <!-- 前端：通用头部 -->
+    <div class="header header-index">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"><a href="home.html" class="logo"></a></div>
+                <div class="col-md-6">
+                    <ul class="menu-list">
+                        <li class="active"><a href="javascript:;">首页</a></li>
+                        <li><a href="javascript:;">科研成果</a></li>
+                        <li><a href="javascript:;">院所风采</a></li>
+                        <li><a href="javascript:;">供需服务</a></li>
+                        <li><a href="javascript:;">联盟主页</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="search pull-left pa">
+                        <div class="search-select">
+                            <a href="javascript:;" class="origin dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="txt">成果</span> <i class="iconfont icon-caret-bottom"></i></a>
+                            <select multiple class="dropdown-menu value-list ">
+                                <option value="成果" selected>成果</option>
+                                <option value="服务">服务</option>
+                                <option value="会员">会员</option>
+                                <option value="需求">需求</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form-control" placeholder="请输入搜索内容"/>
+                        <a href="javascript:;" class="search-btn"><i class="iconfont icon-search1"></i></a>
+                    </div>
+                    <ul class="login-list list-unstyled pull-right">
+                        <li><a href="#">登录</a></li>
+                        <li>|</li>
+                        <li><a href="#">注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 内容部分 -->
+    <div class="main register">
+        <div class="container">
+            <div class="common-form common-wide-form">
+                <legend><h2>注册</h2> <a href="login.html" class="small pull-right">使用已有账号登录</a></legend>
+                <form class="form forget-form">
+                    <div class="form-group">
+                        <div class="row">
+                           
+                            <div class="col-md-8">
+                                <div class="common-input pa">
+                                    <span class="common-input-addon label-person"><i class="iconfont icon-email"></i></span>
+                                    <input type="text" class="form-control" placeholder="请输入邮箱号码"/>
+                                   
+                                    <!--<div class="form-tip form-error"><i class="iconfont icon-error"></i>请输入11位手机号</div>-->
+                                </div>
+                            </div>
+                             <div class="col-md-4 text-right" style="padding-top: 10px;">
+                               <a href="#" style="text-decoration: underline;">欢迎使用手机注册</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                           
+                            <div class="col-md-8">
+                                <div class="common-input">
+                                    <select class="form-control common-select" onchange='btnChange(this[selectedIndex].value);'>
+                                        <option value="1" selected>选择账户类型</option>
+                                        <option value="2">个人</option>
+                                        <option value="3">研究所</option>
+                                        <option value="4">院校</option>
+                                        <option value="5">企业</option>
+                                        <option value="6">政府机构</option>
+                                    </select>
+                                </div>
+                            </div>
+                             <div class="col-md-4 text-right">
+                                <label>&nbsp;</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                        	<div class="col-md-8">
+                                <div class="common-input pa">
+                                	<span class="common-input-addon label-person"><i class="iconfont icon-person"></i></span>
+                                    <input type="text" class="form-control" placeholder="请输入用户名称" />
+                                </div>
+                            </div>
+                              <div class="col-md-4 text-right">
+                                <label>&nbsp;</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group hidden" id="regist-org">
+                        <div class="row">
+                            
+                            <div class="col-md-8">
+                                <div class="common-input pa">
+                                	<span class="common-input-addon label-person"><i class="iconfont icon-user"></i></span>
+                                    <input type="text" class="form-control" placeholder="请输入机构联系人姓名" />
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-right">
+                                <label>&nbsp;</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            
+                            <div class="col-md-8">
+                                <div class="common-input pa">
+                                    <span class="common-input-addon label-person"><i class="iconfont icon-customiconpwd"></i></span>
+                                    <input type="password" class="form-control" placeholder="请输入新密码" id="pwd" oninput="checkLevel1()" />
+                                    <div class="form-tip form-error"><i class="iconfont icon-error"></i>密码中必须包含大写字母，小写字母和数字</div>
+                                    <div class="isHigh pwd1">
+                                        <label>
+                                            <b class="pull-left">安全程度：</b>
+                                            <span class="pull-left level"><i class="high"></i><i class="high2"></i><i class="high3"></i></span>
+                                        </label>
+                                        <p>＊密码的长度不得少于8个字符</p>
+                                        <p>＊密码中必须包含大写字母，小写字母和数字</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-right">
+                                <label>&nbsp;</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            
+                            <div class="col-md-8">
+                                <div class="common-input pa">
+                                    <span class="common-input-addon label-person"><i class="iconfont icon-customiconpwd"></i></span>
+                                    <input type="password" class="form-control" placeholder="请再次输入新密码" id="pwd1"  oninput="checkLevel2()"/>
+                                    <div class="form-tip form-error"><i class="iconfont icon-error"></i>密码的长度不得少于8个字符</div>
+                                    <!--<div class="isHigh pwd2">-->
+                                        <!--<label>-->
+                                            <!--<b class="pull-left">安全程度：</b>-->
+                                            <!--<span class="pull-left level"><i class="high"></i><i class="high2"></i><i class="high3"></i></span>-->
+                                        <!--</label>-->
+                                        <!--<p>＊密码的长度不得少于8个字符</p>-->
+                                        <!--<p>＊密码中必须包含大写字母，小写字母和数字</p>-->
+                                    <!--</div>-->
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label>&nbsp;</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                           
+                            <div class="col-md-8">
+                                <div class="common-input pa sendCode">
+                                    <div class="clearfix">
+                                        <span class="common-input-addon label-person"><i class="iconfont icon-eyes"></i></span>
+                                        <input type="text" class="form-control send-value"  placeholder="请输入验证码"/>
+                                        <a href="javascript:;" class="pull-right send-code" data-toggle="modal" data-target="#myModal">获取手机验证码</a>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-md-4">
+                                <label>&nbsp;</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            
+                            <div class="col-md-8">
+                                <div class="agreement">
+                                    <input type="checkbox" checked/>
+                                    <label>同意<a href="#">科技产业网</a>服务条款</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label>&nbsp;</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            
+                            <div class="col-md-8">
+                                <div class="btn-wrap">
+                                    <a href="#" class="btn">提交注册</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label>&nbsp;</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="register-footer">
+                    <div class="row">
+                        <div class="col-lg-offset-2 col-lg-5">
+                            <div class="linkLogin">
+                                <h2 class="text-center">社交网络登录</h2>
+                                <div class="linkLogin-list">
+                                    <a href="#"><i class="iconfont icon-wechat"></i></a>
+                                    <a href="#"><i class="iconfont icon-qq"></i></a>
+                                    <a href="#"><i class="iconfont icon-sina"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 linkLogin">
+                            <h2>关于科技产业网注册</h2>
+                            <p class="txt">关于科技产业网注册关于科技产业网注册关于科技产业网注册关于科技产业网注册关于科技产业网注册关于科技产业网注册关于科技产业网注册关于科技产业网注册</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 前端：通用尾部  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <h2>院所园企</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h2>服务指南</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h2>关于我们</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">平台简介</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">法律声明</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-offset-1 col-md-4">
+                    <div class="friend-link-list ">
+                        <a class="facebook" href="#"><i class="iconfont icon-facebook1"></i></a>
+                        <a class="twiter" href="#"><i class="iconfont icon-icontwiter"></i></a>
+                        <a class="sina" href="#"><i class="iconfont icon-sina"></i></a>
+                        <a class="google" href="#"><i class="iconfont icon-google1"></i></a>
+                    </div>
+                    <p>copyRight@2007-2017 中国科学院科技产业网版权所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 手机验证码弹窗 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">手机验证码</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form modal-form">
+                        <div class="form-group">
+                            <div class="common-input pa sendCode">
+                                <div class="clearfix">
+                                    <span class="common-input-addon label-person"><i class="iconfont icon-eyes"></i></span>
+                                    <input type="text" class="form-control send-value modal-send-value"  placeholder="输入验证码"/>
+                                    <div class="codeImg pull-right"><span></span></div>
+                                </div>
+                                <div class="form-tip form-error"><i class="iconfont icon-error"></i>请输入正确的验证码</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer modal-footer-center">
+                    <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    /* 设置全局变量sendTime */
+    $('#btn').click(function(){
+        var sentTime= 59;
+        function sent(){
+            if(sentTime == 0) {
+                $('.send-code').removeAttr('disabled');
+                $('.send-code').text('再次发送验证码');
+                sentTime=59;
+            }
+            else {
+                $('.send-code').attr('disabled',true);
+                $('.send-code').text('重新获取（'+sentTime+'）');
+                sentTime--;
+                setTimeout(function(){ sent(); },1000);
+            }
+        }
+        $('.send-code').text('重新获取（'+sentTime+'）');
+        sentTime--;
+        setTimeout(function(){ sent(); },1000);
+    });
+
+//    输入框聚焦
+    $("input[type='password']").focus(function(){
+        $(this).closest(".common-input").find(".isHigh").show();
+    }).blur(function(){
+        $(this).closest(".common-input").find(".isHigh").hide();
+    });
+
+//    密码验证
+    function AuthPasswd(string) {
+        if (string.length >= 6) {
+            if (/[a-zA-Z]+/.test(string) && /[0-9]+/.test(string) && /\W+\D+/.test(string)) {
+                return 3;
+            } else if (/[a-zA-Z]+/.test(string) || /[0-9]+/.test(string) || /\W+\D+/.test(string)) {
+                if (/[a-zA-Z]+/.test(string) && /[0-9]+/.test(string)) {
+                    return 2;
+                } else if (/\[a-zA-Z]+/.test(string) && /\W+\D+/.test(string)) {
+                    return 2;
+                } else if (/[0-9]+/.test(string) && /\W+\D+/.test(string)) {
+                    return 2;
+                } else {
+                    return 1;
+                }
+            }
+        } else {
+            return 0;
+        }
+    }
+    function checkLevel1() {
+        var val = document.getElementById('pwd').value;
+        var v = AuthPasswd(val);
+        if(v == 1) {
+            $(".pwd1").closest(".common-input").find("label").addClass("red");
+        }
+        else if(v == 2) {
+            $(".pwd1").closest(".common-input").find("label").addClass("orange");
+        }
+        else if(v == 3){
+            $(".pwd1").closest(".common-input").find("label").addClass("green");
+        }
+        console.log(123);
+    }
+    function checkLevel2() {
+        var val = document.getElementById('pwd1').value;
+        var v = AuthPasswd(val);
+        if(v == 1) {
+            $(".pwd2").closest(".common-input").find("label").addClass("red");
+        }
+        else if(v == 2) {
+            $(".pwd2").closest(".common-input").find("label").addClass("orange");
+        }
+        else if(v == 3){
+            $(".pwd2").closest(".common-input").find("label").addClass("green");
+        }
+        console.log(456);
+    }
+
+    /* input输入框的插件*/
+    $(document).ready(function(){
+        $('input').iCheck({
+            checkboxClass: 'icheckbox_flat-blue',
+            radioClass: 'iradio_flat-blue'
+        });
+    });
+</script>
+</body>
+</html>

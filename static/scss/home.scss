@@ -1,0 +1,284 @@
+@charset "UTF-8";
+@import "variables";
+@import "base";
+@import "compass";
+
+.header-index {
+  .logo {
+    background-image: url(../img/index/logo.png);
+  }
+
+  .login-list {
+    li {
+      a {
+        i {
+          font-size: 1.6rem;
+          margin-right: 5px;
+        }
+      }
+      &.user {
+        position: relative;
+        .user-click {
+          display: inline-block;
+          width: 35px;
+          height: 35px;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          border: 2px solid #000;
+          overflow: hidden;
+          background-repeat: no-repeat;
+          background-position: center;
+          -webkit-background-size: cover;
+          background-size: cover;
+          background-image: url(../img/pic1.png);
+          &:hover {
+            -webkit-box-shadow: 0 0 10px 2px #e2e2e2;
+            -moz-box-shadow: 0 0 10px 2px #e2e2e2;
+            box-shadow: 0 0 10px 2px #e2e2e2;
+          }
+        }
+        .user-dropdown {
+          position: absolute;
+          right: 0;
+          top: 100%;
+          z-index: 9;
+          width: 120px;
+          padding: 10px;
+          background: #fff;
+          @include border-radius(3px);
+          &:before{
+            position: absolute;
+            top: -15px;
+            right: 10px;
+            z-index: 8;
+            content: '';
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border: 8px solid transparent;
+            border-bottom-color: #fff;
+          }
+          a {
+            display: block;
+            line-height: 34px;
+            &:hover {
+              color: $common-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.main {
+  .banner {
+    width: 100%;
+    height: 640px;
+    padding: 140px 0 120px;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-image: url(../img/index/banner.jpg);
+    h2 {
+      padding-bottom: 40px;
+      letter-spacing: 3px;
+      font-size: 36px;
+    }
+    p {
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+      padding-bottom: 30px;
+    }
+    .input-box {
+      position: relative;
+      width: 650px;
+      margin: 0 auto;
+      .input {
+        font-size: 16px;
+        width: 100%;
+        height: 60px;
+        padding: 10px;
+        @include border-radius(3px);
+        border: 1px solid $global-border;
+        outline: none;
+        color: rgba(255,255,255,.8);
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        background: rgba(255, 255, 255, .2);
+        &:focus {
+          border-color: $common-blue;
+          -webkit-box-shadow: outside 0 5px 8px $common-blue;
+          -moz-box-shadow: outside 0 5px 8px $common-blue;
+          box-shadow: outside 0 5px 8px $common-blue;
+        }
+      }
+      .icon-box {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        z-index: 6;
+        width: 25px;
+        height: 25px;
+        i {
+          color: #fff;
+          font-size: 2rem;
+          transition: all .3s ease;
+          -webkit-transition: all .3s ease;
+        }
+        &:hover {
+          i {
+            color: $common-blue;
+          }
+        }
+      }
+    }
+    .filter-list {
+      width: 800px;
+      margin: 0 auto;
+      padding: 100px 0 40px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      li {
+        flex: 1;
+        height: 55px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        a {
+          font-size: 18px;
+          display: inline-block;
+          width: 80%;
+          height: 100%;
+          line-height: 55px;
+          color: #fff;
+          border-radius: 40px;
+          transition: all .3s ease;
+          &:hover {
+            font-size: 20px;
+            box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.5);
+          }
+        }
+        &.btn1 {
+          background-image: url("../img/index/btn1ed.png");
+        }
+        &.btn2 {
+          background-image: url("../img/index/btn2ed.png");
+        }
+        &.btn3 {
+          background-image: url("../img/index/btn3ed.png");
+        }
+        &.btn4 {
+          background-image: url("../img/index/btn4ed.png");
+        }
+        &.btn5 {
+          background-image: url("../img/index/btn5ed.png");
+        }
+      }
+    }
+  }
+  .common-title {
+    width: 100%;
+    padding: 40px 0 20px;
+    span {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: darken($bg-red,10%);
+    }
+    a {
+      font-size: 1.2rem;
+      color: $color9;
+      float: right;
+      &:hover {
+        color: $common-blue;
+      }
+    }
+  }
+  .new-list {
+    width: 100%;
+    font-size: 1.4rem;
+    border: 2px solid $global-border;
+    dt {
+      line-height: 50px;
+      padding: 0 20px;
+      border-bottom: 1px solid $global-border;
+      a {
+        color: $midnight-blue;
+        &:hover {
+          color: darken($bg-red,10%);
+        }
+      }
+      &.active {
+        a {
+          color: darken($bg-red,10%);
+        }
+      }
+    }
+    dd {
+      padding: 10px 20px;
+      p {
+        line-height: 40px;
+        a {
+          color: $midnight-blue;
+          &:hover {
+            color: darken($bg-red,10%);
+          }
+        }
+      }
+
+
+    }
+  }
+  .list {
+    width: 100%;
+
+    .item {
+      float: left;
+      width: 340px;
+      margin-right: 60px;
+      margin-bottom: 30px;
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+      .index-item {
+        width: 100%;
+        padding: 10px;
+        font-size: 0;
+        border: 1px solid $global-border;
+        dt {
+          font-size: 1.4rem;
+          @include inline-block(top);
+          width: 42%;
+          line-height: 50px;
+          color: $color6;
+          font-weight: normal;
+          border-right: 1px solid $global-border;
+        }
+        dd {
+          font-size: 1.4rem;
+          @include inline-block(top);
+          width: 58%;
+          padding-left: 20px;
+          p {
+            line-height: 26px;
+            a {
+              color: $dark-blue;
+              i {
+                font-size: 1.6rem;
+                margin-right: 5px;
+              }
+            }
+          }
+
+
+        }
+      }
+      
+    }
+  }
+}

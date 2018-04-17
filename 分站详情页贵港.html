@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="zh-hans">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<title>分站详情页</title>
+
+	<link rel="stylesheet" href="static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="static/css/swiper.min.css"/>
+     <link rel="stylesheet" href="static/css/home2.css"/>
+    <link rel="stylesheet" href="static/css/index.css"/>
+    <link rel="stylesheet" href="static/css/iconfont.css"/>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/swiper.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <script src="static/js/unslider.min.js"></script>
+
+		<!-- 在所有的页面引用IE兼容解决方案 -->
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+<style>
+	#nav {
+		border-bottom: 0px;
+		background: #eeeeee;
+	}
+	#nav li a{
+		color: #2068b0;
+		padding: 5px 24px;
+	}
+	#nav li.active a{
+		background-color: #2068b0;
+		color:#FFFFFF;
+		border-radius: 0px;
+	}
+	#nav li a:hover{
+		background-color: #2068b0;
+		border-radius: 0px;
+		color:#FFFFFF;
+	}
+	#nav li{
+		
+	}
+	.ggzhuanti{
+		padding: 10px 0px;
+		border-bottom: 1px solid #DCDCDC;
+		margin-bottom: 10px;
+	}
+	.ggzhuanti a{
+		color: #f7534c;
+	}
+	.ggzhuantititle{
+		color: #f7534c;
+		padding-bottom: 10px;
+	}
+	.ggzhuantititle .left{
+		display: inline-block;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		width: 260px;
+		float: left;
+		font-weight: bold;
+		padding-bottom: 10px;
+	}
+	.ggzhuantititle .right{
+		display: inline-block;
+		float: right;
+		padding-bottom: 10px;
+		}
+	.ggzhuantititle a{
+		color: #f7534c;
+	}
+	.news-wrap .news-list-item .item a{
+		width: 74%;
+	}
+	.news-wrap .news-list-item p{
+		padding-left: 0px;
+	}
+	.wrapper .main.main-index .banner .swiper-container .swiper-wrapper .swiper-slide{
+		height: 435px;
+	}
+	.fbcg, .fbxq, .fbfw, .fbcp{
+		border:1px solid #DCDCDC;
+		padding:25px 0;
+		text-align: center;
+	}
+	.fbcg a, .fbxq a, .fbfw a, .fbcp a {
+		color:#525252;
+	}
+	.fbcg span, .fbxq span, .fbfw span, .fbcp span {
+		display: block;
+		margin-top: 10px;
+	}
+	.czlink a span{
+	font-size: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+	}
+	.czexpert img{
+		width: 100px;
+		height: 100px;
+	}
+	.czexpert h2{
+		font-size: 14px;
+	}
+	#b01{
+		width: 100%;
+		height: 236px;
+	}
+	#b01 ul li {
+		float: left;
+		height: 236px;
+	}
+	#b01 { width: 750px;}
+
+	#b01 .dots { position: absolute;  left: 42%; bottom: 0px;}
+
+	#b01 .dots li { 
+
+	display: inline-block; 
+
+	width: 12px; 
+
+	height: 12px; 
+
+	margin: 0 4px; 
+
+	text-indent: -999em; 
+
+	border: 2px solid #fff; 
+
+	border-radius: 6px; 
+
+	cursor: pointer; 
+    background: #000;
+    opacity: .2;
+	
+
+}
+
+	#b01 .dots li.active {
+
+	background: #27323D;
+
+	opacity: 1;
+
+}
+	#b02{
+		width: 100%;
+		height: 236px;
+	}
+	#b02 ul li {
+		float: left;
+		height: 236px;
+	}
+	#b02 { width: 750px;}
+
+	#b02 .dots { position: absolute;  left: 42%; bottom: 0px;}
+
+	#b02 .dots li { 
+
+	display: inline-block; 
+
+	width: 12px; 
+
+	height: 12px; 
+
+	margin: 0 4px; 
+
+	text-indent: -999em; 
+
+	border: 2px solid #fff; 
+
+	border-radius: 6px; 
+
+	cursor: pointer; 
+    background: #000;
+    opacity: .2;
+	
+
+}
+
+	#b02 .dots li.active {
+
+	background: #27323D;
+
+	opacity: 1;
+
+}
+
+
+	#b02 .dots li.active {
+
+	background: #27323D;
+
+	opacity: 1;
+
+}
+	#b03{
+		width: 100%;
+		height: 236px;
+	}
+	#b03 ul li {
+		float: left;
+		height: 236px;
+	}
+	#b03 { width: 750px;}
+
+	#b03 .dots { position: absolute;  left: 42%; bottom: 0px;}
+
+	#b03 .dots li { 
+
+	display: inline-block; 
+
+	width: 12px; 
+
+	height: 12px; 
+
+	margin: 0 4px; 
+
+	text-indent: -999em; 
+
+	border: 2px solid #fff; 
+
+	border-radius: 6px; 
+
+	cursor: pointer; 
+    background: #000;
+    opacity: .2;
+	
+
+}
+
+	#b03 .dots li.active {
+
+	background: #27323D;
+
+	opacity: 1;
+
+}
+.gkzj{
+	width: 48%;
+}
+.gkzj:nth-child(1){
+	margin-top: 5px;
+	margin-left: 10px;
+	border-bottom: 1px solid #DCDCDC;
+	border-right: 1px solid #DCDCDC;
+}
+.gkzj:nth-child(2){
+	margin-top: 5px;
+	margin-right: 10px;
+	border-bottom: 1px solid #DCDCDC;
+}
+.gkzj:nth-child(3){
+	margin-left: 10px;
+	border-right: 1px solid #DCDCDC;
+	
+}
+.gkzj:nth-child(4){
+	margin-right: 10px;
+}
+.gkexpert{
+	margin: 10px;
+}
+.gkexpert img{
+	width: 80px;
+	height: 80px;
+	border-radius: 80px;
+}
+.gkexpertcont{
+	width: 207px;
+	margin-left: 10px;
+}
+.gkexpertcont h2{
+	font-size: 18px;
+	color: #e34234;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.gkexpertcont p{
+	color: #8a8989;
+	text-indent: 0px;
+	font-size: 14px;
+}
+.gkzltitle{
+	padding-left: 5px;
+}
+.gkzlti a{
+	color: #676767 ;
+	font-weight: bold;
+	font-size: 14px;
+	display: block;
+	margin:5px 0;
+	margin-left: 5px;
+}
+.gkzltitle label{
+	font-size: 12px;
+	color: #217dbb;
+	display: block;
+	margin-bottom:5px;
+	margin-left: 5px;
+}
+.gkzltitle span{
+	text-indent: 0px;
+	color: #676767;
+	font-size: 12px;
+	padding-left: 5px;
+}
+.gkfw img{
+	margin-top: 10px;
+	width: 90px;
+	height: 74px;	
+	margin-left: 10px;
+}
+.gkfwcont{
+	width: 68%;
+	float: left;
+	margin-left: 10px;
+}
+.gkfwcont label{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-size: 14px;
+	font-weight: bold;
+	color: #e34234;
+	display: block;
+	margin-top: 10px;
+}
+.gkfwcont span{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	margin-top: 10px;
+	font-size: 14px;
+	color: #676767 ;
+	display: block;
+}
+</style>
+	<body>
+		<div class="wrapper" id="mainContainer">
+			<div class="header-top">
+				<div class="container">
+					<div class="row">
+						<!-- 登录后样式 -->
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+							<div class="name">
+								我叫小胖胖 <i class="icon icon-gread gread1"></i><i class="iconfont icon-caret-bottom"></i>
+							</div>
+							<a href="#" class="notice">消息<span class="label label-danger">30</span></a>
+							<a href="#" class="loginOut">退出</a>
+						</div>
+						<!-- 登录前样式 -->
+						<!--<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">-->
+						<!--<a href="#" class="loginIn">请登录</a>-->
+						<!--<a href="#" class="registerIn">免费注册</a>-->
+						<!--</div>-->
+						<div class="col-md-offset-1 col-lg-7 col-md-7 col-sm-6 col-xs-6">
+							<div class="right-nav">
+								<a href="#"><span class="luntan"><img src="static/img/index/luntang.png/"></span>&nbsp;论坛 <i class="iconfont icon-caret-bottom"></i></a>
+								<a href="#">我的成果 <i class="iconfont icon-caret-bottom"></i></a>
+								<a href="#">我的服务 <i class="iconfont icon-caret-bottom"></i></a>
+								<a href="#">我的需求 <i class="iconfont icon-caret-bottom"></i></a>
+								<a href="#">我的机构 <i class="iconfont icon-caret-bottom"></i></a>
+								<a class="wechatCheck" href="#">微信扫一扫
+									<img src="static/img/index/wechao.png" />
+									<div class="bigImg">
+										<img src="static/img/index/wechao.png" />
+									</div>
+								</a>
+								<a class="wechatCheck" href="#">今日关注扫一扫
+									<img src="static/img/index/wechao.png" />
+									<div class="bigImg">
+										<img src="static/img/index/wechao.png" />
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+							<a href="#"><img src="static/img/index/new-logo.png" /></a>
+						</div>
+						<div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<div class="search pa pull-left" style="margin-left:106px;width: 81%;">
+								<div class="search-select">
+									<a href="javascript:;" class="origin dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="txt">成果</span> <i class="iconfont icon-caret-bottom"></i></a>
+									<select multiple class="dropdown-menu value-list ">
+										<option value="成果" selected>成果</option>
+										<option value="服务">服务</option>
+										<option value="会员">会员</option>
+										<option value="需求">需求</option>
+									</select>
+								</div>
+								<input type="text" class="form-control" placeholder="请输入搜索内容" />
+								<a href="javascript:;" class="search-btn"><i class="iconfont icon-search1"></i></a>
+							</div>
+
+							<ul class="list" style="margin-left:51px;padding-left:57px;">
+								<li><label>热门搜索 :</label></li>
+								<li>
+									<a href="#">人工智能</a>
+								</li>
+								<li>
+									<a href="#">风云四号</a>
+								</li>
+								<li>
+									<a href="#">海绵城市</a>
+								</li>
+								<li>
+									<a href="#">数字经济</a>
+								</li>
+								<li>
+									<a href="#">通用航空</a>
+								</li>
+								<li>
+									<a href="#">航天航空</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<nav class="header-nav">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<a class="active" href="javascript:;">首页</a>
+							<a href="javascript:;">科研成果</a>
+							<a href="javascript:;">科研产品</a>
+							<a href="javascript:;">分站风采</a>
+							<a href="javascript:;">专家团队</a>
+							<a href="javascript:;">供需服务</a>
+							<a href="javascript:;">联盟主页</a>
+							<a href="javascript:;">科技资讯</a>
+
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="ad-banner" style="background-image:url('static/img/changzhou.png')">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center">
+							<p class="logo" style="background-image: url('static/img/stationLogo.png')"></p>
+						</div>
+						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 desc">
+							<h2>XXXXXXXX分站</h2>
+							<p class="desc" style="height: 70px">You are a big sucker, yes, that is you, I hope you die in Macau Well, never go back to Shanghai, do not add me, I do not want to see you, you are bad is my greatest blessing</p>
+						<span class="zhankai" style="color:#0023AC; cursor:pointer;margin-left: 20px;">展开</span>
+                <span class="shouqi" style="color:#0023AC;display:none;cursor:pointer;margin-left: 20px;">收起</span>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+                    		<a href="#" class="btn btn-primary join-btn">加入分站</a>
+                		</div>
+					</div>
+				</div>
+			</div>
+			<div class="main main-index">
+			<div class="main main-index">
+				<div class="container">
+					<div class="banner row">
+						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+							<!-- Swiper -->
+							<div class="swiper-container" id="substation-carousel">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide" style="background-image: url('static/img/banner.png');"></div>
+									<div class="swiper-slide" style="background-image: url('static/img/pic1.png');"></div>
+									<div class="swiper-slide" style="background-image: url('static/img/banner.png');"></div>
+									<div class="swiper-slide" style="background-image: url('static/img/pic2.png');"></div>
+								</div>
+								<!-- Add Pagination -->
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="news-wrap" id="substation-tab">
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs" role="tablist" id="nav">
+									<li role="presentation" class="active">
+										<a href="#home" aria-controls="home" role="tab" data-toggle="tab"><span>站内专题</span></a>
+									</li>
+									<li role="presentation">
+										<a href="#info" aria-controls="info" role="tab" data-toggle="tab"><span>站内资讯</span></a>
+									</li>
+									<li role="presentation">
+										<a href="#sports" aria-controls="sports" role="tab" data-toggle="tab"><span>站内活动</span></a>
+									</li>
+								</ul>
+
+								<!-- Tab panes -->
+								<div class="tab-content">
+									<div role="tabpanel" class="tab-pane active" id="home">
+										<ul class="news-list">
+											<li class="news-list-item">
+												<div class="item">
+													<i class="iconfont icon-caret pull-left"></i>
+													<a href="#" class="pull-left">乐视金融退出财经金融信息服务平台，贾跃亭：来乐视看财讯元有鬼电车第一单</a>
+													<span class="label label-info pull-right">行业动态</span>
+												</div>
+												<p><span>2017-03-09 21:38</span></p>
+												<div class="ggzhuanti" style="display: none;">
+													<div class="ggzhuantititle">
+														<span class="left"><a href="#">基于云计算的交通大数据</a></span>
+														<span class="right"><a href="#">more>></a></span>
+													</div>
+													<div class="clear"></div>
+													<span class="zxx_text_overflow1">学会2012年会会议简报学会2012年会会议简报学会2012年会会议简报学会2012年会会议简报学会2012年会会报…</span>【<a href="">全文</a>】
+												</div>
+											</li>
+
+											<li class="news-list-item">
+												<div class="item">
+													<i class="iconfont icon-caret pull-left"></i>
+													<a href="#" class="pull-left">乐视金融退出财经金融信息服务平台，贾跃亭：来乐视看财讯元有鬼电车第一单</a>
+													<span class="label label-info pull-right">行业动态</span>
+												</div>
+												<p><span>2017-03-09 21:38</span></p>
+												<div class="ggzhuanti" style="display: none;">
+													<div class="ggzhuantititle">
+														<span class="left"><a href="#">基于云计算的交通大数据</a></span>
+														<span class="right"><a href="#">more>></a></span>
+													</div>
+													<div class="clear"></div>
+													<span class="zxx_text_overflow1">学会2012年会会议简报学会2012年会会议简报学会2012年会会议简报学会2012年会会议简报学会2012年会会报…</span>【<a href="">全文</a>】
+												</div>
+											</li>
+
+											<li class="news-list-item">
+												<div class="item">
+													<i class="iconfont icon-caret pull-left"></i>
+													<a href="#" class="pull-left">乐视金融退出财经金融信息服务平台，贾跃亭：来乐视看财讯元有鬼电车第一单</a>
+													<span class="label label-info pull-right">行业动态</span>
+												</div>
+												<p><span>2017-03-09 21:38</span></p>
+												<div class="ggzhuanti" style="display: none;">
+													<div class="ggzhuantititle">
+														<span class="left"><a href="#">基于云计算的交通大数据</a></span>
+														<span class="right"><a href="#">more>></a></span>
+													</div>
+													<div class="clear"></div>
+													<span class="zxx_text_overflow1">学会2012年会会议简报学会2012年会会议简报学会2012年会会议简报学会2012年会会议简报学会2012年会会报…</span>【<a href="">全文</a>】
+												</div>
+											</li>
+
+											<li class="news-list-item">
+												<div class="item">
+													<i class="iconfont icon-caret pull-left"></i>
+													<a href="#" class="pull-left">乐视金融退出财经金融信息服务平台，贾跃亭：来乐视看财讯元有鬼电车第一单</a>
+													<span class="label label-info pull-right">行业动态</span>
+												</div>
+												<p><span>2017-03-09 21:38</span></p>
+												<div class="ggzhuanti" style="display: none;">
+													<div class="ggzhuantititle">
+														<span class="left"><a href="#">基于云计算的交通大数据</a></span>
+														<span class="right"><a href="#">more>></a></span>
+													</div>
+													<div class="clear"></div>
+													<span class="zxx_text_overflow1">学会2012年会会议简报学会2012年会会议简报学会2012年会会议简报学会2012年会会议简报学会2012年会会报…</span>【<a href="">全文</a>】
+												</div>
+											</li>
+
+											<li class="news-list-item">
+												<div class="item">
+													<i class="iconfont icon-caret pull-left"></i>
+													<a href="#" class="pull-left">乐视金融退出财经金融信息服务平台，贾跃亭：来乐视看财讯元有鬼电车第一单</a>
+													<span class="label label-info pull-right">行业动态</span>
+												</div>
+												<p><span>2017-03-09 21:38</span></p>
+												<div class="ggzhuanti" style="display: none;">
+													<div class="ggzhuantititle">
+														<span class="left"><a href="#">基于云计算的交通大数据</a></span>
+														<span class="right"><a href="#">more>></a></span>
+													</div>
+													<div class="clear"></div>
+													<span class="zxx_text_overflow1">学会2012年会会议简报学会2012年会会议简报学会2012年会会议简报学会2012年会会议简报学会2012年会会报…</span>【<a href="">全文</a>】
+												</div>
+											</li>
+
+										</ul>
+										<div class="text-center">
+											<a href="news.html" class="btn btn-primary btn-inverse">浏览更多</a>
+										</div>
+									</div>
+									<div role="tabpanel" class="tab-pane" id="info">...</div>
+									<div role="tabpanel" class="tab-pane" id="sports">...</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div></div>
+				<script>
+					$(".news-list-item").hover(function(){
+						$(this).children('div.item').hide();
+						$(this).children('p').hide();
+						$(this).children('div.ggzhuanti').show();
+					},function(){
+						$(this).children('div.item').show();
+						$(this).children('p').show();
+						$(this).children('div.ggzhuanti').hide();
+					})
+				</script>
+					<div class="main main-index" style="background: #f8f8f8;">
+				<div class="container">
+				    <div class="row">
+						<div class="col-md-4">
+							<div class="main-index-title substation-title" style="padding-bottom: 0px;">
+								<span style="padding-left: 0px;"><label style="font-weight: bold;">科技需求</label>&nbsp;Science and demand</span>
+								<hr style="width: 15px;margin-top: 15px;"/>
+								<a href="#" class="more pull-right" style="color:red;margin-top: -38px;">更多 ></a>
+							</div>
+							<div class="czdemand">
+								<ul>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+						
+						<div class="col-md-4">
+							<div class="main-index-title substation-title" style="padding-bottom: 0px;">
+								<span style="padding-left: 0px;"><label style="font-weight: bold;">科技成果</label> &nbsp;Scientific Achievements</span>
+								<hr style="width: 15px;margin-top: 15px;"/>
+								<a href="#" class="more pull-right" style="color:red;margin-top: -38px;">更多 ></a>
+							</div>
+							<div class="czdemand">
+								<ul>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+						
+						<div class="col-md-4">
+							<div class="main-index-title substation-title" style="padding-bottom: 0px;">
+								<span style="padding-left: 0px;"><label style="font-weight: bold;">科技动态</label> &nbsp;Scientific Dynamic</span>
+								<hr style="width: 15px;margin-top: 15px;"/>
+								<a href="#" class="more pull-right" style="color:red;margin-top: -38px;">更多 ></a>
+							</div>
+							<div class="czdemand">
+								<ul>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									<li>
+										<a href="#">方剂云彩方剂云彩十大家居的骄傲点击点击安抚十大家居的骄傲点击点击安抚
+					
+										</a>
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+				</div>
+				</div>
+				</div>
+				<div class="main main-index" style="background: #ffffff;padding-bottom: 0px;">
+				 	<div class="container">
+						<div class="row">
+							<div class="col-md-8">
+							<div class="czachievemrnt">
+								<div class="news-wrap" id="substation-tab" style="width: 100%;">
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs" role="tablist" id="nav">
+									<li role="presentation" class="active">
+										<a href="#achieve" aria-controls="achieve" role="tab" data-toggle="tab" style="padding: 5px 63px;"><span>成果推荐</span></a>
+									</li>
+									<li role="presentation">
+										<a href="#person1" aria-controls="person1" role="tab" data-toggle="tab" style="padding: 5px 63px;"><span>专家推荐</span></a>
+									</li>
+									<li role="presentation">
+										<a href="#zhuanli" aria-controls="zhuanli" role="tab" data-toggle="tab" style="padding: 5px 63px;"><span>专利推荐</span></a>
+									</li>
+									<li role="presentation">
+										<a href="#service" aria-controls="service" role="tab" data-toggle="tab" style="padding: 5px 63px;"><span>服务推荐</span></a>
+									</li>
+								</ul>
+
+								<!-- Tab panes -->
+								</div>
+							<!-- Tab panes -->
+								<div class="tab-content" style="border: 1px solid #DCDCDC;">
+									<div role="tabpanel" class="tab-pane active" id="achieve">
+												<div class="banner">
+										  <!-- Swiper -->
+										<div class="swiper-container">
+					                        <div class="swiper-wrapper">
+					                            <div class="swiper-slide"  style="height: 236px;">
+					                            	<div class="banner-left pull-left" style="height: 200px;">
+					                            		<a href="#">
+					                            		<img src="static/img/53f44283a4347.jpg" style="width: 279px;height: 184px;"/>
+					                            		</a>
+					                            	</div>
+					                            	<div class="banner-right pull-left" style="height: 200px;">			                       
+					                            		<h2 style="margin-top: 10px;font-size: 16px;"><a href="#"style="font-size:16px;height: 25px;border: 0px;text-align: left;line-height: normal;margin-top: 0px;color: #414141;">德玛西亚卡卡卡得1</a></h2>
+					                            		<label style="width: 20px;margin-bottom: -1px;border-top:1px solid #EC3642;"></label>
+					                            		<i class="iconfont icon-caret"></i>
+					                			  		<span>德玛西亚</span>
+					                            		<h3 style="font-size: 14px;margin: 5px 0;">电气自动化2</h3>
+					                                    <p class="zxx_text_overflow" style="font-size: 14px;line-height: normal;">是点击啊啥叫打算定居阿速达到阿诗丹是点击啊啥叫打算定居阿速达到阿诗丹顿集散地欧萨地面无IE就我借我点埃里克简单的是点击啊啥叫打算定居阿速达到阿诗丹顿集散地欧萨地面无IE就我借我点埃里克简单的顿集散地欧萨地面无IE就我借我点埃里克简单的</p>
+					                            		<a href="#" style="width: 70px;text-align: center;margin-top: 5px;">查看更多</a>
+					                            	</div>
+					                            </div>
+					                             <div class="swiper-slide" style="height: 236px;">
+					                            	<div class="banner-left pull-left" style="height: 200px;">
+					                            		<a href="#">
+					                            		<img src="static/img/53f44283a4347.jpg" style="width: 279px;height: 184px;"/>
+					                            	    </a>
+					                            	</div>
+					                            	<div class="banner-right pull-left" style="height: 200px;">			                       
+					                            		<h2 style="margin-top: 10px;font-size: 16px;"><a href="#" style="height: 25px;border: 0px;text-align: left;line-height: normal;margin-top: 0px;color: #414141;">德玛西亚卡卡卡得2</a></h2>
+					                            		<label style="width: 20px;margin-bottom: -1px;border-top:1px solid #EC3642;"></label>
+					                            		<i class="iconfont icon-caret"></i>
+					                			  		<span>德玛西亚</span>
+					                            		<h3 style="font-size: 14px;margin: 5px 0;">电气自动化</h3>
+					                                    <p class="zxx_text_overflow" style="font-size: 14px;line-height: normal;">是点击啊啥叫打算定居阿速达到阿诗丹是点击啊啥叫打算定居阿速达到阿诗丹顿集散地欧萨地面无IE就我借我点埃里克简单的是点击啊啥叫打算定居阿速达到阿诗丹顿集散地欧萨地面无IE就我借我点埃里克简单的顿集散地欧萨地面无IE就我借我点埃里克简单的</p>
+					                            		<a href="#" style="width: 70px;text-align: center;margin-top: 5px;">查看更多</a>
+					                            	</div>
+					                            </div>
+					                             <div class="swiper-slide" style="height: 236px;">
+					                            	<div class="banner-left pull-left" style="height: 200px;">
+					                            		<a href="#">
+					                            		<img src="static/img/53f44283a4347.jpg" style="width: 279px;height: 184px;"/>
+					                            		</a>
+					                            	</div>
+					                            	<div class="banner-right pull-left" style="height: 200px;">			                       
+					                            		<h2 style="margin-top: 10px;font-size: 16px;"><a href="#"style="height:25px;border: 0px;text-align: left;line-height: normal;margin-top: 0px;color: #414141;">3</a></h2>
+					                            		<label style="width: 20px;margin-bottom: -1px;border-top: 1px solid #EC3642;"></label>
+					                            		<i class="iconfont icon-caret"></i>
+					                			  		<span>德玛西亚</span>
+					                            		<h3 style="font-size: 14px;margin: 5px 0;">电气自动化</h3>
+					                                    <p class="zxx_text_overflow" style="font-size: 14px;line-height: normal;">是点击啊啥叫打算定居阿速达到阿诗丹是点击啊啥叫打算定居阿速达到阿诗丹顿集散地欧萨地面无IE就我借我点埃里克简单的是点击啊啥叫打算定居阿速达到阿诗丹顿集散地欧萨地面无IE就我借我点埃里克简单的顿集散地欧萨地面无IE就我借我点埃里克简单的</p>
+					                            		<a href="#" style="width: 70px;text-align: center;margin-top: 5px;">查看更多</a>
+					                            	</div>
+					                            </div>
+					                             <div class="swiper-slide" style="height: 236px;">
+					                            	<div class="banner-left pull-left" style="height: 200px;">
+					                            		<a href="#">
+					                            		<img src="static/img/53f44283a4347.jpg" style="width: 279px;height: 184px;"/>
+					                            		</a>
+					                            	</div>
+					                            	<div class="banner-right pull-left" style="height: 200px;">			                       
+					                            		<h2 style="margin-top: 10px;font-size: 16px;"><a href="#"style="height: 25px;border: 0px;text-align: left;line-height: normal;margin-top: 0px;color: #414141;">德玛西亚卡卡卡得</a></h2>
+					                            		<label style="width: 20px;margin-bottom: -1px;border-top: 1px solid #EC3642;"></label>
+					                            		<i class="iconfont icon-caret"></i>
+					                			  		<span>德玛西亚</span>
+					                            		<h3 style="font-size: 14px;margin: 5px 0;">电气自动化</h3>
+					                                    <p class="zxx_text_overflow" style="font-size: 14px;line-height: normal;">是点击啊啥叫打算定居阿速达到阿诗丹是点击啊啥叫打算定居阿速达到阿诗丹顿集散地欧萨地面无IE就我借我点埃里克简单的是点击啊啥叫打算定居阿速达到阿诗丹顿集散地欧萨地面无IE就我借我点埃里克简单的顿集散地欧萨地面无IE就我借我点埃里克简单的</p>
+					                            		<a href="#" style="width: 70px;text-align: center;margin-top: 5px;">查看更多</a>
+					                            	</div>
+					                            </div>
+					                         </div>
+		                        <!-- Add Pagination -->
+		                        <div class="swiper-pagination" style="text-align: right;left: 0px;"></div>
+		                    </div>
+									</div>
+									 </div>
+									<div role="tabpanel" class="tab-pane " id="person1">
+												<div class="banner" id="b01">
+										  <!-- Swiper -->
+										  <ul>
+										  	<li>
+										  		<div class="col-md-6 gkzj" style="background: #FFFFFF;height:105px;padding: 0px;">
+									                        <div class="gkexpert">
+									                        	<div >
+									                        	<a href="#">
+									                        	<img src="static/img/53f442834079a.jpg" class="pull-left">
+									                        	</a>
+									                        	
+									                        	<div class="pull-left gkexpertcont" >
+											                       <a href="#"><h2>Milla Jovovich</h2></a>
+											                       <p class="zxx_text_overflow1">格雷森.鲍彻，美国篮球运动员，巡回赛
+																	唯一的白人，也是最矮的选手。</p>
+									                     		  </div>
+									                        	</div>          
+									                     </div>	 
+									                </div> 
+									                <div class="col-md-6 gkzj" style="background: #FFFFFF;height:105px;padding: 0px;">
+									                        <div class="gkexpert">
+									                        	<div >
+									                        	<a href="#">
+									                        	<img src="static/img/53f442834079a.jpg" class="pull-left">
+									                        	</a>
+									                        	
+									                        	<div class="pull-left gkexpertcont" >
+											                       <h2>Milla Jovovich</h2>
+											                       <p class="zxx_text_overflow1">格雷森.鲍彻，美国篮球运动员，巡回赛
+																	唯一的白人，也是最矮的选手。</p>
+									                     		  </div>
+									                        	</div>          
+									                     </div>	 
+									                </div>
+									                <div class="col-md-6 gkzj" style="background: #FFFFFF;height:105px;padding: 0px;">
+									                        <div class="gkexpert">
+									                        	<div >
+									                        	<a href="#">
+									                        	<img src="static/img/53f442834079a.jpg" class="pull-left">
+									                        	</a>
+									                        	
+									                        	<div class="pull-left gkexpertcont" >
+											                       <h2>Milla Jovovich</h2>
+											                       <p class="zxx_text_overflow1">格雷森.鲍彻，美国篮球运动员，巡回赛
+																	唯一的白人，也是最矮的选手。</p>
+									                     		  </div>
+									                        	</div>          
+									                     </div>	 
+									                </div>
+									                <div class="col-md-6 gkzj" style="background: #FFFFFF;height:105px;padding: 0px;">
+									                        <div class="gkexpert">
+									                        	<div >
+									                        	<a href="#">
+									                        	<img src="static/img/53f442834079a.jpg" class="pull-left">
+									                        	</a>
+									                        	
+									                        	<div class="pull-left gkexpertcont" >
+											                       <h2>Milla Jovovich</h2>
+											                       <p class="zxx_text_overflow1">格雷森.鲍彻，美国篮球运动员，巡回赛
+																	唯一的白人，也是最矮的选手。</p>
+									                     		  </div>
+									                        	</div>          
+									                     </div>	 
+									                </div>
+									                <div class="col-md-12" style="background: #FFFFFF;padding: 0px;width:98%;text-align: right;padding-right: 15px;">
+									                	<a  href="#">查看更多>></a>
+									                </div>
+										  	</li>
+										  	<li>
+										  		<div class="col-md-6 gkzj" style="background: #FFFFFF;height:105px;padding: 0px;">
+									                        <div class="gkexpert">
+									                        	<div >
+									                        	<a href="#">
+									                        	<img src="static/img/53f442834079a.jpg" class="pull-left">
+									                        	</a>
+									                        	
+									                        	<div class="pull-left gkexpertcont" >
+											                       <h2>Milla Jovovich</h2>
+											                       <p class="zxx_text_overflow1">格雷森.鲍彻，美国篮球运动员，巡回赛
+																	唯一的白人，也是最矮的选手。</p>
+									                     		  </div>
+									                        	</div>          
+									                     </div>	 
+									                </div> 
+									                <div class="col-md-6 gkzj" style="background: #FFFFFF;height:105px;padding: 0px;">
+									                        <div class="gkexpert">
+									                        	<div >
+									                        	<a href="#">
+									                        	<img src="static/img/53f442834079a.jpg" class="pull-left">
+									                        	</a>
+									                        	
+									                        	<div class="pull-left gkexpertcont" >
+											                       <h2>Milla Jovovich</h2>
+											                       <p class="zxx_text_overflow1">格雷森.鲍彻，美国篮球运动员，巡回赛
+																	唯一的白人，也是最矮的选手。</p>
+									                     		  </div>
+									                        	</div>          
+									                     </div>	 
+									                </div>
+									                <div class="col-md-6 gkzj" style="background: #FFFFFF;height:105px;padding: 0px;">
+									                        <div class="gkexpert">
+									                        	<div >
+									                        	<a href="#">
+									                        	<img src="static/img/53f442834079a.jpg" class="pull-left">
+									                        	</a>
+									                        	
+									                        	<div class="pull-left gkexpertcont" >
+											                       <h2>Milla Jovovich</h2>
+											                       <p class="zxx_text_overflow1">格雷森.鲍彻，美国篮球运动员，巡回赛
+																	唯一的白人，也是最矮的选手。</p>
+									                     		  </div>
+									                        	</div>          
+									                     </div>	 
+									                </div>
+									                <div class="col-md-6 gkzj" style="background: #FFFFFF;height:105px;padding: 0px;">
+									                        <div class="gkexpert">
+									                        	<div >
+									                        	<a href="#">
+									                        	<img src="static/img/53f442834079a.jpg" class="pull-left">
+									                        	</a>
+									                        	
+									                        	<div class="pull-left gkexpertcont" >
+											                       <h2>Milla Jovovich</h2>
+											                       <p class="zxx_text_overflow1">格雷森.鲍彻，美国篮球运动员，巡回赛
+																	唯一的白人，也是最矮的选手。</p>
+									                     		  </div>
+									                        	</div>          
+									                     </div>	 
+									                </div>
+									                <div class="col-md-12" style="background: #FFFFFF;padding: 0px;width:98%;text-align: right;padding-right: 15px;">
+									                	<a  href="#">查看更多>></a>
+									                </div>
+										  	</li>
+									
+										  </ul>
+										</div>
+									 </div>
+								 	<div role="tabpanel" class="tab-pane " id="zhuanli">
+											<div class="banner" id="b02">
+										  <!-- Swiper -->
+										  <ul>
+										  	<li>
+										  			<div class="col-md-6 gkzj" style="background: #FFFFFF;height:100px;padding: 0px;">
+									                       <div class="gkzltitle">
+									                      
+									                       	<div class="gkzlti"> <a href="#">在视网膜固定微电机职务无的手撒奇偶is啊太 </a> </div>
+									                      
+									                       <label>CN20142131231231231231</label>
+									                         <span class="zxx_text_overflow1">格雷森.鲍彻，美国篮球运动员，巡回赛
+																	唯一的白人，也是最矮的选手。</span><a href="#" style="color: #e34234 ;font-size: 12px;">【全文】</a>
+									                      </div>
+									                </div> 
+									                <div class="col-md-6 gkzj" style="background: #FFFFFF;height:100px;padding: 0px;">
+									                       <div class="gkzltitle">
+									                      
+									                       	<div class="gkzlti"> <a href="#">在视网膜固定微电机职务无的手撒奇偶is啊太 </a> </div>
+									                      
+									                       <label>CN20142131231231231231</label>
+									                         <span class="zxx_text_overflow1">格雷森.鲍彻，美国篮球运动员，巡回赛
+																	唯一的白人，也是最矮的选手。</span><a href="#" style="color: #e34234 ;font-size: 12px;">【全文】</a>
+									                      </div>
+									                </div> 
+									                <div class="col-md-6 gkzj" style="background: #FFFFFF;height:100px;padding: 0px;">
+									                       <div class="gkzltitle">
+									                      
+									                       	<div class="gkzlti"> <a href="#">在视网膜固定微电机职务无的手撒奇偶is啊太 </a> </div>
+									                      
+									                       <label>CN20142131231231231231</label>
+									                         <span class="zxx_text_overflow1">格雷森.鲍彻，美国篮球运动员，巡回赛
+																	唯一的白人，也是最矮的选手。</span><a href="#" style="color: #e34234 ;font-size: 12px;">【全文】</a>
+									                      </div>
+									                </div> 
+									                <div class="col-md-6 gkzj" style="background: #FFFFFF;height:100px;padding: 0px;">
+									                       <div class="gkzltitle">
+									                      
+									                       	<div class="gkzlti"> <a href="#">在视网膜固定微电机职务无的手撒奇偶is啊太 </a> </div>
+									                      
+									                       <label>CN20142131231231231231</label>
+									                         <span class="zxx_text_overflow1">格雷森.鲍彻，美国篮球运动员，巡回赛
+																	唯一的白人，也是最矮的选手。</span><a href="#" style="color: #e34234 ;font-size: 12px;">【全文】</a>
+									                      </div>
+									                </div> 
+									               
+									                <div class="col-md-12" style="background: #FFFFFF;padding: 0px;width:98%;text-align: right;padding-right: 15px;">
+									                	<a  href="#">查看更多>></a>
+									                </div>
+										  	</li>
+										  	
+									<li>
+										  			<div class="col-md-6 gkzj" style="background: #FFFFFF;height:100px;padding: 0px;">
+									                       <div class="gkzltitle">
+									                      
+									                       	<div class="gkzlti"> <a href="#">在视网膜固定微电机职务无的手撒奇偶is啊太 </a> </div>
+									                      
+									                       <label>CN20142131231231231231</label>
+									                         <span class="zxx_text_overflow1">格雷森.鲍彻，美国篮球运动员，巡回赛
+																	唯一的白人，也是最矮的选手。</span><a href="#" style="color: #e34234 ;font-size: 12px;">【全文】</a>
+									                      </div>
+									                </div> 
+									                <div class="col-md-6 gkzj" style="background: #FFFFFF;height:100px;padding: 0px;">
+									                       <div class="gkzltitle">
+									                      
+									                       	<div class="gkzlti"> <a href="#">在视网膜固定微电机职务无的手撒奇偶is啊太 </a> </div>
+									                      
+									                       <label>CN20142131231231231231</label>
+									                         <span class="zxx_text_overflow1">格雷森.鲍彻，美国篮球运动员，巡回赛
+																	唯一的白人，也是最矮的选手。</span><a href="#" style="color: #e34234 ;font-size: 12px;">【全文】</a>
+									                      </div>
+									                </div> 
+									                <div class="col-md-6 gkzj" style="background: #FFFFFF;height:100px;padding: 0px;">
+									                       <div class="gkzltitle">
+									                      
+									                       	<div class="gkzlti"> <a href="#">在视网膜固定微电机职务无的手撒奇偶is啊太 </a> </div>
+									                      
+									                       <label>CN20142131231231231231</label>
+									                         <span class="zxx_text_overflow1">格雷森.鲍彻，美国篮球运动员，巡回赛
+																	唯一的白人，也是最矮的选手。</span><a href="#" style="color: #e34234 ;font-size: 12px;">【全文】</a>
+									                      </div>
+									                </div> 
+									                <div class="col-md-6 gkzj" style="background: #FFFFFF;height:100px;padding: 0px;">
+									                       <div class="gkzltitle">
+									                      
+									                       	<div class="gkzlti"> <a href="#">在视网膜固定微电机职务无的手撒奇偶is啊太 </a> </div>
+									                      
+									                       <label>CN20142131231231231231</label>
+									                         <span class="zxx_text_overflow1">格雷森.鲍彻，美国篮球运动员，巡回赛
+																	唯一的白人，也是最矮的选手。</span><a href="#" style="color: #e34234 ;font-size: 12px;">【全文】</a>
+									                      </div>
+									                </div> 
+									               
+									                <div class="col-md-12" style="background: #FFFFFF;padding: 0px;width:98%;text-align: right;padding-right: 15px;">
+									                	<a  href="#">查看更多>></a>
+									                </div>
+										  	</li>
+										  </ul>
+										</div>
+									 </div>
+								 	<div role="tabpanel" class="tab-pane " id="service">
+											<div class="banner" id="b03">
+										  <!-- Swiper -->
+										  <ul>
+										  	<li>
+										  			<div class="col-md-6 gkzj" style="background: #FFFFFF;height:100px;padding: 0px;">
+									                     <div class="gkfw">
+									                     	<a href="#">
+									                     		<img src="static/img/53f44283a4347.jpg" class="pull-left"/>
+									                     	</a>
+									                     	<div class="gkfwcont">
+									                     		<a href="#"><label>知识长认证服务</label></a>
+									                     		<span>服务地区：全国</span>
+									                     		<span>服务机构：北京中科三方网络技术有限公司</span>
+									                     	</div>
+									                     </div>
+									                </div> 
+									                <div class="col-md-6 gkzj" style="background: #FFFFFF;height:100px;padding: 0px;">
+									                     <div class="gkfw">
+									                     	<a href="#">
+									                     		<img src="static/img/53f44283a4347.jpg" class="pull-left"/>
+									                     	</a>
+									                     	<div class="gkfwcont">
+									                     		<label>知识长认证服务</label>
+									                     		<span>服务地区：全国</span>
+									                     		<span>服务机构：北京中科三方网络技术有限公司</span>
+									                     	</div>
+									                     </div>
+									                </div> 
+									                <div class="col-md-6 gkzj" style="background: #FFFFFF;height:100px;padding: 0px;">
+									                     <div class="gkfw">
+									                     	<a href="#">
+									                     		<img src="static/img/53f44283a4347.jpg" class="pull-left"/>
+									                     	</a>
+									                     	<div class="gkfwcont">
+									                     		<label>知识长认证服务</label>
+									                     		<span>服务地区：全国</span>
+									                     		<span>服务机构：北京中科三方网络技术有限公司</span>
+									                     	</div>
+									                     </div>
+									                </div> 
+									                <div class="col-md-6 gkzj" style="background: #FFFFFF;height:100px;padding: 0px;">
+									                     <div class="gkfw">
+									                     	<a href="#">
+									                     		<img src="static/img/53f44283a4347.jpg" class="pull-left"/>
+									                     	</a>
+									                     	<div class="gkfwcont">
+									                     		<label>知识长认证服务</label>
+									                     		<span>服务地区：全国</span>
+									                     		<span>服务机构：北京中科三方网络技术有限公司</span>
+									                     	</div>
+									                     </div>
+									                </div> 
+									            
+									                <div class="col-md-12" style="background: #FFFFFF;padding: 0px;width:98%;text-align: right;padding-right: 15px;">
+									                	<a  href="#">查看更多>></a>
+									                </div>
+										  	</li>
+										  	 	<li>
+										  			<div class="col-md-6 gkzj" style="background: #FFFFFF;height:100px;padding: 0px;">
+									                     <div class="gkfw">
+									                     	<a href="#">
+									                     		<img src="static/img/53f44283a4347.jpg" class="pull-left"/>
+									                     	</a>
+									                     	<div class="gkfwcont">
+									                     		<label>知识长认证服务</label>
+									                     		<span>服务地区：全国</span>
+									                     		<span>服务机构：北京中科三方网络技术有限公司</span>
+									                     	</div>
+									                     </div>
+									                </div> 
+									                <div class="col-md-6 gkzj" style="background: #FFFFFF;height:100px;padding: 0px;">
+									                     <div class="gkfw">
+									                     	<a href="#">
+									                     		<img src="static/img/53f44283a4347.jpg" class="pull-left"/>
+									                     	</a>
+									                     	<div class="gkfwcont">
+									                     		<label>知识长认证服务</label>
+									                     		<span>服务地区：全国</span>
+									                     		<span>服务机构：北京中科三方网络技术有限公司</span>
+									                     	</div>
+									                     </div>
+									                </div> 
+									                <div class="col-md-6 gkzj" style="background: #FFFFFF;height:100px;padding: 0px;">
+									                     <div class="gkfw">
+									                     	<a href="#">
+									                     		<img src="static/img/53f44283a4347.jpg" class="pull-left"/>
+									                     	</a>
+									                     	<div class="gkfwcont">
+									                     		<label>知识长认证服务</label>
+									                     		<span>服务地区：全国</span>
+									                     		<span>服务机构：北京中科三方网络技术有限公司</span>
+									                     	</div>
+									                     </div>
+									                </div> 
+									                <div class="col-md-6 gkzj" style="background: #FFFFFF;height:100px;padding: 0px;">
+									                     <div class="gkfw">
+									                     	<a href="#">
+									                     		<img src="static/img/53f44283a4347.jpg" class="pull-left"/>
+									                     	</a>
+									                     	<div class="gkfwcont">
+									                     		<label>知识长认证服务</label>
+									                     		<span>服务地区：全国</span>
+									                     		<span>服务机构：北京中科三方网络技术有限公司</span>
+									                     	</div>
+									                     </div>
+									                </div> 
+									            
+									                <div class="col-md-12" style="background: #FFFFFF;padding: 0px;width:98%;text-align: right;padding-right: 15px;">
+									                	<a  href="#">查看更多>></a>
+									                </div>
+										  	</li>
+									
+										  </ul>
+										</div>
+									 </div>
+								 		
+									
+									
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4" style="margin-top: 30px;">
+								<div class="col-md-6 fbcg"> 
+									<a href="">
+										<img src="static/img/fbcg-a.png" /> 
+										<span>发布成果</span>
+									</a>
+								</div> 
+								<div class="col-md-6 fbxq">
+									<a href="">
+										<img src="static/img/fbxq-a.png" /> 
+										<span>提交需求</span>
+									</a>
+								</div> 
+								<div class="col-md-6 fbfw">
+									<a href="">
+										<img src="static/img/fbfw-a.png" /> 
+										<span>发布服务</span>
+									
+									</a>
+								</div> 
+								<div class="col-md-6 fbcp">
+									<a href="">
+										<img src="static/img/fbcp-a.png" /> 
+										<span>发布产品</span>
+									</a>
+								</div> 
+							</div>
+							
+						</div>
+					</div>
+				</div>
+						
+					<div class="main main-index" style="background: #f8f8f8;">
+				<div class="container">
+					<div class="main-index-title substation-title" style="text-align: center;">
+						
+						<span style="padding-left: 0px; display:block;font-weight: bold;font-size: 20px;color:#3498db ;">贵港市科技信息一站式服务平台</span>
+					<hr style="width: 25px;margin: 0 auto;margin-top: 10px;height:0px;"/>
+						
+						<!--<a href="#" class="more pull-right">更多 ></a>-->
+					</div>
+					<div class="row">
+						
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+							<div class="czlink">
+							<a href="http://www.ggscl.com" style="background-image: url(static/img/index.png);">
+							<span>贵州市科技信息网</span>	
+							</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ">
+							<div class="czlink">
+							<a href="http://www.ggscl.com/jssc" style="background-image: url(static/img/jishu.png);">
+							<span>技术市场</span>	
+							</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ">
+							<div class="czlink">
+							<a href="http://www.ggscl.com/sjkxx" style="background-image: url(static/img/shujuku.png);">
+							<span>科技数据库</span>	
+							</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xs-3">
+							<div class="czlink">
+							<a href="http://www.gxstd.com/webs/homepage.jsp" style="background-image: url(static/img/book.png);">
+							<span>科技文献平台</span>	
+							</a>
+							</div>
+						</div>
+						
+						
+						
+					</div>
+					</div></div>
+					
+					<!-- 前端：通用尾部  -->
+
+			</div>
+				<div class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+							<h2>院所园企</h2>
+							<ul class="footer-list">
+								<li>
+									<a href="#">账号问题</a>
+								</li>
+								<li>
+									<a href="#">参与活动</a>
+								</li>
+								<li>
+									<a href="#">帮助中心</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+							<h2>服务指南</h2>
+							<ul class="footer-list">
+								<li>
+									<a href="#">账号问题</a>
+								</li>
+								<li>
+									<a href="#">参与活动</a>
+								</li>
+								<li>
+									<a href="#">帮助中心</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+							<h2>关于我们</h2>
+							<ul class="footer-list">
+								<li>
+									<a href="#">平台简介</a>
+								</li>
+								<li>
+									<a href="#">参与活动</a>
+								</li>
+								<li>
+									<a href="#">法律声明</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-offset-1 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+							<div class="friend-link-list ">
+								<a class="facebook" href="#"><i class="iconfont icon-facebook1"></i></a>
+								<a class="twiter" href="#"><i class="iconfont icon-icontwiter"></i></a>
+								<a class="sina" href="#"><i class="iconfont icon-sina"></i></a>
+								<a class="google" href="#"><i class="iconfont icon-google1"></i></a>
+							</div>
+							<p>copyRight@2007-2017 中国科学院科技产业网版权所有</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 幕布 -->
+			<div class="curtain">
+				<img src="static/img/index/curtain.gif" />
+				<div class="content">
+					<h2>LOGO中国科学院科技产业网</h2>
+
+					<h4>中国科学院科技产业化联盟官方平台</h4>
+
+					<h4>科技成果专业服务平台</h4>
+
+					<h4>网址：www.castt.ac.cn</h4>
+
+					<h4>主管单位：中国科学院科技促进发展局</h4>
+
+					<h4>承办单位：喀斯玛控股有限公司</h4>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			//    幕布效果
+			var curtain = function() {
+				$('.curtain').show(
+					setTimeout(function() {
+						$('.curtain').fadeOut();
+					}, 3000)
+				);
+			};
+			//    curtain();
+
+			//搜索按钮效果
+			$(".value-list> option").click(function() {
+				var _this = $(this);
+				var _val = _this.val();
+				$(".origin > .txt").text(_val);
+			});
+			 $(".zhankai").click(function(){
+        $(".desc p").css("height","auto");
+        $(".zhankai").hide();
+        $(".shouqi").show();
+    });
+    $(".shouqi").click(function(){
+        $(".desc p").css("height","43px");
+        $(".shouqi").hide();
+        $(".zhankai").show();
+    });
+    $(document).ready(function(){
+//限制字符个数
+        $(".zxx_text_overflow1").each(function(){
+            var maxwidth=45;
+            if($(this).text().length>maxwidth){
+                $(this).text($(this).text().substring(0,maxwidth));
+                $(this).html($(this).html()+'…');
+            }
+        });
+    });
+    $(document).ready(function(){
+//限制字符个数
+$(".zxx_text_overflow").each(function(){
+var maxwidth=53;
+if($(this).text().length>maxwidth){
+$(this).text($(this).text().substring(0,maxwidth));
+$(this).html($(this).html()+'…');
+}
+});
+});
+		</script>
+		<script>
+								$(".fbcg").hover(function(){
+								    $(".fbcg").css("background-color","#f5f5f5");
+								    $(".fbcg img").attr("src", "static/img/fbcg-b.png");
+								},function(){
+								    $(".fbcg").css("background-color","#FFFFFF");
+								     $(".fbcg img").attr("src", "static/img/fbcg-a.png");
+								});
+								$(".fbxq").hover(function(){
+								    $(".fbxq").css("background-color","#f5f5f5");
+								    $(".fbxq img").attr("src", "static/img/fbxq-b.png");
+								},function(){
+								    $(".fbxq").css("background-color","#FFFFFF");
+								     $(".fbxq img").attr("src", "static/img/fbxq-a.png");
+								});
+								$(".fbfw").hover(function(){
+								    $(".fbfw").css("background-color","#f5f5f5");
+								    $(".fbfw img").attr("src", "static/img/fbfw-b.png");
+								},function(){
+								    $(".fbfw").css("background-color","#FFFFFF");
+								     $(".fbfw img").attr("src", "static/img/fbfw-a.png");
+								});
+								$(".fbcp").hover(function(){
+								    $(".fbcp").css("background-color","#f5f5f5");
+								    $(".fbcp img").attr("src", "static/img/fbcp-b.png");
+								},function(){
+								    $(".fbcp").css("background-color","#FFFFFF");
+								     $(".fbcp img").attr("src", "static/img/fbcp-a.png");
+								});
+							</script>
+							<script>
+
+$(document).ready(function(e) {
+
+    $('#b01').unslider({
+
+		dots: true
+
+	});
+	$('#b02').unslider({
+
+		dots: true
+
+	});
+	$('#b03').unslider({
+
+		dots: true
+
+	});
+
+});
+
+</script>
+	</body>
+
+</html>

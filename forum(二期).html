@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-hans">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>成果科技</title>
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="static/css/swiper.min.css"/>
+    <link rel="stylesheet" href="static/css/home2.css"/>
+    <link rel="stylesheet" href="static/css/iconfont.css"/>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/swiper.min.js"></script>
+    <script src="static/js/index.js"></script>
+
+    <!-- 在所有的页面引用IE兼容解决方案 -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper" id="mainContainer">
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <!-- 登录后样式 -->
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="name">
+                        我叫小胖胖 <i class="icon icon-gread gread1"></i><i class="iconfont icon-caret-bottom"></i>
+                    </div>
+                    <a href="#" class="notice">消息<span class="label label-danger">30</span></a>
+                    <a href="#" class="loginOut">退出</a>
+                </div>
+                <!-- 登录前样式 -->
+                <!--<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">-->
+                    <!--<a href="#" class="loginIn">请登录</a>-->
+                    <!--<a href="#" class="registerIn">免费注册</a>-->
+                <!--</div>-->
+                <div class="col-md-offset-1 col-lg-7 col-md-7 col-sm-6 col-xs-6">
+                    <div class="right-nav">
+                    	<a href="#"><span class="luntan"><img src="static/img/index/luntang.png/"></span>&nbsp;论坛 <i class="iconfont icon-caret-bottom"></i></a>
+                        <a href="#">我的成果 <i class="iconfont icon-caret-bottom"></i></a>
+                        <a href="#">我的服务 <i class="iconfont icon-caret-bottom"></i></a>
+                        <a href="#">我的需求 <i class="iconfont icon-caret-bottom"></i></a>
+                        <a href="#">我的机构 <i class="iconfont icon-caret-bottom"></i></a>
+                        <a class="wechatCheck" href="#">微信扫一扫
+                            <img src="static/img/index/wechao.png"/>
+                            <div class="bigImg">
+                                <img src="static/img/index/wechao.png"/>
+                            </div>
+                        </a>
+                        <a class="wechatCheck" href="#">今日关注扫一扫
+                            <img src="static/img/index/wechao.png"/>
+                            <div class="bigImg">
+                                <img src="static/img/index/wechao.png"/>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5"><a href="#"><img src="static/img/index/new-logo.png"/></a></div>
+                <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                   <div class="search pa pull-left" style="margin-left:106px;width: 81%;">
+                        <div class="search-select">
+                            <a href="javascript:;" class="origin dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="txt">成果</span> <i class="iconfont icon-caret-bottom"></i></a>
+                            <select multiple class="dropdown-menu value-list ">
+                                <option value="成果" selected>成果</option>
+                                <option value="服务">服务</option>
+                                <option value="会员">会员</option>
+                                <option value="需求">需求</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form-control" placeholder="请输入搜索内容"/>
+                        <a href="javascript:;" class="search-btn"><i class="iconfont icon-search1"></i></a>
+                    </div>
+                   
+                    <ul class="list" style="margin-left:51px;padding-left:57px;">
+                        <li><label>热门搜索 :</label></li>
+                        <li><a href="#">人工智能</a></li>
+                        <li><a href="#">风云四号</a></li>
+                        <li><a href="#">海绵城市</a></li>
+                        <li><a href="#">数字经济</a></li>
+                        <li><a href="#">通用航空</a></li>
+                        <li><a href="#">航天航空</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <nav class="header-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <a class="active" href="javascript:;">首页</a>
+                    <a href="javascript:;">科研成果</a>
+                    <a href="javascript:;">科研产品</a>
+                    <a href="javascript:;">分站风采</a>
+                    <a href="javascript:;">专家团队</a>
+                    <a href="javascript:;">供需服务</a>
+                    <a href="javascript:;">联盟主页</a>
+                    <a href="javascript:;">科技资讯</a>
+                  
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+    	<div class="forum-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 desc">
+                    <h2>科技产业网帖子中心</h2>
+                    <span class="forum-search">
+                  	<img src="static/img/search.png" />
+                    </span>
+                    <input type="text" placeholder="帖子搜索"/>
+                    <p class="displayPart">进行科技成果研发，交流；专利交易，科技资源共享的权威平台…</p> 
+                </div>
+              
+            </div>
+        </div>
+    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                 
+    				
+    					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 forum-bg">
+    						<div class="forum-span"><span>帖子中心</span></div>
+    						<!--<div class="forum-user">
+    							<img src="static/img/brand3.png"/>
+    							<a href="#"> 中国科学院大连自动化研究所</a>
+    						</div>-->
+    						
+    						<div class="forum-user">
+    							
+    							<a href="#"> 未登录</a>
+    						</div>
+    					<div class="forum-span"><span>帖子分类</span></div>
+    					<div class="forum-class">
+    					<ul>
+    						<li class="active">
+    								<i class="iconfont icon-caret"></i>
+    								<a href="#">电子与信息</a>
+    							
+    						</li>
+    						<li>
+    								<i class="iconfont icon-caret"></i>
+    								<a href="#">多应用技术成果</a>
+    							
+    						</li>
+    						<li>
+    								<i class="iconfont icon-caret"></i>
+    								<a href="#">光机电一体化</a>
+    							
+    						</li>
+    						<li>
+    								<i class="iconfont icon-caret"></i>
+    								<a href="#">航空航天</a>
+    							
+    						</li>
+    						<li>
+    								<i class="iconfont icon-caret"></i>
+    								<a href="#">化工</a>
+    							
+    						</li>
+    						<li>
+    								<i class="iconfont icon-caret"></i>
+    								<a href="#">环境保护</a>
+    							
+    						</li>
+    						<li>
+    								<i class="iconfont icon-caret"></i>
+    								<a href="#">能源化工</a>
+    							
+    						</li>
+    						<li>
+    								<i class="iconfont icon-caret"></i>
+    								<a href="#">农林牧渔</a>
+    							
+    						</li>
+    						<li>
+    								<i class="iconfont icon-caret"></i>
+    								<a href="#">轻工</a>
+    							
+    						</li>
+    						
+    						<li>
+    								<i class="iconfont icon-caret"></i>
+    								<a href="#">生物医药技术</a>
+    							
+    						</li>
+    						<li>
+    								<i class="iconfont icon-caret"></i>
+    								<a href="#">食品安全</a>
+    							
+    						</li>
+    						<li>
+    								<i class="iconfont icon-caret"></i>
+    								<a href="#">现代服务业</a>
+    							
+    						</li>
+    						<li>
+    								<i class="iconfont icon-caret"></i>
+    								<a href="#">新材料</a>
+    							
+    						</li>
+    						<li>
+    								<i class="iconfont icon-caret"></i>
+    								<a href="#">新能源节能技术</a>
+    							
+    						</li>
+    						<li>
+    								<i class="iconfont icon-caret"></i>
+    								<a href="#">装备制造</a>
+    							
+    						</li>
+    						<li>
+    								<i class="iconfont icon-caret"></i>
+    								<a href="#">其他</a>
+    							
+    						</li>
+    						
+    					</ul>
+    					</div>
+    				</div>
+    				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 " style="width: 4%;"></div>
+    				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 ma-top-15">
+    					<div class="search-key">
+                    		<div class="search-title">
+                        		<span>帖子</span>
+                        		 <a href="#fatie" class="achievement-import pull-right"><i class="iconfont icon-edit"></i>发布帖子</a>
+                    		</div>
+                  		</div>	
+                  		<div class="forum-list">
+                  			<a href="#">来来来，大家集思广益一下如何增加棚膜的使用年限，同时完成回收，降低污染，降低造价等</a><i>123</i>
+                  			<p>帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明</p>
+                  			<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 forum-li" style="padding-left: 0px;">
+                  				<span class="baohu">环境保护</span><span class="cailiao">新材料</span><span class="dianzi">电子与信息</span><span class="yingyong">多应用技术成果</span><span class="jidian">光机电一体化</span>
+                  			</div>
+                  			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 forum-data">
+                  				<span>2016.07.11 13:31</span>
+                  				<span class="glyphicon glyphicon-user">中国科学院自动化研究院</span>
+                  				
+                  			</div>
+                  			<div class="clear"></div>
+    				</div>
+    				<div class="forum-list">
+                  			<a href="#">来来来，大家集思广益一下如何增加棚膜的使用年限，同时完成回收，降低污染，降低造价等</a><i>123</i>
+                  			<p>帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明</p>
+                  			<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 forum-li" style="padding-left: 0px;">
+                  				<span class="muyu">农林牧渔</span><span class="hangkong">航空航天</span><span class="huagong">化工</span><span class="qinggong">轻工</span>
+                  			</div>
+                  			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 forum-data">
+                  				<span>2016.07.11 13:31</span>
+                  				<span class="glyphicon glyphicon-user">中国科学院自动化研究院</span>
+                  				
+                  			</div>
+                  			<div class="clear"></div>
+                  		</div>
+                  			<div class="forum-list">
+                  			<a href="#">来来来，大家集思广益一下如何增加棚膜的使用年限，同时完成回收，降低污染，降低造价等</a><i>123</i>
+                  			<p>帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明</p>
+                  			<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 forum-li" style="padding-left: 0px;">
+                  				<span class="shengwu">生物医药技术</span><span class="shipin">食品安全</span><span class="xiandai">现代服务业</span><span class="nengyuan">新能源节能技术</span>
+                  			</div>
+                  			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 forum-data">
+                  				<span>2016.07.11 13:31</span>
+                  				<span class="glyphicon glyphicon-user">中国科学院自动化研究院</span>
+                  				
+                  			</div>
+                  			<div class="clear"></div>
+                  			</div>
+                  			<div class="forum-list">
+                  			<a href="#">来来来，大家集思广益一下如何增加棚膜的使用年限，同时完成回收，降低污染，降低造价等</a><i>123</i>
+                  			<p>帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明</p>
+                  			<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 forum-li" style="padding-left: 0px;">
+                  				<span class="zhuanbei">装备制造</span><span class="qita">其他</span><span class="xiandai">现代服务业</span><span class="nengyuan">新能源节能技术</span>
+                  			</div>
+                  			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 forum-data">
+                  				<span>2016.07.11 13:31</span>
+                  				<span class="glyphicon glyphicon-user">中国科学院自动化研究院</span>
+                  				
+                  			</div>
+                  			<div class="clear"></div>
+                  			</div>
+                  			<div class="forum-list">
+                  			<a href="#">来来来，大家集思广益一下如何增加棚膜的使用年限，同时完成回收，降低污染，降低造价等</a><i>123</i>
+                  			<p>帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明</p>
+                  			<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 forum-li" style="padding-left: 0px;">
+                  				<span class="shengwu">生物医药技术</span><span class="shipin">食品安全</span><span class="xiandai">现代服务业</span><span class="nengyuan">新能源节能技术</span>
+                  			</div>
+                  			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 forum-data">
+                  				<span>2016.07.11 13:31</span>
+                  				<span class="glyphicon glyphicon-user">中国科学院自动化研究院</span>
+                  				
+                  			</div>
+                  			<div class="clear"></div>
+                  			</div>
+                  			<div class="forum-list">
+                  			<a href="#">来来来，大家集思广益一下如何增加棚膜的使用年限，同时完成回收，降低污染，降低造价等</a><i>123</i>
+                  			<p>帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明帖子说明</p>
+                  			<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 forum-li" style="padding-left: 0px;">
+                  				<span class="shengwu">生物医药技术</span><span class="shipin">食品安全</span><span class="xiandai">现代服务业</span><span class="nengyuan">新能源节能技术</span>
+                  			
+                  			</div>
+                  			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 forum-data">
+                  				<span>2016.07.11 13:31</span>
+                  				<span class="glyphicon glyphicon-user">中国科学院自动化研究院</span>
+                  				
+                  			</div>
+                  			<div class="clear"></div>
+                  			</div>
+                  			
+                  			 <!--分页-->
+           <div class="row">
+           	  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pagination-private">
+           	  	 <ul class="pagination">
+					<li><a href="#">&laquo;</a></li>
+					<li class="active"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">&raquo;</a></li>
+				</ul>
+           	  </div>
+           </div>
+           <!--end-->
+    				</div>
+      			</div>
+        </div>
+    </div>
+		<!--
+        	发帖
+        -->	
+        <div class="sendforum-bg" id="fatie">
+        	 <div class="container">
+        	 <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                	<div class="main-index-title"><span>发帖</span></div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 sendforum" style="padding-left: 0px;">
+                	<input type="text" placeholder="请输入帖子标题" /> 
+                	<!--登录后的样式 -->
+                     <!--<textarea name="content" id="content" class="form-control notNull" ></textarea> -->
+                	 <a href="#">请先登录后再发帖</a>
+                </div>	
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 send-list">
+                	<img src="static/img/leibie.png"/><label>选择帖子标签</label>
+                	<div>
+                	<span class="baohu weixuan ">环境保护</span><span class="cailiao weixuan">新材料</span><span class="dianzi weixuan">电子与信息</span><span class="yingyong weixuan">多应用技术成果</span><span class="jidian weixuan">光机电一体化</span>
+                	<span class="muyu weixuan " >农林牧渔</span><span class="hangkong weixuan">航空航天</span><span class="huagong weixuan">化工</span><span class="qinggong weixuan">轻工</span><span class="zhuanbei weixuan">装备制造</span>
+                	<span class="shengwu weixuan">生物医药技术</span><span class="shipin weixuan">食品安全</span><span class="xiandai weixuan">现代服务业</span><span class="nengyuan weixuan">新能源节能技术</span>
+                	<span class="qita weixuan">其他</span>
+                	</div>
+                	<a href="#">发表</a>
+                </div>
+            </div>
+           </div>
+        </div>
+	<div class="main-index-title"></div>
+	</div>
+	</div>
+    <!-- 前端：通用尾部  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>院所园企</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>服务指南</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">账号问题</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <h2>关于我们</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">平台简介</a></li>
+                        <li><a href="#">参与活动</a></li>
+                        <li><a href="#">法律声明</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-offset-1 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="friend-link-list ">
+                        <a class="facebook" href="#"><i class="iconfont icon-facebook1"></i></a>
+                        <a class="twiter" href="#"><i class="iconfont icon-icontwiter"></i></a>
+                        <a class="sina" href="#"><i class="iconfont icon-sina"></i></a>
+                        <a class="google" href="#"><i class="iconfont icon-google1"></i></a>
+                    </div>
+                    <p>copyRight@2007-2017 中国科学院科技产业网版权所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 幕布 -->
+    <div class="curtain">
+        <img src="static/img/index/curtain.gif"/>
+        <div class="content">
+            <h2>LOGO中国科学院科技产业网</h2>
+
+            <h4>中国科学院科技产业化联盟官方平台</h4>
+
+            <h4>科技成果专业服务平台</h4>
+
+            <h4>网址：www.castt.ac.cn</h4>
+
+            <h4>主管单位：中国科学院科技促进发展局</h4>
+
+            <h4>承办单位：喀斯玛控股有限公司</h4>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+//    幕布效果
+    var curtain =  function(){
+        $('.curtain').show(
+                setTimeout(function(){
+                    $('.curtain').fadeOut();
+                },3000)
+        );
+    };
+//    curtain();
+
+    //搜索按钮效果
+    $(".value-list> option").click(function () {
+        var _this = $(this);
+        var _val = _this.val();
+        $(".origin > .txt").text(_val);
+    });
+
+    //滚动消息通知
+    var t;
+    $(".news").hover(function(){
+        clearInterval(t);
+    },function(){
+        t = setInterval(function(){
+            var ul = $(".news-item");
+            var liHeight = ul.find("li:last").height();
+            ul.animate({marginTop : liHeight +"px"},1000,function(){
+                ul.find("li:last").prependTo(ul);
+                ul.find("li:first").hide();
+                ul.css({marginTop:0});
+                ul.find("li:first").fadeIn(800);
+            });
+        },3000);
+    }).trigger("mouseleave");
+
+    var swiper1 = new Swiper('.patent > .swiper-container',{
+//        autoplay: 2500
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        loop: true
+    });
+
+</script>
+<script>
+	$(".forum-banner input").bind('input propertychange', function() {
+		$(".forum-search").hide();
+	})
+</script>
+<link rel="stylesheet" href="static/kindeditor/themes/default/default.css"/>
+<link rel="stylesheet" href="static/kindeditor/plugins/code/prettify.css"/>
+<script charset="utf-8" src="static/kindeditor/kindeditor-all-min.js"></script>
+<script charset="utf-8" src="static/kindeditor/lang/zh-CN.js"></script>
+<script charset="utf-8" src="static/kindeditor/plugins/code/prettify.js"></script>
+
+<script>
+    KindEditor.ready(function(K) {
+        var editor1 = K.create('#content', {
+            cssPath : 'static/kindeditor/plugins/code/prettify.css',
+            uploadJson : 'static/kindeditor/php/upload_json.php',//图片提交程序路径
+            fileManagerJson : 'static/kindeditor/php/file_manager_json.php',//flash，文件，视频等提交程序路径
+            allowFileManager : true,
+            minHeight:300,
+            filterMode:false,
+            afterCreate : function() {
+                this.sync();
+            },
+            afterBlur:function(){
+                this.sync();
+            },
+            items : ['source', '|', 'fullscreen', 'undo', 'redo',  'copy', 'paste',
+                'plainpaste', 'wordpaste', '|', 'justifyleft', 'justifycenter', 'justifyright',
+                'justifyfull', 'insertorderedlist', 'insertunorderedlist', 'indent', 'outdent', 'subscript',
+                'superscript', '|', 'selectall', '-',
+                'title', 'fontname', 'fontsize', '|', 'textcolor', 'bgcolor', 'bold',
+                'italic', 'underline', 'strikethrough',  '|', 'image', 'advtable', '|','baidumap', 'anchor','|','link','unlink', '|', 'about']
+        });
+        prettyPrint();
+
+    });
+</script>
+<script>
+	$(".send-list span").click(function(){
+		$(this).addClass("xuanze");
+		 $(this).siblings().removeClass("xuanze");
+		
+	})
+	
+</script>
+<script>
+	
+</script>
+</body>
+</html>
